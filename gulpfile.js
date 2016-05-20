@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-  nodemon = require('gulp-nodemon'),
-  plumber = require('gulp-plumber'),
-  livereload = require('gulp-livereload'),
-  sass = require('gulp-sass');
+const gulp = require('gulp');
+const nodemon = require('gulp-nodemon');
+const plumber = require('gulp-plumber');
+const livereload = require('gulp-livereload');
+const sass = require('gulp-sass');
 
 gulp.task('sass', function () {
   gulp.src('./public/css/*.scss')
