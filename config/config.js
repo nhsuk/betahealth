@@ -6,7 +6,7 @@ const config = {
   development: {
     root: rootPath,
     app: {
-      name: 'betahealth'
+      name: 'betahealth',
     },
     port: process.env.PORT || 3000,
   },
@@ -14,7 +14,7 @@ const config = {
   test: {
     root: rootPath,
     app: {
-      name: 'betahealth'
+      name: 'betahealth',
     },
     port: process.env.PORT || 3000,
   },
@@ -22,10 +22,10 @@ const config = {
   production: {
     root: rootPath,
     app: {
-      name: 'betahealth'
+      name: 'betahealth',
     },
     port: process.env.PORT || 3000,
-  }
+  },
 };
 
 module.exports = config[env];
