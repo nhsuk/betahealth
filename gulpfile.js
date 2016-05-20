@@ -4,7 +4,7 @@ const plumber = require('gulp-plumber');
 const livereload = require('gulp-livereload');
 const sass = require('gulp-sass');
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
   gulp.src('./public/css/*.scss')
     .pipe(plumber())
     .pipe(sass())
@@ -12,19 +12,19 @@ gulp.task('sass', function () {
     .pipe(livereload());
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch('./public/css/*.scss', ['sass']);
 });
 
-gulp.task('develop', function () {
+gulp.task('develop', () => {
   livereload.listen();
   nodemon({
     script: 'app.js',
     ext: 'js coffee nunjucks',
-    stdout: false
-  }).on('readable', function () {
-    this.stdout.on('data', function (chunk) {
-      if(/^Express server listening on port/.test(chunk)){
+    stdout: false,
+  }).on('readable', () => {
+    this.stdout.on('data', (chunk) => {
+      if (/^Express server listening on port/.test(chunk)) {
         livereload.changed(__dirname);
       }
     });
@@ -36,5 +36,5 @@ gulp.task('develop', function () {
 gulp.task('default', [
   'sass',
   'develop',
-  'watch'
+  'watch',
 ]);
