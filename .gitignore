@@ -1,3 +1,13 @@
-node_modules/
+# Ignore cache
+/.sass-cache
+/.cache
+
+# npm
+node_modules
+*.log
+*.gz
+npm-debug.log.*
+
+# Ignore build directories
+build/
 public/components
-.sass-cache
