@@ -37,14 +37,6 @@ module.exports = (app, config) => {
     app.use(helmet.contentSecurityPolicy({
       directives: {
         defaultSrc: ["'self'"],
-        scriptSrc: [],
-        styleSrc: [],
-        imgSrc: [],
-        fontSrc: [],
-        objectSrc: [],
-        connectSrc: [],
-        mediaSrc: [],
-        frameSrc: [],
       },
     }));
     app.use(helmet.xssFilter());
