@@ -31,6 +31,7 @@
     "gulp-sass-lint": "^1.1.1",
     "gulp-sequence": "^0.4.5",
     "gulp-sourcemaps": "^1.6.0",
+    "helmet": "^2.1.0",
     "method-override": "^2.3.0",
     "morgan": "^1.6.1",
     "nunjucks": "^2.0.0",
