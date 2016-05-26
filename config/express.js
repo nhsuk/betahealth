@@ -11,10 +11,8 @@ const nunjucks = require('nunjucks');
 const routes = require('./routes');
 
 module.exports = (app, config) => {
-  const env = process.env.NODE_ENV || 'development';
   /* eslint-disable no-param-reassign */
-  app.locals.ENV = env;
-  app.locals.ENV_DEVELOPMENT = env === 'development';
+  app.locals.GOOGLE_ANALYTICS_TRACKING_ID = config.googleAnalyticsId;
   /* eslint-enable no-param-reassign */
 
   app.set('views', `${config.root}/app/views`);
@@ -35,10 +33,11 @@ module.exports = (app, config) => {
   app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
 
-  if (env !== 'development') {
+  if (config.env !== 'development') {
     app.use(helmet.contentSecurityPolicy({
       directives: {
-        defaultSrc: ["'self'"],
+        defaultSrc: ['\'self\''],
+        scriptSrc: ['\'self\'', 'www.google-analytics.com', 'data:', '\'unsafe-inline\''],
       },
     }));
     app.use(helmet.xssFilter());
@@ -66,7 +65,7 @@ module.exports = (app, config) => {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
-      error: env === 'development' ? err : {},
+      error: config.env === 'development' ? err : {},
       title: 'Error',
     });
   });
