@@ -1,4 +1,5 @@
 const express = require('express');
+const helmet = require('helmet');
 const glob = require('glob');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
@@ -31,6 +32,31 @@ module.exports = (app, config) => {
   app.use(express.static(`${config.root}/build`));
   app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
+
+  if (env !== 'development') {
+    app.use(helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: [],
+        styleSrc: [],
+        imgSrc: [],
+        fontSrc: [],
+        objectSrc: [],
+        connectSrc: [],
+        mediaSrc: [],
+        frameSrc: [],
+      },
+    }));
+    app.use(helmet.xssFilter());
+    app.use(helmet({
+      frameguard: {
+        action: 'deny',
+      },
+    }));
+    app.use(helmet.hidePoweredBy());
+    app.use(helmet.ieNoOpen());
+    app.use(helmet.noSniff());
+  }
 
   const controllers = glob.sync(`${config.root}/app/controllers/*.js`);
   controllers.forEach((controller) => {
