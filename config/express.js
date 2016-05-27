@@ -1,12 +1,14 @@
 const express = require('express');
 const helmet = require('helmet');
-const glob = require('glob');
+// const glob = require('glob');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
+
+const routes = require('./routes');
 
 module.exports = (app, config) => {
   const env = process.env.NODE_ENV || 'development';
@@ -50,11 +52,8 @@ module.exports = (app, config) => {
     app.use(helmet.noSniff());
   }
 
-  const controllers = glob.sync(`${config.root}/app/controllers/*.js`);
-  controllers.forEach((controller) => {
-    // eslint-disable-next-line global-require
-    require(controller)(app);
-  });
+  // routes middleware
+  app.use(routes);
 
   app.use((req, res, next) => {
     const err = new Error('Not Found');
