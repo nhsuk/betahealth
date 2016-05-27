@@ -11,7 +11,7 @@ gulp.task('lint-css', () => {
 });
 
 gulp.task('lint-js', () => {
-  gulp.src(['**/*.js', '!node_modules/**'])
+  gulp.src(['**/*.js', '!node_modules/**', '!build/**', '!coverage/**'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());

@@ -11,3 +11,6 @@ npm-debug.log.*
 # Ignore build directories
 build/
 public/components
+
+# Ignore coverage reports
+coverage/
