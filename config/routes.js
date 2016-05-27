@@ -1,7 +1,9 @@
 // eslint-disable-next-line new-cap
 const router = require('express').Router();
-const indexCtrl = require('../app/controllers/index');
+const indexController = require('../app/controllers/index');
+const elementsController = require('../app/controllers/elements');
 
-router.get('/', indexCtrl.index);
+router.get('/', indexController.index);
+router.get('/elements', elementsController.index);
 
 module.exports = router;
