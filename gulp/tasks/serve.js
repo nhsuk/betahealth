@@ -1,3 +1,6 @@
+// eslint-disable-next-line strict
+'use strict';
+
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 

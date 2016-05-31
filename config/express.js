@@ -1,6 +1,5 @@
 const express = require('express');
 const helmet = require('helmet');
-// const glob = require('glob');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
