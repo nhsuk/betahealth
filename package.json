@@ -7,7 +7,7 @@
     "start": "node app.js",
     "develop": "gulp watch",
     "lint": "gulp lint",
-    "test": "npm run lint test",
+    "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test LOG_LEVEL=silent istanbul test _mocha -- --opts ./test/unit/mocha.opts -R spec",
     "coverage": "npm_config_coverage=true npm run test:unit"
   },
@@ -53,6 +53,7 @@
     "sinon-chai": "^2.8.0"
   },
   "pre-commit": [
+    "test:unit",
     "lint"
   ]
 }
