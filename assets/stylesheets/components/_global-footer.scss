@@ -1,0 +1,9 @@
+.global-footer {
+  background-color: $light-grey;
+  border-top: 1px solid tint($light-grey, 80%);
+}
+
+  .global-footer--inner {
+    @extend %content-block;
+    padding: ($baseline-grid-unit * 6) 0 ($baseline-grid-unit * 12);
+  }

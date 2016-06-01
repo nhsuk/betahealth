@@ -4,7 +4,7 @@
 
 .global-header--inner {
   @extend %content-block;
-  padding: 24px;
+  padding: ($baseline-grid-unit * 6) 0;
 }
 
 .global-header--link {
