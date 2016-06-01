@@ -6,7 +6,16 @@
   </head>
 
   <body>
+
+    <header role="banner">
+      {% include '_includes/global/header.nunjucks' %}
+    </header>
+
     {% block content %}{% endblock %}
+
+    <footer role="contentinfo">
+      {% include '_includes/global/footer.nunjucks' %}
+    </footer>
 
     {% include '_includes/global/analytics.nunjucks' %}
   </body>
