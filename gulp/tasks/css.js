@@ -20,7 +20,7 @@ gulp.task('css', () => {
       outputStyle: isProduction ? 'compressed' : 'expanded',
     }).on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ['> 1%', 'last 2 versions', 'IE 9'],
+      browsers: ['> 0%', 'IE 8'],
     }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(`${paths.outputStyles}`));
