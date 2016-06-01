@@ -1,0 +1,23 @@
+h1 {
+  @include core-font(80);
+}
+
+h2 {
+  @include core-font(48);
+}
+
+h3 {
+  @include core-font(36);
+}
+
+h4 {
+  @include core-font(27);
+}
+
+h5 {
+  @include core-font(24);
+}
+
+h6 {
+  @include core-font(19);
+}

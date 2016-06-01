@@ -1,0 +1,33 @@
+/// Media query helper
+/// ------------------
+/// Block include to support conditional content
+/// for different screen sizes. Based on a mobile
+/// first approach.
+///
+/// @prop {string} size - can be a set string of tablet|desktop
+/// or a pixel value to change content at
+///
+/// @example scss - change layout of element at tablet size
+///   div {
+///     border: 1px solid;
+///
+///     @include media(tablet){
+///       width: 30%;
+///       float: left;
+///     }
+///   }
+@mixin media($size: false) {
+  @if $size == "desktop" {
+    @media (min-width: 769px) {
+      @content;
+    }
+  } @else if $size == "tablet" {
+    @media (min-width: 641px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: #{$size}) {
+      @content;
+    }
+  }
+}

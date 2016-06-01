@@ -1,7 +1,10 @@
 @import "environment/settings/globals";
 @import "environment/settings/colours";
+@import "environment/settings/typography";
 
-@import "environment/tools/mixins";
+@import "environment/tools/mixins/colour";
+@import "environment/tools/mixins/conditionals";
+@import "environment/tools/mixins/typography";
 @import "environment/tools/placeholders";
 
 @import "environment/generic/box-sizing";
@@ -11,6 +14,7 @@
 
 // units
 @import "units/images";
+@import "units/headings";
 @import "units/lists";
 @import "units/links";
 @import "units/quotes";
