@@ -6,6 +6,7 @@
   <h3>Heading three</h3>
   <h4>Heading four</h4>
   <h5>Heading five</h5>
+  <h6>Heading six</h6>
 
   <p>
     <strong>Fusce vitae accumsan ex, eu semper sem.</strong> Donec sit amet metus a lacus feugiat gravida sit amet eget lorem. <em>Donec pulvinar</em> gravida consequat. Sed dolor felis, dignissim nec ipsum eu, molestie cursus elit. Donec commodo malesuada metus. Nulla efficitur, sapien ac interdum pellentesque, <a href="#">risus ligula</a> feugiat nulla, at ultrices mauris felis fringilla massa.
@@ -14,13 +15,25 @@
   <ul>
     <li>Unordered list item one</li>
     <li>Unordered list item two</li>
-    <li>Unordered list item three</li>
+    <li>Unordered list item three
+      <ul>
+        <li>Nested list item one</li>
+        <li>Nested list item two</li>
+        <li>Nested list item three</li>
+      </ul>
+    </li>
   </ul>
 
   <ol>
     <li>Ordered list item one</li>
     <li>Ordered list item two</li>
-    <li>Ordered list item three</li>
+    <li>Ordered list item three
+      <ol>
+        <li>Nested list item one</li>
+        <li>Nested list item two</li>
+        <li>Nested list item three</li>
+      </ol>
+    </li>
   </ol>
 
   <dl>
