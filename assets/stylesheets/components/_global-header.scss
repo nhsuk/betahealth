@@ -1,0 +1,17 @@
+.global-header {
+  background-color: $nhs-blue;
+}
+
+.global-header--inner {
+  @extend %content-block;
+  padding: 24px;
+}
+
+.global-header--link {
+  background: url("/images/logotype-nhs-colour.png") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 32px;
+  text-indent: -999em;
+  width: 79px;
+}
