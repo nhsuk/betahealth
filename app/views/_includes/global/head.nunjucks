@@ -11,4 +11,6 @@
 <title>{{ title }} NHS.UK</title>
 <meta name="description" content="{{ description }}">
 
-<link rel="stylesheet" href="stylesheets/style.css" media="screen">
+<link rel="stylesheet" href="stylesheets/style.css" media="screen" type="text/css">
+
+<link rel="stylesheet" href="stylesheets/nhsuk-print.css" media="print" type="text/css">
