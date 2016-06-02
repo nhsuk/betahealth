@@ -29,6 +29,22 @@ This application is a Node based application that runs on [beta.nhs.uk](http://b
 
 ## Development
 
+### Development dependencies
+
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Bundler](http://bundler.io/)
+
+[scss-lint](https://github.com/brigade/scss-lint) is used for code linting
+but adds the ruby dependency. Linting is run as part of the commit process
+so scss-lint will need to be installed.
+
+To install ruby dependencies:
+```
+bundle install
+```
+
+### Run development mode
+
 You can run the server in develop mode. Develop mode auto restarts
 the node server if you make any changes to it and if you connect to the server
 using [http://localhost:3001](http://localhost:3001) this will use
