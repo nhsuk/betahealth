@@ -1,6 +1,7 @@
 # Ignore cache
 /.sass-cache
 /.cache
+/.bundle
 
 # npm
 node_modules
