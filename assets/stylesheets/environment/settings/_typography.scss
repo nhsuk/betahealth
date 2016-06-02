@@ -1,0 +1,126 @@
+$nhs-font-stack: Arial, sans-serif;
+$print-font-stack: sans-serif;
+
+$is-print: false !default;
+
+$base-font-size: 16px;
+$baseline-grid-unit: 4px;
+$base-line-height: $baseline-grid-unit * 6;
+
+$type-settings-map: (
+  14: -2,
+  16: -1,
+  19: 0,
+  24: 1,
+  27: 2,
+  36: 3,
+  48: 4,
+  80: 5,
+);
+
+$type-settings: (
+  -2: (
+    desktop: (
+      font-size: 14px,
+      line-height: $base-line-height,
+    ),
+    mobile: (
+      font-size: 12px,
+      line-height: $base-line-height,
+    ),
+    print: (
+      font-size: 11pt,
+    ),
+  ),
+  -1: (
+    desktop: (
+      font-size: 16px,
+      line-height: $base-line-height,
+    ),
+    mobile: (
+      font-size: 14px,
+      line-height: $base-line-height,
+    ),
+    print: (
+      font-size: 12pt,
+    ),
+  ),
+  0: (
+    desktop: (
+      font-size: 19px,
+      line-height: $base-line-height,
+    ),
+    mobile: (
+      font-size: 16px,
+      line-height: $base-line-height,
+    ),
+    print: (
+      font-size: 14pt,
+    ),
+  ),
+  1: (
+    desktop: (
+      font-size: 24px,
+      line-height: $base-line-height * 2,
+    ),
+    mobile: (
+      font-size: 18px,
+      line-height: $base-line-height * 2,
+    ),
+    print: (
+      font-size: 16pt,
+    ),
+  ),
+  2: (
+    desktop: (
+      font-size: 27px,
+      line-height: $base-line-height * 2,
+    ),
+    mobile: (
+      font-size: 20px,
+      line-height: $base-line-height * 2,
+    ),
+    print: (
+      font-size: 16pt,
+    ),
+  ),
+  3: (
+    desktop: (
+      font-size: 36px,
+      line-height: $base-line-height * 2,
+    ),
+    mobile: (
+      font-size: 24px,
+      line-height: $base-line-height * 2,
+    ),
+    print: (
+      font-size: 18pt,
+    ),
+  ),
+  4: (
+    desktop: (
+      font-size: 48px,
+      line-height: $base-line-height * 2,
+    ),
+    mobile: (
+      font-size: 32px,
+      line-height: $base-line-height * 2,
+    ),
+    print: (
+      font-size: 18px,
+    ),
+  ),
+  5: (
+    desktop: (
+      font-size: 80px,
+      line-height: $base-line-height * 4,
+    ),
+    mobile: (
+      font-size: 53px,
+      line-height: $base-line-height * 3,
+    ),
+    print: (
+      font-size: 28pt,
+    ),
+  ),
+);
