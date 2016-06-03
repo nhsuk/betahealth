@@ -11,6 +11,9 @@
 <title>{{ title }} NHS.UK</title>
 <meta name="description" content="{{ description }}">
 
-<link rel="stylesheet" href="stylesheets/style.css" media="screen" type="text/css">
+<!--[if gt IE 8]><!--><link href="stylesheets/nhsuk.css" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
+<!--[if IE 6]><link href="stylesheets/nhsuk-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 7]><link href="stylesheets/nhsuk-ie7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if IE 8]><link href="stylesheets/nhsuk-ie8.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 
 <link rel="stylesheet" href="stylesheets/nhsuk-print.css" media="print" type="text/css">
