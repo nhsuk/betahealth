@@ -1,5 +1,5 @@
 {% extends 'layouts/layout.nunjucks' %}
 
 {% block content %}
-  <img src="images/nhs-logo.png" class="logo" alt="NHS">
+  <img src="assets/images/nhs-logo.png" class="logo" alt="NHS">
 {% endblock %}

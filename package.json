@@ -32,6 +32,7 @@
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-nodemon": "^2.0.2",
+    "gulp-preprocess": "^2.0.0",
     "gulp-sass": "^2.0.4",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sequence": "^0.4.5",
