@@ -7,11 +7,19 @@
 
   <body>
 
+    <div class="skiplinks">
+      <div class="skiplinks--inner">
+        <a href="#content" class="skiplinks--link">Skip to main content</a>
+      </div>
+    </div>
+
     <header role="banner">
       {% include '_includes/global/header.nunjucks' %}
     </header>
 
-    {% block content %}{% endblock %}
+    <main id="content" role="main" tabindex="-1">
+      {% block content %}{% endblock %}
+    </main>
 
     <footer role="contentinfo">
       {% include '_includes/global/footer.nunjucks' %}
