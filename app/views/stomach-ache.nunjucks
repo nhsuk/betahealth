@@ -41,7 +41,7 @@
 
       </section>
 
-      <section>
+      <section class="callout callout__gp">
 
         <h2>See your GP</h2>
 
@@ -58,7 +58,7 @@
 
       </section>
 
-      <section>
+      <section class="callout callout__emergency">
 
         <h2>Call 999 or go to <abbr title="Accident and Emergency">
           A&amp;E</abbr> if you:</h2>
@@ -78,12 +78,14 @@
 
     </div>
 
-    <section>
+    <section class="callout callout__111">
+      <div class="callout--inner">
 
-      <h2>Still not sure what to do?</h2>
+        <h2>Still not sure what to do?</h2>
 
-      <p>If you need help deciding what to do next, call 111</p>
+        <p>If you need help deciding what to do next, call 111</p>
 
+      </div>
     </section>
 
   </main>
