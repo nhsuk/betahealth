@@ -1,0 +1,24 @@
+.inline-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.inline-list--item {
+  @include media(tablet) {
+    display: inline;
+  }
+}
+
+@include media(tablet) {
+  .inline-list__slash {
+    .inline-list--item {
+      &:after {
+        content: "/";
+      }
+
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
