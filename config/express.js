@@ -12,6 +12,7 @@ const routes = require('./routes');
 module.exports = (app, config) => {
   /* eslint-disable no-param-reassign */
   app.locals.GOOGLE_ANALYTICS_TRACKING_ID = config.googleAnalyticsId;
+  app.locals.CDN_HOST = config.staticCdn;
   /* eslint-enable no-param-reassign */
 
   app.set('views', `${config.root}/app/views`);
@@ -35,8 +36,18 @@ module.exports = (app, config) => {
   if (config.env !== 'development') {
     app.use(helmet.contentSecurityPolicy({
       directives: {
-        defaultSrc: ['\'self\''],
-        scriptSrc: ['\'self\'', 'www.google-analytics.com', 'data:', '\'unsafe-inline\''],
+        defaultSrc: [
+          '\'self\'',
+        ],
+        scriptSrc: [
+          '\'self\'',
+          '\'unsafe-inline\'',
+          'data:',
+          'www.google-analytics.com',
+        ],
+        fontSrc: [
+          (config.staticCdn ? config.staticCdn.replace('//', '') : null),
+        ],
       },
     }));
     app.use(helmet.xssFilter());

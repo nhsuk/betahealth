@@ -1,3 +1,8 @@
+// scss-lint:disable SingleLinePerSelector
+html, body, button, input, table, td, th {
+  font-family: $nhs-font-stack;
+}
+
 html {
   background-color: $light-grey;
 }

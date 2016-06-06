@@ -5,4 +5,5 @@ module.exports = {
   env: process.env.NODE_ENV || 'development',
   port: process.env.PORT || 3000,
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+  staticCdn: process.env.STATIC_CDN || '/',
 };

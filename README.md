@@ -43,6 +43,26 @@ To install ruby dependencies:
 bundle install
 ```
 
+### Fonts
+
+The FS Me web font can only be used in a license permitted manor which means
+they cannot be included in this repository as it is publicly accessible.
+
+If you want to run the fonts in a development environment you will need to
+include them in a directory that is ignored by git: `./assets/fonts/fsme/`.
+The files in this directory should then be:
+
+```
+FSMeWeb-Bold.eot
+FSMeWeb-Bold.woff
+FSMeWeb-Heavy.eot
+FSMeWeb-Heavy.woff
+FSMeWeb-Light.eot
+FSMeWeb-Light.woff
+FSMeWeb-Regular.eot
+FSMeWeb-Regular.woff
+```
+
 ### Run development mode
 
 You can run the server in develop mode. Develop mode auto restarts
