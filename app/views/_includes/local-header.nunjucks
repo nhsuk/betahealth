@@ -1,0 +1,8 @@
+<div class="local-header">
+  <div class="local-header--inner">
+    <h1 class="local-header--title">{{ title }}</h1>
+    {% if intro %}
+      <p class="local-header--intro">{{ intro }}</p>
+    {% endif %}
+  </div>
+</div>
