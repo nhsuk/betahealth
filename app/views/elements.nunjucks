@@ -68,6 +68,33 @@
       }
     </code></pre>
 
+    <table>
+      <thead>
+        <tr>
+          <th>Table header one</th>
+          <th>Table header two</th>
+          <th>Table header three</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table row one, cell one</td>
+          <td>Table row one, cell two</td>
+          <td>Table row one, cell three</td>
+        </tr>
+        <tr>
+          <td>Table row two, cell one</td>
+          <td>Table row two, cell two</td>
+          <td>Table row two, cell three</td>
+        </tr>
+        <tr>
+          <td>Table row three, cell one</td>
+          <td>Table row three, cell two</td>
+          <td>Table row three, cell three</td>
+        </tr>
+      </tbody>
+    </table>
+
     <h2>Inline markup</h2>
 
     <ul>
