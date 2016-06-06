@@ -1,0 +1,6 @@
+<div class="notification-banner notification-banner__js-hidden" id="global-cookies-banner" role="alert">
+  <p class="notification-banner--inner">
+    NHS.UK uses cookies to make the site simpler.
+    <a href="/help/cookies">Find out more about cookies</a>
+  </p>
+</div>

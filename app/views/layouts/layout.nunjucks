@@ -14,6 +14,8 @@
       </div>
     </div>
 
+    {% include '_includes/cookie-message.nunjucks' %}
+
     <header role="banner">
       {% include '_includes/global/header.nunjucks' %}
     </header>

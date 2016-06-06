@@ -1,0 +1,17 @@
+.notification-banner {
+  background-color: tint($light-blue, 70%);
+}
+
+
+.notification-banner__js-hidden {
+  // scss-lint:disable SelectorFormat
+  .js-enabled & {
+    display: none;
+  }
+  // scss-lint:enable SelectorFormat
+}
+
+  .notification-banner--inner {
+    @extend %site-width-container;
+    padding: ($baseline-grid-unit * 4) 0;
+  }
