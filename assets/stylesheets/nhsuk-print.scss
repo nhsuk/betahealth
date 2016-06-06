@@ -9,7 +9,7 @@ $is-print: true;
 @import "environment/tools/mixins/colour";
 @import "environment/tools/mixins/conditionals";
 @import "environment/tools/mixins/typography";
-@import "environment/tools/placeholders";
+@import "environment/tools/placeholders/shims";
 
 @import "environment/generic/reset";
 @import "normalize.css/normalize";

@@ -3,7 +3,7 @@
 }
 
 .global-header--inner {
-  @extend %content-block;
+  @extend %site-width-container;
   padding: ($baseline-grid-unit * 6) 0;
 }
 
