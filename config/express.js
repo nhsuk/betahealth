@@ -12,6 +12,7 @@ const routes = require('./routes');
 module.exports = (app, config) => {
   /* eslint-disable no-param-reassign */
   app.locals.GOOGLE_ANALYTICS_TRACKING_ID = config.googleAnalyticsId;
+  app.locals.ASSET_PATH = '/';
   app.locals.CDN_HOST = config.staticCdn;
   /* eslint-enable no-param-reassign */
 

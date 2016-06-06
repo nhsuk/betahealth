@@ -1,17 +1,17 @@
-const indexController = require(`${appFolder}/controllers/index`);
+const controller = require(`${appFolder}/controllers/cookies`);
 
-describe('Index controller', () => {
+describe('Cookies controller', () => {
   describe('#index', () => {
     it('should render a template with params', (done) => {
       const res = {
         render: (template, params) => {
-          template.should.equal('index');
+          template.should.equal('cookies');
           params.should.have.property('title');
           done();
         },
       };
 
-      indexController.index({}, res);
+      controller.index({}, res);
     });
   });
 });
