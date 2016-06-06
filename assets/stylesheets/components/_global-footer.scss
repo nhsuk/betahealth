@@ -4,6 +4,6 @@
 }
 
   .global-footer--inner {
-    @extend %content-block;
+    @extend %site-width-container;
     padding: ($baseline-grid-unit * 6) 0 ($baseline-grid-unit * 12);
   }
