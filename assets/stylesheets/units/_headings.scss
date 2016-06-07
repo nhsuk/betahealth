@@ -1,23 +1,23 @@
 h1 {
-  @include core-font(80);
+  @include bold-font(64);
 }
 
 h2 {
-  @include core-font(48);
+  @include bold-font(36);
 }
 
 h3 {
-  @include core-font(36);
+  @include bold-font(24);
 }
 
 h4 {
-  @include core-font(27);
+  @include bold-font(20);
 }
 
 h5 {
-  @include core-font(24);
+  @include bold-font(16);
 }
 
 h6 {
-  @include core-font(19);
+  @include core-font(16);
 }

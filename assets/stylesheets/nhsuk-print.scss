@@ -22,7 +22,7 @@ $is-print: true;
 @import "units/quotes";
 
 body {
-  @include core-font(14);
+  @include core-font(16);
   margin: 0;
   padding: 0;
   width: 100%;
