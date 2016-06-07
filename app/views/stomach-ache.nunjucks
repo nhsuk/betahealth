@@ -1,13 +1,9 @@
 {% extends 'layouts/layout.nunjucks' %}
+{% import '_macros/headers.nunjucks' as headers %}
 
 {% block content %}
-  <div class="local-header">
-    <div class="local-header--inner">
-      <h1 class="local-header--title">Stomach Ache</h1>
-      <p class="local-header--intro">Most stomach aches aren’t anything
-        serious and will go away after a few days.</p>
-    </div>
-  </div>
+  {{ headers.local_header(title=title, intro='Most stomach aches aren’t anything
+    serious and will go away after a few days.') }}
 
   <div class="main-content">
 
@@ -53,7 +49,7 @@
         <li>if you bleed from your bottom</li>
         <li>if your diarrhoea lasts longer than a few days</li>
       </ul>
-    
+
     </section>
 
     <section class="callout callout__emergency">
