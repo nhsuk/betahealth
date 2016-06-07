@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
   <head>
     {% include '_includes/global/head.nunjucks' %}
   </head>
 
   <body>
+    <script>(function(d){d.className=d.className.replace(/\bno-js\b/,'js-enabled')})(document.documentElement);</script>
 
     <div class="skiplinks">
       <div class="skiplinks--inner">
         <a href="#content" class="skiplinks--link">Skip to main content</a>
       </div>
     </div>
+
+    {% include '_includes/cookie-message.nunjucks' %}
 
     <header role="banner">
       {% include '_includes/global/header.nunjucks' %}
@@ -25,6 +28,6 @@
       {% include '_includes/global/footer.nunjucks' %}
     </footer>
 
-    {% include '_includes/global/analytics.nunjucks' %}
+    {% include '_includes/global/foot.nunjucks' %}
   </body>
 </html>
