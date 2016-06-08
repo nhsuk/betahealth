@@ -5,28 +5,34 @@
   {{ headers.local_header(title=title, intro=intro) }}
 
   <div class="main-content">
-    {% block aside_content %}
-      {% if emergencyCallout %}
-        <section class="callout callout__emergency">
-          <h2>Call 999 or go to <abbr title="Accident and Emergency">
-            A&amp;E</abbr> if you:</h2>
+    <div class="grid-row">
+      <div class="column__one-third column__right">
+        {% block aside_content %}
+          {% if emergencyCallout %}
+            <section class="callout callout__emergency callout__overlap">
+              <h2>Call 999 or go to <abbr title="Accident and Emergency">
+                A&amp;E</abbr> if you:</h2>
 
-          {% block aside_callout %}{% endblock %}
+              {% block aside_callout %}{% endblock %}
+            </section>
+          {% endif %}
+        {% endblock %}
+      </div>
+
+      <div class="column__two-thirds">
+        <section>
+          {% block main_content %}{% endblock %}
         </section>
-      {% endif %}
-    {% endblock %}
 
-    <section>
-      {% block main_content %}{% endblock %}
-    </section>
+        {% if gpCallout %}
+          <section class="callout callout__gp">
+            <h2>See your GP</h2>
 
-    {% if gpCallout %}
-      <section class="callout callout__gp">
-        <h2>See your GP</h2>
-
-        {% block gp_callout %}{% endblock %}
-      </section>
-    {% endif %}
+            {% block gp_callout %}{% endblock %}
+          </section>
+        {% endif %}
+      </div>
+    </div>
   </div>
 
   {% if nonEmergencyCallout %}

@@ -29,3 +29,13 @@
 .callout__gp {
   border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
 }
+
+.callout__overlap {
+  @include media(tablet) {
+    @include background-clip(padding-box);
+    border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
+    padding-top: 0;
+    position: relative;
+    top: -($baseline-grid-unit * 16);
+  }
+}

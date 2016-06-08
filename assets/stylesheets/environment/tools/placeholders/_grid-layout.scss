@@ -58,4 +58,12 @@
 %grid-row {
   @extend %clearfix;
   margin: 0 (-($gutter / 2));
+
+  @include media(tablet) {
+    .main-content & {
+      > * {
+        margin-top: 0;
+      }
+    }
+  }
 }

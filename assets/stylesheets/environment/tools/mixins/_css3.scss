@@ -1,0 +1,13 @@
+// CSS 3 mixins
+
+// This file includes mixins for CSS properties that require vendor prefixes.
+
+// This style of indentation is preferred as it is easier to scan
+// Allow more than two spaces per indentation level and don't require a space after a colon
+// scss-lint:disable VendorPrefix Indentation
+
+@mixin background-clip($clip) {
+  -webkit-background-clip: $clip; // Chrome 4.0, Safari 3.1 to 4.0, Mobile Safari 3.2, Android Browser 2.1
+     -moz-background-clip: $clip; // Firefox 2.0 to 3.6
+          background-clip: $clip;
+}
