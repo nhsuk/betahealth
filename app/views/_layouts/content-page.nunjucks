@@ -26,7 +26,7 @@
 
         {% block gp_callout %}{% endblock %}
       </section>
-    {% endif %}    
+    {% endif %}
   </div>
 
   {% if nonEmergencyCallout %}

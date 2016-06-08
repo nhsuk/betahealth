@@ -19,7 +19,7 @@
 ///   h1 {
 ///     font-size: type-scale(0, "mobile");
 ///   }
-@function type-scale($level, $size: "desktop") {
+@function type-scale($level, $size: "large") {
   @return map-get(map-get(map-get($type-settings, $level), $size), "font-size");
 }
 
@@ -42,7 +42,7 @@
 ///   h1 {
 ///     font-size: line-height(0, "mobile");
 ///   }
-@function line-height($level, $size: "desktop") {
+@function line-height($level, $size: "large") {
   @return map-get(map-get(map-get($type-settings, $level), $size), "line-height");
 }
 
@@ -60,14 +60,19 @@
     font-size: type-scale($level, "print");
   } @else {
     font-family: $nhs-font-stack;
-    font-size: type-scale($level, "mobile");
+    font-size: type-scale($level, "small");
   }
 
   font-weight: $font-weight;
-  line-height: line-height($level, "mobile");
+  line-height: line-height($level, "small");
   text-transform: none;
 
   @include media(tablet) {
+    font-size: type-scale($level, "medium");
+    line-height: line-height($level, "medium");
+  }
+
+  @include media(desktop) {
     font-size: type-scale($level);
     line-height: line-height($level);
   }
@@ -115,5 +120,25 @@
   } @else {
     @warn "`#{$font-size}` is not a core font size. " +
       "See `settings/_typography.scss` for a list of valid sizes.";
+  }
+}
+
+/// Element spacing
+/// -------------
+/// Set the basic spacing between elements and adjust for different screen widths
+///
+/// @access public
+///
+/// @prop {number} poisition [top] - position of spacing
+///
+/// @example scss - Set spacing on elements that have a preceeding element
+///   * + * {
+///     @include element-spacing;
+///   }
+@mixin element-spacing($position: top) {
+  margin-#{$position}: $default-spacing-unit;
+
+  @include media(tablet) {
+    margin-#{$position}: $default-spacing-unit * 2;
   }
 }

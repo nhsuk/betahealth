@@ -3,14 +3,32 @@
   border-top: 1px solid tint($nhs-blue, 80%);
 }
 
-.local-header--inner {
-  @extend %site-width-container;
-}
+  .local-header--inner {
+    @extend %site-width-container;
+    padding-bottom: $baseline-grid-unit * 4;
+    padding-top: $baseline-grid-unit * 8;
 
-.local-header--title {
-  color: $white;
-}
+    @include media(tablet) {
+      padding-bottom: $baseline-grid-unit * 4;
+      padding-top: $baseline-grid-unit * 16;
+    }
 
-.local-header--intro {
-  color: $white;
-}
+    @include media(desktop) {
+      padding-bottom: $baseline-grid-unit * 8;
+      padding-top: $baseline-grid-unit * 32;
+    }
+  }
+
+  .local-header--title {
+    color: $white;
+    margin: 0;
+  }
+
+  .local-header--intro {
+    color: $white;
+    margin-top: $baseline-grid-unit * 4;
+
+    @include media(tablet) {
+      width: percentage(2 / 3);
+    }
+  }

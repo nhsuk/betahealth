@@ -1,9 +1,21 @@
 ul {
+  @include core-font(20);
   list-style: disc outside;
   padding-left: 1.5em;
 }
 
 ol {
+  @include core-font(20);
   list-style: decimal outside;
   padding-left: 1.5em;
+}
+
+dl {
+  @include core-font(20);
+}
+
+.main-content {
+  li {
+    margin-top: 0;
+  }
 }

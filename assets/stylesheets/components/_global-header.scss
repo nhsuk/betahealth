@@ -2,16 +2,22 @@
   background-color: $nhs-blue;
 }
 
-.global-header--inner {
-  @extend %site-width-container;
-  padding: ($baseline-grid-unit * 6) 0;
-}
+  .global-header--inner {
+    @extend %site-width-container;
+    padding-bottom: $baseline-grid-unit * 4;
+    padding-top: $baseline-grid-unit * 4;
 
-.global-header--link {
-  background: url("../images/logotype-nhs-colour.png") no-repeat;
-  background-size: contain;
-  display: block;
-  height: 32px;
-  text-indent: -999em;
-  width: 79px;
-}
+    @include media(tablet) {
+      padding-bottom: $baseline-grid-unit * 6;
+      padding-top: $baseline-grid-unit * 6;
+    }
+  }
+
+  .global-header--link {
+    background: url("../images/logotype-nhs-colour.png") no-repeat;
+    background-size: contain;
+    display: block;
+    height: 32px;
+    text-indent: -999em;
+    width: 79px;
+  }
