@@ -1,10 +1,8 @@
 .callout {
-  margin: ($baseline-grid-unit * 4) 0;
-  padding: ($baseline-grid-unit * 4);
+  padding: $default-spacing-unit;
 
   @include media(tablet) {
-    margin: ($baseline-grid-unit * 8) 0;
-    padding: ($baseline-grid-unit * 8);
+    padding: $default-spacing-unit * 2;
   }
 }
 

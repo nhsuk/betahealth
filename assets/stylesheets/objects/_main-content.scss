@@ -1,3 +1,11 @@
 .main-content {
   @extend %site-width-container;
+  @include element-spacing(top);
+  @include element-spacing(bottom);
+
+  // the lobotomized owl
+  // see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+  * + * {
+    @include element-spacing;
+  }
 }

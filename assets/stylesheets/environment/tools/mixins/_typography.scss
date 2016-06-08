@@ -122,3 +122,23 @@
       "See `settings/_typography.scss` for a list of valid sizes.";
   }
 }
+
+/// Element spacing
+/// -------------
+/// Set the basic spacing between elements and adjust for different screen widths
+///
+/// @access public
+///
+/// @prop {number} poisition [top] - position of spacing
+///
+/// @example scss - Set spacing on elements that have a preceeding element
+///   * + * {
+///     @include element-spacing;
+///   }
+@mixin element-spacing($position: top) {
+  margin-#{$position}: $default-spacing-unit;
+
+  @include media(tablet) {
+    margin-#{$position}: $default-spacing-unit * 2;
+  }
+}

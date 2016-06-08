@@ -27,7 +27,6 @@
 ///     @include grid-column(1 / 2, $float: right);
 ///   }
 @mixin grid-column($width, $full-width: tablet, $float: left) {
-  @include box-sizing(border-box);
   padding: 0 ($gutter / 2);
 
   @include media($full-width) {

@@ -5,7 +5,7 @@ $is-print: false !default;
 
 $base-font-size: 16px;
 $baseline-grid-unit: 4px;
-$base-line-height: $baseline-grid-unit * 6;
+$default-spacing-unit: $baseline-grid-unit * 4;
 
 $type-settings-map: (
   16: -1,
