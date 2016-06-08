@@ -10,7 +10,7 @@
     @extend %site-width-container;
   }
 
-.callout__111 {
+.callout__full-width {
   background-color: $light-blue;
   color: $white;
   margin-bottom: 0;
@@ -21,12 +21,12 @@
   }
 }
 
-.callout__emergency {
+.callout__alert {
   background-color: $red;
   color: $white;
 }
 
-.callout__gp {
+.callout__info {
   border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
 }
 
