@@ -15,6 +15,8 @@
 <title>{{ title }} NHS.UK</title>
 <meta name="description" content="{{ description }}">
 
+<meta property="og:image" content="{{ ASSET_PATH }}assets/images/opengraph.png">
+
 <!--[if gt IE 8]><!--><link href="{{ ASSET_PATH }}assets/stylesheets/nhsuk.css" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
 <!--[if IE 6]><link href="{{ ASSET_PATH }}assets/stylesheets/nhsuk-ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
 <!--[if IE 7]><link href="{{ ASSET_PATH }}assets/stylesheets/nhsuk-ie7.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
