@@ -36,7 +36,7 @@ function getCookie(name) {
 module.exports = (id) => {
   const banner = document.getElementById(id);
 
-  if (banner && getCookie('seen_cookie_message') === null) {
+  if (banner && getCookie('nhsuk_seen_cookie_message') === null) {
     banner.style.display = 'block';
     setCookie('seen_cookie_message', 'yes', { days: 28 });
   }
