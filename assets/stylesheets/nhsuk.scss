@@ -6,6 +6,7 @@
 
 @import "environment/tools/mixins/colour";
 @import "environment/tools/mixins/conditionals";
+@import "environment/tools/mixins/css3";
 @import "environment/tools/mixins/grid-layout";
 @import "environment/tools/mixins/typography";
 @import "environment/tools/placeholders/grid-layout";
@@ -27,6 +28,7 @@
 @import "units/quotes";
 
 // objects (eg. grid)
+@import "objects/grid";
 @import "objects/main-content";
 
 // components (eg. site search, navigation)
