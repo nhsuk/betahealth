@@ -4,6 +4,8 @@
 }
 
 .inline-list--item {
+  margin: 0;
+
   @include media(tablet) {
     display: inline;
   }
