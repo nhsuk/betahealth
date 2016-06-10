@@ -38,6 +38,6 @@ module.exports = (id) => {
 
   if (banner && getCookie('nhsuk_seen_cookie_message') === null) {
     banner.style.display = 'block';
-    setCookie('seen_cookie_message', 'yes', { days: 28 });
+    setCookie('nhsuk_seen_cookie_message', 'yes', { days: 28 });
   }
 };
