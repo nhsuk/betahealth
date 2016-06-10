@@ -14,14 +14,15 @@ if (isProduction) {
 
 module.exports = {
   entry: {
-    index: [
+    nhsuk: [
       './assets/javascripts/nhsuk.js',
     ],
+    ie: ['JSON2', 'html5shiv'],
   },
 
   output: {
     path: paths.outputJS,
-    filename: 'nhsuk.bundle.js',
+    filename: '[name].bundle.js',
   },
 
   module: {
