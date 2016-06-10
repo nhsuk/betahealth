@@ -30,9 +30,16 @@
 .callout__overlap {
   @include media(tablet) {
     @include background-clip(padding-box);
-    border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
-    padding-top: 0;
     position: relative;
     top: -($baseline-grid-unit * 16);
+
+    &.callout__alert {
+      border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
+      padding-top: 0;
+
+      @include ie-lte(8) {
+        border-top: ($baseline-grid-unit * 8) solid $red;
+      }
+    }
   }
 }
