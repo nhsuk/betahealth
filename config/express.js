@@ -6,16 +6,12 @@ const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
+const enforce = require('express-sslify');
 
-const routes = require('./routes');
+const locals = require('../app/middleware/locals');
+const router = require('./routes');
 
 module.exports = (app, config) => {
-  /* eslint-disable no-param-reassign */
-  app.locals.GOOGLE_ANALYTICS_TRACKING_ID = config.googleAnalyticsId;
-  app.locals.ASSET_PATH = '/';
-  app.locals.CDN_HOST = config.staticCdn;
-  /* eslint-enable no-param-reassign */
-
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', 'nunjucks');
   nunjucks.configure(`${config.root}/app/views`, {
@@ -60,10 +56,18 @@ module.exports = (app, config) => {
     app.use(helmet.hidePoweredBy());
     app.use(helmet.ieNoOpen());
     app.use(helmet.noSniff());
+
+    // eslint-disable-next-line new-cap
+    app.use(enforce.HTTPS({
+      trustProtoHeader: typeof config.dyno !== undefined,
+    }));
   }
 
-  // routes middleware
-  app.use(routes);
+  // custom middlewares
+  app.use(locals(config));
+
+  // router
+  app.use('/', router);
 
   app.use((req, res, next) => {
     const err = new Error('Not Found');
