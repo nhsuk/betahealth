@@ -8,6 +8,7 @@ const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
 const enforce = require('express-sslify');
 
+const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const router = require('./routes');
 
@@ -29,6 +30,10 @@ module.exports = (app, config) => {
   app.use(express.static(`${config.root}/build`));
   app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
+  app.use(checkSecure({
+    trustProtoHeader: config.trustProtoHeader,
+    trustAzureHeader: config.trustAzureHeader,
+  }));
 
   if (config.env !== 'development') {
     app.use(helmet.contentSecurityPolicy({
@@ -59,8 +64,8 @@ module.exports = (app, config) => {
 
     // eslint-disable-next-line new-cap
     app.use(enforce.HTTPS({
-      trustProtoHeader: typeof config.dyno !== undefined,
-      trustAzureHeader: typeof config.azureWebsiteName !== undefined,
+      trustProtoHeader: config.trustProtoHeader,
+      trustAzureHeader: config.trustAzureHeader,
     }));
   }
 

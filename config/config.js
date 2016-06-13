@@ -6,6 +6,6 @@ module.exports = {
   port: process.env.PORT || 3000,
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   staticCdn: process.env.STATIC_CDN || '/',
-  dyno: process.env.DYNO,
-  azureWebsiteName: process.env.APPSETTING_WEBSITE_SITE_NAME,
+  trustProtoHeader: typeof process.env.DYNO !== undefined,
+  trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== undefined,
 };
