@@ -60,6 +60,7 @@ module.exports = (app, config) => {
     // eslint-disable-next-line new-cap
     app.use(enforce.HTTPS({
       trustProtoHeader: typeof config.dyno !== undefined,
+      trustAzureHeader: typeof config.azureWebsiteName !== undefined,
     }));
   }
 
