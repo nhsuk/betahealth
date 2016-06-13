@@ -1,10 +1,9 @@
 module.exports = (config) => {
   return function locals(req, res, next) {
-    const isHttps = (req.headers['x-forwarded-proto'] === 'https');
     let assetPath = '/';
 
     if (config.env === 'production') {
-      assetPath = `${(isHttps ? 'https' : req.protocol)}://${req.get('host')}/`;
+      assetPath = `${(req.isHttps ? 'https' : req.protocol)}://${req.get('host')}/`;
     }
 
     /* eslint-disable no-param-reassign */
