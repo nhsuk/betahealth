@@ -20,4 +20,9 @@
     height: 32px;
     text-indent: -999em;
     width: 79px;
+
+    @include device-pixel-ratio {
+      background-image: url("../images/logotype-nhs-colour@2x.png");
+      background-size: 79px 32px;
+    }
   }
