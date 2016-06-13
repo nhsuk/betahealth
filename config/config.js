@@ -7,4 +7,5 @@ module.exports = {
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   staticCdn: process.env.STATIC_CDN || '/',
   dyno: process.env.DYNO,
+  azureWebsiteName: process.env.APPSETTING_WEBSITE_SITE_NAME,
 };
