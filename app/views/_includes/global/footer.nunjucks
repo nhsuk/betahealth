@@ -1,0 +1,23 @@
+<div class="global-footer">
+  <div class="global-footer--inner">
+
+    <div>
+      <h2 class="util-visuallyhidden">Support links</h2>
+      <ul class="inline-list inline-list__slash">
+        <li class="inline-list--item">
+          <a href="/help/clinical-assurance">Clinical assurance</a>
+        </li>
+        <li class="inline-list--item">
+          <a href="/help/cookies">Cookies</a>
+        </li>
+      </ul>
+    </div>
+
+    <p>
+      &copy; Crown copyright<br>
+      Content is available under the <a rel="external" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">
+      Open Government Licence v3.0</a> except where otherwise stated
+    </p>
+
+  </div>
+</div>

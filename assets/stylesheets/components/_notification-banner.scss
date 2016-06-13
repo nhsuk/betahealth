@@ -1,0 +1,21 @@
+.notification-banner {
+  background-color: $grey-4;
+
+  * {
+    @include core-font(16);
+  }
+}
+
+
+.notification-banner__js-hidden {
+  // scss-lint:disable SelectorFormat
+  .js-enabled & {
+    display: none;
+  }
+  // scss-lint:enable SelectorFormat
+}
+
+  .notification-banner--inner {
+    @extend %site-width-container;
+    padding: ($baseline-grid-unit * 2) 0;
+  }

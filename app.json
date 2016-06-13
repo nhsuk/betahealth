@@ -1,0 +1,22 @@
+{
+  "name": "betahealth",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "NODE_MODULES_CACHE": "false",
+    "SESSION_SECRET": {
+      "generator": "secret"
+    },
+    "STATIC_CDN": "//s3-eu-west-1.amazonaws.com/static.nhs.uk/"
+  },
+  "formation": {
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

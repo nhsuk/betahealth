@@ -1,0 +1,51 @@
+severity: error
+
+linters:
+
+  BemDepth:
+    enabled: true
+
+  BorderZero:
+    enabled: true
+    convention: zero
+
+  DeclarationOrder:
+    enabled: true
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: false
+
+  Indentation:
+    enabled: true
+    allow_non_nested_indentation: true
+
+  NameFormat:
+    enabled: true
+
+  # disabled to allow support IE8 support of `:before` and `:after`
+  PseudoElement:
+    enabled: false
+
+  PrivateNamingConvention:
+    enabled: true
+    prefix: _
+
+  QualifyingElement:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+    class_convention: ^(?!js-).*
+    class_convention_explanation: should not be written in the form js-*
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+
+  TrailingZero:
+    enabled: true
+
+  TransitionAll:
+    enabled: true

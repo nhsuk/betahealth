@@ -1,5 +1,14 @@
-{% extends 'layout.nunjucks' %}
+{% extends '_layouts/blank.nunjucks' %}
+
+{% block head %}
+  {% include '_includes/global/head.nunjucks' %}
+  <style>
+    html {
+      background-color: #fff;
+    }
+  </style>
+{% endblock %}
 
 {% block content %}
-  <img src="img/nhs-logo.png" class="logo" alt="NHS">
+  <img src="{{ ASSET_PATH }}assets/images/nhs-logo.png" class="logo" alt="NHS">
 {% endblock %}

@@ -1,0 +1,45 @@
+.callout {
+  padding: $default-spacing-unit;
+
+  @include media(tablet) {
+    padding: $default-spacing-unit * 2;
+  }
+}
+
+  .callout--inner {
+    @extend %site-width-container;
+  }
+
+.callout__full-width {
+  background-color: $light-blue;
+  color: $white;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.callout__alert {
+  background-color: $red;
+  color: $white;
+}
+
+.callout__info {
+  border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
+}
+
+.callout__overlap {
+  @include media(tablet) {
+    @include background-clip(padding-box);
+    position: relative;
+    top: -($baseline-grid-unit * 16);
+
+    &.callout__alert {
+      border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
+      padding-top: 0;
+
+      @include ie-lte(8) {
+        border-top: ($baseline-grid-unit * 8) solid $red;
+      }
+    }
+  }
+}

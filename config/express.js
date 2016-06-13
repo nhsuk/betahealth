@@ -1,19 +1,18 @@
 const express = require('express');
-const glob = require('glob');
+const helmet = require('helmet');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
+const enforce = require('express-sslify');
+
+const checkSecure = require('../app/middleware/check-secure');
+const locals = require('../app/middleware/locals');
+const router = require('./routes');
 
 module.exports = (app, config) => {
-  const env = process.env.NODE_ENV || 'development';
-  /* eslint-disable no-param-reassign */
-  app.locals.ENV = env;
-  app.locals.ENV_DEVELOPMENT = env === 'development';
-  /* eslint-enable no-param-reassign */
-
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', 'nunjucks');
   nunjucks.configure(`${config.root}/app/views`, {
@@ -28,14 +27,53 @@ module.exports = (app, config) => {
   }));
   app.use(cookieParser());
   app.use(compress());
+  app.use(express.static(`${config.root}/build`));
   app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
+  app.use(checkSecure({
+    trustProtoHeader: config.trustProtoHeader,
+    trustAzureHeader: config.trustAzureHeader,
+  }));
 
-  const controllers = glob.sync(`${config.root}/app/controllers/*.js`);
-  controllers.forEach((controller) => {
-    // eslint-disable-next-line global-require
-    require(controller)(app);
-  });
+  if (config.env !== 'development') {
+    app.use(helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: [
+          '\'self\'',
+        ],
+        scriptSrc: [
+          '\'self\'',
+          '\'unsafe-inline\'',
+          'data:',
+          'www.google-analytics.com',
+        ],
+        fontSrc: [
+          (config.staticCdn ? config.staticCdn.replace('//', '') : null),
+        ],
+      },
+    }));
+    app.use(helmet.xssFilter());
+    app.use(helmet({
+      frameguard: {
+        action: 'deny',
+      },
+    }));
+    app.use(helmet.hidePoweredBy());
+    app.use(helmet.ieNoOpen());
+    app.use(helmet.noSniff());
+
+    // eslint-disable-next-line new-cap
+    app.use(enforce.HTTPS({
+      trustProtoHeader: config.trustProtoHeader,
+      trustAzureHeader: config.trustAzureHeader,
+    }));
+  }
+
+  // custom middlewares
+  app.use(locals(config));
+
+  // router
+  app.use('/', router);
 
   app.use((req, res, next) => {
     const err = new Error('Not Found');
@@ -48,7 +86,7 @@ module.exports = (app, config) => {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
-      error: env === 'development' ? err : {},
+      error: config.env === 'development' ? err : {},
       title: 'Error',
     });
   });

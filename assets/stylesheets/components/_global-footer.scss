@@ -1,0 +1,26 @@
+.global-footer {
+  background-color: $grey-3;
+  border-top: 1px solid tint($grey-3, 80%);
+  color: $grey-1;
+
+  * {
+    @include core-font(16);
+
+    + * {
+      @include element-spacing;
+    }
+  }
+
+  a {
+    color: $grey-1;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+  .global-footer--inner {
+    @extend %site-width-container;
+    padding: 0 0 ($baseline-grid-unit * 16);
+  }

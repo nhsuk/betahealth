@@ -1,40 +1,13 @@
-const gulp = require('gulp');
-const nodemon = require('gulp-nodemon');
-const plumber = require('gulp-plumber');
-const livereload = require('gulp-livereload');
-const sass = require('gulp-sass');
+/*
+  gulpfile.js
+  ===========
+  Rather than manage one giant configuration file responsible
+  for creating multiple tasks, each task has been broken out into
+  its own file in gulpfile.js/tasks. Any files in that directory get
+  automatically required below.
+  To add a new task, simply add a new task file that directory.
+  gulpfile.js/tasks/default.js specifies the default set of tasks to run
+  when you run `gulp`.
+*/
 
-gulp.task('sass', () => {
-  gulp.src('./public/css/*.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(gulp.dest('./public/css'))
-    .pipe(livereload());
-});
-
-gulp.task('watch', () => {
-  gulp.watch('./public/css/*.scss', ['sass']);
-});
-
-gulp.task('develop', () => {
-  livereload.listen();
-  nodemon({
-    script: 'app.js',
-    ext: 'js coffee nunjucks',
-    stdout: false,
-  }).on('readable', () => {
-    this.stdout.on('data', (chunk) => {
-      if (/^Express server listening on port/.test(chunk)) {
-        livereload.changed(__dirname);
-      }
-    });
-    this.stdout.pipe(process.stdout);
-    this.stderr.pipe(process.stderr);
-  });
-});
-
-gulp.task('default', [
-  'sass',
-  'develop',
-  'watch',
-]);
+require('require-dir')('./gulp/tasks');
