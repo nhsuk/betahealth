@@ -2,6 +2,11 @@
 
 {% block head %}
   {% include '_includes/global/head.nunjucks' %}
+  <style>
+    html {
+      background-color: #fff;
+    }
+  </style>
 {% endblock %}
 
 {% block content %}
