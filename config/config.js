@@ -8,4 +8,5 @@ module.exports = {
   staticCdn: process.env.STATIC_CDN || '/',
   trustProtoHeader: typeof process.env.DYNO !== undefined,
   trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== undefined,
+  logLevel: process.env.LOG_LEVEL || 'warn',
 };

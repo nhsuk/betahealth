@@ -1,13 +1,14 @@
 const express = require('express');
 const helmet = require('helmet');
-const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
 const enforce = require('express-sslify');
+const churchill = require('churchill');
 
+const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const router = require('./routes');
@@ -20,7 +21,10 @@ module.exports = (app, config) => {
     express: app,
   });
 
-  app.use(logger('dev'));
+  if (config.env !== 'ci') {
+    app.use(churchill(logger));
+  }
+
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
     extended: true,
