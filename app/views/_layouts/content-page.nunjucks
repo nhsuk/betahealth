@@ -7,19 +7,7 @@
 
     <div class="main-content">
       <div class="grid-row">
-        <div class="column__one-third column__right">
-          {% block aside_content %}
-            {% if emergencyCallout %}
-              <section class="callout callout__alert callout__overlap">
-                <h2>Call 999 or go to <abbr title="Accident and Emergency">
-                  A&amp;E</abbr> if you:</h2>
-
-                {% block aside_callout %}{% endblock %}
-              </section>
-            {% endif %}
-          {% endblock %}
-        </div>
-
+        
         <div class="column__two-thirds">
           <section>
             {% block main_content %}{% endblock %}
@@ -33,6 +21,20 @@
             </section>
           {% endif %}
         </div>
+
+        <div class="column__one-third column__right">
+          {% block aside_content %}
+            {% if emergencyCallout %}
+              <section class="callout callout__alert callout__overlap">
+                <h2>Call 999 or go to <abbr title="Accident and Emergency">
+                  A&amp;E</abbr> if you:</h2>
+
+                {% block aside_callout %}{% endblock %}
+              </section>
+            {% endif %}
+          {% endblock %}
+        </div>
+
       </div>
     </div>
 
