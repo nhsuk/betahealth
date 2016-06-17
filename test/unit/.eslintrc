@@ -3,6 +3,11 @@
     "mocha": true
   },
   "globals": {
-    "appFolder": true
+    "appFolder": true,
+    "rootFolder": true,
+    "should": true
+  },
+  "rules": {
+    "no-unused-expressions": 0
   }
 }
