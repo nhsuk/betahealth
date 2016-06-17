@@ -28,26 +28,26 @@
 
 {% block gp_callout %}
   <ul>
-    <li>if the pain gets much worse in a short space of time</li>
-    <li>if the pain or bloating won’t go away or keeps coming back</li>
-    <li>if you have other symptoms like weight loss or vomiting</li>
-    <li>if there’s a change in how often you pee</li>
-    <li>if you have pain when you pee</li>
-    <li>if you have unusual vaginal bleeding or discharge</li>
-    <li>if you bleed from your bottom</li>
-    <li>if your diarrhoea lasts longer than a few days</li>
+    <li>the pain gets much worse in a short space of time</li>
+    <li>the pain or bloating won’t go away or keeps coming back</li>
+    <li>you have other symptoms like weight loss or vomiting</li>
+    <li>there’s a change in how often you pee</li>
+    <li>you have pain when you pee</li>
+    <li>you have unusual vaginal bleeding or discharge</li>
+    <li>you bleed from your bottom</li>
+    <li>your diarrhoea lasts longer than a few days</li>
   </ul>
 {% endblock %}
 
 {% block aside_callout %}
   <ul>
-    <li>if the pain gets much worse in a short space of time</li>
-    <li>if the pain or bloating won’t go away or keeps coming back</li>
-    <li>if you have other symptoms like weight loss or vomiting</li>
-    <li>if there’s a change in how often you pee</li>
-    <li>if you have pain when you pee</li>
-    <li>if you have unusual vaginal bleeding or discharge</li>
-    <li>if you bleed from your bottom</li>
-    <li>if your diarrhoea lasts longer than a few days</li>
+    <li>have sudden, severe stomach pain</li>
+    <li>have pain when you touch your stomach</li>
+    <li>are vomiting blood or a ground coffee like substance</li>
+    <li>have bloody or black, sticky poo</li>
+    <li>have collapsed</li>
+    <li>can’t breathe</li>
+    <li>unable to pee</li>
+    <li>are diabetic and vomiting</li>
   </ul>
 {% endblock %}

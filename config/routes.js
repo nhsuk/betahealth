@@ -13,7 +13,7 @@ router.get('/', indexController.index);
 router.get('/help/cookies', cookiesController.index);
 router.get('/help/clinical-assurance', assuranceController.index);
 
-router.get('/symptons/stomach-ache', stomachAcheController.index);
+router.get('/symptoms/stomach-ache', stomachAcheController.index);
 
 if (config !== 'production') {
   router.get('/elements', elementsController.index);
