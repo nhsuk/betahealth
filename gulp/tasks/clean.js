@@ -4,5 +4,8 @@ const paths = require('../paths');
 
 // Cleans out any generated assets before rebuilding
 gulp.task('clean', () => {
-  return del(paths.output);
+  return del([
+    paths.build,
+    paths.output,
+  ]);
 });

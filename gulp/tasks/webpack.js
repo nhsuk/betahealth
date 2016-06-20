@@ -3,8 +3,11 @@ const gutil = require('gulp-util');
 const webpack = require('webpack');
 const browserSync = require('browser-sync').get('bs-proxy');
 
+const config = require('../../config/config');
 const paths = require('../paths');
-const webpackConfig = require(paths.webpackConfig);
+const webpackConfig = config.env === 'production'
+                      ? require(paths.webpackProductionConfig)
+                      : require(paths.webpackConfig);
 
 gulp.task('webpack', done => {
   return webpack(webpackConfig).run((err, stats) => {
