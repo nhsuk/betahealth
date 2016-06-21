@@ -1,14 +1,13 @@
-{% extends '_layouts/blank.nunjucks' %}
+{% extends '_layouts/content-page.nunjucks' %}
 
-{% block head %}
-  {% include '_includes/global/head.nunjucks' %}
-  <style>
-    html {
-      background-color: #fff;
-    }
-  </style>
-{% endblock %}
+{% block main_content %}
+  <p>beta.nhs.uk is a new service to test and iterate new aspects of the NHS.UK
+    service. <a href="http://digital.nhs.uk/" rel="external">Read more about
+    the project on our blog</a>.</p>
 
-{% block content %}
-  <img src="{{ asset_path('assets/images/nhs-logo.png') }}" class="logo" alt="NHS">
+  <h2>Symptoms</h2>
+
+  <ul>
+    <li><a href="/symptoms/stomach-ache">Stomach ache</a></li>
+  </ul>
 {% endblock %}
