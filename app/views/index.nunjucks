@@ -10,5 +10,5 @@
 {% endblock %}
 
 {% block content %}
-  <img src="{{ ASSET_PATH }}assets/images/nhs-logo.png" class="logo" alt="NHS">
+  <img src="{{ asset_path('assets/images/nhs-logo.png') }}" class="logo" alt="NHS">
 {% endblock %}

@@ -1,16 +1,5 @@
 const webpack = require('webpack');
 const paths = require('./gulp/paths');
-const config = require('./config/config');
-
-const isProduction = config.env === 'production';
-const plugins = [
-  new webpack.optimize.DedupePlugin(),
-];
-
-// production only plugins
-if (isProduction) {
-  plugins.push(new webpack.optimize.UglifyJsPlugin());
-}
 
 module.exports = {
   entry: {
@@ -48,5 +37,7 @@ module.exports = {
     ],
   },
 
-  plugins,
+  plugins: [
+    new webpack.optimize.DedupePlugin(),
+  ],
 };

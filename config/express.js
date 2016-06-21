@@ -11,6 +11,7 @@ const churchill = require('churchill');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
+const assetPath = require('../app/middleware/asset-path');
 const router = require('./routes');
 
 module.exports = (app, config) => {
@@ -31,7 +32,6 @@ module.exports = (app, config) => {
   }));
   app.use(cookieParser());
   app.use(compress());
-  app.use(express.static(`${config.root}/build`));
   app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
   app.use(checkSecure({
@@ -39,7 +39,13 @@ module.exports = (app, config) => {
     trustAzureHeader: config.trustAzureHeader,
   }));
 
+  if (config.env !== 'production') {
+    app.use(express.static(`${config.root}/.tmp`));
+  }
+
   if (config.env !== 'development') {
+    app.use(express.static(`${config.root}/build`));
+
     app.use(helmet.contentSecurityPolicy({
       directives: {
         defaultSrc: [
@@ -75,6 +81,7 @@ module.exports = (app, config) => {
 
   // custom middlewares
   app.use(locals(config));
+  app.use(assetPath(config));
 
   // router
   app.use('/', router);
