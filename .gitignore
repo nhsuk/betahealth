@@ -10,11 +10,13 @@ node_modules
 npm-debug.log.*
 
 # Ignore build directories
+.tmp/
 build/
 public/components
 
-# Ignore coverage reports
+# Ignore reports
 coverage/
+test/acceptance/report
 
 # Ignore FSMe font from source control
 assets/fonts/fsme

@@ -1,3 +1,7 @@
 .util-visuallyhidden {
   @extend %visuallyhidden;
 }
+
+.util-nofocus:focus {
+  outline: none;
+}

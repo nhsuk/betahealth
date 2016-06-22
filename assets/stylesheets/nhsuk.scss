@@ -27,6 +27,7 @@
 @import "units/paragraphs";
 @import "units/tables";
 @import "units/quotes";
+@import "units/inline";
 
 // objects (eg. grid)
 @import "objects/grid";
@@ -40,5 +41,3 @@
 @import "components/local-header";
 @import "components/notification-banner";
 @import "components/skiplinks";
-
-@import "trumps/beta-placeholder";

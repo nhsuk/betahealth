@@ -8,7 +8,11 @@
     "develop": "gulp watch",
     "lint": "gulp lint",
     "test": "npm run test:unit",
-    "test:unit": "NODE_ENV=test LOG_LEVEL=silent istanbul test _mocha -- --opts ./test/unit/mocha.opts -R spec",
+    "test:unit": "NODE_ENV=test LOG_LEVEL=silent istanbul test _mocha -- ./test/unit --opts ./test/unit/mocha.opts -R spec",
+    "test:acceptance": "LOG_LEVEL=info wdio test/acceptance/wdio.conf.js",
+    "test:acceptance-headless": "LOG_LEVEL=info wdio test/acceptance/wdio.headless.conf.js",
+    "test:acceptance-cloud": "LOG_LEVEL=info wdio test/acceptance/wdio.cloud.conf.js",
+    "test:acceptance-ci": "bash ./bin/run-acceptance-tests.sh",
     "coverage": "npm_config_coverage=true npm run test:unit"
   },
   "engines": {
@@ -36,9 +40,11 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-eslint": "^2.0.0",
     "gulp-if": "^2.0.1",
+    "gulp-ignore": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-nodemon": "^2.0.2",
     "gulp-preprocess": "^2.0.0",
+    "gulp-rev-all": "^0.8.24",
     "gulp-sass": "^2.0.4",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sequence": "^0.4.5",
@@ -58,11 +64,20 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
+    "chai-string": "^1.2.0",
     "istanbul": "^0.4.3",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.5.3",
+    "progress": "^1.1.8",
+    "proxyquire": "^1.7.9",
+    "request": "^2.72.0",
+    "selenium-standalone": "^5.1.1",
     "sinomocha": "^0.2.4",
     "sinon": "^1.17.4",
-    "sinon-chai": "^2.8.0"
+    "sinon-chai": "^2.8.0",
+    "ua-parser-js": "^0.7.10",
+    "wdio-mocha-framework": "^0.3.1",
+    "webdriverio": "^4.0.9"
   },
   "pre-commit": [
     "test:unit",
