@@ -3,9 +3,8 @@
     "mocha": true
   },
   "globals": {
-    "appFolder": true,
-    "rootFolder": true,
-    "should": true
+    "browser": true,
+    "expect": true
   },
   "rules": {
     "no-unused-expressions": 0

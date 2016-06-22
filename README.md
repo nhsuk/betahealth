@@ -90,3 +90,59 @@ npm run lint
 ```
 
 If you want to update build related code and scripts then each task is a [gulp](http://gulpjs.com/) script located at '*gulp/tasks*'.
+
+### Testing
+
+#### Unit tests
+
+Unit tests are located in `./test/unit/`. They are run using the [mocha](https://mochajs.org/) framework.
+
+To run unit tests:
+
+```
+npm run test:unit
+```
+
+#### Acceptance tests
+
+Acceptance tests are located in `./test/acceptance/`. They are run using [webdriverio](http://webdriver.io/). Basic configuration for webdriverio is in `./test/acceptance/wdio.conf.js`. Other configurations exist for different environments.
+
+To run the default configuration (run against Chrome, Firefox and Phantomjs):
+
+```
+npm run test:acceptance
+```
+
+To run headlessly (in Phantomjs) only:
+
+```
+npm run test:acceptance-headless
+```
+
+Tests can also be run in the cloud on [browserstack](https://www.browserstack.com/). If using the default [webdriver base url](./config/config.js) of `http://localhost:3000` then you will need to setup [local testing](https://www.browserstack.com/local-testing) for browserstack. If you want to test against a remote url, set the `WDIO_BASEURL` to the desired url.
+
+To run tests on browserstack:
+
+```
+npm run test:acceptance-cloud
+```
+
+#### Test coverage
+
+Unit test coverage can be run using [Istanbul](https://github.com/gotwarlost/istanbul).
+
+To run test coverage:
+
+```
+npm run coverage
+```
+
+### Continuous integration
+
+Acceptance tests, unit tests and code linting are all run on [Travis](https://travis-ci.org/).
+
+Unit tests are run locally on Travis.
+
+Acceptance tests are run on browserstack against a Heroku [review app](https://devcenter.heroku.com/articles/github-integration-review-apps) url. When each PR is created on Github a review app is created on Heroku. A [test script](./bin/run-acceptance-tests.sh) is then run on Travis which waits for the right commit to be deployed and runs the tests against this url.
+
+**Note:** This setup is not ideal and currently doesn't allow for acceptance tests to be run on pushes to a specific branch, for example `develop` or `master`.

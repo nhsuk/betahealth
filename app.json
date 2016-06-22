@@ -16,7 +16,7 @@
   ],
   "buildpacks": [
     {
-      "url": "heroku/nodejs"
+      "url": "heroku/heroku-buildpack-multi"
     }
   ]
 }

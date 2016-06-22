@@ -5,6 +5,7 @@ global.chai = chai;
 global.should = chai.should();
 global.sinon = require('sinon');
 global.appFolder = `${process.cwd()}/app`;
+global.rootFolder = `${process.cwd()}`;
 
 require('sinomocha')();
 

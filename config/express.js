@@ -22,7 +22,7 @@ module.exports = (app, config) => {
     express: app,
   });
 
-  if (config.env !== 'ci') {
+  if (!config.ci) {
     app.use(churchill(logger));
   }
 
