@@ -1,39 +1,45 @@
 <div id="page-feedback" class="util-bg-tint__yellow">
   <div class="page-section">
 
-    <!-- server error -->
-    <p class="form-label form-label__large">
-      Sorry, there’s been an error, <a href="#">please try again.</a>
-    </p>
-    <!-- / server error -->
+    {% if FEEDBACKFORM.outcome == "success" %}
+      <p class="form-label form-label__large">Thank you for your feedback.</p>
+    {% endif %}
 
-    <form action="" method="post">
+    {% if FEEDBACKFORM.outcome != "success" %}
+      <form action="{{ path }}" name="feedback-form" method="post">
+        <input name="feedback-form-path" type="hidden" value="{{ FEEDBACKFORM.path }}">
 
-      <!-- form error -->
-      <div class="grid-row">
-        <div class="column__two-thirds">
-          <div class="callout callout__error" role="group" aria-labelledby="error-summary" tabindex="-1">
-            <p id="error-summary">
-              Sorry, the feedback area was empty. Please make sure to add
-              your comments about this page.
-            </p>
+        {% if FEEDBACKFORM.outcome == "failure" %}
+          <div class="grid-row">
+            <div class="column__two-thirds">
+              <div class="callout callout__error" role="group" aria-labelledby="error-summary" tabindex="-1">
+                <p id="error-summary">
+                  {% if FEEDBACKFORM.errorType == "submission" %}
+                    Sorry, the feedback area was empty. <a href="#feedback-form-comments">
+                      Please make sure to add your comments about this page.</a>
+                  {% elif FEEDBACKFORM.errorType == "server" %}
+                    Sorry, there’s been an error, <a href="#feedback-form-comments">please try again.</a>
+                  {% endif %}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        <label for="feedback-form-comments" class="form-label form-label__large">
+          What’s useful about this page? What’s missing?
+        </label>
+        <div class="grid-row">
+          <div class="column__two-thirds">
+            <textarea name="feedback-form-comments" id="feedback-form-comments" {% if FEEDBACKFORM.outcome == "failure" %}class="error"{% endif %} rows="4"></textarea>
           </div>
         </div>
-      </div>
-      <!-- / form error -->
 
-      <label for="feedback-form-comments" class="form-label form-label__large">
-        What’s useful about this page? What’s missing?
-      </label>
-      <div class="grid-row">
-        <div class="column__two-thirds">
-          <textarea name="feedback-form-comments" id="feedback-form-comments" class="error" rows="4"></textarea>
-        </div>
-      </div>
+        <button type="submit" class="button">Send feedback</button>
+        <button type="reset" class="button button__cancel">Cancel</button>
 
-      <button type="submit" class="button">Send feedback</button>
-      <button type="reset" class="button button__cancel">Cancel</button>
+      </form>
+    {% endif %}
 
-    </form>
   </div>
 </div>

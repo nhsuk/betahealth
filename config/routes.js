@@ -1,6 +1,7 @@
 // eslint-disable-next-line new-cap
 const router = require('express').Router();
 const config = require('../config/config');
+
 const indexController = require('../app/controllers/index');
 const elementsController = require('../app/controllers/elements');
 const cookiesController = require('../app/controllers/cookies');
@@ -17,7 +18,7 @@ router.get('/healthcheck', healthcheckController.index);
 router.get('/help/cookies', cookiesController.index);
 router.get('/help/clinical-assurance', assuranceController.index);
 
-router.get('/symptoms/stomach-ache', stomachAcheController.index);
+router.all('/symptoms/stomach-ache', stomachAcheController.index);
 
 if (config !== 'production') {
   router.get('/elements', elementsController.index);
