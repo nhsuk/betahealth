@@ -1,9 +1,6 @@
 .callout {
-  padding: $default-spacing-unit;
-
-  @include media(tablet) {
-    padding: $default-spacing-unit * 2;
-  }
+  @include element-padding;
+  background-color: $white;
 }
 
   .callout--inner {
@@ -13,7 +10,6 @@
 .callout__full-width {
   background-color: $light-blue;
   color: $white;
-  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -25,6 +21,10 @@
 
 .callout__info {
   border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
+}
+
+.callout__error {
+  border: $baseline-grid-unit solid $red;
 }
 
 .callout__overlap {

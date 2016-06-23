@@ -60,7 +60,7 @@
   margin: 0 (-($gutter / 2));
 
   @include media(tablet) {
-    .main-content & {
+    .page-section & {
       > * {
         margin-top: 0;
       }

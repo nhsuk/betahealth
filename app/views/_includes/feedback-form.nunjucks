@@ -1,0 +1,39 @@
+<div id="page-feedback" class="util-bg-tint__yellow">
+  <div class="page-section">
+
+    <!-- server error -->
+    <p class="form-label form-label__large">
+      Sorry, there’s been an error, <a href="#">please try again.</a>
+    </p>
+    <!-- / server error -->
+
+    <form action="" method="post">
+
+      <!-- form error -->
+      <div class="grid-row">
+        <div class="column__two-thirds">
+          <div class="callout callout__error" role="group" aria-labelledby="error-summary" tabindex="-1">
+            <p id="error-summary">
+              Sorry, the feedback area was empty. Please make sure to add
+              your comments about this page.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- / form error -->
+
+      <label for="feedback-form-comments" class="form-label form-label__large">
+        What’s useful about this page? What’s missing?
+      </label>
+      <div class="grid-row">
+        <div class="column__two-thirds">
+          <textarea name="feedback-form-comments" id="feedback-form-comments" class="error" rows="4"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="button">Send feedback</button>
+      <button type="reset" class="button button__cancel">Cancel</button>
+
+    </form>
+  </div>
+</div>
