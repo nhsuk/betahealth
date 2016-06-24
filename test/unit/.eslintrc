@@ -5,7 +5,9 @@
   "globals": {
     "appFolder": true,
     "rootFolder": true,
-    "should": true
+    "should": true,
+    "sinon": true,
+    "proxyquire": true
   },
   "rules": {
     "no-unused-expressions": 0
