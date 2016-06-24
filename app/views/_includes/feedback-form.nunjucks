@@ -7,8 +7,6 @@
 
     {% if FEEDBACKFORM.outcome != "success" %}
       <form action="{{ path }}" name="feedback-form" method="post">
-        <input name="feedback-form-path" type="hidden" value="{{ FEEDBACKFORM.path }}">
-
         {% if FEEDBACKFORM.outcome == "failure" %}
           <div class="grid-row">
             <div class="column__two-thirds">
@@ -38,6 +36,7 @@
         <button type="submit" class="button">Send feedback</button>
         <button type="reset" class="button button__cancel">Cancel</button>
 
+        <input name="feedback-form-path" type="hidden" value="{{ FEEDBACKFORM.path }}">
       </form>
     {% endif %}
 

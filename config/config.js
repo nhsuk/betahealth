@@ -26,4 +26,8 @@ module.exports = {
     buildNum: process.env.TRAVIS_BUILD_NUMBER,
     jobNum: process.env.TRAVIS_JOB_NUMBER,
   },
+  feedbackApi: {
+    baseUrl: process.env.FEEDBACK_API_BASEURL,
+    apiKey: process.env.FEEDBACK_API_KEY,
+  },
 };

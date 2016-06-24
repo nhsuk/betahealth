@@ -1,4 +1,7 @@
 /* eslint-disable no-param-reassign */
+const feedbackApi = require('../../lib/feedback-api');
+const logger = require('../../lib/logger');
+
 module.exports = () => {
   return function feedback(req, res, next) {
     const isPost = req.method.toLowerCase() === 'post';
@@ -26,10 +29,17 @@ module.exports = () => {
           path: req.body['feedback-form-path'],
         };
 
-        console.log(formData);
-
-        res.locals.FEEDBACKFORM.outcome = 'success';
-        next();
+        feedbackApi
+          .sendComment(formData)
+          .then(() => {
+            res.locals.FEEDBACKFORM.outcome = 'success';
+            next();
+          }, (error) => {
+            logger.error(error);
+            res.locals.FEEDBACKFORM.outcome = 'failure';
+            res.locals.FEEDBACKFORM.errorType = 'server';
+            next();
+          });
       }
     } else {
       next();
