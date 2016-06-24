@@ -60,6 +60,10 @@ module.exports = (app, config) => {
           'data:',
           'www.google-analytics.com',
         ],
+        imgSrc: [
+          '\'self\'',
+          'www.google-analytics.com',
+        ],
         fontSrc: [
           (config.staticCdn ? config.staticCdn.replace('//', '') : null),
         ],
