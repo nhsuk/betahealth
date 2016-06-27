@@ -26,7 +26,7 @@
       {% block content %}{% endblock %}
     </main>
 
-    {% if feedback %}
+    {% if feedback and not FEEDBACKFORM.disabled %}
       {% include '_includes/feedback-form.nunjucks' %}
     {% endif %}
 
