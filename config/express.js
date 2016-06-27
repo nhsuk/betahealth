@@ -7,11 +7,13 @@ const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
+const validator = require('express-validator');
 
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const assetPath = require('../app/middleware/asset-path');
+const feedback = require('../app/middleware/feedback');
 const router = require('./routes');
 
 module.exports = (app, config) => {
@@ -31,14 +33,15 @@ module.exports = (app, config) => {
     extended: true,
   }));
   app.use(cookieParser());
+  app.use(validator());
   app.use(compress());
-  app.use(express.static(`${config.root}/public`));
   app.use(methodOverride());
   app.use(checkSecure({
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
 
+  app.use(express.static(`${config.root}/public`));
   if (config.env !== 'production') {
     app.use(express.static(`${config.root}/.tmp`));
   }
@@ -55,6 +58,10 @@ module.exports = (app, config) => {
           '\'self\'',
           '\'unsafe-inline\'',
           'data:',
+          'www.google-analytics.com',
+        ],
+        imgSrc: [
+          '\'self\'',
           'www.google-analytics.com',
         ],
         fontSrc: [
@@ -82,6 +89,7 @@ module.exports = (app, config) => {
   // custom middlewares
   app.use(locals(config));
   app.use(assetPath(config));
+  app.use(feedback());
 
   // router
   app.use('/', router);

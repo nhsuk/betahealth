@@ -18,8 +18,8 @@ dl {
   @include core-font(20);
 }
 
-.main-content {
+.page-section {
   li {
-    margin: ($baseline-grid-unit * 2) 0;
+    margin-top: $baseline-grid-unit * 2;
   }
 }

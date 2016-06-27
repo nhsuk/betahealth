@@ -10,8 +10,8 @@ module.exports = {
   port,
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   staticCdn: process.env.STATIC_CDN || '/',
-  trustProtoHeader: typeof process.env.DYNO !== undefined,
-  trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== undefined,
+  trustProtoHeader: typeof process.env.DYNO !== 'undefined',
+  trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== 'undefined',
   logLevel: process.env.LOG_LEVEL || 'warn',
   webdriver: {
     baseUrl: process.env.WDIO_BASEURL || `http://localhost:${port}`,
@@ -25,5 +25,10 @@ module.exports = {
   travis: {
     buildNum: process.env.TRAVIS_BUILD_NUMBER,
     jobNum: process.env.TRAVIS_JOB_NUMBER,
+  },
+  feedbackApi: {
+    disabled: process.env.DISABLE_FEEDBACK || false,
+    baseUrl: process.env.FEEDBACK_API_BASEURL,
+    apiKey: process.env.FEEDBACK_API_KEY,
   },
 };

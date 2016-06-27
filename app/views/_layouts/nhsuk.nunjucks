@@ -16,6 +16,8 @@
 
     {% include '_includes/cookie-message.nunjucks' %}
 
+    {% include '_includes/new-site-message.nunjucks' %}
+
     <header role="banner">
       {% include '_includes/global/header.nunjucks' %}
     </header>
@@ -23,6 +25,10 @@
     <main id="content" role="main" tabindex="-1" class="util-nofocus">
       {% block content %}{% endblock %}
     </main>
+
+    {% if feedback and not FEEDBACKFORM.disabled %}
+      {% include '_includes/feedback-form.nunjucks' %}
+    {% endif %}
 
     <footer role="contentinfo">
       {% include '_includes/global/footer.nunjucks' %}

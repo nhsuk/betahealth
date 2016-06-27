@@ -15,6 +15,32 @@
   // scss-lint:enable SelectorFormat
 }
 
+.notification-banner__hiviz {
+  background-color: tint($yellow, 25%);
+
+  a {
+    &:link {
+      color: shade($link-colour, 18%);
+    }
+
+    &:visited {
+      color: shade($link-visited-colour, 18%);
+    }
+
+    &:hover {
+      color: shade($link-hover-colour, 18%);
+    }
+
+    &:active {
+      color: shade($link-active-colour, 18%);
+    }
+
+    &:focus {
+      outline: 3px solid $focus-colour;
+    }
+  }
+}
+
   .notification-banner--inner {
     @extend %site-width-container;
     padding: ($baseline-grid-unit * 2) 0;

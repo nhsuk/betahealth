@@ -5,7 +5,7 @@
   <article role="article">
     {{ headers.local_header(title=title, intro=intro) }}
 
-    <div class="main-content">
+    <div class="page-section">
       <div class="grid-row">
 
         <div class="column__two-thirds">

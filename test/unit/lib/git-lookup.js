@@ -1,52 +1,42 @@
-const proxyquire = require('proxyquire');
-const sinon = require('sinon');
-
-const fsMock = {
-  accessSync: {},
-  readFileSync: {},
-};
-const loggerMock = {
-  warn: {},
-};
-
 describe('git lookup library', () => {
-  let gitLookup;
-
   beforeEach(() => {
-    gitLookup = proxyquire(`${rootFolder}/lib/git-lookup`, {
-      fs: fsMock,
-      '../lib/logger': loggerMock,
+    this.sandbox = sinon.sandbox.create();
+    this.warn = this.sandbox.stub();
+    this.accessSync = this.sandbox.stub();
+    this.readFileSync = this.sandbox.stub();
+
+    this.gitLookup = proxyquire(`${rootFolder}/lib/git-lookup`, {
+      fs: {
+        accessSync: this.accessSync,
+        readFileSync: this.readFileSync,
+      },
+      '../lib/logger': {
+        warn: this.warn,
+      },
     });
+  });
+
+  afterEach(() => {
+    this.sandbox.restore();
   });
 
   describe('#getGitSha', () => {
     describe('when a git sha doesn\'t exist', () => {
-      before(() => {
-        fsMock.accessSync = sinon.stub().throws();
-        fsMock.readFileSync = sinon.stub();
-        loggerMock.warn = sinon.stub();
-      });
-
       it('it should throw an error and log it', () => {
-        const sha = gitLookup.getGitSha();
+        this.accessSync = this.sandbox.stub().throws();
 
-        should.not.exist(sha);
-        loggerMock.warn.should.have.been.called;
+        should.not.exist(this.gitLookup.getGitSha());
+        this.warn.should.have.been.called;
       });
     });
 
-    describe('when a git sha exists it should return it', () => {
-      before(() => {
-        fsMock.accessSync = sinon.stub();
-        fsMock.readFileSync = sinon.stub().returns('gitsha');
-        loggerMock.warn = sinon.stub();
-      });
+    describe('when a git sha exists', () => {
+      it('it should return the sha', () => {
+        this.readFileSync.returns('gitsha');
 
-      it('it should throw an error and log it', () => {
-        const sha = gitLookup.getGitSha();
-
-        sha.should.equal('gitsha');
-        loggerMock.warn.should.not.have.been.called;
+        this.gitLookup.getGitSha().should.equal('gitsha');
+        this.readFileSync.should.have.been.calledWith('./.source_version');
+        this.warn.should.not.have.been.called;
       });
     });
   });

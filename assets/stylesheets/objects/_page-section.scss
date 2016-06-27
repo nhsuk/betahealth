@@ -1,7 +1,6 @@
-.main-content {
+.page-section {
   @extend %site-width-container;
-  @include element-spacing(top);
-  @include element-spacing(bottom);
+  @include element-padding(vertical);
 
   // the lobotomized owl
   // see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
