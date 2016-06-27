@@ -53,6 +53,7 @@
     "gulp-util": "^3.0.7",
     "helmet": "^2.1.0",
     "html5shiv": "^3.7.3",
+    "jquery": "^1.12.4",
     "method-override": "^2.3.0",
     "moment": "^2.13.0",
     "moment-timezone": "^0.5.4",
