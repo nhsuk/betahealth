@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 const feedbackApi = require('../../lib/feedback-api');
 const logger = require('../../lib/logger');
+const config = require('../../config/config');
 
 module.exports = () => {
   return function feedback(req, res, next) {
@@ -9,9 +10,10 @@ module.exports = () => {
 
     res.locals.FEEDBACKFORM = {
       path: req.path,
+      disabled: config.feedbackApi.disabled,
     };
 
-    if (isPost && isFeedback) {
+    if (isPost && isFeedback && !config.feedbackApi.disabled) {
       req.checkBody('feedback-form-comments').notEmpty();
 
       const errors = req.validationErrors();

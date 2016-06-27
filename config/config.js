@@ -27,6 +27,7 @@ module.exports = {
     jobNum: process.env.TRAVIS_JOB_NUMBER,
   },
   feedbackApi: {
+    disabled: process.env.DISABLE_FEEDBACK || false,
     baseUrl: process.env.FEEDBACK_API_BASEURL,
     apiKey: process.env.FEEDBACK_API_KEY,
   },
