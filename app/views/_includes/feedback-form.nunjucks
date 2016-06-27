@@ -1,4 +1,4 @@
-<div id="page-feedback" class="util-bg-tint__yellow">
+<div class="util-bg-tint__yellow js-feedback-container{% if FEEDBACKFORM.outcome %} is-submitted{% endif %}">
   <div class="page-section">
 
     {% if FEEDBACKFORM.outcome == "success" %}
