@@ -10,8 +10,8 @@ module.exports = {
   port,
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   staticCdn: process.env.STATIC_CDN || '/',
-  trustProtoHeader: typeof process.env.DYNO !== undefined,
-  trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== undefined,
+  trustProtoHeader: typeof process.env.DYNO !== 'undefined',
+  trustAzureHeader: typeof process.env.WEBSITE_SITE_NAME !== 'undefined',
   logLevel: process.env.LOG_LEVEL || 'warn',
   webdriver: {
     baseUrl: process.env.WDIO_BASEURL || `http://localhost:${port}`,
