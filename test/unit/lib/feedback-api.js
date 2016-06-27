@@ -5,7 +5,7 @@ const config = {
     apiKey: 'APIKEY123456789',
   },
 };
-const fakeTime = moment().tz('Europe/London').startOf('day');
+const fakeTime = moment('2016-06-24').tz('Europe/London').startOf('day');
 
 describe('feedback api library', () => {
   beforeEach(() => {
