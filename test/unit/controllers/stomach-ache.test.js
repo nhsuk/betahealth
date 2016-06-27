@@ -10,6 +10,12 @@ describe('Stomach ache controller', () => {
           params.should.have.property('emergencyCallout');
           params.should.have.property('nonEmergencyCallout');
           params.should.have.property('gpCallout');
+
+          params.should.have.property('feedback');
+          params.feedback.should.equal(true);
+
+          params.should.have.property('choicesOrigin');
+          params.choicesOrigin.should.not.be.empty;
           done();
         },
       };
