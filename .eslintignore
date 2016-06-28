@@ -1,0 +1,4 @@
+public/assets/javascripts/vendor/**
+node_modules/**
+build/**
+coverage/**

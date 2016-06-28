@@ -10,10 +10,12 @@ gulp.task('lint-css', () => {
 });
 
 gulp.task('lint-js', () => {
-  return gulp.src(['**/*.js', '!node_modules/**', '!build/**', '!coverage/**'])
-    .pipe(eslint())
-    .pipe(eslint.format())
-    .pipe(eslint.failAfterError());
+  return gulp.src([
+    '**/*.js',
+  ])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError());
 });
 
 gulp.task('lint', ['lint-css', 'lint-js']);
