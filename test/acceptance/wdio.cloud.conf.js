@@ -10,7 +10,7 @@ exports.config = (function headlessConfig(globalConfig) {
   globalConfig.user = config.browserstack.user;
   globalConfig.key = config.browserstack.key;
 
-  globalConfig.maxInstances = 5;
+  globalConfig.maxInstances = 2;
 
   globalConfig.host = 'hub.browserstack.com';
   globalConfig.port = 80;

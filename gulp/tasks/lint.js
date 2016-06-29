@@ -11,7 +11,10 @@ gulp.task('lint-css', () => {
 
 gulp.task('lint-js', () => {
   return gulp.src([
-    '**/*.js',
+    `${paths.sourceJS}/**/*.js`,
+    `${paths.sourceApp}/**/*.js`,
+    `${paths.projectDir}/+(config|gulp|lib|public|test)/**/*.js`,
+    `${paths.projectDir}/*.js`,
   ])
   .pipe(eslint())
   .pipe(eslint.format())

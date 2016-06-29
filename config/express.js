@@ -59,10 +59,13 @@ module.exports = (app, config) => {
           '\'unsafe-inline\'',
           'data:',
           'www.google-analytics.com',
+          's.webtrends.com',
+          'statse.webtrendslive.com',
         ],
         imgSrc: [
           '\'self\'',
           'www.google-analytics.com',
+          'statse.webtrendslive.com',
         ],
         fontSrc: [
           (config.staticCdn ? config.staticCdn.replace('//', '') : null),
