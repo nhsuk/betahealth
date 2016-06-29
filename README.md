@@ -119,9 +119,9 @@ To run headlessly (in Phantomjs) only:
 npm run test:acceptance-headless
 ```
 
-Tests can also be run in the cloud on [browserstack](https://www.browserstack.com/). If using the default [webdriver base url](./config/config.js) of `http://localhost:3000` then you will need to setup [local testing](https://www.browserstack.com/local-testing) for browserstack. If you want to test against a remote url, set the `WDIO_BASEURL` to the desired url.
+Tests can also be run in the cloud on [BrowserStack](https://www.browserstack.com/). If using the default [webdriver base url](./config/config.js) of `http://localhost:3000` then you will need to setup [local testing](https://www.browserstack.com/local-testing) for BrowserStack. If you want to test against a remote url, set the `WDIO_BASEURL` to the desired url.
 
-To run tests on browserstack:
+To run tests on BrowserStack:
 
 ```
 npm run test:acceptance-cloud
@@ -146,3 +146,7 @@ Unit tests are run locally on Travis.
 Acceptance tests are run on browserstack against a Heroku [review app](https://devcenter.heroku.com/articles/github-integration-review-apps) url. When each PR is created on Github a review app is created on Heroku. A [test script](./bin/run-acceptance-tests.sh) is then run on Travis which waits for the right commit to be deployed and runs the tests against this url.
 
 **Note:** This setup is not ideal and currently doesn't allow for acceptance tests to be run on pushes to a specific branch, for example `develop` or `master`.
+
+## Thanks
+
+We'd like to thank [BrowserStack](https://www.browserstack.com/) for providing a sponsored plan for this project.
