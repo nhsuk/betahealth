@@ -35,6 +35,6 @@ if [ $TRAVIS_PULL_REQUEST != "false" ]; then
   fi
 
   # run acceptance tests
-  WDIO_BASEURL=$HEROKU_APP_URL npm run test:acceptance-headless
+  WDIO_BASEURL=$HEROKU_APP_URL npm run test:acceptance-cloud
 
 fi
