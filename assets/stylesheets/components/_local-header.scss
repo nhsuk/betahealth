@@ -27,8 +27,5 @@
   .local-header--intro {
     color: $white;
     margin-top: $baseline-grid-unit * 4;
-
-    @include media(tablet) {
-      width: percentage(2 / 3);
-    }
+    max-width: $measure;
   }
