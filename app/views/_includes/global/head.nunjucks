@@ -12,8 +12,10 @@
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
 <link rel="icon" href="{{ asset_path('assets/images/favicon.png') }}">
 
-<title>{{ title }} NHS.UK</title>
-<meta name="description" content="{{ description }}">
+<title>{{ title }} - NHS.UK</title>
+{% if description %}
+  <meta name="description" content="{{ description }}">
+{% endif %}
 
 <meta property="og:image" content="{{ asset_path('assets/images/opengraph-image.png') }}">
 <meta property="og:image:width" content="1200">
