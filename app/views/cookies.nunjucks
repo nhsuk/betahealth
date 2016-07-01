@@ -22,7 +22,7 @@
 
   <h3>Measuring website usage (Google Analytics)</h3>
 
-  <p>We use Google Analytics software to collect information about how you use NHS.UK. We do this to help make sure the site is meeting the needs of its users and to help us make improvements, eg improving site search.</p>
+  <p>We use Google Analytics software to collect information about how you use NHS.UK. We do this to help make sure the site is meeting the needs of its users and to help us make improvements, for example improving site search.</p>
 
   <p>Google Analytics stores information about:</p>
 
@@ -33,15 +33,13 @@
     <li>what you click on while you’re visiting the site</li>
   </ul>
 
-  <p>We don’t collect or store your personal information (eg your name or address) so this information can’t be used to identify who you are.</p>
+  <p>We don’t collect or store your personal information (for example your name or address) so this information can’t be used to identify who you are.</p>
 
   <div role="note" aria-label="Information">
     <p>We don’t allow Google to use or share our analytics data.</p>
   </div>
 
-  <p>Google Analytics sets the following cookies:</p>
-
-  <h3>Universal Analytics</h3>
+  <h3>Google Analytics sets the following cookies:</h3>
 
   <table>
     <thead>
@@ -62,20 +60,6 @@
         <td>Used to manage the rate at which page view requests are made</td>
         <td>10 minutes</td>
       </tr>
-    </tbody>
-  </table>
-
-  <h3>Google Analytics</h3>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Purpose</th>
-        <th>Expires</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>_utma</td>
         <td>Like _ga, this lets us know if you’ve visited before, so we can count how many of our visitors are new to NHS.UK or to a certain page</td>
@@ -115,8 +99,29 @@
     </thead>
     <tbody>
       <tr>
-        <td>seen_cookie_message</td>
+        <td>nhsuk_seen_cookie_message</td>
         <td>Saves a message to let us know that you’ve seen our cookie message</td>
+        <td>1 month</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Preventing malicious attacks</h3>
+
+  <p>We use a cookie to try to prevent cross site request forgery (CSRF) attacks through form submissions.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Expires</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>_csrf</td>
+        <td>Saves a unique token so we can check against it during form submissions</td>
         <td>1 month</td>
       </tr>
     </tbody>

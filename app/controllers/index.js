@@ -1,6 +1,6 @@
 function index(req, res) {
   res.render('index', {
-    title: 'NHS.UK Beta',
+    title: 'Test pages for NHS.UK',
   });
 }
 
