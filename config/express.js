@@ -16,6 +16,7 @@ const locals = require('../app/middleware/locals');
 const assetPath = require('../app/middleware/asset-path');
 const feedback = require('../app/middleware/feedback');
 const csrfToken = require('../app/middleware/csrf-token');
+const affinityCookie = require('../app/middleware/affinity-cookie');
 const router = require('./routes');
 
 module.exports = (app, config) => {
@@ -100,6 +101,10 @@ module.exports = (app, config) => {
       trustProtoHeader: config.trustProtoHeader,
       trustAzureHeader: config.trustAzureHeader,
     }));
+
+    if (config.trustAzureHeader) {
+      app.use(affinityCookie());
+    }
   }
 
   // router
