@@ -12,11 +12,11 @@
     <li>patients who have been directly affected by the condition</li>
   </ul>
 
-  <p>All content has been written using evidence based sources including:</p>
+  <p>All content has been written using evidence-based sources including:</p>
 
   <ul>
     <li>NHS Choices</li>
-    <li>NICE Clinical Knowledge Summaries</li>
+    <li><a href="https://www.nice.org.uk/about" rel="external">National Institute for Health and Care Excellence</a> (NICE) Clinical Knowledge Summaries</li>
     <li>National charities with a recognised expertise and specialist interest</li>
   </ul>
 {% endblock %}

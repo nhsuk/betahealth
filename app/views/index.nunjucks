@@ -1,9 +1,13 @@
 {% extends '_layouts/content-page.nunjucks' %}
 
 {% block main_content %}
-  <p>beta.nhs.uk is a new service to test and iterate new aspects of the NHS.UK
-    service. <a href="http://digital.nhs.uk/" rel="external">Read more about
-    the project on our blog</a>.</p>
+  <p>
+    This is where NHS.UK tests new pages and services to get feedback. Please
+    take a look and tell us what you think. It will help us to improve what we do.
+  </p>
+  <p>
+    <a href="http://digital.nhs.uk/" rel="external">Read more about NHS.UK on our blog.</a>
+  </p>
 
   <h2>Symptoms</h2>
 

@@ -36,7 +36,8 @@
         <button type="submit" class="button">Send feedback</button>
         <button type="reset" class="button button__cancel">Cancel</button>
 
-        <input name="feedback-form-path" type="hidden" value="{{ FEEDBACKFORM.path }}">
+        <input type="hidden" name="feedback-form-path" value="{{ FEEDBACKFORM.path }}">
+        <input type="hidden" name="_csrf" value="{{ csrfToken }}">
       </form>
     {% endif %}
 

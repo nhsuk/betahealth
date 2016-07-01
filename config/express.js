@@ -8,12 +8,15 @@ const nunjucks = require('nunjucks');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
+const csrf = require('csurf');
 
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const assetPath = require('../app/middleware/asset-path');
 const feedback = require('../app/middleware/feedback');
+const csrfToken = require('../app/middleware/csrf-token');
+const affinityCookie = require('../app/middleware/affinity-cookie');
 const router = require('./routes');
 
 module.exports = (app, config) => {
@@ -28,18 +31,28 @@ module.exports = (app, config) => {
     app.use(churchill(logger));
   }
 
+  app.use(locals(config));
+
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
     extended: true,
   }));
   app.use(cookieParser());
   app.use(validator());
-  app.use(compress());
-  app.use(methodOverride());
   app.use(checkSecure({
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
+  app.use(assetPath(config));
+  app.use(feedback());
+
+  app.use(csrf({
+    cookie: true,
+  }));
+  app.use(csrfToken());
+
+  app.use(compress());
+  app.use(methodOverride());
 
   app.use(express.static(`${config.root}/public`));
   if (config.env !== 'production') {
@@ -88,12 +101,11 @@ module.exports = (app, config) => {
       trustProtoHeader: config.trustProtoHeader,
       trustAzureHeader: config.trustAzureHeader,
     }));
-  }
 
-  // custom middlewares
-  app.use(locals(config));
-  app.use(assetPath(config));
-  app.use(feedback());
+    if (config.trustAzureHeader) {
+      app.use(affinityCookie());
+    }
+  }
 
   // router
   app.use('/', router);
@@ -106,6 +118,11 @@ module.exports = (app, config) => {
 
   // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
+    if (err.code === 'EBADCSRFTOKEN') {
+      // eslint-disable-next-line no-param-reassign
+      err.message = 'Invalid form token';
+    }
+
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
