@@ -82,7 +82,7 @@ module.exports = (app, config) => {
           'hm.webtrends.com',
         ],
         fontSrc: [
-          (config.staticCdn ? config.staticCdn.replace('//', '') : null),
+          config.staticCdn,
         ],
       },
     }));
