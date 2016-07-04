@@ -22,8 +22,8 @@ FeedbackForm.prototype.cacheEls = function cacheEls() {
 
 FeedbackForm.prototype.bindEvents = function bindEvents() {
   this.$body
-    .on('click.feedbackForm', this.toggleEl, this.showForm.bind(this))
-    .on('click.feedbackForm', 'button[type="reset"]', this.hideForm.bind(this));
+    .on('click.feedbackForm', this.toggleEl, $.proxy(this.showForm, this))
+    .on('click.feedbackForm', 'button[type="reset"]', $.proxy(this.hideForm, this));
 };
 
 FeedbackForm.prototype.render = function render() {
