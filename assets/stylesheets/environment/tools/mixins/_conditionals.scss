@@ -28,7 +28,7 @@
     }
   } @else {
     @if $size == desktop {
-      @media (min-width: 769px){
+      @media (min-width: 925px){
         @content;
       }
     } @else if $size == tablet {

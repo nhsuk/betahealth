@@ -28,7 +28,7 @@
 }
 
 .callout__overlap {
-  @include media(tablet) {
+  @include media(desktop) {
     @include background-clip(padding-box);
     position: relative;
     top: -($baseline-grid-unit * 16);

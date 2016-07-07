@@ -19,25 +19,44 @@
 }
 
 // Use .grid-column to create a grid column with 15px gutter
-// By default grid columns break to become full width at tablet size
+// By default grid columns break to become full width at 925px
 .column__one-quarter {
   @include grid-column(1 / 4);
-}
-
-.column__one-half {
-  @include grid-column(1 / 2);
 }
 
 .column__one-third {
   @include grid-column(1 / 3);
 }
 
+.column__one-half {
+  @include grid-column(1 / 2);
+}
+
 .column__two-thirds {
   @include grid-column(2 / 3);
 }
 
-.column__right {
-  @include media(tablet) {
-    float: right;
-  }
+.column__three-quarters {
+  @include grid-column(3 / 4);
+}
+
+// Right floating column classes
+.column__one-quarter-right {
+  @include grid-column(1 / 4, $float: right);
+}
+
+.column__one-third-right {
+  @include grid-column(1 / 3, $float: right);
+}
+
+.column__one-half-right {
+  @include grid-column(1 / 2, $float: right);
+}
+
+.column__two-thirds-right {
+  @include grid-column(2 / 3, $float: right);
+}
+
+.column__three-quarters-right {
+  @include grid-column(3 / 4, $float: right);
 }
