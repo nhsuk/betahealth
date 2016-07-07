@@ -20,11 +20,11 @@
 
   <h2>How cookies are used on NHS.UK</h2>
 
-  <h3>Measuring website usage (Google Analytics)</h3>
+  <h3>Measuring website usage (Google Analytics and Webtrends)</h3>
 
-  <p>We use Google Analytics software to collect information about how you use NHS.UK. We do this to help make sure the site is meeting the needs of its users and to help us make improvements, for example improving site search.</p>
+  <p>We use Google Analytics and Webtrends software to collect information about how you use NHS.UK. We do this to help make sure the site is meeting the needs of its users and to help us make improvements, for example improving site search.</p>
 
-  <p>Google Analytics stores information about:</p>
+  <p>Google Analytics and Webtrends store information about:</p>
 
   <ul>
     <li>the pages you visit on NHS.UK</li>
@@ -39,7 +39,7 @@
     <p>We don’t allow Google to use or share our analytics data.</p>
   </div>
 
-  <h3>Google Analytics sets the following cookies:</h3>
+  <h4>Google Analytics sets the following cookies:</h4>
 
   <table>
     <thead>
@@ -84,6 +84,32 @@
   </table>
 
   <p>You can <a rel="external" href="https://tools.google.com/dlpage/gaoptout">opt out of Google Analytics cookies.</a></p>
+
+  <h4>Webtrends sets the following cookies:</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Expires</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ACOOKIE</td>
+        <td>This lets us know if you’ve visited before, so we can count how many of our visitors are new to NHS.UK or to a certain page</td>
+        <td>2 years</td>
+      </tr>
+      <tr>
+        <td>WT_FPC</td>
+        <td> This cookie is used to identify the visitor and the session to allow us to track usage of our websites so we can improve them</td>
+        <td>2 years</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>You can <a rel="external" href="http://kb.webtrends.com/articles/Information/Opting-out-of-Tracking-Cookies-1365447872915">opt out of Webtrends cookies.</a></p>
 
   <h3>Our introductory message</h3>
 
