@@ -17,7 +17,7 @@
   }
 
 
-  @include media(tablet) {
+  @include media(desktop) {
     margin: 0 $gutter;
   }
 
@@ -41,7 +41,7 @@
   margin-left: -($gutter / 2);
   margin-right: -($gutter / 2);
 
-  @include media(tablet) {
+  @include media(desktop) {
     margin-left: -$gutter;
     margin-right: -$gutter;
   }
@@ -59,11 +59,24 @@
   @extend %clearfix;
   margin: 0 (-($gutter / 2));
 
-  @include media(tablet) {
+  @include media(desktop) {
     .page-section & {
       > * {
         margin-top: 0;
       }
     }
   }
+}
+
+/// Measure
+/// -------
+/// Set a max width of $measure for a comfortable reading width
+///
+/// @example scss - Width of .article
+///   .article {
+///     @extend %measure;
+///   }
+%measure,
+.reading-width {
+  max-width: $measure;
 }

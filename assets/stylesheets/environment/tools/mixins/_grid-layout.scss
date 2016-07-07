@@ -26,7 +26,8 @@
 ///   div {
 ///     @include grid-column(1 / 2, $float: right);
 ///   }
-@mixin grid-column($width, $full-width: tablet, $float: left) {
+@mixin grid-column($width, $full-width: desktop, $float: left) {
+  display: block;
   padding: 0 ($gutter / 2);
 
   @include media($full-width) {
