@@ -187,6 +187,7 @@ const wdioConfig = {
   // See the full list at http://mochajs.org/
   mochaOpts: {
     ui: 'bdd',
+    timeout: 20000,
   },
   //
   // =====
@@ -261,12 +262,12 @@ const wdioConfig = {
     if (!test.passed) {
       utils.saveErrorshot(test);
     }
-    browser.deleteCookie();
   },
   //
   // Hook that gets executed after the suite has ended
-  // afterSuite: function (suite) {
-  // },
+  afterSuite: () => {
+    browser.deleteCookie();
+  },
   //
   // Gets executed after all tests are done. You still have access to all global variables from
   // the test.

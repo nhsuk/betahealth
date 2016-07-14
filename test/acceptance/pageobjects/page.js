@@ -1,6 +1,6 @@
 function Page() {}
 
-Page.prototype.open = (path) => {
+Page.prototype.open = (path = '') => {
   browser.url(`/${path}`);
 };
 
