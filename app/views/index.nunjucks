@@ -12,6 +12,7 @@
   <h2>Symptoms</h2>
 
   <ul>
+    <li><a href="/symptoms/rashes-in-babies-and-children">Rashes in babies and children</a></li>
     <li><a href="/symptoms/stomach-ache">Stomach ache</a></li>
   </ul>
 {% endblock %}
