@@ -1,4 +1,10 @@
-{% extends '_layouts/content-page.nunjucks' %}
+{% extends '_layouts/content-sidebar-last.nunjucks' %}
+
+{% block local_header %}
+  <div class="local-header--intro">
+    <p>Most stomach aches aren’t anything serious and will go away after a few days.</p>
+  </div>
+{% endblock %}
 
 {% block main_content %}
   <h2>Treating stomach ache at home</h2>
@@ -24,30 +30,36 @@
 
   <p>Find out more about <a href="http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx">
     treating vomiting and diarrhoea.</a></p>
+
+  <section class="callout callout__info">
+    <h2>See your GP if</h2>
+    <ul>
+      <li>the pain gets much worse in a short space of time</li>
+      <li>the pain or bloating won’t go away or keeps coming back</li>
+      <li>you have other symptoms like weight loss or vomiting</li>
+      <li>there’s a change in how often you pee</li>
+      <li>you have pain when you pee</li>
+      <li>you have unusual vaginal bleeding or discharge</li>
+      <li>you bleed from your bottom</li>
+      <li>your diarrhoea lasts longer than a few days</li>
+    </ul>
+  </section>
 {% endblock %}
 
-{% block gp_callout %}
-  <ul>
-    <li>the pain gets much worse in a short space of time</li>
-    <li>the pain or bloating won’t go away or keeps coming back</li>
-    <li>you have other symptoms like weight loss or vomiting</li>
-    <li>there’s a change in how often you pee</li>
-    <li>you have pain when you pee</li>
-    <li>you have unusual vaginal bleeding or discharge</li>
-    <li>you bleed from your bottom</li>
-    <li>your diarrhoea lasts longer than a few days</li>
-  </ul>
-{% endblock %}
+{% block sidebar_content %}
+  <section class="callout callout__alert callout__overlap" id="emergency-info">
+    <h2>Call 999 or go to <abbr title="Accident and Emergency">
+      A&amp;E</abbr> if you</h2>
 
-{% block aside_callout %}
-  <ul>
-    <li>have sudden, severe stomach pain</li>
-    <li>have pain when you touch your stomach</li>
-    <li>are vomiting blood or a ground coffee like substance</li>
-    <li>have bloody or black, sticky poo</li>
-    <li>have collapsed</li>
-    <li>can’t breathe</li>
-    <li>are unable to pee</li>
-    <li>are diabetic and vomiting</li>
-  </ul>
+    <ul>
+      <li>have sudden, severe stomach pain</li>
+      <li>have pain when you touch your stomach</li>
+      <li>are vomiting blood or a ground coffee like substance</li>
+      <li>have bloody or black, sticky poo</li>
+      <li>have collapsed</li>
+      <li>can’t breathe</li>
+      <li>are unable to pee</li>
+      <li>are diabetic and vomiting</li>
+    </ul>
+  </section>
 {% endblock %}
