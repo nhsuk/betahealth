@@ -29,15 +29,7 @@
     </div>
 
     {% if nonEmergencyCallout %}
-      <section class="callout callout__full-width">
-        <div class="callout--inner">
-          <h2>Call 111</h2>
-
-          {% block footer_callout %}
-            <p>If you can’t speak to your GP or don’t know what to do next</p>
-          {% endblock %}
-        </div>
-      </section>
+      {% include '_includes/non-emergency-callout.nunjucks' %}
     {% endif %}
   </article>
 {% endblock %}
