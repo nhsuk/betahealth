@@ -18,6 +18,7 @@ dl {
   @include core-font(20);
 }
 
+.local-header,
 .page-section {
   li {
     margin-top: $baseline-grid-unit * 2;
