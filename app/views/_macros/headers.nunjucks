@@ -1,3 +1,0 @@
-{% macro local_header(title, intro) %}
-  {% include "_includes/local-header.nunjucks" %}
-{% endmacro %}
