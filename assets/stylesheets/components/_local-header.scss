@@ -1,6 +1,12 @@
 .local-header {
   background-color: $nhs-blue;
   border-top: 1px solid tint($nhs-blue, 20%);
+
+  // the lobotomized owl
+  // see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+  * + * {
+    @include element-spacing;
+  }
 }
 
   .local-header--inner {
