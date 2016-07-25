@@ -92,14 +92,14 @@ exports.config = (function headlessConfig(globalConfig) {
   }, {
     browserName: 'iPhone',
     platform: 'MAC',
-    device: 'iPhone 5',
+    device: 'iPhone 6S',
     project,
     build,
     maxInstances,
   }, {
     browserName: 'iPad',
     platform: 'MAC',
-    device: 'iPad 4th',
+    device: 'iPad Air 2',
     project,
     build,
     maxInstances,
@@ -112,7 +112,7 @@ exports.config = (function headlessConfig(globalConfig) {
     maxInstances,
   }];
 
-  globalConfig.onPrepare = globalConfig.onComplete = () => {
+  globalConfig.onPrepare = globalConfig.onComplete = globalConfig.afterTest = () => {
     return;
   };
 

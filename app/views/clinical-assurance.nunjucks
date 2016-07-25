@@ -1,4 +1,4 @@
-{% extends '_layouts/content-page.nunjucks' %}
+{% extends '_layouts/content-simple.nunjucks' %}
 
 {% block main_content %}
   <p>We have a GP in the NHS.UK Beta team who reads and approves all content before

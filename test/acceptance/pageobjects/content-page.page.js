@@ -19,7 +19,7 @@ const formPage = Object.create(page, {
    * define or overwrite page methods
    */
   open: {
-    value: () => {
+    value: function open() {
       page.open.call(this, 'symptoms/stomach-ache');
     },
   },

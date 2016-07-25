@@ -1,4 +1,4 @@
-{% extends '_layouts/content-page.nunjucks' %}
+{% extends '_layouts/content-simple.nunjucks' %}
 
 {% block main_content %}
   <p>NHS.UK puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site.</p>

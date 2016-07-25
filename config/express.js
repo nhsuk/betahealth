@@ -123,6 +123,10 @@ module.exports = (app, config) => {
       err.message = 'Invalid form token';
     }
 
+    if (err.status !== 404) {
+      logger.error(err);
+    }
+
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,

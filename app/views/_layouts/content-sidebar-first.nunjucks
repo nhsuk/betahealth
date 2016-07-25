@@ -1,0 +1,35 @@
+{% extends '_layouts/nhsuk.nunjucks' %}
+
+{% block content %}
+  <article role="article">
+
+    <div class="local-header">
+      <div class="local-header--inner">
+        <h1 class="local-header--title">{{ title }}</h1>
+        {% block local_header %}{% endblock %}
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="grid-row">
+
+        <div class="column__one-third-right">
+          <div class="reading-width">
+            {% block sidebar_content %}{% endblock %}
+          </div>
+        </div>
+
+        <div class="column__two-thirds">
+          <div class="reading-width">
+            {% block main_content %}{% endblock %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% if nonEmergencyCallout %}
+      {% include '_includes/non-emergency-callout.nunjucks' %}
+    {% endif %}
+  </article>
+{% endblock %}
