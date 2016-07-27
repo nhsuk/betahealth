@@ -2,6 +2,10 @@
   @extend %site-width-container;
   @include element-padding(vertical);
 
+  + .page-section {
+    padding-top: 0;
+  }
+
   // the lobotomized owl
   // see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
   * + * {

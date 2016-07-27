@@ -10,11 +10,15 @@
       </div>
     </div>
 
+    {% block main_content_before %}{% endblock %}
+
     <div class="page-section">
       <div class="reading-width">
         {% block main_content %}{% endblock %}
       </div>
     </div>
+    
+    {% block main_content_after %}{% endblock %}
 
     {% if nonEmergencyCallout %}
       {% include '_includes/non-emergency-callout.nunjucks' %}
