@@ -41,7 +41,7 @@ const checkSecure = function checkSecure(options) {
     // Second, if the request headers can be trusted (e.g. because they are send
     // by a proxy), check if x-forward-proto is set to https
     if (!isHttps && options.trustProtoHeader) {
-      isHttps = (req.headers['x-forwarded-proto'] === 'https');
+      isHttps = ((req.headers['x-forwarded-proto'] || '').substring(0, 5) === 'https');
     }
 
     // Third, if trustAzureHeader is set, check for Azure's headers
