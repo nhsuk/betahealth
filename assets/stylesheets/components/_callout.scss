@@ -23,6 +23,10 @@
   border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
 }
 
+.callout__warning {
+  background-color: tint($yellow, 20%);
+}
+
 .callout__error {
   border: $baseline-grid-unit solid $red;
 }
