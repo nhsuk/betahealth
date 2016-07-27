@@ -1,3 +1,4 @@
+/* global document */
 function setCookie(name, value, options = {}) {
   let cookieString = `${name}=${value}; path=/`;
 

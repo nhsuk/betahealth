@@ -1,4 +1,5 @@
 const path = require('path');
+
 const projectDir = path.resolve(__dirname, '../');
 const tempDir = `${projectDir}/.tmp`;
 

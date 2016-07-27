@@ -224,6 +224,7 @@ const wdioConfig = {
     const chai = require('chai');
     const chaiAsPromised = require('chai-as-promised');
     const chaiString = require('chai-string');
+
     global.expect = chai.expect;
     chai.use(chaiAsPromised);
     chai.use(chaiString);
