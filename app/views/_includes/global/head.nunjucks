@@ -5,6 +5,9 @@
 {% if CDN_HOST != '/' %}
   <link href="{{ CDN_HOST }}" rel="dns-prefetch">
 {% endif %}
+{% if FONT_CDN_HOST != '/' %}
+  <link href="{{ FONT_CDN_HOST }}" rel="dns-prefetch">
+{% endif %}
 
 <!--[if IE]><link rel="shortcut icon" href="{{ asset_path('assets/images/favicon.ico') }}"><![endif]-->
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
