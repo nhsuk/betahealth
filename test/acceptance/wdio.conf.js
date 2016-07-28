@@ -26,13 +26,16 @@ function startSelenium() {
       if (!error) {
         // already started, return promise
         logger.info('Selenium already running');
-        resolve('started all good');
+        resolve();
       } else {
         selenium.install({
-          version: '2.53.0',
+          version: '2.53.1',
           drivers: {
             chrome: {
-              version: '2.21',
+              version: '2.22',
+            },
+            firefox: {
+              version: '0.9.0',
             },
           },
           progressCb: (total, progress, chunk) => {
@@ -49,12 +52,14 @@ function startSelenium() {
           },
         }, (installError) => {
           if (installError) {
-            throw installError;
+            logger.error(installError);
+            reject(installError);
           }
 
           logger.info('Starting selenium');
           selenium.start((startError, child) => {
             if (startError) {
+              logger.error(startError);
               reject(startError);
             }
 

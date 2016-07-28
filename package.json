@@ -76,7 +76,7 @@
     "mocha": "~2.5.3",
     "progress": "~1.1.8",
     "proxyquire": "~1.7.10",
-    "selenium-standalone": "~5.1.1",
+    "selenium-standalone": "~5.5.0",
     "sinomocha": "~0.2.4",
     "sinon": "~1.17.5",
     "sinon-chai": "~2.8.0",
