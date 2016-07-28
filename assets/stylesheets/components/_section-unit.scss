@@ -1,7 +1,6 @@
 .section-unit {
-  @include element-padding(vertical);
+  @include element-padding(bottom);
   border-bottom: 1px solid tint($nhs-blue, 80%);
-  padding-top: 0;
 
   &:last-child {
     border: 0;
