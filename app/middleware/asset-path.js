@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign, global-require */
 const logger = require('../../lib/logger');
+
 const manifestPath = '../../build/rev-manifest.json';
 let manifestFile = {};
 
