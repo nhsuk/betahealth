@@ -1,7 +1,3 @@
-$is-ie: true;
-$ie-version: 6;
-$mobile-ie6: false;
-
 $font-family: "Frutiger W01";
 
-@import "nhsuk";
+@import "nhsuk-ie6";

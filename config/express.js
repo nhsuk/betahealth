@@ -112,7 +112,6 @@ module.exports = (app, config) => {
     }
   }
 
-
   // router
   app.use('/', router);
 
