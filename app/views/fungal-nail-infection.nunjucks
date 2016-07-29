@@ -1,0 +1,133 @@
+{% extends '_layouts/content-simple.nunjucks' %}
+
+{% block local_header %}
+  <div class="local-header--intro">
+    <p>Fungal nail infections are common. They’re not serious but they can take a long time to treat.</p>
+  </div>
+{% endblock %}
+
+{% block main_content_before %}
+  <div class="page-section page-section__collapse-bottom">
+
+    <figure class="card">
+      <img
+        srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }} 300w,
+                {{ asset_path('assets/images/fungal-nail-infection/stage-1-600.jpg') }} 600w"
+        alt="Fungal infection at the edge of the nail"
+        onclick="dcsMultiTrack('DCSext.FungalNailImages','Edge','WT.dl','121')" />
+      <noscript>
+        <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }}" alt="Fungal infection at the edge of the nail" />
+      </noscript>
+      <figcaption class="card--caption">
+        <p>Fungal nail infections usually start at the edge of the nail.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <img
+        srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }} 300w,
+                {{ asset_path('assets/images/fungal-nail-infection/stage-2-600.jpg') }} 600w"
+        alt="Infection spread to the middle of the toe"
+        onclick="dcsMultiTrack('DCSext.FungalNailImages','Spread','WT.dl','121')" />
+      <noscript>
+        <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }}" alt="Infection spread to the middle of the toe" />
+      </noscript>
+      <figcaption class="card--caption">
+        <p>They often then spread to the middle. The nail becomes discoloured and lifts off.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <img
+        srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }} 300w,
+                {{ asset_path('assets/images/fungal-nail-infection/stage-3-600.jpg') }} 600w"
+        alt="Brittle nail with pieces missing"
+        onclick="dcsMultiTrack('DCSext.FungalNailImages','Brittle','WT.dl','121')" />
+      <noscript>
+        <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }}" alt="Brittle nail with pieces missing" />
+      </noscript>
+      <figcaption class="card--caption">
+        <p>The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.</p>
+      </figcaption>
+    </figure>
+  </div>
+{% endblock %}
+
+{% block main_content %}
+  <p>Fungal nail infections usually affect your toenails but you can get them on your finger nails too.</p>
+
+  <div class="callout callout__warning">
+    <p>If you have diabetes you should see a foot specialist because any foot injury <a href="http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx">can lead to complications.</a></p>
+  </div>
+
+  <h2>Treating fungal nail infections at home</h2>
+
+  <p>Small fungal nail infections may not need medication.</p>
+
+  <p>You should:</p>
+
+  <ul>
+    <li>keep your feet clean and dry</li>
+    <li>use separate clippers or scissors to cut your infected nails</li>
+  </ul>
+
+  <p>If the look of your nail bothers you or it’s painful, speak to your pharmacist. They may suggest:</p>
+
+  <ul>
+    <li>antifungal nail cream &mdash; it can take up to 12 months to cure the infection and doesn’t always work</li>
+    <li>nail softening cream &mdash; used for 2 weeks to soften the nail so the infection can be scraped off</li>
+  </ul>
+
+  <p>The infection is cured when you see healthy nail growing back at the base.</p>
+
+  <h2>Treatment from your GP</h2>
+
+  <p>Your GP can prescribe you tablets if your infection is severe or has spread to other nails.</p>
+
+  <p>You need to take tablets every day for up to 6 months.</p>
+
+  <p>Tablets can have side effects including:</p>
+
+  <ul>
+    <li>headaches</li>
+    <li>itching</li>
+    <li>loss of taste</li>
+    <li>diarrhoea</li>
+  </ul>
+
+  <p>You can’t take antifungal tablets if you’re pregnant or have certain conditions. They can damage your liver.</p>
+
+  <p>Badly infected nails sometimes need to be removed. It’s a small procedure done under local anaesthetic.</p>
+
+  <h2>Other treatment</h2>
+
+  <p>Laser treatment uses laser to destroy the fungus.</p>
+
+  <p>You’ll have to pay for it as it’s not covered by the NHS. It can be expensive. There’s little evidence to show it’s a long-term cure as most studies only follow patients for three months.</p>
+
+  <h2>Preventing fungal nail infection</h2>
+
+  <p>Fungal nail infections develop when your feet are constantly warm and damp. You’re more likely to get an infection if you wear trainers for a long time and have hot, sweaty feet.</p>
+
+  <div class="callout callout__warning">
+    <p>Treat athlete’s foot as soon as possible to avoid it spreading to the nails.</p>
+  </div>
+
+  <p>To prevent fungal nail infection you should:</p>
+
+  <ul>
+    <li>keep your feet clean and dry</li>
+    <li>wear clean socks every day</li>
+    <li>don’t wear shoes that make your feet hot and sweaty</li>
+    <li>wear flip flops in showers at the gym, pool etc</li>
+    <li>don’t share towels</li>
+    <li>throw out old shoes</li>
+    <li>don’t wear other people’s shoes</li>
+  </ul>
+
+  <p>
+    <a href="http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario">
+      Medical detail about fungal nail infections.
+    </a>
+  </p>
+{% endblock %}

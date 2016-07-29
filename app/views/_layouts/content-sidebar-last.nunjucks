@@ -10,6 +10,8 @@
       </div>
     </div>
 
+    {% block main_content_before %}{% endblock %}
+
     <div class="page-section">
       <div class="grid-row">
 
@@ -27,6 +29,8 @@
 
       </div>
     </div>
+
+    {% block main_content_after %}{% endblock %}
 
     {% if nonEmergencyCallout %}
       {% include '_includes/non-emergency-callout.nunjucks' %}
