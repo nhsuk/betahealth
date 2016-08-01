@@ -1,3 +1,5 @@
+{% set font = "frutiger" %}
+
 {% extends '_layouts/content-simple.nunjucks' %}
 
 {% block local_header %}
