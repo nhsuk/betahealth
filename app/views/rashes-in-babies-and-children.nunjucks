@@ -68,7 +68,7 @@
         alt="A child’s face showing a bright red rash on both cheeks"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','FeverRedCheeks','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" alt="A child’s face showing a bright red rash on both cheeks" />
       </noscript>
 
       <p>
@@ -90,7 +90,7 @@
         alt="A baby covered in small spots"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','SmallSpotsBlisters','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg') }}" alt="A baby covered in small spots" />
       </noscript>
 
       <p>
@@ -109,7 +109,7 @@
         alt="Blisters on the small finger on a hand"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','BlistersOnHands','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" alt="Blisters on the small finger on a hand" />
       </noscript>
 
       <p>
@@ -131,7 +131,7 @@
         alt="A child’s chest and shoulders covered in a pink-red rash"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','PinkRedRash','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg') }}" alt="A child’s chest and shoulders covered in a pink-red rash" />
       </noscript>
 
       <p>
@@ -160,7 +160,7 @@
         alt="A child’s back showing a heat rash under a pulled up t-shirt"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','RashesHeat','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-400.jpg') }}" alt="A child’s back showing a heat rash under a pulled up t-shirt" />
       </noscript>
 
       <p>
@@ -182,7 +182,7 @@
         alt="Back of a child’s knees showing red, cracked skin"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','ScalyCrackedSkin','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/eczma-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/eczma-400.jpg') }}" alt="Back of a child’s knees showing red, cracked skin" />
       </noscript>
 
       <p>
@@ -204,7 +204,7 @@
         alt="Side of a child’s knee showing hives"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','RaisedItchySpots','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/hives-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/hives-400.jpg') }}" alt="Side of a child’s knee showing hives" />
       </noscript>
 
       <p>
@@ -232,7 +232,7 @@
         alt="Ringworm rash on skin"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','ItchyRoundRash','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-400.jpg') }}" alt="Ringworm rash on skin" />
       </noscript>
 
       <p>
@@ -261,7 +261,7 @@
         alt="Close-up of a baby’s nose showing small white spots"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','WhiteSpotsBabies','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/milia-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/milia-400.jpg') }}" alt="Close-up of a baby’s nose showing small white spots" />
       </noscript>
 
       <p>
@@ -280,7 +280,7 @@
         alt="Baby’s head and shoulders showing raised spots"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','RedYellowWhiteSpots','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/erythema-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/erythema-400.jpg') }}" alt="Baby’s head and shoulders showing raised spots" />
       </noscript>
 
       <p>
@@ -305,7 +305,7 @@
         alt="Small, pink raised spots on skin"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','PinkSkinColoured','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-400.jpg') }}" alt="Small, pink raised spots on skin" />
       </noscript>
 
       <p>
@@ -327,7 +327,7 @@
         alt="Red patch on a baby’s bottom"
         onclick="dcsMultiTrack('DCSext.RashesChildrenImages','RedPatches','WT.dl','121')" />
       <noscript>
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/nappy-400.jpg') }}" />
+        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/nappy-400.jpg') }}" alt="Red patch on a baby’s bottom" />
       </noscript>
 
       <p>

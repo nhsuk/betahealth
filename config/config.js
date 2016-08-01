@@ -1,4 +1,5 @@
 const path = require('path');
+
 const port = process.env.PORT || 3000;
 const screenshotPath = path.resolve(__dirname, '..', 'test', 'acceptance', 'report', 'screenshots');
 const reportPath = path.resolve(__dirname, '..', 'test', 'acceptance', 'report');

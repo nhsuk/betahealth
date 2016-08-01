@@ -33,8 +33,8 @@
           </div>
         </div>
 
-        <button type="submit" class="button">Send feedback</button>
-        <button type="reset" class="button button__cancel">Cancel</button>
+        <button type="submit" class="button" onclick="dcsMultiTrack('DCSext.GeneralLinks','SendFeedback','WT.dl','121')">Send feedback</button>
+        <button type="reset" class="button button__cancel" onclick="dcsMultiTrack('DCSext.GeneralLinks','CancelFeedback','WT.dl','121')">Cancel</button>
 
         <input type="hidden" name="feedback-form-path" value="{{ FEEDBACKFORM.path }}">
         <input type="hidden" name="_csrf" value="{{ csrfToken }}">

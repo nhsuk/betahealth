@@ -81,7 +81,12 @@ module.exports = (app, config) => {
           'statse.webtrendslive.com',
           'hm.webtrends.com',
         ],
+        styleSrc: [
+          '\'self\'',
+          'fast.fonts.net',
+        ],
         fontSrc: [
+          'fast.fonts.net',
           config.staticCdn,
         ],
       },

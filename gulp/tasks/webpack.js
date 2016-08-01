@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').get('bs-proxy');
 
 const config = require('../../config/config');
 const paths = require('../paths');
+
 const webpackConfig = config.env === 'production'
                       ? require(paths.webpackProductionConfig)
                       : require(paths.webpackConfig);

@@ -1,4 +1,9 @@
 .section-unit {
+  @include element-padding(bottom);
   border-bottom: 1px solid tint($nhs-blue, 80%);
-  padding-bottom: $default-spacing-unit * 2;
+
+  &:last-child {
+    border: 0;
+    padding-bottom: 0;
+  }
 }

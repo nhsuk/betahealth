@@ -2,6 +2,7 @@
 
 const config = require('../../config/config');
 const wdioConfig = require('./wdio.conf.js').config;
+
 const project = 'nhsuk';
 const build = `nhsuk [${config.travis.jobNum}]`;
 const maxInstances = 1;
