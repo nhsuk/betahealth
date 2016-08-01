@@ -12,42 +12,53 @@
   <div class="page-section page-section__collapse-bottom">
 
     <figure class="card">
+
+      <!--[if gt IE 7]><!-->
       <img
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-1-600.jpg') }} 600w"
         alt="Fungal infection at the edge of the nail"
         data-analytics="DCSext.FungalNailImages,Edge" />
-      <noscript>
+      <!--<![endif]-->
+      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }}" alt="Fungal infection at the edge of the nail" />
-      </noscript>
+      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+
       <figcaption class="card--caption">
         <p>Fungal nail infections usually start at the edge of the nail.</p>
       </figcaption>
     </figure>
 
     <figure class="card">
+
+      <!--[if gt IE 7]><!-->
       <img
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-2-600.jpg') }} 600w"
         alt="Infection spread to the middle of the toe"
         data-analytics="DCSext.FungalNailImages,Spread" />
-      <noscript>
+      <!--<![endif]-->
+      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }}" alt="Infection spread to the middle of the toe" />
-      </noscript>
+      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+
       <figcaption class="card--caption">
         <p>They often then spread to the middle. The nail becomes discoloured and lifts off.</p>
       </figcaption>
     </figure>
 
     <figure class="card">
+
+      <!--[if gt IE 7]><!-->
       <img
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-3-600.jpg') }} 600w"
         alt="Brittle nail with pieces missing"
         data-analytics="DCSext.FungalNailImages,Brittle" />
-      <noscript>
+      <!--<![endif]-->
+      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }}" alt="Brittle nail with pieces missing" />
-      </noscript>
+      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
       <figcaption class="card--caption">
         <p>The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.</p>
       </figcaption>
