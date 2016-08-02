@@ -79,6 +79,7 @@ module.exports = (app, config) => {
         ],
         imgSrc: [
           '\'self\'',
+          'data:',
           'www.google-analytics.com',
           'statse.webtrendslive.com',
           'hm.webtrends.com',
