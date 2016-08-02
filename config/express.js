@@ -88,7 +88,7 @@ module.exports = (app, config) => {
         styleSrc: [
           '\'self\'',
           'fast.fonts.net',
-          config.fontCdn,
+          config.staticCdn,
         ],
         fontSrc: [
           'fast.fonts.net',
