@@ -1,3 +1,5 @@
+{% import "_macros/images.nunjucks" as images %}
+
 {% extends '_layouts/content-sidebar-first.nunjucks' %}
 
 {% block local_header %}
@@ -60,18 +62,16 @@
     <article class="section-unit">
       <h3>Fever and red cheeks</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-1280.jpg') }} 1280w"
-        alt="A child’s face showing a bright red rash on both cheeks"
-        data-analytics="DCSext.RashesChildrenImages,FeverRedCheeks" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" alt="A child’s face showing a bright red rash on both cheeks" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-1280.jpg") + " 1280w"
+        ],
+        alt="A child’s face showing a bright red rash on both cheeks",
+        analytics="DCSext.RashesChildrenImages,FeverRedCheeks"
+        ) }}
 
       <p>
         A fever with bright red rash on both cheeks can be <a href="http://www.nhs.uk/conditions/slapped-cheek-syndrome/Pages/Introduction.aspx">slapped cheek syndrome.</a> Your child may have a cold and the rash can spread to the body.
@@ -84,18 +84,16 @@
     <article class="section-unit">
       <h3>Small spots and blisters</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-1280.jpg') }} 1280w"
-        alt="A baby covered in small spots"
-        data-analytics="DCSext.RashesChildrenImages,SmallSpotsBlisters" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg') }}" alt="A baby covered in small spots" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/chicken-pox-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/chicken-pox-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/chicken-pox-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/chicken-pox-1280.jpg") + " 1280w"
+        ],
+        alt="A baby covered in small spots",
+        analytics="DCSext.RashesChildrenImages,SmallSpotsBlisters"
+        ) }}
 
       <p>
         <a href="http://www.nhs.uk/conditions/chickenpox/Pages/Introduction.aspx">Chickenpox</a> causes red spots that turn to blisters. They can be itchy. They eventually scab and fall off. Some children have a few spots, while others have them all over their body.
@@ -105,18 +103,16 @@
     <article class="section-unit">
       <h3>Blisters on hands and feet and in the mouth</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-1280.jpg') }} 1280w"
-        alt="Blisters on the small finger on a hand"
-        data-analytics="DCSext.RashesChildrenImages,BlistersOnHands" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-400.jpg') }}" alt="Blisters on the small finger on a hand" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-1280.jpg") + " 1280w"
+        ],
+        alt="Blisters on the small finger on a hand",
+        analytics="DCSext.RashesChildrenImages,BlistersOnHands"
+        ) }}
 
       <p>
         A common childhood illness that causes blisters on the hands and feet and ulcers on the tongue, is <a href="http://www.nhs.uk/conditions/hand-foot-and-mouth-disease/Pages/Introduction.aspx">hand, foot and mouth disease.</a> It also causes fever and your child may have a cold.
@@ -129,18 +125,16 @@
     <article class="section-unit">
       <h3>Pink-red rash</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-1280.jpg') }} 1280w"
-        alt="A child’s chest and shoulders covered in a pink-red rash"
-        data-analytics="DCSext.RashesChildrenImages,PinkRedRash" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg') }}" alt="A child’s chest and shoulders covered in a pink-red rash" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/scarlet-fever-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/scarlet-fever-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/scarlet-fever-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/scarlet-fever-1280.jpg") + " 1280w"
+        ],
+        alt="A child’s chest and shoulders covered in a pink-red rash",
+        analytics="DCSext.RashesChildrenImages,PinkRedRash"
+        ) }}
 
       <p>
         <a href="http://www.nhs.uk/Conditions/Scarlet-fever/Pages/Introduction.aspx">Scarlet fever</a> causes a pink-red rash, which feels like sandpaper and looks like sunburn.
@@ -160,18 +154,16 @@
     <article class="section-unit">
       <h3>Rash caused by heat</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-1280.jpg') }} 1280w"
-        alt="A child’s back showing a heat rash under a pulled up t-shirt"
-        data-analytics="DCSext.RashesChildrenImages,RashesHeat" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/heat-rash-400.jpg') }}" alt="A child’s back showing a heat rash under a pulled up t-shirt" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/heat-rash-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/heat-rash-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/heat-rash-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/heat-rash-1280.jpg") + " 1280w"
+        ],
+        alt="A child’s back showing a heat rash under a pulled up t-shirt",
+        analytics="DCSext.RashesChildrenImages,RashesHeat"
+        ) }}
 
       <p>
         Heat and sweat can cause small, red spots known as prickly heat or heat rash. It itches so you may notice your baby scratching.
@@ -184,18 +176,16 @@
     <article class="section-unit">
       <h3>Red scaly skin or cracked skin</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/eczma-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/eczma-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/eczma-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/eczma-1280.jpg') }} 1280w"
-        alt="Back of a child’s knees showing red, cracked skin"
-        data-analytics="DCSext.RashesChildrenImages,ScalyCrackedSkin" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/eczma-400.jpg') }}" alt="Back of a child’s knees showing red, cracked skin" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/eczma-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/eczma-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/eczma-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/eczma-1280.jpg") + " 1280w"
+        ],
+        alt="Back of a child’s knees showing red, cracked skin",
+        analytics="DCSext.RashesChildrenImages,ScalyCrackedSkin"
+        ) }}
 
       <p>
         Skin that's itchy, red, dry and cracked may be <a href="http://www.nhs.uk/conditions/Eczema-(atopic)/Pages/Introduction.aspx">eczema.</a> It’s common behind the knees and elbows and the neck, but can appear anywhere.
@@ -208,18 +198,16 @@
     <article class="section-unit">
       <h3>Raised itchy spots</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/hives-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hives-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hives-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/hives-1280.jpg') }} 1280w"
-        alt="Side of a child’s knee showing hives"
-        data-analytics="DCSext.RashesChildrenImages,RaisedItchySpots" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/hives-400.jpg') }}" alt="Side of a child’s knee showing hives" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/hives-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/hives-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/hives-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/hives-1280.jpg") + " 1280w"
+        ],
+        alt="Side of a child’s knee showing hives",
+        analytics="DCSext.RashesChildrenImages,RaisedItchySpots"
+        ) }}
 
       <p>
         A raised, red, itchy rash (hives) can appear as an allergic reaction to things like stings, medicines or food.
@@ -238,18 +226,16 @@
     <article class="section-unit">
       <h3>Itchy, round rash</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-1280.jpg') }} 1280w"
-        alt="Ringworm rash on skin"
-        data-analytics="DCSext.RashesChildrenImages,ItchyRoundRash" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/ringworm-400.jpg') }}" alt="Ringworm rash on skin" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/ringworm-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/ringworm-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/ringworm-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/ringworm-1280.jpg") + " 1280w"
+        ],
+        alt="Ringworm rash on skin",
+        analytics="DCSext.RashesChildrenImages,ItchyRoundRash"
+        ) }}
 
       <p>
         An itchy, ring-like rash can be <a href="http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx">ringworm.</a>
@@ -269,18 +255,16 @@
     <article class="section-unit">
       <h3>White spots in babies</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/milia-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/milia-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/milia-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/milia-1280.jpg') }} 1280w"
-        alt="Close-up of a baby’s nose showing small white spots"
-        data-analytics="DCSext.RashesChildrenImages,WhiteSpotsBabies" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/milia-400.jpg') }}" alt="Close-up of a baby’s nose showing small white spots" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/milia-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/milia-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/milia-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/milia-1280.jpg") + " 1280w"
+        ],
+        alt="Close-up of a baby’s nose showing small white spots",
+        analytics="DCSext.RashesChildrenImages,WhiteSpotsBabies"
+        ) }}
 
       <p>
         Small white spots <a href="http://patient.info/health/milia-leaflet">(milia)</a> often appear on a baby’s face when they are a few days old. They usually clear up within a few weeks and don’t need treatment.
@@ -290,18 +274,16 @@
     <article class="section-unit">
       <h3>Red, yellow and white spots in babies</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/erythema-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/erythema-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/erythema-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/erythema-1280.jpg') }} 1280w"
-        alt="Baby’s head and shoulders showing raised spots"
-        data-analytics="DCSext.RashesChildrenImages,RedYellowWhiteSpots" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/erythema-400.jpg') }}" alt="Baby’s head and shoulders showing raised spots" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/erythema-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/erythema-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/erythema-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/erythema-1280.jpg") + " 1280w"
+        ],
+        alt="Baby’s head and shoulders showing raised spots",
+        analytics="DCSext.RashesChildrenImages,RedYellowWhiteSpots"
+        ) }}
 
       <p>
         Raised red, yellow and white spots (erythema toxicum) can appear on babies when they’re born. They usually appear on the face, the body and the upper arms and thighs.
@@ -317,18 +299,16 @@
     <article class="section-unit">
       <h3>Pink or skin-coloured spots</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-1280.jpg') }} 1280w"
-        alt="Small, pink raised spots on skin"
-        data-analytics="DCSext.RashesChildrenImages,PinkSkinColoured" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/molluscum-400.jpg') }}" alt="Small, pink raised spots on skin" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/molluscum-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/molluscum-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/molluscum-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/molluscum-1280.jpg") + " 1280w"
+        ],
+        alt="Small, pink raised spots on skin",
+        analytics="DCSext.RashesChildrenImages,PinkSkinColoured"
+        ) }}
 
       <p>
         Small, firm, raised spots that can appear anywhere on the body are common in children and known as <a href="http://www.nhs.uk/conditions/molluscum-contagiosum/pages/introduction.aspx">molluscum contagiosum.</a>
@@ -341,18 +321,16 @@
     <article class="section-unit">
       <h3>Red patches on a baby’s bottom</h3>
 
-      <!--[if gt IE 7]><!-->
-      <img
-        srcset="{{ asset_path('assets/images/rashes-in-babies-and-children/nappy-400.jpg') }} 400w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/nappy-640.jpg') }} 640w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/nappy-800.jpg') }} 800w,
-                {{ asset_path('assets/images/rashes-in-babies-and-children/nappy-1280.jpg') }} 1280w"
-        alt="Red patch on a baby’s bottom"
-        data-analytics="DCSext.RashesChildrenImages,RedPatches" />
-      <!--<![endif]-->
-      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-        <img src="{{ asset_path('assets/images/rashes-in-babies-and-children/nappy-400.jpg') }}" alt="Red patch on a baby’s bottom" />
-      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+      {{ images.image(
+        srcset=[
+          asset_path("assets/images/rashes-in-babies-and-children/nappy-400.jpg") + " 400w",
+          asset_path("assets/images/rashes-in-babies-and-children/nappy-640.jpg") + " 640w",
+          asset_path("assets/images/rashes-in-babies-and-children/nappy-800.jpg") + " 800w",
+          asset_path("assets/images/rashes-in-babies-and-children/nappy-1280.jpg") + " 1280w"
+        ],
+        alt="Red patch on a baby’s bottom",
+        analytics="DCSext.RashesChildrenImages,RedPatches"
+        ) }}
 
       <p>
         <a href="http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/Nappy-rash.aspx">Nappy rash</a> can be red patches on your baby’s bottom, or the whole nappy area. The skin may look sore and feel hot. There may be spots or blisters. It can make you child feel uncomfortable or distressed.
