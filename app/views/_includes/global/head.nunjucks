@@ -42,4 +42,4 @@
   <script src="{{ asset_path('assets/javascripts/ie.bundle.js') }}" type="text/javascript"></script>
 <![endif]-->
 
-<script async src="{{ asset_path('assets/javascripts/vendor/picturefill/picturefill.min.js') }}" type="text/javascript"></script>
+<script async src="{{ asset_path('assets/javascripts/picturefill.bundle.js') }}" type="text/javascript"></script>
