@@ -4,6 +4,7 @@ module.exports = (config) => {
     res.locals.GOOGLE_ANALYTICS_TRACKING_ID = config.googleAnalyticsId;
     res.locals.WEBTRENDS_TRACKING_ID = config.webtrendsId;
     res.locals.CDN_HOST = config.staticCdn;
+    res.locals.FONT_CDN_HOST = config.fontCdn;
     /* eslint-enable no-param-reassign */
     next();
   };

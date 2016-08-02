@@ -16,7 +16,9 @@ module.exports = (config) => {
     res.locals.asset_path = (filename) => {
       let assetRoot = '/';
 
-      if (config.env === 'production') {
+      if (config.staticCdn) {
+        assetRoot = config.staticCdn;
+      } else if (config.env === 'production') {
         assetRoot = `${(req.isHttps ? 'https' : req.protocol)}://${req.get('host')}/`;
       }
 

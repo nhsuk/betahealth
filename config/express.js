@@ -66,6 +66,7 @@ module.exports = (app, config) => {
       directives: {
         defaultSrc: [
           '\'self\'',
+          config.staticCdn,
         ],
         scriptSrc: [
           '\'self\'',
@@ -74,20 +75,24 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
+          config.staticCdn,
         ],
         imgSrc: [
           '\'self\'',
+          'data:',
           'www.google-analytics.com',
           'statse.webtrendslive.com',
           'hm.webtrends.com',
+          config.staticCdn,
         ],
         styleSrc: [
           '\'self\'',
           'fast.fonts.net',
+          config.fontCdn,
         ],
         fontSrc: [
           'fast.fonts.net',
-          config.staticCdn,
+          config.fontCdn,
         ],
       },
     }));

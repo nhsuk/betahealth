@@ -6,6 +6,10 @@ module.exports = {
     nhsuk: [
       './assets/javascripts/nhsuk.js',
     ],
+    webtrends: [
+      './assets/javascripts/vendor/webtrends/webtrends.min.js',
+    ],
+    picturefill: ['picturefill'],
     ie: ['JSON2', 'html5shiv'],
   },
 
