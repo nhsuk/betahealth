@@ -7,7 +7,7 @@ module.exports = {
       './assets/javascripts/nhsuk.js',
     ],
     webtrends: [
-      './assets/javascripts/vendor/webtrends/webtrends.min.js',
+      './assets/javascripts/vendor/webtrends/webtrends.js',
     ],
     picturefill: ['picturefill'],
     ie: ['JSON2', 'html5shiv'],
@@ -22,7 +22,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules|public\/components/,
+        exclude: /(node_modules|components|vendor)/,
         loader: 'babel',
         query: {
           presets: ['es2015'],
