@@ -3,6 +3,8 @@
   "rules": {
     "arrow-body-style": ["error", "always"],
     "import/no-extraneous-dependencies": 0,
-    "no-prototype-builtins": 0
+    "no-prototype-builtins": 0,
+    "no-underscore-dangle": 0,
+    "prefer-spread": 0
   }
 }

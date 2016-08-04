@@ -2,10 +2,10 @@
   <p class="notification-banner--inner">
     This is a new page.
     {% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
-      <a href="#page-feedback" class="js-feedback-toggle" onclick="dcsMultiTrack('DCSext.GeneralLinks','TellUsWhatYouThink','WT.dl','121')">Tell us what you think</a> or go
+      <a href="#page-feedback" class="js-feedback-toggle" data-analytics="DCSext.GeneralLinks,TellUsWhatYouThink">Tell us what you think</a> or go
     {% else %}
       Go
     {% endif %}
-    <a href="http://www.nhs.uk/{{ choicesOrigin }}" onclick="dcsMultiTrack('DCSext.GeneralLinks','BackToChoices','WT.dl','121')">back to NHS Choices.</a>
+    <a href="http://www.nhs.uk/{{ choicesOrigin }}" data-analytics="DCSext.GeneralLinks,BackToChoices">back to NHS Choices.</a>
   </p>
 </div>

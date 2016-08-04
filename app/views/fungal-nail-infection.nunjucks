@@ -16,7 +16,7 @@
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-1-600.jpg') }} 600w"
         alt="Fungal infection at the edge of the nail"
-        onclick="dcsMultiTrack('DCSext.FungalNailImages','Edge','WT.dl','121')" />
+        data-analytics="DCSext.FungalNailImages,Edge" />
       <noscript>
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-1-300.jpg') }}" alt="Fungal infection at the edge of the nail" />
       </noscript>
@@ -30,7 +30,7 @@
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-2-600.jpg') }} 600w"
         alt="Infection spread to the middle of the toe"
-        onclick="dcsMultiTrack('DCSext.FungalNailImages','Spread','WT.dl','121')" />
+        data-analytics="DCSext.FungalNailImages,Spread" />
       <noscript>
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-2-300.jpg') }}" alt="Infection spread to the middle of the toe" />
       </noscript>
@@ -44,7 +44,7 @@
         srcset="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }} 300w,
                 {{ asset_path('assets/images/fungal-nail-infection/stage-3-600.jpg') }} 600w"
         alt="Brittle nail with pieces missing"
-        onclick="dcsMultiTrack('DCSext.FungalNailImages','Brittle','WT.dl','121')" />
+        data-analytics="DCSext.FungalNailImages,Brittle" />
       <noscript>
         <img src="{{ asset_path('assets/images/fungal-nail-infection/stage-3-300.jpg') }}" alt="Brittle nail with pieces missing" />
       </noscript>
