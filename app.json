@@ -8,7 +8,7 @@
     "SESSION_SECRET": {
       "generator": "secret"
     },
-    "STATIC_CDN": "https://s3-eu-west-1.amazonaws.com/static.nhs.uk/"
+    "FONT_CDN": "https://dhrlmnmyf2njb.cloudfront.net/"
   },
   "formation": {
   },

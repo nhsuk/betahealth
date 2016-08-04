@@ -9,7 +9,6 @@ const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
-
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -22,9 +21,12 @@ const router = require('./routes');
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', 'nunjucks');
-  nunjucks.configure(`${config.root}/app/views`, {
+  const env = nunjucks.configure(`${config.root}/app/views`, {
     autoescape: true,
     express: app,
+  });
+  env.addFilter('split', (str, seperator) => {
+    return str.split(seperator);
   });
 
   if (!config.ci) {
@@ -66,6 +68,7 @@ module.exports = (app, config) => {
       directives: {
         defaultSrc: [
           '\'self\'',
+          config.staticCdn,
         ],
         scriptSrc: [
           '\'self\'',
@@ -74,20 +77,24 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
+          config.staticCdn,
         ],
         imgSrc: [
           '\'self\'',
+          'data:',
           'www.google-analytics.com',
           'statse.webtrendslive.com',
           'hm.webtrends.com',
+          config.staticCdn,
         ],
         styleSrc: [
           '\'self\'',
           'fast.fonts.net',
+          config.staticCdn,
         ],
         fontSrc: [
           'fast.fonts.net',
-          config.staticCdn,
+          config.fontCdn,
         ],
       },
     }));

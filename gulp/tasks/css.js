@@ -26,7 +26,7 @@ gulp.task('css', () => {
     }))
     .pipe(preprocess({
       context: {
-        ASSET_PATH: config.staticCdn,
+        FONT_CDN_PATH: config.fontCdn,
       },
     }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
