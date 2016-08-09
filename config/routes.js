@@ -16,7 +16,6 @@ if (config.env === 'development') {
 
 router.get('/help/cookies', cookiesController.index);
 router.get('/help/clinical-assurance', assuranceController.index);
-
 router.get('/healthcheck', healthcheckController.index);
 
 router.all('/:type(conditions|symptoms)/:page', contentPageController.index);
