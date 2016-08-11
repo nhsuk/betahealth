@@ -25,7 +25,7 @@ router.all('/conditions/fungal-nail-infection', fungalNailInfectionController.in
 router.all('/symptoms/rashes-in-babies-and-children', rashesInChildrenController.index);
 router.all('/symptoms/stomach-ache', stomachAcheController.index);
 
-if (config !== 'production') {
+if (config.env === 'development') {
   router.get('/elements', elementsController.index);
 }
 
