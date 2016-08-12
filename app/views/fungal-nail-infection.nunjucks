@@ -1,7 +1,9 @@
-{% import "_macros/images.nunjucks" as images %}
-{% set font = "frutiger" %}
-
 {% extends '_layouts/content-simple.nunjucks' %}
+{% import "_macros/images.nunjucks" as images %}
+
+{% set font = 'frutiger' %}
+{% set choicesOrigin = 'conditions/fungal-nail-infection/pages/introduction.aspx' %}
+{% set title = 'Fungal nail infection' %}
 
 {% block local_header %}
   <div class="local-header--intro">

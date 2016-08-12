@@ -132,7 +132,7 @@ module.exports = (app, config) => {
   app.use('/', router);
 
   app.use((req, res, next) => {
-    const err = new Error('Not Found');
+    const err = new Error('Page not found');
     err.status = 404;
     next(err);
   });
