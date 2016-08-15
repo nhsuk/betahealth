@@ -1,6 +1,8 @@
-{% import "_macros/images.nunjucks" as images %}
-
 {% extends '_layouts/content-sidebar-first.nunjucks' %}
+{% import '_macros/images.nunjucks' as images %}
+
+{% set choicesOrigin = 'conditions/skin-rash-children/Pages/Introduction.aspx' %}
+{% set title = 'Rashes in babies and children' %}
 
 {% block local_header %}
   <div class="local-header--intro">
