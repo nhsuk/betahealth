@@ -86,6 +86,9 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
+          'static.hotjar.com',
+          'script.hotjar.com',
+          'cdn.jsdelivr.net',
           config.staticCdn,
         ],
         imgSrc: [
@@ -104,6 +107,11 @@ module.exports = (app, config) => {
         fontSrc: [
           'fast.fonts.net',
           config.fontCdn,
+        ],
+        connectSrc: [
+          '\'self\'',
+          'https://*.hotjar.com',
+          'wss://*.hotjar.com',
         ],
       },
     }));

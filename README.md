@@ -42,7 +42,8 @@ environment.
 | `NODE_ENV`                     | node environment                                                          | development              |
 | `PORT`                         | server port                                                               | 3000                     |
 | `GOOGLE_ANALYTICS_TRACKING_ID` | Google Analytics property id                                              |                          |
-| `WEBTRENDS_TRACKING_ID`        | Webtrends tracking id                                                     |                          |
+| `WEBTRENDS_TRACKING_ID`        | [Webtrends](https://www.webtrends.com/) tracking id                       |                          |
+| `HOTJAR_TRACKING_ID`           | [Hotjar](https://www.hotjar.com/) tracking id                             |                          |
 | `FONT_CDN`                     | Base url where the font is served                                         | /                        |
 | `STATIC_CDN`                   | Base url where all other assets are served                                |                          |
 | `LOG_LEVEL`                    | Level of logging to user                                                  | warn                     |
