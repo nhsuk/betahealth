@@ -111,6 +111,52 @@
 
   <p>You can <a rel="external" href="http://kb.webtrends.com/articles/Information/Opting-out-of-Tracking-Cookies-1365447872915">opt out of Webtrends cookies.</a></p>
 
+  <h4>Hotjar sets the following cookies:</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Expires</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>_hjUserId</td>
+        <td>This cookie is set as soon as a user loads a page which contains the Hotjar code. The cookie contains a universally unique identifier (UUID) which allows Hotjar to track the same visitor across multiple pages and sessions</td>
+        <td>365 days</td>
+      </tr>
+      <tr>
+        <td>_hjClosedSurveyInvites</td>
+        <td>This cookie is set once a visitor interacts with a Survey invitation modal popup. It is used to ensure that the same invite does not re-appear if it has already been shown</td>
+        <td>365 days</td>
+      </tr>
+      <tr>
+        <td>_hjDonePolls</td>
+        <td>This cookie is set once a visitor completes a poll using the Feedback Poll widget. It is used to ensure that the same poll does not re-appear if it has already been filled in</td>
+        <td>365 days</td>
+      </tr>
+      <tr>
+        <td>_hjMinimizedPolls</td>
+        <td>This cookie is set once a visitor minimizes a Feedback Poll widget. It is used to ensure that the widget stays minimizes when the visitor navigates through your site</td>
+        <td>365 days</td>
+      </tr>
+      <tr>
+        <td>_hjDoneTestersWidgets</td>
+        <td>This cookie is set once a visitor submits their information in the Recruit User Testers widget. It is used to ensure that the same form does not re-appear if it has already been filled in</td>
+        <td>365 days</td>
+      </tr>
+      <tr>
+        <td>_hjMinimizedTestersWidgets</td>
+        <td>This cookie is set once a visitor minimizes a Recruit User Testers widget. It is used to ensure that the widget stays minimizes when the visitor navigates through your site</td>
+        <td>365 days</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>You can <a rel="external" href="https://www.hotjar.com/opt-out">opt out of Hotjar cookies.</a></p>
+
   <h3>Our introductory message</h3>
 
   <p>You may see a pop-up welcome message when you first visit NHS.UK. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
