@@ -7,7 +7,6 @@ const indexController = require('../app/controllers/index');
 const elementsController = require('../app/controllers/elements');
 const cookiesController = require('../app/controllers/cookies');
 const assuranceController = require('../app/controllers/clinical-assurance');
-
 const healthcheckController = require('../app/controllers/healthcheck');
 
 const contentPageController = require('../app/controllers/content-page');
