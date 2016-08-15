@@ -32,6 +32,32 @@ This application is a Node based application that runs on [beta.nhs.uk](http://b
   npm start
   ```
 
+### Environment variables
+
+Environment variables are used to set application level settings for each
+environment.
+
+| Variable                       | Description                                                               | Default                  |
+|:-------------------------------|:--------------------------------------------------------------------------|:-------------------------|
+| `NODE_ENV`                     | node environment                                                          | development              |
+| `PORT`                         | server port                                                               | 3000                     |
+| `GOOGLE_ANALYTICS_TRACKING_ID` | Google Analytics property id                                              |                          |
+| `WEBTRENDS_TRACKING_ID`        | [Webtrends](https://www.webtrends.com/) tracking id                       |                          |
+| `HOTJAR_TRACKING_ID`           | [Hotjar](https://www.hotjar.com/) tracking id                             |                          |
+| `FONT_CDN`                     | Base url where the font is served                                         | /                        |
+| `STATIC_CDN`                   | Base url where all other assets are served                                |                          |
+| `LOG_LEVEL`                    | Level of logging to user                                                  | warn                     |
+| `WDIO_BASEURL`                 | base URL for webdriver to use for acceptance tests                        | http://localhost:${PORT} |
+| `WDIO_SCREENSHOTPATH`          | path where webdriver screenshots are saved                                |                          |
+| `WDIO_REPORTPATH`              | path where webdriverio test runner reports are saved                      |                          |
+| `BROWSERSTACK_USERNAME`        | Browserstack username                                                     |                          |
+| `BROWSERSTACK_ACCESS_KEY`      | Browserstack access key                                                   |                          |
+| `TRAVIS_BUILD_NUMBER`          | The number of the current Travis build                                    |                          |
+| `TRAVIS_JOB_NUMBER`            | The number of the current Travis job                                      |                          |
+| `DISABLE_FEEDBACK`             | Whether to disable feedback. On by default. Set this to `true` to disable |                          |
+| `FEEDBACK_API_BASEURL`         | Base feedback endpoint                                                    |                          |
+| `FEEDBACK_API_KEY`             | Key for feedback API if needed                                            |                          |
+
 ## Development
 
 ### Development dependencies

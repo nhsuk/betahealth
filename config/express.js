@@ -5,10 +5,13 @@ const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
+const markdown = require('nunjucks-markdown');
+const marked = require('marked');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
+const MarkdownRenderer = require('../lib/nuspeak');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -21,13 +24,19 @@ const router = require('./routes');
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', 'nunjucks');
-  const env = nunjucks.configure(`${config.root}/app/views`, {
+
+  const nunjucksEnv = nunjucks.configure(`${config.root}/app/views`, {
     autoescape: true,
     express: app,
   });
-  env.addFilter('split', (str, seperator) => {
+  nunjucksEnv.addFilter('split', (str, seperator) => {
     return str.split(seperator);
   });
+
+  marked.setOptions({
+    renderer: new MarkdownRenderer(),
+  });
+  markdown.register(nunjucksEnv, marked);
 
   if (!config.ci) {
     app.use(churchill(logger));
@@ -77,6 +86,9 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
+          'static.hotjar.com',
+          'script.hotjar.com',
+          'cdn.jsdelivr.net',
           config.staticCdn,
         ],
         imgSrc: [
@@ -95,6 +107,11 @@ module.exports = (app, config) => {
         fontSrc: [
           'fast.fonts.net',
           config.fontCdn,
+        ],
+        connectSrc: [
+          '\'self\'',
+          'https://*.hotjar.com',
+          'wss://*.hotjar.com',
         ],
       },
     }));
@@ -123,7 +140,7 @@ module.exports = (app, config) => {
   app.use('/', router);
 
   app.use((req, res, next) => {
-    const err = new Error('Not Found');
+    const err = new Error('Page not found');
     err.status = 404;
     next(err);
   });
