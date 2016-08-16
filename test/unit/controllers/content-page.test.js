@@ -1,14 +1,9 @@
+const contentPageController = require(`${appFolder}/controllers/content-page`);
+
 describe('Content page controller', () => {
   beforeEach(() => {
     this.sandbox = sinon.sandbox.create();
-    this.warn = this.sandbox.stub();
     this.next = this.sandbox.stub();
-
-    this.contentPageController = proxyquire(`${appFolder}/controllers/content-page`, {
-      '../../lib/logger': {
-        warn: this.warn,
-      },
-    });
   });
 
   afterEach(() => {
@@ -32,13 +27,12 @@ describe('Content page controller', () => {
           },
           send: (body) => {
             body.should.equal(bodyTest);
-            this.warn.should.not.have.been.called;
             this.next.should.not.have.been.called;
             done();
           },
         };
 
-        this.contentPageController.index({
+        contentPageController.index({
           params: {
             type: contentTypeTest,
             page: templateTest,
@@ -53,14 +47,13 @@ describe('Content page controller', () => {
           render: (template, params, callback) => {
             callback(new Error('Template not found'), null);
 
-            this.warn.should.have.been.called;
-            this.next.should.have.been.called;
+            this.next.should.have.been.calledWith(new Error());
 
             done();
           },
         };
 
-        this.contentPageController.index({
+        contentPageController.index({
           params: {},
         }, res, this.next);
       });
