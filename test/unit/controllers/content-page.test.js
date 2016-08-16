@@ -19,10 +19,11 @@ describe('Content page controller', () => {
     describe('when a template file exists', () => {
       it('should render a template with params', (done) => {
         const bodyTest = '<html></html>';
-        const templateTest = 'page-template';
+        const contentTypeTest = 'condition';
+        const templateTest = 'headache';
         const res = {
           render: (template, params, callback) => {
-            template.should.equal(templateTest);
+            template.should.equal(`${contentTypeTest}/${templateTest}`);
 
             params.should.have.property('feedback');
             params.feedback.should.equal(true);
@@ -39,6 +40,7 @@ describe('Content page controller', () => {
 
         this.contentPageController.index({
           params: {
+            type: contentTypeTest,
             page: templateTest,
           },
         }, res, this.next);
@@ -59,9 +61,7 @@ describe('Content page controller', () => {
         };
 
         this.contentPageController.index({
-          params: {
-            page: '',
-          },
+          params: {},
         }, res, this.next);
       });
     });

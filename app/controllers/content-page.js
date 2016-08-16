@@ -1,13 +1,14 @@
 const logger = require('../../lib/logger');
 
 function index(req, res, next) {
-  const template = req.params.page;
+  const type = req.params.type;
+  const view = req.params.page;
 
-  res.render(template, {
+  res.render(`${type}/${view}`, {
     feedback: true,
   }, (err, html) => {
     if (err) {
-      logger.warn(`View template '${template}' not found`);
+      logger.warn(`View template '${view}' not found`);
       next();
     } else {
       res.send(html);
