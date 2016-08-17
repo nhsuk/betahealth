@@ -1,5 +1,3 @@
-const logger = require('../../lib/logger');
-
 function index(req, res, next) {
   const type = req.params.type;
   const view = req.params.page;
@@ -8,8 +6,7 @@ function index(req, res, next) {
     feedback: true,
   }, (err, html) => {
     if (err) {
-      logger.warn(`View template '${view}' not found`);
-      next();
+      next(err);
     } else {
       res.send(html);
     }

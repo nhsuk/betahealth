@@ -147,9 +147,16 @@ module.exports = (app, config) => {
 
   // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
+    let message = err.message;
+
     if (err.code === 'EBADCSRFTOKEN') {
+      message = 'Invalid form token';
+    }
+
+    if (err.message.indexOf('template not found') !== -1) {
       // eslint-disable-next-line no-param-reassign
-      err.message = 'Invalid form token';
+      err.status = 404;
+      message = 'Page not found';
     }
 
     if (err.status !== 404) {
@@ -158,7 +165,7 @@ module.exports = (app, config) => {
 
     res.status(err.status || 500);
     res.render('error', {
-      message: err.message,
+      message,
       error: config.env === 'development' ? err : {},
       title: 'Error',
     });
