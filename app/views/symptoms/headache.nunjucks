@@ -2,6 +2,7 @@
 
 {% set choicesOrigin = 'conditions/headache/pages/introduction.aspx' %}
 {% set title = 'Headache' %}
+{% set nonEmergencyCallout = true %}
 
 {% block local_header %}
   <div class="local-header--intro">
@@ -36,14 +37,13 @@
   <section class="callout callout__info">
     <h2>See your GP if</h2>
     <ul>
-      <li>you get jaw pain on <a href="http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx">
+      <li>you get pain on <a href="http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx">
         chewing or combing your hair</a> (get an urgent appointment)</li>
-      <li>you have a bad throbbing pain at the front or side of your head</li>
-      <li>your headache keeps coming back &mdash; this might be
-        <a href="http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx">migraine</a> or <a href="http://www.nhs.uk/conditions/cluster-headaches/Pages/Introduction.aspx">cluster headaches</a></li>
+      <li>you have a bad throbbing pain at the front or side of your head &mdash; this could be <a href="http://www.nhs.uk/Conditions/Migraine/Pages/Introduction.aspx">migraine</a> or more rarely <a href="http://www.nhs.uk/conditions/cluster-headaches/Pages/Introduction.aspx">cluster headaches</a></li>
+      <li>your headache keeps coming back</li>
       <li>you feel sick, vomit and find light or noise painful</li>
       <li>your headache doesn’t go away and gets worse over time</li>
-      <li>you get other symptoms such as changes in your vision, numbness or weakness in your body</li>
+      <li>you get other symptoms, for example your arms or legs feel numb or weak</li>
     </ul>
   </section>
 {% endblock %}
