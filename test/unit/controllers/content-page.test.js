@@ -1,14 +1,9 @@
+const contentPageController = require(`${appFolder}/controllers/content-page`);
+
 describe('Content page controller', () => {
   beforeEach(() => {
     this.sandbox = sinon.sandbox.create();
-    this.warn = this.sandbox.stub();
     this.next = this.sandbox.stub();
-
-    this.contentPageController = proxyquire(`${appFolder}/controllers/content-page`, {
-      '../../lib/logger': {
-        warn: this.warn,
-      },
-    });
   });
 
   afterEach(() => {
@@ -19,10 +14,11 @@ describe('Content page controller', () => {
     describe('when a template file exists', () => {
       it('should render a template with params', (done) => {
         const bodyTest = '<html></html>';
-        const templateTest = 'page-template';
+        const contentTypeTest = 'condition';
+        const templateTest = 'headache';
         const res = {
           render: (template, params, callback) => {
-            template.should.equal(templateTest);
+            template.should.equal(`${contentTypeTest}/${templateTest}`);
 
             params.should.have.property('feedback');
             params.feedback.should.equal(true);
@@ -31,14 +27,14 @@ describe('Content page controller', () => {
           },
           send: (body) => {
             body.should.equal(bodyTest);
-            this.warn.should.not.have.been.called;
             this.next.should.not.have.been.called;
             done();
           },
         };
 
-        this.contentPageController.index({
+        contentPageController.index({
           params: {
+            type: contentTypeTest,
             page: templateTest,
           },
         }, res, this.next);
@@ -51,17 +47,14 @@ describe('Content page controller', () => {
           render: (template, params, callback) => {
             callback(new Error('Template not found'), null);
 
-            this.warn.should.have.been.called;
-            this.next.should.have.been.called;
+            this.next.should.have.been.calledWith(new Error());
 
             done();
           },
         };
 
-        this.contentPageController.index({
-          params: {
-            page: '',
-          },
+        contentPageController.index({
+          params: {},
         }, res, this.next);
       });
     });
