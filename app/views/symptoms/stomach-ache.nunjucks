@@ -2,6 +2,7 @@
 
 {% set choicesOrigin = 'conditions/stomach-ache-abdominal-pain/Pages/Introduction.aspx' %}
 {% set title = 'Stomach ache' %}
+{% set nonEmergencyCallout = true %}
 
 {% block local_header %}
   <div class="local-header--intro">

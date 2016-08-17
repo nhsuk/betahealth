@@ -2,6 +2,7 @@
 
 {% set choicesOrigin = 'conditions/headache/pages/introduction.aspx' %}
 {% set title = 'Headache' %}
+{% set nonEmergencyCallout = true %}
 
 {% block local_header %}
   <div class="local-header--intro">

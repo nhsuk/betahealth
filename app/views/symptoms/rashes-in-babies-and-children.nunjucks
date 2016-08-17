@@ -3,6 +3,7 @@
 
 {% set choicesOrigin = 'conditions/skin-rash-children/Pages/Introduction.aspx' %}
 {% set title = 'Rashes in babies and children' %}
+{% set nonEmergencyCallout = true %}
 
 {% block local_header %}
   <div class="local-header--intro">
