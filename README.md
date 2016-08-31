@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/nhsuk/betahealth.svg?branch=develop&style=flat-square)](https://travis-ci.org/nhsuk/betahealth)
 [![dependencies](https://img.shields.io/david/nhsuk/betahealth.svg?style=flat-square&label=dependencies)](https://david-dm.org/nhsuk/betahealth)
-[![devDependencies](https://img.shields.io/david/dev/nhsuk/betahealth.svg?style=flat-square&label=devDependencies)](https://david-dm.org/nhsuk/betahealth#info=devDependencies)
+[![devDependencies](https://img.shields.io/david/dev/nhsuk/betahealth.svg?style=flat-square&label=devDependencies)](https://david-dm.org/nhsuk/betahealth?type=dev)
 
 This application is a Node based application that runs on [beta.nhs.uk](http://beta.nhs.uk).
 

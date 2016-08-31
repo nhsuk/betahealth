@@ -2,8 +2,6 @@ const chai = require('chai').use(require('sinon-chai')).use(require('chai-as-pro
 const sinon = require('sinon');
 const proxyquire = require('proxyquire');
 
-require('sinomocha')();
-
 // set mocha globals
 global.chai = chai;
 global.should = chai.should();
