@@ -20,7 +20,7 @@ a {
   }
 }
 
-.link__reverse-polarity {
+%link__reverse-polarity {
   &:link {
     color: $link-reverse-polarity;
   }
@@ -40,4 +40,8 @@ a {
   &:focus {
     outline: 3px solid $focus-colour;
   }
+}
+
+.link__reverse-polarity {
+  @extend %link__reverse-polarity;
 }
