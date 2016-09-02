@@ -6,10 +6,10 @@
 {% set nonEmergencyCallout = true %}
 
 {% block local_header %}
-  <div class="local-header--intro">
-    <p>Hand, foot and mouth disease is a common infection that mostly affects
-      children under 10. It usually clears up by itself, within about a week.</p>
-  </div>
+  {% markdown %}
+    Hand, foot and mouth disease is a common infection that mostly affects
+    children under 10. It usually clears up by itself, within about a week.
+  {% endmarkdown %}
 {% endblock %}
 
 {% block main_content_before %}
@@ -76,49 +76,46 @@
 {% endblock %}
 
 {% block main_content %}
-  <p>If you’re unsure it’s hand, foot and mouth disease, look at other
-    <a href="/symptoms/rashes-in-babies-and-children">childhood rashes.</a></p>
+  {% markdown %}
+  If you’re unsure it’s hand, foot and mouth disease, look at other
+  [childhood rashes.](/symptoms/rashes-in-babies-and-children)
 
-  <h2>How to treat hand, foot and mouth disease at home</h2>
+  ## How to treat hand, foot and mouth disease at home
 
-  <ul>
-    <li>drink fluids to avoid dehydration (avoid acidic drinks, like fruit juice)</li>
-    <li>eat soft foods like soup</li>
-    <li>take paracetamol or ibuprofen to help ease a sore throat and bring
-      down a temperature</li>
-  </ul>
+  * drink fluids to avoid dehydration (avoid acidic drinks, like fruit juice)
+  * eat soft foods like soup
+  * take paracetamol or ibuprofen to help ease a sore throat and bring
+    down a temperature
 
-  <p>You can buy mouth ulcer gels, sprays, and mouthwashes to ease the
+  You can buy mouth ulcer gels, sprays, and mouthwashes to ease the
     blisters. Always check they are suitable for children and give the
-    correct dose.</p>
+    correct dose.
 
-  <div class="callout callout__info">
-    <h2>See a GP if</h2>
+  !!! info
+  ## See a GP if
 
-    <ul>
-      <li>your child isn’t better after a week</li>
-      <li>your child is dehydrated &mdash; they’re not weeing as often as usual</li>
-      <li>you’re concerned about your child’s symptoms</li>
-      <li>you’re pregnant and get hand, foot and mouth disease</li>
-    </ul>
-  </div>
+  * your child isn’t better after a week
+  * your child is dehydrated --- they’re not weeing as often as usual
+  * you’re concerned about your child’s symptoms
+  * you’re pregnant and get hand, foot and mouth disease
+  !!!
 
-  <h2>How to stop hand, foot and mouth disease spreading</h2>
+  ## How to stop hand, foot and mouth disease spreading
 
-  <p>Hand, foot and mouth disease spreads easily.</p>
+  Hand, foot and mouth disease spreads easily.
 
-  <p>Keep your child away from school or nursery while they're feeling
-    unwell. Generally, there's no need to keep them off until the blisters
-    scab. However, check with your school or nursery as they may have their
-    own guidance.</p>
+  Keep your child away from school or nursery while they're feeling
+  unwell. Generally, there's no need to keep them off until the blisters
+  scab. However, check with your school or nursery as they may have their
+  own guidance.
 
-  <h2>Hand, foot and mouth disease in pregnancy</h2>
+  ## Hand, foot and mouth disease in pregnancy
 
-  <p>It’s best to avoid close contact with anyone who has hand, foot and
-    mouth disease.</p>
+  It’s best to avoid close contact with anyone who has hand, foot and
+  mouth disease.
 
-  <p>There’s normally no risk to the pregnancy or baby. However, there’s
-    limited evidence that in very rare cases catching it during the first
-    3 months of pregnancy could lead to miscarriage. This risk is very
-    low.</p>
+  There’s normally no risk to the pregnancy or baby. However, there’s
+  limited evidence that in very rare cases catching it during the first
+  3 months of pregnancy could lead to miscarriage. This risk is very low.
+  {% endmarkdown %}
 {% endblock %}
