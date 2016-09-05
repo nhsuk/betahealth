@@ -74,70 +74,66 @@
 {% endblock %}
 
 {% block main_content %}
-  <section class="callout callout__info">
-    <h2>Speak to your GP as soon as you suspect shingles</h2>
+  {% markdown %}
+  !!! info
+  ## Speak to your GP as soon as you suspect shingles
 
-    <p>There is medicine your GP can prescribe to speed up your recovery.</p>
-  </section>
+  There is medicine your GP can prescribe to speed up your recovery.
+  !!!
 
-  <h2>How to treat shingles at home</h2>
+  ## How to treat shingles at home
 
-  <p>You can buy painkillers to ease shingles pain.</p>
+  You can buy painkillers to ease shingles pain.
 
-  <div class="callout callout__warning">
-    <p>It can take up to 4 weeks for the rash to heal. Pain can stay for weeks
-      after the rash has gone, but it usually settles in time.</p>
-  </div>
+  !!! warning
+  It can take up to 4 weeks for the rash to heal. Pain can stay for weeks
+  after the rash has gone, but it usually settles in time.
+  !!!
 
-  <h3>Do</h3>
+  ### Do
 
-  <ul>
-    <li>keep the rash clean and dry to reduce risk of infection</li>
-    <li>wear loose-fitting clothing</li>
-    <li>buy calamine lotion to ease itching</li>
-    <li>use a cool compress (a bag of frozen vegetables wrapped in a towel
-      or a wet cloth) a few times a day</li>
-  </ul>
+  * keep the rash clean and dry to reduce risk of infection
+  * wear loose-fitting clothing
+  * buy calamine lotion to ease itching
+  * use a cool compress (a bag of frozen vegetables wrapped in a towel
+    or a wet cloth) a few times a day
 
-  <h3>Don’t</h3>
+  ### Don’t
 
-  <ul>
-    <li>let dressings or plasters stick to the rash</li>
-    <li>use antibiotic cream &mdash; this slows healing</li>
-  </ul>
+  * let dressings or plasters stick to the rash
+  * use antibiotic cream --- this slows healing
 
-  <h2>Stay away from certain groups of people if you have shingles</h2>
+  ## Stay away from certain groups of people if you have shingles
 
-  <p>Try to avoid:</p>
+  Try to avoid:
 
-  <ul>
-    <li>pregnant women who have not had chickenpox before</li>
-    <li>people with a weakened immune system, such as someone with HIV or AIDS</li>
-    <li>babies less than one month old (unless it is your own baby, as they
-      should be protected from the virus by your immune system)</li>
-  </ul>
+  * pregnant women who have not had chickenpox before
+  * people with a weakened immune system, such as someone with HIV or AIDS
+  * babies less than one month old (unless it is your own baby, as they
+    should be protected from the virus by your immune system)
 
-  <h2>Stay off work or school until the rash scabs</h2>
+  ## Stay off work or school until the rash scabs
 
-  <p>Shingles is contagious only while the rash oozes fluid.</p>
+  Shingles is contagious only while the rash oozes fluid.
 
-  <h2>Shingles and pregnancy</h2>
+  ## Shingles and pregnancy
 
-  <p>If you’re pregnant and get shingles, there is no danger to your
-    pregnancy or baby.</p>
+  If you’re pregnant and get shingles, there is no danger to your
+  pregnancy or baby.
 
-  <p>If your GP thinks you need medicine, they may speak to a specialist to
-    decide whether the benefits of medication outweigh any possible risk.</p>
+  If your GP thinks you need medicine, they may speak to a specialist to
+  decide whether the benefits of medication outweigh any possible risk.
 
-  <h2>You can’t get shingles from chickenpox</h2>
+  ## You can’t get shingles from chickenpox
 
-  <p>You can’t get shingles from someone with shingles or chickenpox.</p>
+  You can’t get shingles from someone with shingles or chickenpox.
 
-  <p>However, you can get chickenpox from someone with shingles, if you
-    haven’t had chickenpox before.</p>
+  However, you can get chickenpox from someone with shingles, if you
+  haven’t had chickenpox before.
 
-  <p>When people get chickenpox, the virus remains in the body. It can be
-    reactivated later and cause shingles if someone’s immune system is
-    lowered. This can be because of stress, certain conditions or treatments
-    like chemotherapy.</p>
+  When people get chickenpox, the virus remains in the body. It can be
+  reactivated later and cause shingles if someone’s immune system is
+  lowered. This can be because of stress, certain conditions or treatments
+  like chemotherapy.
+  {% endmarkdown %}
 {% endblock %}

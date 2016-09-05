@@ -6,12 +6,17 @@ const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
 const markdown = require('nunjucks-markdown');
-const marked = require('marked');
+const md = require('markdown-it')({
+  html: true,
+  typographer: true,
+});
+const markdownItAbbr = require('markdown-it-abbr');
+const markdownItAttrs = require('markdown-it-attrs');
+const markdownItContainer = require('markdown-it-container');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
-const MarkdownRenderer = require('../lib/nuspeak');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -20,6 +25,36 @@ const feedback = require('../app/middleware/feedback');
 const csrfToken = require('../app/middleware/csrf-token');
 const affinityCookie = require('../app/middleware/affinity-cookie');
 const router = require('./routes');
+
+md.use(markdownItAbbr);
+md.use(markdownItAttrs);
+md.use(markdownItContainer, 'info', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__info">\n';
+    }
+    return '</section>\n';
+  },
+});
+md.use(markdownItContainer, 'warning', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__warning">\n';
+    }
+    return '</section>\n';
+  },
+});
+md.use(markdownItContainer, 'alert', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__alert callout__overlap" id="emergency-info">\n';
+    }
+    return '</section>\n';
+  },
+});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
@@ -33,10 +68,9 @@ module.exports = (app, config) => {
     return str.split(seperator);
   });
 
-  marked.setOptions({
-    renderer: new MarkdownRenderer(),
+  markdown.register(nunjucksEnv, (body) => {
+    return md.render(body);
   });
-  markdown.register(nunjucksEnv, marked);
 
   if (!config.ci) {
     app.use(churchill(logger));
