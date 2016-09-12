@@ -6,9 +6,9 @@
 {% set title = 'Fungal nail infection' %}
 
 {% block local_header %}
-  <div class="local-header--intro">
-    <p>Fungal nail infections are common. They’re not serious but they can take a long time to treat.</p>
-  </div>
+  {% markdown %}
+    Fungal nail infections are common. They’re not serious but they can take a long time to treat.
+  {% endmarkdown %}
 {% endblock %}
 
 {% block main_content_before %}
@@ -65,80 +65,83 @@
 {% endblock %}
 
 {% block main_content %}
-  <p>Fungal nail infections usually affect your toenails but you can get them on your finger nails too.</p>
+  {% markdown %}
+  Fungal nail infections usually affect your toenails but you can get them on
+  your finger nails too.
 
-  <div class="callout callout__warning">
-    <p>If you have diabetes you should see a foot specialist because any foot injury <a href="http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx">can lead to complications.</a></p>
-  </div>
+  !!! warning
+  If you have diabetes you should see a foot specialist because any foot injury
+  [can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)
+  !!!
 
-  <h2>Treating fungal nail infections at home</h2>
+  ## Treating fungal nail infections at home
 
-  <p>Small fungal nail infections may not need medication.</p>
+  Small fungal nail infections may not need medication.
 
-  <p>You should:</p>
+  You should:
 
-  <ul>
-    <li>keep your feet clean and dry</li>
-    <li>use separate clippers or scissors to cut your infected nails</li>
-  </ul>
+  * keep your feet clean and dry
+  * use separate clippers or scissors to cut your infected nails
 
-  <p>If the look of your nail bothers you or it’s painful, speak to your pharmacist. They may suggest:</p>
+  If the look of your nail bothers you or it’s painful, speak to your
+  pharmacist. They may suggest:
 
-  <ul>
-    <li>antifungal nail cream &mdash; it can take up to 12 months to cure the infection and doesn’t always work</li>
-    <li>nail softening cream &mdash; used for 2 weeks to soften the nail so the infection can be scraped off</li>
-  </ul>
+  * antifungal nail cream --- it can take up to 12 months to cure the infection
+    and doesn’t always work
+  * nail softening cream --- used for 2 weeks to soften the nail so the
+    infection can be scraped off
 
-  <p>The infection is cured when you see healthy nail growing back at the base.</p>
+  The infection is cured when you see healthy nail growing back at the base.
 
-  <h2>Treatment from your GP</h2>
+  ## Treatment from your GP
 
-  <p>Your GP can prescribe you tablets if your infection is severe or has spread to other nails.</p>
+  Your GP can prescribe you tablets if your infection is severe or has spread
+  to other nails.
 
-  <p>You need to take tablets every day for up to 6 months.</p>
+  You need to take tablets every day for up to 6 months.
 
-  <p>Tablets can have side effects including:</p>
+  Tablets can have side effects including:
 
-  <ul>
-    <li>headaches</li>
-    <li>itching</li>
-    <li>loss of taste</li>
-    <li>diarrhoea</li>
-  </ul>
+  * headaches
+  * itching
+  * loss of taste
+  * diarrhoea
 
-  <p>You can’t take antifungal tablets if you’re pregnant or have certain conditions. They can damage your liver.</p>
+  You can’t take antifungal tablets if you’re pregnant or have certain
+  conditions. They can damage your liver.
 
-  <p>Badly infected nails sometimes need to be removed. It’s a small procedure done under local anaesthetic.</p>
+  Badly infected nails sometimes need to be removed. It’s a small procedure
+  done under local anaesthetic.
 
-  <h2>Other treatment</h2>
+  ## Other treatment
 
-  <p>Laser treatment uses laser to destroy the fungus.</p>
+  Laser treatment uses laser to destroy the fungus.
 
-  <p>You’ll have to pay for it as it’s not covered by the NHS. It can be expensive. There’s little evidence to show it’s a long-term cure as most studies only follow patients for three months.</p>
+  You’ll have to pay for it as it’s not covered by the NHS. It can be
+  expensive. There’s little evidence to show it’s a long-term cure as most
+  studies only follow patients for three months.
 
-  <h2>Preventing fungal nail infection</h2>
+  ## Preventing fungal nail infection
 
-  <p>Fungal nail infections develop when your feet are constantly warm and damp. You’re more likely to get an infection if you wear trainers for a long time and have hot, sweaty feet.</p>
+  Fungal nail infections develop when your feet are constantly warm and damp.
+  You’re more likely to get an infection if you wear trainers for a long time
+  and have hot, sweaty feet.
 
-  <div class="callout callout__warning">
-    <p>Treat athlete’s foot as soon as possible to avoid it spreading to the nails.</p>
-  </div>
+  !!! warning
+  Treat athlete’s foot as soon as possible to avoid it spreading to the nails.
+  !!!
 
-  <p>To prevent fungal nail infection you should:</p>
+  To prevent fungal nail infection you should:
 
-  <ul>
-    <li>keep your feet clean and dry</li>
-    <li>wear clean socks every day</li>
-    <li>don’t wear shoes that make your feet hot and sweaty</li>
-    <li>wear flip flops in showers at the gym, pool etc</li>
-    <li>don’t share towels</li>
-    <li>throw out old shoes</li>
-    <li>don’t wear other people’s shoes</li>
-  </ul>
+  * keep your feet clean and dry
+  * wear clean socks every day
+  * don’t wear shoes that make your feet hot and sweaty
+  * wear flip flops in showers at the gym, pool etc
+  * don’t share towels
+  * throw out old shoes
+  * don’t wear other people’s shoes
 
-  <p>
-    <a href="http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario">
-      Medical detail about fungal nail infections.
-    </a>
-  </p>
+
+  [Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)
+  {% endmarkdown %}
 {% endblock %}

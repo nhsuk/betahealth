@@ -17,6 +17,10 @@
 .callout__alert {
   background-color: $red;
   color: $white;
+
+  a {
+    @extend %link__reverse-polarity;
+  }
 }
 
 .callout__info {

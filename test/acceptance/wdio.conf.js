@@ -32,16 +32,16 @@ function startSelenium() {
           version: '2.53.1',
           drivers: {
             chrome: {
-              version: '2.22',
+              version: '2.23',
             },
             firefox: {
-              version: '0.9.0',
+              version: '0.10.0',
             },
           },
           progressCb: (total, progress, chunk) => {
             if (!bar) {
-              logger.info('Installing selenium standalone');
-              bar = new ProgressBar('selenium installation [:bar] :percent :etas', {
+              logger.info('Installing selenium and drivers');
+              bar = new ProgressBar('[:bar] :percent :etas', {
                 total,
                 complete: '=',
                 incomplete: ' ',

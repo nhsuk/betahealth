@@ -1,4 +1,5 @@
 /* eslint-disable no-param-reassign */
+const requestIp = require('request-ip');
 const feedbackApi = require('../../lib/feedback-api');
 const logger = require('../../lib/logger');
 const config = require('../../config/config');
@@ -27,6 +28,7 @@ module.exports = () => {
         req.sanitizeBody('feedback-form-path');
 
         const formData = {
+          ip: requestIp.getClientIp(req),
           comment: req.body['feedback-form-comments'],
           path: req.body['feedback-form-path'],
         };

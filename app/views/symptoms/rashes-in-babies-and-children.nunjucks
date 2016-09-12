@@ -6,9 +6,7 @@
 {% set nonEmergencyCallout = true %}
 
 {% block local_header %}
-  <div class="local-header--intro">
-    <p>Many things can cause a rash in children and they’re often nothing to worry about.</p>
-  </div>
+  <p>Many things can cause a rash in children and they’re often nothing to worry about.</p>
 
   <ul class="link-list">
     <li class="link-list--item">
@@ -27,37 +25,34 @@
 {% endblock %}
 
 {% block sidebar_content %}
-  <section class="callout callout__alert callout__overlap" id="emergency-info">
-    <h2>Call 999 or go to <abbr title="Accident and Emergency">
-      A&amp;E</abbr> if your child has a rash and they:</h2>
+  {% markdown %}
+  !!! alert
+  ## Call 999 or go to A&E if your child has a rash and they:
 
-    <ul>
-      <li>have a stiff neck</li>
-      <li>are bothered by light</li>
-      <li>seem confused</li>
-      <li>are shaking uncontrollably</li>
-      <li>have a fever you can’t control</li>
-      <li>have unusually cold hands and feet</li>
-      <li>have a rash that doesn’t fade when you press <a href="https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg" class="link__reverse-polarity">a glass against it</a></li>
-    </ul>
-    <p>
-      These can be signs of <a href="http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx" class="link__reverse-polarity">meningitis.</a>
-    </p>
-  </section>
+  * have a stiff neck
+  * are bothered by light
+  * seem confused
+  * are shaking uncontrollably
+  * have a fever you can’t control
+  * have unusually cold hands and feet
+  * have a rash that doesn’t fade when you press [a glass against it](https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg)
+
+  These can be signs of [meningitis.](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)
+  !!!
+  {% endmarkdown %}
 {% endblock %}
 
 {% block main_content %}
+  {% markdown %}
+  !!! info
+  ## See your GP
 
-  <section class="callout callout__info">
-    <h2>See your GP</h2>
-    <p>
-      If your child seems unwell with a rash and has a fever.
-    </p>
-  </section>
+  If your child seems unwell with a rash and has a fever.
+  !!!
 
-  <p>
-    The information below shouldn’t be used to self-diagnose your child’s condition, but it should give you a better idea of what is causing the rash.
-  </p>
+  The information below shouldn’t be used to self-diagnose your child’s
+  condition, but it should give you a better idea of what is causing the rash.
+  {% endmarkdown %}
 
   <section>
     <h2 id="rash-with-fever">Rash with fever</h2>
