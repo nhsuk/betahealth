@@ -88,7 +88,7 @@ module.exports = (app, config) => {
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
-  app.use(assetPath(config));
+  app.use(assetPath(config, nunjucksEnv));
   app.use(feedback());
 
   app.use(csrf({
