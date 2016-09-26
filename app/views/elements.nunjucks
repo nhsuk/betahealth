@@ -1,5 +1,7 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
+{% set title = 'HTML elements' %}
+
 {% block main_content %}
   <h1>Heading one</h1>
   <h2>Heading two</h2>

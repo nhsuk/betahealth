@@ -1,18 +1,21 @@
 const contentApi = require('../../lib/content-api');
 
 function index(req, res, next) {
-  const type = req.params.type || 'index';
-  const view = req.params.page || '';
-  const record = contentApi.getRecord(`${type}/${view}`);
+  const slug = req.originalUrl.replace(/^\//, '') || 'index';
+  const record = contentApi.getRecord(`${slug}`);
+  let feedback = false;
+
+  // only capture feedback on conditions/symptoms
+  if (slug.indexOf('conditions') !== -1 || slug.indexOf('symptoms') !== -1) {
+    feedback = true;
+  }
 
   if (record) {
-    const data = record;
-    data.feedback = true;
-
+    record.feedback = feedback;
     res.render(`_layouts/${record.layout}`, record);
   } else {
-    res.render(`${type}/${view}`, {
-      feedback: true,
+    res.render(`${slug}`, {
+      feedback,
     }, (err, html) => {
       if (err) {
         next(err);

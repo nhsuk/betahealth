@@ -3,7 +3,7 @@ const mock = require('mock-fs');
 
 const contentApi = require(`${rootFolder}/lib/content-api`);
 
-describe('content api library', () => {
+describe('Content API library', () => {
   afterEach(() => {
     mock.restore();
   });

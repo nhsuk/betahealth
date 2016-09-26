@@ -1,5 +1,7 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
+{% set title = 'Test pages for NHS.UK' %}
+
 {% block main_content %}
   <p>
     This is where NHS.UK tests new pages and services to get feedback. Please

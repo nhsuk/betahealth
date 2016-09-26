@@ -27,7 +27,7 @@ describe('Content page controller', () => {
             template.should.equal(`_layouts/${record.layout}`);
 
             params.should.have.property('feedback');
-            params.feedback.should.equal(true);
+            params.feedback.should.equal(false);
 
             params.should.have.property('title');
             params.title.should.equal(record.title);
@@ -38,7 +38,7 @@ describe('Content page controller', () => {
 
         this.getRecord.returns(record);
         this.contentPageController.index({
-          params: {},
+          originalUrl: '',
         }, res, this.next);
       });
     });
@@ -47,14 +47,13 @@ describe('Content page controller', () => {
       describe('and a template file exists', () => {
         it('should render a template with params', (done) => {
           const bodyTest = '<html></html>';
-          const contentTypeTest = 'condition';
-          const templateTest = 'headache';
+          const slugTest = 'sample/url/slug';
           const res = {
             render: (template, params, callback) => {
-              template.should.equal(`${contentTypeTest}/${templateTest}`);
+              template.should.equal(`${slugTest}`);
 
               params.should.have.property('feedback');
-              params.feedback.should.equal(true);
+              params.feedback.should.equal(false);
 
               callback(null, bodyTest);
             },
@@ -66,10 +65,7 @@ describe('Content page controller', () => {
           };
 
           this.contentPageController.index({
-            params: {
-              type: contentTypeTest,
-              page: templateTest,
-            },
+            originalUrl: slugTest,
           }, res, this.next);
         });
       });
@@ -87,9 +83,49 @@ describe('Content page controller', () => {
           };
 
           this.contentPageController.index({
-            params: {},
+            originalUrl: '',
           }, res, this.next);
         });
+      });
+    });
+
+    describe('when the slug contains a condition path', () => {
+      it('should set feedback to true', (done) => {
+        const slugTest = 'conditions/url/slug';
+        const res = {
+          render: (template, params) => {
+            template.should.equal(`${slugTest}`);
+
+            params.should.have.property('feedback');
+            params.feedback.should.equal(true);
+
+            done();
+          },
+        };
+
+        this.contentPageController.index({
+          originalUrl: slugTest,
+        }, res);
+      });
+    });
+
+    describe('when the slug contains is a symptom path', () => {
+      it('should set feedback to true', (done) => {
+        const slugTest = 'symptoms/url/slug';
+        const res = {
+          render: (template, params) => {
+            template.should.equal(`${slugTest}`);
+
+            params.should.have.property('feedback');
+            params.feedback.should.equal(true);
+
+            done();
+          },
+        };
+
+        this.contentPageController.index({
+          originalUrl: slugTest,
+        }, res);
       });
     });
   });
