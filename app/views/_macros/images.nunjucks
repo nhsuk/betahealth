@@ -1,17 +1,16 @@
-{% macro image(
-  srcset=[],
-  alt='',
-  analytics
-) %}
+{% macro image(srcset=[], alt='', analytics) %}
   <!--[if gt IE 7]><!-->
   <img
     srcset="
       {% for src in srcset %}
         {% set splitSrc = src | split(' ') %}
+        {% set path = asset_path(splitSrc[0]) %}
+        {% set width = splitSrc[1] %}
+
         {% if loop.last %}
-          {{ splitSrc[0] }} {{ splitSrc[1] }}
+          {{ path }} {{ width }}
         {% else %}
-          {{ splitSrc[0] }} {{ splitSrc[1] }},
+          {{ path }} {{ width }},
         {% endif %}
       {% endfor %}
     "
@@ -23,6 +22,6 @@
   <!--<![endif]-->
   <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
     {% set fallback = srcset[0] | split(' ') %}
-    <img src="{{ fallback[0] }}" alt="{{ alt }}" />
+    <img src="{{ asset_path(fallback[0]) }}" alt="{{ alt }}" />
   <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
 {% endmacro %}

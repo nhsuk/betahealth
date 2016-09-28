@@ -81,6 +81,7 @@
     "istanbul": "~0.4.5",
     "mkdirp": "~0.5.1",
     "mocha": "~3.0.2",
+    "mock-fs": "^3.11.0",
     "progress": "~1.1.8",
     "proxyquire": "~1.7.10",
     "selenium-standalone": "~5.6.2",

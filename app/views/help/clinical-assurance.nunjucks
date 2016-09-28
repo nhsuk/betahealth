@@ -1,5 +1,7 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
+{% set title = 'How we make sure NHS.UK Beta content is medically sound' %}
+
 {% block main_content %}
   <p>We have a GP in the NHS.UK Beta team who reads and approves all content before
   it’s published.</p>
