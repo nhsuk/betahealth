@@ -32,6 +32,22 @@
 {% endmarkdown%}
 {% endmacro %}
 
+{% macro paragraph(content) %}
+  {{ content | safe }}
+{% endmacro %}
+
+{% macro callout(content) %}
+  <section class="callout callout__info">
+  {{ content | safe }}
+  </section>
+{% endmacro %}
+
+{% macro alert(content) %}
+  <section class="callout callout__alert callout__overlap" id="emergency-info">
+  {{ content | safe }}
+  </section>
+{% endmacro %}
+
 {% macro content_block(content) %}
   <div class="page-section">
     <div class="reading-width">
