@@ -7,7 +7,7 @@
       <div class="column__two-thirds">
         <div class="reading-width">
           {% for component in main %}
-            {{ components[component.type](component.content) }}
+            {{ components[component.type](component) }}
           {% endfor %}
         </div>
       </div>
@@ -15,7 +15,7 @@
       <div class="column__one-third-right">
         <div class="reading-width">
           {% for component in sidebar %}
-            {{ components[component.type](component.content) }}
+            {{ components[component.type](component) }}
           {% endfor %}
         </div>
       </div>

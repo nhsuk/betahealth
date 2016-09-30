@@ -1,4 +1,4 @@
-{% macro image(options) %}
+{% macro structured_image(options) %}
   <!--[if gt IE 7]><!-->
   <img
     srcset="
@@ -26,32 +26,40 @@
   <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
 {% endmacro %}
 
-{% macro markdown(content) %}
+{% macro image(component) %}
+<img src="{{ contentBaseURL }}{{ component.image.meta.url_1280 }}" />
+{% endmacro %}
+
+{% macro markdown(component) %}
 {% markdown %}
-  {{ content | safe }}
+  {{ component.content | safe }}
 {% endmarkdown%}
 {% endmacro %}
 
-{% macro paragraph(content) %}
-  {{ content | safe }}
+{% macro paragraph(component) %}
+  {{ component.value | safe }}
 {% endmacro %}
 
-{% macro callout(content) %}
+{% macro text(component) %}
+  {{ component.value | safe }}
+{% endmacro %}
+
+{% macro callout(component) %}
   <section class="callout callout__info">
-  {{ content | safe }}
+  {{ component.value | safe }}
   </section>
 {% endmacro %}
 
-{% macro alert(content) %}
+{% macro alert(component) %}
   <section class="callout callout__alert callout__overlap" id="emergency-info">
-  {{ content | safe }}
+  {{ component.value | safe }}
   </section>
 {% endmacro %}
 
-{% macro content_block(content) %}
+{% macro content_block(component) %}
   <div class="page-section">
     <div class="reading-width">
-      {{ markdown(content) }}
+      {{ markdown(component) }}
     </div>
   </div>
 {% endmacro %}
@@ -74,16 +82,16 @@
   </div>
 {% endmacro %}
 
-{% macro section_list(content) %}
+{% macro section(component) %}
   <section>
-    <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
+    <h2 id="{{ component.value.title | kebabcase }}">{{ component.value.title }}</h2>
 
-    {% for section in content.sections %}
+    {% for subsection in component.value.subsections %}
       <article class="section-unit">
-        <h3>{{ section.title }}</h3>
+        <h3>{{ subsection.title }}</h3>
 
-        {% for component in section.content %}
-          {{ loadComponent(component.type)(component.content) }}
+        {% for subcomponent in subsection.content %}
+          {{ loadComponent(subcomponent.type)(subcomponent) }}
         {% endfor %}
       </article>
     {% endfor %}

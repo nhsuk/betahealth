@@ -26,6 +26,7 @@ const feedback = require('../app/middleware/feedback');
 const csrfToken = require('../app/middleware/csrf-token');
 const affinityCookie = require('../app/middleware/affinity-cookie');
 const router = require('./routes');
+const contentApi = require('../lib/content-api');
 
 md.use(markdownItAbbr);
 md.use(markdownItAttrs);
@@ -74,6 +75,9 @@ module.exports = (app, config) => {
   nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
     return (name) ? this.ctx[name] : this.ctx;
   });
+
+  nunjucksEnv.addGlobal('contentBaseURL', contentApi.API_BASEURL);
+
 
   markdown.register(nunjucksEnv, (body) => {
     return md.render(body);

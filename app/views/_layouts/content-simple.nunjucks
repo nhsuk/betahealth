@@ -14,7 +14,7 @@
                 {% if component.type == 'section_nav' %}
                   {{ components[component.type](main) }}
                 {% else %}
-                  {{ components[component.type](component.content) }}
+                  {{ components[component.type](component) }}
                 {% endif %}
               {% endfor %}
             </div>
@@ -25,13 +25,13 @@
 
     {% block main_content_before %}
       {% for component in before %}
-        {{ components[component.type](component.content) }}
+        {{ components[component.type](component) }}
       {% endfor %}
     {% endblock %}
 
     {% block main_content %}
       {% for component in main %}
-        {{ components[component.type](component.content) }}
+        {{ components[component.type](component) }}
       {% endfor %}
     {% endblock %}
 
