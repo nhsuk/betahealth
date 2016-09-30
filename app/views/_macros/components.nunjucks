@@ -85,3 +85,64 @@
     {% endfor %}
   </ul>
 {% endmacro %}
+
+{% macro numbered_navigation(pages, current_slug) %}
+  {% set items = pages %}
+  {% set breakpoint = (items.length / 2) | round(0, 'ceil') %}
+  {% set firstSplit = items.splice(0, breakpoint) %}
+
+  <nav role="navigation" aria-label="Parts to this guide" class="link-list--row">
+    {{ link_list(firstSplit, current_slug, {
+      classNames: ' link-list__one-half link-list__numbered'
+    }) }}
+
+    {{ link_list(items, current_slug, {
+      classNames: ' link-list__one-half link-list__numbered',
+      start: breakpoint + 1
+    }) }}
+  </nav>
+{% endmacro %}
+
+{% macro link_list(items, current_slug, options) %}
+  {% set start = options.start | default (1) %}
+
+  <ol class="link-list {{ options.classNames }}" start="{{ start }}">
+    {% for item in items %}
+      <li class="link-list--item">
+        {% if isCurrent(current_slug, item.slug) %}
+          {{ item.title }}
+        {% else %}
+          <a href="{{ item.slug }}"
+             class="link__reverse-polarity"
+             title="Part {{ loop.index + (start - 1) }}: {{ item.title }}">
+            {{ item.title }}
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endmacro %}
+
+{% macro pagination(previous, next) %}
+  <nav role="navigation" aria-label="Guide pagination">
+    <ul class="article-pagination">
+      {% if next %}
+        <li class="article-pagination--item article-pagination--item__right">
+          <a href="{{ next.slug }}" rel="next">
+            <span class="article-pagination--prefix">Next page:</span>
+            <span class="article-pagination--title">{{ next.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if previous %}
+        <li class="article-pagination--item article-pagination--item__left">
+          <a href="{{ previous.slug }}" rel="prev">
+            <span class="article-pagination--prefix">Previous page:</span>
+            <span class="article-pagination--title">{{ previous.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endmacro %}
