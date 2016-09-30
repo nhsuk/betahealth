@@ -6,10 +6,11 @@ take a look and tell us what you think. It will help us to improve what we do.
 ## Conditions
 
 * [Fungal nail infection](/conditions/fungal-nail-infection)
-* [Shingles](/conditions/shingles)
-* [Head lice](/conditions/head-lice)
-* [Warts](/conditions/warts)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
+* [Head lice](/conditions/head-lice)
+* [Shingles](/conditions/shingles)
+* [Warts](/conditions/warts)
+* [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
 
 ## Symptoms
 
