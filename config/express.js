@@ -142,6 +142,7 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           'statse.webtrendslive.com',
           'hm.webtrends.com',
+          'betahealth-wagtail-demo.herokuapp.com',
           config.staticCdn,
         ],
         styleSrc: [
