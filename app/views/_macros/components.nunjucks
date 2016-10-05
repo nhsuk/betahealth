@@ -15,9 +15,8 @@
       {% endfor %}
     "
     alt="{{ options.alt }}"
-    {% if options.analytics %}
-      data-analytics="{{ options.analytics }}"
-    {% endif %}
+    data-analytics="image"
+    data-analytics-type="{{ options.analyticsType | default('inline') }}"
     />
   <!--<![endif]-->
   <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
@@ -47,7 +46,7 @@
         {{ image({
           srcset: figure.srcset,
           alt: figure.alt,
-          analytics: figure.analytics
+          analyticsType: 'figure'
         }) }}
 
         <figcaption class="card--caption">
@@ -79,7 +78,11 @@
     {% for component in components %}
       {% if component.type == 'section_list' %}
         <li class="link-list--item">
-          <a href="#{{ component.content.title | kebabcase }}" class="link__reverse-polarity">{{ component.content.title }}</a>
+          <a href="#{{ component.content.title | kebabcase }}"
+             class="link__reverse-polarity"
+             data-analytics="anchor">
+            {{ component.content.title }}
+          </a>
         </li>
       {% endif %}
     {% endfor %}
@@ -109,6 +112,7 @@
   <ol class="link-list {{ options.classNames }}" start="{{ start }}">
     {% for item in items %}
       {% set active = isCurrent(current_slug, item.slug) %}
+      {% set step = loop.index + (start - 1) %}
 
       <li class="link-list--item{{ ' is-active' if active }}">
         {% if active %}
@@ -116,7 +120,9 @@
         {% else %}
           <a href="{{ item.slug }}"
              class="link__reverse-polarity"
-             title="Part {{ loop.index + (start - 1) }}: {{ item.title }}">
+             title="Part {{ step }}: {{ item.title }}"
+             data-analytics="contents-navigation"
+             data-step="{{ step }}">
             {{ item.title }}
           </a>
         {% endif %}
@@ -130,7 +136,7 @@
     <ul class="article-pagination">
       {% if next %}
         <li class="article-pagination--item article-pagination--item__right">
-          <a href="{{ next.slug }}" rel="next">
+          <a href="{{ next.slug }}" rel="next" data-analytics="pagination">
             <span class="article-pagination--prefix">Next page:</span>
             <span class="article-pagination--title">{{ next.title }}</span>
           </a>
@@ -139,7 +145,7 @@
 
       {% if previous %}
         <li class="article-pagination--item article-pagination--item__left">
-          <a href="{{ previous.slug }}" rel="prev">
+          <a href="{{ previous.slug }}" rel="prev" data-analytics="pagination">
             <span class="article-pagination--prefix">Previous page:</span>
             <span class="article-pagination--title">{{ previous.title }}</span>
           </a>
