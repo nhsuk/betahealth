@@ -2,11 +2,11 @@
 const router = require('express').Router();
 const developmentOnlyController = require('../app/controllers/development-only');
 const healthcheckController = require('../app/controllers/healthcheck');
-const contentPageController = require('../app/controllers/content-page');
+const contentRouter = require('./content-router');
 
-router.all('/', contentPageController.index);
+router.use('/', contentRouter);
 router.get('/:slug(elements)', developmentOnlyController.index);
 router.get('/healthcheck', healthcheckController.index);
-router.all('/*(help|symptoms|conditions)/*?', contentPageController.index);
+router.use('/*(help|symptoms|conditions)/*?', contentRouter);
 
 module.exports = router;

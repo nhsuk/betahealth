@@ -3,13 +3,16 @@
 
 {% block content %}
   <article role="article">
-
     <div class="local-header">
       <div class="local-header--inner">
-        <h1 class="local-header--title">{{ title }}</h1>
+        <h1 class="local-header--title">{{ guide.title if guide else title }}</h1>
         {% block local_header %}
-          {% if localHeader %}
+          {% if localHeader or guide %}
             <div class="local-header--intro">
+              {% if guide %}
+                {{ components.numbered_navigation(guide.pages, slug) }}
+              {% endif %}
+
               {% for component in localHeader %}
                 {% if component.type == 'section_nav' %}
                   {{ components[component.type](main) }}
@@ -35,7 +38,15 @@
       {% endfor %}
     {% endblock %}
 
-    {% block main_content_after %}{% endblock %}
+    {% block main_content_after %}
+      {% if guide %}
+        <div class="page-section">
+          <div class="reading-width">
+            {{ components.pagination(guide.previous, guide.next) }}
+          </div>
+        </div>
+      {% endif %}
+    {% endblock %}
 
     {% if nonEmergencyCallout %}
       {% include '_includes/non-emergency-callout.nunjucks' %}
