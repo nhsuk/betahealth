@@ -108,8 +108,10 @@
 
   <ol class="link-list {{ options.classNames }}" start="{{ start }}">
     {% for item in items %}
-      <li class="link-list--item">
-        {% if isCurrent(current_slug, item.slug) %}
+      {% set active = isCurrent(current_slug, item.slug) %}
+
+      <li class="link-list--item{{ ' is-active' if active }}">
+        {% if active %}
           {{ item.title }}
         {% else %}
           <a href="{{ item.slug }}"
