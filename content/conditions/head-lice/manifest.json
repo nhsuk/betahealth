@@ -23,7 +23,6 @@
             "assets/images/head-lice/head-lice-600.jpg 600w"
           ],
           "caption": "Head lice are small insects, up to 3mm long. They can be difficult to spot.",
-          "analytics": "DCSext.HeadLiceImages,Insects",
           "alt": "Head lice in hair"
         },
         {
@@ -32,7 +31,6 @@
             "assets/images/head-lice/head-lice-zoom-600.jpg 600w"
           ],
           "caption": "Close up view of a louse.",
-          "analytics": "DCSext.HeadLiceImages,Nits",
           "alt": "Close up view of a louse"
         },
         {
@@ -41,7 +39,6 @@
             "assets/images/head-lice/empty-eggs-600.jpg 600w"
           ],
           "caption": "Head lice eggs (nits) are yellow, brown or white (empty shells) and attached to the hair.",
-          "analytics": "DCSext.HeadLiceImages,Eggs",
           "alt": "Head lice eggs"
         }
       ]
