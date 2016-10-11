@@ -1,6 +1,3 @@
-// eslint-disable-next-line strict
-'use strict';
-
 const fs = require('fs');
 const del = require('del');
 const request = require('request');
@@ -32,7 +29,7 @@ function startSelenium() {
           version: '2.53.1',
           drivers: {
             chrome: {
-              version: '2.23',
+              version: '2.24',
             },
             firefox: {
               version: '0.10.0',

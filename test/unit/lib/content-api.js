@@ -1,6 +1,7 @@
 const path = require('path');
 const mock = require('mock-fs');
 
+// eslint-disable-next-line import/no-dynamic-require
 const contentApi = require(`${rootFolder}/lib/content-api`);
 
 describe('Content API library', () => {

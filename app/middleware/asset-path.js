@@ -5,6 +5,7 @@ const manifestPath = '../../build/rev-manifest.json';
 let manifestFile = {};
 
 try {
+  // eslint-disable-next-line import/no-dynamic-require
   manifestFile = require(manifestPath);
 } catch (e) {
   logger.warn(`No asset manifest file found. This is only a concern if running
