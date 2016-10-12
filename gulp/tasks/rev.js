@@ -18,6 +18,20 @@ gulp.task('rev', () => {
     .pipe(revAll.revision({
       hashLength: 32,
       dontRenameFile: ['rev-manifest.json'],
+      includeFilesInManifest: [
+        '.css',
+        '.js',
+        '.png',
+        '.jpg',
+        '.jpeg',
+        '.gif',
+        '.svg',
+        '.ico',
+        '.eot',
+        '.ttf',
+        '.woff',
+        '.woff2',
+      ],
     }))
     .pipe(gulp.dest(paths.build))
     .pipe(revAll.manifestFile())
