@@ -1,6 +1,6 @@
 const ContentPage = require('../pageobjects/content-page.page');
 
-describe('a content page page', () => {
+describe('a content page', () => {
   it('should contain a local header', () => {
     ContentPage.open();
     ContentPage.header.isVisible().should.be.true;

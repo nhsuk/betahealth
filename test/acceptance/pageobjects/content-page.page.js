@@ -1,17 +1,17 @@
 const page = require('./page');
 
-const formPage = Object.create(page, {
+const contentPage = Object.create(page, {
   /**
    * define elements
    */
   header: {
     get: () => {
-      return browser.elements('.local-header');
+      return browser.element('.local-header');
     },
   },
   h1: {
     get: () => {
-      return browser.elements('.local-header h1');
+      return browser.element('.local-header h1');
     },
   },
 
@@ -25,4 +25,4 @@ const formPage = Object.create(page, {
   },
 });
 
-module.exports = formPage;
+module.exports = contentPage;
