@@ -1,3 +1,7 @@
+/* eslint-disable strict */
+
+'use strict';
+
 const fs = require('fs');
 const del = require('del');
 const request = require('request');
