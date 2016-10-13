@@ -17,7 +17,6 @@
             "assets/images/shingles/shingles-rash-600.jpg 600w"
           ],
           "caption": "The shingles rash appears as red blotches on your skin, on one side of your body only. A rash on both the left and right of your body is unlikely to be shingles.",
-          "analytics": "DCSext.ShinglesImages,Rash",
           "alt": "A shingles rash on the shoulder"
         },
         {
@@ -26,7 +25,6 @@
             "assets/images/shingles/itchy-blisters-600.jpg 600w"
           ],
           "caption": "The blotches become itchy blisters which ooze fluid. A few days later the blisters dry out and scab.",
-          "analytics": "DCSext.ShinglesImages,Blister",
           "alt": "Blisters oozing fluid"
         },
         {
@@ -35,7 +33,6 @@
             "assets/images/shingles/rash-band-600.jpg 600w"
           ],
           "caption": "The rash can form a band that only appears on one side of your body. The skin remains painful until after the rash has gone.",
-          "analytics": "DCSext.ShinglesImages,Band",
           "alt": "A rash band"
         }
       ]

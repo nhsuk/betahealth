@@ -34,8 +34,7 @@
                     "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/fever-and-red-cheeks-1280.jpg 1280w"
                   ],
-                  "alt": "A child’s face showing a bright red rash on both cheeks",
-                  "analytics": "DCSext.RashesChildrenImages,FeverRedCheeks"
+                  "alt": "A child’s face showing a bright red rash on both cheeks"
                 }
               },
               {
@@ -56,8 +55,7 @@
                     "assets/images/rashes-in-babies-and-children/chicken-pox-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/chicken-pox-1280.jpg 1280w"
                   ],
-                  "alt": "A baby covered in small spots",
-                  "analytics": "DCSext.RashesChildrenImages,SmallSpotsBlisters"
+                  "alt": "A baby covered in small spots"
                 }
               },
               {
@@ -78,8 +76,7 @@
                     "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/hand-foot-and-mouth-1280.jpg 1280w"
                   ],
-                  "alt": "Blisters on the small finger on a hand",
-                  "analytics": "DCSext.RashesChildrenImages,BlistersOnHands"
+                  "alt": "Blisters on the small finger on a hand"
                 }
               },
               {
@@ -100,8 +97,7 @@
                     "assets/images/rashes-in-babies-and-children/scarlet-fever-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/scarlet-fever-1280.jpg 1280w"
                   ],
-                  "alt": "A child’s chest and shoulders covered in a pink-red rash",
-                  "analytics": "DCSext.RashesChildrenImages,PinkRedRash"
+                  "alt": "A child’s chest and shoulders covered in a pink-red rash"
                 }
               },
               {
@@ -130,8 +126,7 @@
                     "assets/images/rashes-in-babies-and-children/heat-rash-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/heat-rash-1280.jpg 1280w"
                   ],
-                  "alt": "A child’s back showing a heat rash under a pulled up t-shirt",
-                  "analytics": "DCSext.RashesChildrenImages,RashesHeat"
+                  "alt": "A child’s back showing a heat rash under a pulled up t-shirt"
                 }
               },
               {
@@ -152,8 +147,7 @@
                     "assets/images/rashes-in-babies-and-children/eczma-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/eczma-1280.jpg 1280w"
                   ],
-                  "alt": "Back of a child’s knees showing red, cracked skin",
-                  "analytics": "DCSext.RashesChildrenImages,ScalyCrackedSkin"
+                  "alt": "Back of a child’s knees showing red, cracked skin"
                 }
               },
               {
@@ -174,8 +168,7 @@
                     "assets/images/rashes-in-babies-and-children/hives-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/hives-1280.jpg 1280w"
                   ],
-                  "alt": "Side of a child’s knee showing hives",
-                  "analytics": "DCSext.RashesChildrenImages,RaisedItchySpots"
+                  "alt": "Side of a child’s knee showing hives"
                 }
               },
               {
@@ -196,8 +189,7 @@
                     "assets/images/rashes-in-babies-and-children/ringworm-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/ringworm-1280.jpg 1280w"
                   ],
-                  "alt": "Ringworm rash on skin",
-                  "analytics": "DCSext.RashesChildrenImages,ItchyRoundRash"
+                  "alt": "Ringworm rash on skin"
                 }
               },
               {
@@ -226,8 +218,7 @@
                     "assets/images/rashes-in-babies-and-children/milia-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/milia-1280.jpg 1280w"
                   ],
-                  "alt": "Close-up of a baby’s nose showing small white spots",
-                  "analytics": "DCSext.RashesChildrenImages,WhiteSpotsBabies"
+                  "alt": "Close-up of a baby’s nose showing small white spots"
                 }
               },
               {
@@ -248,8 +239,7 @@
                     "assets/images/rashes-in-babies-and-children/erythema-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/erythema-1280.jpg 1280w"
                   ],
-                  "alt": "Baby’s head and shoulders showing raised spots",
-                  "analytics": "DCSext.RashesChildrenImages,RedYellowWhiteSpots"
+                  "alt": "Baby’s head and shoulders showing raised spots"
                 }
               },
               {
@@ -270,8 +260,7 @@
                     "assets/images/rashes-in-babies-and-children/molluscum-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/molluscum-1280.jpg 1280w"
                   ],
-                  "alt": "Small, pink raised spots on skin",
-                  "analytics": "DCSext.RashesChildrenImages,PinkSkinColoured"
+                  "alt": "Small, pink raised spots on skin"
                 }
               },
               {
@@ -292,8 +281,7 @@
                     "assets/images/rashes-in-babies-and-children/nappy-800.jpg 800w",
                     "assets/images/rashes-in-babies-and-children/nappy-1280.jpg 1280w"
                   ],
-                  "alt": "Red patch on a baby’s bottom",
-                  "analytics": "DCSext.RashesChildrenImages,RedPatches"
+                  "alt": "Red patch on a baby’s bottom"
                 }
               },
               {

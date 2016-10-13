@@ -16,6 +16,9 @@ module.exports = () => {
       if (currentIndex < pageData.guide.pages.length) {
         pageData.guide.next = pageData.guide.pages[currentIndex + 1];
       }
+
+      pageData.guide.currentIndex = currentIndex;
+      pageData.guide.current = pageData.guide.pages[currentIndex];
     }
 
     // eslint-disable-next-line no-param-reassign
