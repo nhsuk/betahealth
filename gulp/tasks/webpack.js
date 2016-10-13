@@ -1,3 +1,4 @@
+/* eslint-disable import/no-dynamic-require */
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const webpack = require('webpack');
@@ -10,7 +11,7 @@ const webpackConfig = config.env === 'production'
                       ? require(paths.webpackProductionConfig)
                       : require(paths.webpackConfig);
 
-gulp.task('webpack', done => {
+gulp.task('webpack', (done) => {
   return webpack(webpackConfig).run((err, stats) => {
     if (err) {
       throw new gutil.PluginError('webpack', err);

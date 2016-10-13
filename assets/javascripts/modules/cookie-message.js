@@ -19,7 +19,7 @@ function getCookie(name) {
   const nameEQ = `${name}=`;
   const cookies = document.cookie.split(';');
 
-  for (let i = 0, len = cookies.length; i < len; i++) {
+  for (let i = 0, len = cookies.length; i < len; i += 1) {
     let cookie = cookies[i];
 
     while (cookie.charAt(0) === ' ') {

@@ -1,0 +1,43 @@
+.article-pagination {
+  @extend %clearfix;
+  @include element-padding(top);
+  border-top: 1px solid tint($nhs-blue, 80%);
+  list-style: none;
+  padding-left: 0;
+}
+
+  .article-pagination--item {
+    @include media(tablet) {
+      + .article-pagination--item {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+
+  @include media(tablet) {
+    .article-pagination--item__left {
+      float: left;
+      width: 47%;
+    }
+
+    .article-pagination--item__right {
+      float: right;
+      text-align: right;
+      width: 47%;
+    }
+  }
+
+  .article-pagination--prefix {
+    @include core-font(16);
+    color: $black;
+    display: block;
+  }
+
+  .article-pagination--title {
+    text-decoration: underline;
+  }

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-dynamic-require
 const contentPageController = require(`${appFolder}/controllers/content-page`);
 
 describe('Content page controller', () => {
@@ -14,14 +15,14 @@ describe('Content page controller', () => {
     describe('when a template file exists', () => {
       it('should render a template with params', (done) => {
         const bodyTest = '<html></html>';
-        const contentTypeTest = 'condition';
+        const dataTest = { foo: 'bar' };
         const templateTest = 'headache';
         const res = {
           render: (template, params, callback) => {
-            template.should.equal(`${contentTypeTest}/${templateTest}`);
+            template.should.equal(templateTest);
 
-            params.should.have.property('feedback');
-            params.feedback.should.equal(true);
+            params.should.have.property('foo');
+            params.foo.should.equal('bar');
 
             callback(null, bodyTest);
           },
@@ -33,10 +34,8 @@ describe('Content page controller', () => {
         };
 
         contentPageController.index({
-          params: {
-            type: contentTypeTest,
-            page: templateTest,
-          },
+          layout: templateTest,
+          pageData: dataTest,
         }, res, this.next);
       });
     });
@@ -53,9 +52,7 @@ describe('Content page controller', () => {
           },
         };
 
-        contentPageController.index({
-          params: {},
-        }, res, this.next);
+        contentPageController.index({}, res, this.next);
       });
     });
   });

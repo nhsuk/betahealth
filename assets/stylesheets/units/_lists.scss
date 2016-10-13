@@ -20,7 +20,7 @@ dl {
 
 .local-header,
 .page-section {
-  li {
+  li + li {
     margin-top: $baseline-grid-unit * 2;
   }
 }

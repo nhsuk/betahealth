@@ -17,6 +17,7 @@ const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
+const changeCase = require('change-case');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -67,6 +68,16 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('split', (str, seperator) => {
     return str.split(seperator);
   });
+  nunjucksEnv.addFilter('kebabcase', (str) => {
+    return changeCase.paramCase(str);
+  });
+  nunjucksEnv.addGlobal('isCurrent', (str, search) => {
+    const current = str || '';
+    return current.indexOf(search) !== -1;
+  });
+  nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
+    return (name) ? this.ctx[name] : this.ctx;
+  });
 
   markdown.register(nunjucksEnv, (body) => {
     return md.render(body);
@@ -88,7 +99,7 @@ module.exports = (app, config) => {
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
-  app.use(assetPath(config));
+  app.use(assetPath(config, nunjucksEnv));
   app.use(feedback());
 
   app.use(csrf({

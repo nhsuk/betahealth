@@ -1,0 +1,12 @@
+{
+  "layout": "content-simple",
+  "guide": true,
+  "title": "Food and keeping active",
+  "choicesOrigin": "",
+  "main": [
+    {
+      "type": "content_block",
+      "content": "!file=main-content.md"
+    }
+  ]
+}

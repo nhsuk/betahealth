@@ -1,0 +1,156 @@
+{% macro image(options) %}
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="
+      {% for src in options.srcset %}
+        {% set splitSrc = src | split(' ') %}
+        {% set path = asset_path(splitSrc[0]) %}
+        {% set width = splitSrc[1] %}
+
+        {% if loop.last %}
+          {{ path }} {{ width }}
+        {% else %}
+          {{ path }} {{ width }},
+        {% endif %}
+      {% endfor %}
+    "
+    alt="{{ options.alt }}"
+    data-analytics="image"
+    data-analytics-type="{{ options.analyticsType | default('inline') }}"
+    />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    {% set fallback = options.srcset[0] | split(' ') %}
+    <img src="{{ asset_path(fallback[0]) }}" alt="{{ options.alt }}" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+{% endmacro %}
+
+{% macro markdown(content) %}
+{% markdown %}
+  {{ content | safe }}
+{% endmarkdown%}
+{% endmacro %}
+
+{% macro content_block(content) %}
+  <div class="page-section">
+    <div class="reading-width">
+      {{ markdown(content) }}
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro figure_list(list) %}
+  <div class="page-section page-section__collapse-bottom">
+    {% for figure in list %}
+      <figure class="card">
+        {{ image({
+          srcset: figure.srcset,
+          alt: figure.alt,
+          analyticsType: 'figure'
+        }) }}
+
+        <figcaption class="card--caption">
+          {{ markdown(figure.caption) }}
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro section_list(content) %}
+  <section>
+    <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
+
+    {% for section in content.sections %}
+      <article class="section-unit">
+        <h3>{{ section.title }}</h3>
+
+        {% for component in section.content %}
+          {{ loadComponent(component.type)(component.content) }}
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </section>
+{% endmacro %}
+
+{% macro section_nav(components) %}
+  <ul class="link-list">
+    {% for component in components %}
+      {% if component.type == 'section_list' %}
+        <li class="link-list--item">
+          <a href="#{{ component.content.title | kebabcase }}"
+             class="link__reverse-polarity"
+             data-analytics="anchor">
+            {{ component.content.title }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro numbered_navigation(pages, current_slug) %}
+  {% set items = pages %}
+  {% set breakpoint = (items.length / 2) | round(0, 'ceil') %}
+  {% set firstSplit = items.splice(0, breakpoint) %}
+
+  <nav role="navigation" aria-label="Parts to this guide" class="link-list--row">
+    {{ link_list(firstSplit, current_slug, {
+      classNames: ' link-list__one-half link-list__numbered'
+    }) }}
+
+    {{ link_list(items, current_slug, {
+      classNames: ' link-list__one-half link-list__numbered',
+      start: breakpoint + 1
+    }) }}
+  </nav>
+{% endmacro %}
+
+{% macro link_list(items, current_slug, options) %}
+  {% set start = options.start | default (1) %}
+
+  <ol class="link-list {{ options.classNames }}" start="{{ start }}">
+    {% for item in items %}
+      {% set active = isCurrent(current_slug, item.slug) %}
+      {% set step = loop.index + (start - 1) %}
+
+      <li class="link-list--item{{ ' is-active' if active }}">
+        {% if active %}
+          {{ item.title }}
+        {% else %}
+          <a href="{{ item.slug }}"
+             class="link__reverse-polarity"
+             title="Part {{ step }}: {{ item.title }}"
+             data-analytics="contents-navigation"
+             data-step="{{ step }}">
+            {{ item.title }}
+          </a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% endmacro %}
+
+{% macro pagination(previous, next) %}
+  <nav role="navigation" aria-label="Guide pagination">
+    <ul class="article-pagination">
+      {% if next %}
+        <li class="article-pagination--item article-pagination--item__right">
+          <a href="{{ next.slug }}" rel="next" data-analytics="pagination">
+            <span class="article-pagination--prefix">Next page:</span>
+            <span class="article-pagination--title">{{ next.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+
+      {% if previous %}
+        <li class="article-pagination--item article-pagination--item__left">
+          <a href="{{ previous.slug }}" rel="prev" data-analytics="pagination">
+            <span class="article-pagination--prefix">Previous page:</span>
+            <span class="article-pagination--title">{{ previous.title }}</span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endmacro %}
