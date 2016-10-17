@@ -2,7 +2,7 @@
   "layout": "content-simple",
   "guide": true,
   "title": "Understanding medication",
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Treatment.aspx",
   "main": [
     {
       "type": "content_block",
