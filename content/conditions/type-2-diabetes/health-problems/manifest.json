@@ -2,7 +2,7 @@
   "layout": "content-simple",
   "guide": true,
   "title": "Health problems",
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Complications.aspx",
   "main": [
     {
       "type": "content_block",
