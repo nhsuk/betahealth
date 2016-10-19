@@ -29,7 +29,7 @@
         </label>
         <div class="grid-row">
           <div class="column__two-thirds">
-            <textarea name="feedback-form-comments" id="feedback-form-comments" {% if FEEDBACKFORM.outcome == "failure" %}class="error"{% endif %} rows="4"></textarea>
+            <textarea name="feedback-form-comments" id="feedback-form-comments" {% if FEEDBACKFORM.outcome == "failure" %}class="error"{% endif %} rows="4">{{ FEEDBACKFORM.data['feedback-form-comments'] }}</textarea>
           </div>
         </div>
 
