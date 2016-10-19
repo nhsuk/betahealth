@@ -16,17 +16,17 @@ module.exports = () => {
 
     if (isPost && isFeedback && !config.feedbackApi.disabled) {
       req.checkBody('feedback-form-comments').notEmpty();
+      req.sanitizeBody('feedback-form-comments');
+      req.sanitizeBody('feedback-form-path');
 
       const errors = req.validationErrors();
       if (errors) {
         res.locals.FEEDBACKFORM.outcome = 'failure';
         res.locals.FEEDBACKFORM.errorType = 'submission';
         res.locals.FEEDBACKFORM.errors = errors;
+        res.locals.FEEDBACKFORM.data = req.body;
         next();
       } else {
-        req.sanitizeBody('feedback-form-comments');
-        req.sanitizeBody('feedback-form-path');
-
         const formData = {
           ip: requestIp.getClientIp(req),
           comment: req.body['feedback-form-comments'],
@@ -42,6 +42,7 @@ module.exports = () => {
             logger.error(error);
             res.locals.FEEDBACKFORM.outcome = 'failure';
             res.locals.FEEDBACKFORM.errorType = 'server';
+            res.locals.FEEDBACKFORM.data = req.body;
             next();
           });
       }
