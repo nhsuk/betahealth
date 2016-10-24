@@ -16,10 +16,12 @@ module.exports = () => {
 
     if (isPost && isFeedback && !config.feedbackApi.disabled) {
       req.checkBody('feedback-form-comments').notEmpty();
+      req.checkBody('feedback-form-found').notEmpty();
       req.sanitizeBody('feedback-form-comments');
+      req.sanitizeBody('feedback-form-found');
       req.sanitizeBody('feedback-form-path');
 
-      const errors = req.validationErrors();
+      const errors = req.validationErrors(true);
       if (errors) {
         res.locals.FEEDBACKFORM.outcome = 'failure';
         res.locals.FEEDBACKFORM.errorType = 'submission';
@@ -30,6 +32,7 @@ module.exports = () => {
         const formData = {
           ip: requestIp.getClientIp(req),
           comment: req.body['feedback-form-comments'],
+          found: req.body['feedback-form-found'],
           path: req.body['feedback-form-path'],
         };
 

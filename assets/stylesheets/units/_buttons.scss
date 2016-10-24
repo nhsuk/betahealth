@@ -14,8 +14,12 @@
   width: 100%;
 
   @include media(tablet) {
-    margin-right: $default-spacing-unit * 2;
+    margin-right: $default-spacing-unit;
     width: auto;
+  }
+
+  @include media(desktop) {
+    margin-right: $default-spacing-unit * 2;
   }
 
   &:link,

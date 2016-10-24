@@ -1,3 +1,27 @@
+fieldset {
+  border: 0;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+
+  body:not(:-moz-handler-blocked) & {
+    display: table-cell;
+  }
+}
+
+legend {
+  @include core-font(20);
+  display: table;
+  padding: 0;
+
+  // In Webkit, the bottom margin of a legend and the top margin
+  // of the next element don't overlap, which they should. This
+  // addresses that by discarding the top margin of the next element
+  + * {
+    -webkit-margin-top-collapse: separate;
+  }
+}
+
 textarea {
   @include core-font(20);
 
