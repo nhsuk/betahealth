@@ -78,7 +78,17 @@ Analytics.prototype._getEventData = function _getEventData(e) {
       name = `${this.wtPrefix}Pagination`;
       value = $el.attr('rel');
       break;
+    case 'external':
+      name = `${this.wtPrefix}ExternalLinks`;
+      value = $el.attr('href');
+      break;
+    case 'event':
+      name = `${this.wtPrefix}Event`;
+      value = $el.prop('tagName');
+      break;
     default:
+      name = `${this.wtPrefix}GeneralLinks`;
+      value = component;
       break;
   }
 

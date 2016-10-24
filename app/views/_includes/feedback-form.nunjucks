@@ -96,8 +96,8 @@
           </div>
         </fieldset>
 
-        <button type="submit" class="button" data-analytics="DCSext.GeneralLinks,SendFeedback)">Send feedback</button>
-        <button type="reset" class="button button__cancel" data-analytics="DCSext.GeneralLinks,CancelFeedback)">Cancel</button>
+        <button type="submit" class="button" data-analytics="event" data-analytics-type="SendFeedback">Send feedback</button>
+        <button type="reset" class="button button__cancel" data-analytics="event" data-analytics-type="CancelFeedback">Cancel</button>
 
         <input type="hidden" name="feedback-form-path" value="{{ FEEDBACKFORM.path }}">
         <input type="hidden" name="_csrf" value="{{ csrfToken }}">
