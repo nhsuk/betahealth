@@ -207,5 +207,31 @@
         <p>A severe callout</p>
       </div>
     </div>
+
+    <h2>Hidden text (progressive disclosure)</h2>
+
+    <details>
+      <summary>
+        <span class="details--summary">Help with something</span>
+      </summary>
+
+      <div>
+        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
+      </div>
+    </details>
+
+    <details class="details__inline">
+      <summary>
+        <span class="details--summary">
+          Vivamus magna. Cras in mi at <span class="details--cta">felis aliquet congue.</span>
+        </span>
+      </summary>
+
+      <div>
+        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
+          ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
+          congue. Ut a est eget ligula molestie gravida.</p>
+      </div>
+    </details>
   </div>
 {% endblock %}

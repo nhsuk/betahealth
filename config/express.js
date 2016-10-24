@@ -74,6 +74,42 @@ md.use(markdownItContainer, 'severe', {
     return '</section>\n';
   },
 });
+md.use(markdownItContainer, 'reveal', {
+  marker: ':',
+  validate: (params) => {
+    return params.trim().match(/^reveal\s+(.*)$/);
+  },
+  render: (tokens, idx) => {
+    const m = tokens[idx].info.trim().match(/^reveal\s+(.*)$/);
+
+    if (tokens[idx].nesting === 1) {
+      return `<details>\n<summary><span class="details--summary">${md.utils.escapeHtml(m[1])}</span></summary>\n<div>\n`;
+    }
+    return '</div>\n</details>\n';
+  },
+});
+md.use(markdownItContainer, 'inline_reveal', {
+  marker: ':',
+  validate: (params) => {
+    return params.trim().match(/^inline_reveal\s+(.*)$/);
+  },
+  render: (tokens, idx) => {
+    const m = tokens[idx].info.trim().match(/^inline_reveal\s+(.*)$/);
+
+    if (tokens[idx].nesting === 1) {
+      const summary = md.utils.escapeHtml(m[1]);
+      const cta = summary.slice(summary.indexOf('['), summary.indexOf(']') + 1);
+      const ctaHtml = cta.replace('[', '<span class="details--cta">').replace(']', '</span>');
+
+      return `<details class="details__inline">
+        <summary>
+          <span class="details--summary">${summary.replace(cta, ctaHtml)}</span>
+        </summary>
+        <div>`;
+    }
+    return '</div>\n</details>\n';
+  },
+});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
