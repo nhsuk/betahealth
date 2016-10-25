@@ -36,7 +36,7 @@ describe('feedback mechanism', () => {
 
       FeedbackPage.errorSummary.waitForExist();
       FeedbackPage.errorSummary.isVisible().should.be.true;
-      FeedbackPage.errorSummary.getText().should.contain('feedback area was empty');
+      FeedbackPage.errorSummary.getText().should.contain('feedback wasn\'t complete');
       FeedbackPage.comment.getAttribute('class').should.contain('error');
     });
 

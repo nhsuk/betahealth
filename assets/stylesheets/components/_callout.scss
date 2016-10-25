@@ -1,6 +1,10 @@
 .callout {
   @include element-padding;
   background-color: $white;
+
+  &:focus {
+    outline: 3px solid $focus-colour;
+  }
 }
 
   .callout--inner {

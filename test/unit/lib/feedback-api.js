@@ -4,6 +4,7 @@ const config = {
   feedbackApi: {
     baseUrl: 'http://api-baseurl.com/',
     apiKey: 'APIKEY123456789',
+    timeout: 5000,
   },
 };
 const fakeTime = moment('2016-06-24').tz('Europe/London').startOf('day');
@@ -43,6 +44,7 @@ describe('feedback api library', () => {
           'Ocp-Apim-Subscription-Key': config.feedbackApi.apiKey,
         },
         form: formData,
+        timeout: 5000,
       });
       return send.should.eventually.deep.equal(formData);
     });

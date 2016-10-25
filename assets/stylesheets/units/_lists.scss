@@ -19,7 +19,8 @@ dl {
 }
 
 .local-header,
-.page-section {
+.page-section,
+.global-footer {
   li + li {
     margin-top: $baseline-grid-unit * 2;
   }

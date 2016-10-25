@@ -13,6 +13,10 @@ gulp.task('serve', (cb) => {
   return nodemon({
     script: 'app.js',
     ext: 'js nunjucks',
+    ignore: [
+      './assets',
+      './tmp',
+    ],
   }).on('start', () => {
     // to avoid nodemon being started multiple times
     if (!started) {

@@ -13,8 +13,19 @@
               <div class="callout callout__error" role="group" aria-labelledby="error-summary" tabindex="-1">
                 <p id="error-summary">
                   {% if FEEDBACKFORM.errorType == "submission" %}
-                    Sorry, the feedback area was empty. <a href="#feedback-form-comments">
-                      Please make sure to add your comments about this page.</a>
+                    Sorry, the feedback wasn't complete. Please make sure to tell us
+
+                    {% if FEEDBACKFORM.errors['feedback-form-comments'] %}
+                      <a href="#feedback-form-comments">what you were looking for{{ '.' if not FEEDBACKFORM.errors['feedback-form-found'] }}</a>{{ ',' if FEEDBACKFORM.errors['feedback-form-found'] }}
+                    {% endif %}
+
+                    {% if FEEDBACKFORM.errors['feedback-form-found'] and FEEDBACKFORM.errors['feedback-form-comments'] %}
+                      and
+                    {% endif %}
+
+                    {% if FEEDBACKFORM.errors['feedback-form-found'] %}
+                      <a href="#looking-for-group">if you found it.</a>
+                    {% endif %}
                   {% elif FEEDBACKFORM.errorType == "server" %}
                     Sorry, there’s been an error, <a href="#feedback-form-comments">please try again.</a>
                   {% endif %}
@@ -25,16 +36,68 @@
         {% endif %}
 
         <label for="feedback-form-comments" class="form-label form-label__large">
-          What’s useful about this page? What’s missing?
+          What were you looking for?
         </label>
         <div class="grid-row">
           <div class="column__two-thirds">
-            <textarea name="feedback-form-comments" id="feedback-form-comments" {% if FEEDBACKFORM.outcome == "failure" %}class="error"{% endif %} rows="4"></textarea>
+            <textarea
+              name="feedback-form-comments"
+              id="feedback-form-comments"
+              rows="4"
+              {% if FEEDBACKFORM.errors['feedback-form-comments'] %}
+                class="error"
+              {% endif %}
+            >{{ FEEDBACKFORM.data['feedback-form-comments'] }}</textarea>
           </div>
         </div>
 
-        <button type="submit" class="button" data-analytics="DCSext.GeneralLinks,SendFeedback)">Send feedback</button>
-        <button type="reset" class="button button__cancel" data-analytics="DCSext.GeneralLinks,CancelFeedback)">Cancel</button>
+        <fieldset>
+          <legend class="form-label form-label__large" id="looking-for-group">
+            Did you find what you were looking for?
+          </legend>
+          <div class="grid-row">
+            <div class="column__two-thirds">
+              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+                <input
+                  type="radio"
+                  name="feedback-form-found"
+                  value="Yes"
+                  class="selection-button--input"
+                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'Yes' %}
+                    checked=checked
+                  {% endif %}>
+                Yes
+              </label>
+
+              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+                <input
+                  type="radio"
+                  name="feedback-form-found"
+                  value="No"
+                  class="selection-button--input"
+                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'No' %}
+                    checked=checked
+                  {% endif %}>
+                No
+              </label>
+
+              <label class="selection-button selection-button__inline selection-button__radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
+                <input
+                  type="radio"
+                  name="feedback-form-found"
+                  value="Partially"
+                  class="selection-button--input"
+                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'Partially' %}
+                    checked=checked
+                  {% endif %}>
+                Partially
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="button" data-analytics="event" data-analytics-type="SendFeedback">Send feedback</button>
+        <button type="reset" class="button button__cancel" data-analytics="event" data-analytics-type="CancelFeedback">Cancel</button>
 
         <input type="hidden" name="feedback-form-path" value="{{ FEEDBACKFORM.path }}">
         <input type="hidden" name="_csrf" value="{{ csrfToken }}">
