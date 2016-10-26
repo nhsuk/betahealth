@@ -19,7 +19,7 @@ bad posture or stress.
 Some women get headaches when they’re on the pill or during their
 period or menopause.
 
-!!! info
+!!! attention
 ## See your GP if
 
 * you get pain on [chewing or combing your hair](http://www.nhs.uk/Conditions/giant-cell-arteritis/Pages/Introduction.aspx) (get an urgent appointment)

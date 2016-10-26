@@ -184,6 +184,28 @@
           </div>
         </fieldset>
       </form>
+
+      <h2>Callouts</h2>
+
+      <div class="callout callout__info">
+        <p>An information callout</p>
+      </div>
+
+      <div class="callout callout__attention">
+        <p>An attention callout</p>
+      </div>
+
+      <div class="callout callout__warning">
+        <p>A warning callout</p>
+      </div>
+
+      <div class="callout callout__alert">
+        <p>An alert callout</p>
+      </div>
+
+      <div class="callout callout__severe">
+        <p>A severe callout</p>
+      </div>
     </div>
   </div>
 {% endblock %}

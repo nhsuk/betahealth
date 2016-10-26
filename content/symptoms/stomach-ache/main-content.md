@@ -18,7 +18,7 @@ stop any vomiting and diarrhoea.
 
 Find out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)
 
-!!! info
+!!! attention
 ## See your GP if
 
 * the pain gets much worse in a short space of time

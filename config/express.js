@@ -38,6 +38,15 @@ md.use(markdownItContainer, 'info', {
     return '</section>\n';
   },
 });
+md.use(markdownItContainer, 'attention', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__attention">\n';
+    }
+    return '</section>\n';
+  },
+});
 md.use(markdownItContainer, 'warning', {
   marker: '!',
   render: (tokens, idx) => {
@@ -51,7 +60,16 @@ md.use(markdownItContainer, 'alert', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__alert callout__overlap" id="emergency-info">\n';
+      return '<section class="callout callout__alert">\n';
+    }
+    return '</section>\n';
+  },
+});
+md.use(markdownItContainer, 'severe', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__severe">\n';
     }
     return '</section>\n';
   },
