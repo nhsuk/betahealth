@@ -1,4 +1,4 @@
-.section-unit {
+.section-unit__divider {
   @include element-padding(bottom);
   position: relative;
 
@@ -21,3 +21,18 @@
     }
   }
 }
+
+  .section-unit--prefix {
+    @include core-font(20);
+    border-top: $baseline-grid-unit solid $grey-3;
+    display: inline-block;
+    padding-top: $baseline-grid-unit;
+
+    + * {
+      margin-top: $default-spacing-unit / 2;
+
+      @include media(desktop) {
+        margin-top: $default-spacing-unit;
+      }
+    }
+  }

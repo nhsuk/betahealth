@@ -45,3 +45,36 @@ a {
 .link__reverse-polarity {
   @extend %link__reverse-polarity;
 }
+
+.link__document {
+  background-color: $grey-4;
+  border: solid $grey-3;
+  border-width: $baseline-grid-unit / 2 0;
+  display: block;
+  padding: $default-spacing-unit;
+  padding-right: $baseline-grid-unit * 10 + $default-spacing-unit;
+  position: relative;
+  text-decoration: none;
+
+  @include media(tablet) {
+    max-width: 50%;
+  }
+
+  &:after {
+    border-bottom: $baseline-grid-unit * 10 solid $white;
+    border-left: $baseline-grid-unit * 10 solid $grey-3;
+    bottom: -2px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+  }
+}
+
+  .link--document-type {
+    @include core-font(16);
+    color: $grey-1;
+    display: block;
+    font-weight: normal;
+  }
