@@ -63,6 +63,31 @@
   </figure>
 {% endmacro %}
 
+{% macro image_set(list) %}
+  <section class="tabs js-tabs">
+
+    <div class="tabs--tab-container js-tabs-content">
+      {% for item in list %}
+        <div class="tabs--tab js-tab-pane" id="tab-{{ item.name | kebabcase }}">
+          <h3 class="tabs--tab-heading">{{ item.name }}</h3>
+          <div class="tabs--tab-content">
+            {{ image(item.image) }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <ul class="tabs--nav js-tabs-nav">
+      {% for item in list %}
+        <li class="tabs--nav-item">
+          <a href="#tab-{{ item.name | kebabcase }}" class="tabs--nav-link">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
+{% endmacro %}
+
 {% macro section_list(content) %}
   <section>
     <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
