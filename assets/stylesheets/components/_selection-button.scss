@@ -17,6 +17,10 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   .js-enabled & {
     padding-left: 50px;
     width: auto;
+
+    @include ie-lte(8) {
+      padding-left: 0;
+    }
   }
 }
 
