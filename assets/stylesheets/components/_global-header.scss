@@ -1,5 +1,6 @@
 .global-header {
-  background-color: $nhs-blue;
+  background-color: $white;
+  border-bottom: $baseline-grid-unit / 2 solid $nhs-blue;
 }
 
   .global-header--inner {
@@ -14,7 +15,7 @@
   }
 
   .global-header--link {
-    background: url("../images/logotype-nhs-colour.png") no-repeat;
+    background: url("../images/logotype-nhs-colour__reverse.png") no-repeat;
     background-size: contain;
     display: block;
     height: 32px;
@@ -22,7 +23,7 @@
     width: 79px;
 
     @include device-pixel-ratio {
-      background-image: url("../images/logotype-nhs-colour@2x.png");
+      background-image: url("../images/logotype-nhs-colour__reverse@2x.png");
       background-size: 79px 32px;
     }
   }
