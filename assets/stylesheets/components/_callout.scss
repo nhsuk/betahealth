@@ -11,11 +11,8 @@
     @extend %site-width-container;
   }
 
-.callout__full-width {
-  background-color: $light-blue;
-  color: $white;
-  padding-left: 0;
-  padding-right: 0;
+.callout__muted {
+  background-color: $grey-3;
 }
 
 .callout__info {
@@ -58,7 +55,7 @@
     position: relative;
     top: -($baseline-grid-unit * 16);
 
-    &.callout__alert {
+    &.callout__severe {
       border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
       padding-top: 0;
 
