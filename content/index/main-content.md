@@ -7,6 +7,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 * [Fungal nail infection](/conditions/fungal-nail-infection)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
+* [Hernia](/conditions/hernia)
 * [Head lice](/conditions/head-lice)
 * [Shingles](/conditions/shingles)
 * [Warts](/conditions/warts)
