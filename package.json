@@ -73,7 +73,7 @@
     "request-ip": "~1.2.2",
     "require-dir": "~0.3.0",
     "serve-favicon": "~2.3.0",
-    "webpack": "~1.13.2",
+    "webpack": "1.13.2",
     "winston": "~2.2.0"
   },
   "devDependencies": {
