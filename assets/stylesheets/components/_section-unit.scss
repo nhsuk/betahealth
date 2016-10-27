@@ -1,9 +1,23 @@
 .section-unit {
   @include element-padding(bottom);
-  border-bottom: 1px solid tint($nhs-blue, 80%);
+  position: relative;
+
+  &:after {
+    background-color: $grey-3;
+    bottom: -($baseline-grid-unit / 2);
+    content: "";
+    display: block;
+    height: $baseline-grid-unit;
+    left: 0;
+    position: absolute;
+    width: 130px;
+  }
 
   &:last-child {
-    border: 0;
     padding-bottom: 0;
+
+    &:after {
+      display: none;
+    }
   }
 }
