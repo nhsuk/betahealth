@@ -42,19 +42,25 @@
 {% macro figure_list(list) %}
   <div class="page-section page-section__collapse-bottom">
     {% for figure in list %}
-      <figure class="card">
-        {{ image({
-          srcset: figure.srcset,
-          alt: figure.alt,
-          analyticsType: 'figure'
-        }) }}
-
-        <figcaption class="card--caption">
-          {{ markdown(figure.caption) }}
-        </figcaption>
-      </figure>
+      {{ figure_item(figure) }}
     {% endfor %}
   </div>
+{% endmacro %}
+
+{% macro figure_item(figure) %}
+  <figure class="card{{ ' card__full-width' if figure.fullWidth }}">
+    {{ image({
+      srcset: figure.srcset,
+      alt: figure.alt,
+      analyticsType: 'figure'
+    }) }}
+
+    {% if figure.caption %}
+      <figcaption class="card--caption">
+        {{ markdown(figure.caption) }}
+      </figcaption>
+    {% endif %}
+  </figure>
 {% endmacro %}
 
 {% macro section_list(content) %}
@@ -153,4 +159,18 @@
       {% endif %}
     </ul>
   </nav>
+{% endmacro %}
+
+{% macro panel(content) %}
+  <article class="panel">
+    <div class="panel--content">
+      {{ markdown(content.main) }}
+    </div>
+
+    {% if content.footer %}
+      <footer class="panel--footer">
+        {{ markdown(content.footer) }}
+      </footer>
+    {% endif %}
+  </article>
 {% endmacro %}

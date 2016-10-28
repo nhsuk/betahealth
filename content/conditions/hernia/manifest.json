@@ -1,0 +1,31 @@
+{
+  "layout": "content-sidebar-last",
+  "title": "Hernia",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "",
+  "localHeader": [
+    {
+      "type": "markdown",
+      "content": "A hernia looks like a lump under the skin. It can be different sizes."
+    }
+  ],
+  "main": [
+    {
+      "type": "panel",
+      "content": {
+        "main": "!file=panel-content.md",
+        "footer": "!file=panel-footer-content.md"
+      }
+    },
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "content": "!file=sidebar-content.md"
+    }
+  ]
+}
