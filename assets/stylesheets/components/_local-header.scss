@@ -3,15 +3,24 @@
   @include element-padding;
   @include element-spacing;
   background-color: $nhs-blue;
-  border-top: 1px solid tint($nhs-blue, 20%);
   padding-top: $baseline-grid-unit * 8;
 
   @include media(tablet) {
-    padding-top: $baseline-grid-unit * 12;
+    padding-top: $baseline-grid-unit * 8;
   }
 
   @include media(desktop) {
-    padding-top: $baseline-grid-unit * 16;
+    padding-top: $baseline-grid-unit * 12;
+  }
+
+  .grid-row & {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    @include ie-lte(8) {
+      width: auto;
+    }
   }
 
   // the lobotomized owl
@@ -21,10 +30,30 @@
   }
 }
 
+  .local-header--return {
+    @extend %link__reverse-polarity;
+    background-color: $nhs-blue;
+    border: $baseline-grid-unit / 2 solid tint($nhs-blue, 20);
+    display: inline-block;
+    margin-bottom: $baseline-grid-unit * 4;
+    padding: $default-spacing-unit / 2 $default-spacing-unit;
+    text-decoration: none;
+
+
+    &:hover {
+      border-color: tint($nhs-blue, 60);
+      color: $white;
+    }
+  }
+
   .local-header--title {
     @include bold-font(36);
     color: $white;
     margin: 0;
+
+    @include media(tablet) {
+      padding-top: $baseline-grid-unit * 4;
+    }
   }
 
   .local-header--intro {
