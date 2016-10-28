@@ -1,0 +1,24 @@
+{% extends '_layouts/content-simple.nunjucks' %}
+
+{% block local_header %}
+{% endblock %}
+
+{% block main_content %}
+  <div class="page-section">
+    <div class="grid-row">
+
+      <div class="column__one-third">
+        {% include '_includes/local-header.nunjucks' %}
+      </div>
+
+      <div class="column__two-thirds">
+        <div class="reading-width">
+          {% for component in main %}
+            {{ components[component.type](component.content) }}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

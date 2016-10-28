@@ -68,8 +68,10 @@
     <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
 
     {% for section in content.sections %}
-      <article class="section-unit">
-        <h3>{{ section.title }}</h3>
+      <article class="section-unit section-unit__divider">
+        {% if section.title %}
+          <h3>{{ section.title }}</h3>
+        {% endif %}
 
         {% for component in section.content %}
           {{ loadComponent(component.type)(component.content) }}
@@ -77,6 +79,29 @@
       </article>
     {% endfor %}
   </section>
+{% endmacro %}
+
+{% macro article_list(content) %}
+  {% for article in content.articles %}
+    <article class="section-unit">
+      {% if article.label %}
+        <h3 class="section-unit--prefix">{{ article.label }}</h3>
+      {% endif %}
+
+      {% if article.title %}
+        <h2 id="{{ article.title | kebabcase }}">
+          {% if content.numbered %}
+            {{ loop.index }}.
+          {% endif %}
+          {{ article.title }}
+        </h2>
+      {% endif %}
+
+      {% for component in article.content %}
+        {{ loadComponent(component.type)(component.content) }}
+      {% endfor %}
+    </article>
+  {% endfor %}
 {% endmacro %}
 
 {% macro section_nav(components) %}
@@ -93,6 +118,24 @@
       {% endif %}
     {% endfor %}
   </ul>
+{% endmacro %}
+
+{% macro article_nav(components) %}
+  <ol class="step-list">
+    {% for component in components %}
+      {% if component.type == 'article_list' %}
+        {% for article in component.content.articles %}
+          <li class="step-list--item{{ ' is-last' if loop.last }}">
+            <a href="#{{ article.title | kebabcase }}"
+               class="link__reverse-polarity"
+               data-analytics="anchor">
+              {{ article.title }}
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ol>
 {% endmacro %}
 
 {% macro numbered_navigation(pages, current_slug) %}
