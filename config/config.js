@@ -36,4 +36,5 @@ module.exports = {
     baseUrl: process.env.FEEDBACK_API_BASEURL,
     apiKey: process.env.FEEDBACK_API_KEY,
   },
+  appInsightsKey: process.env.APPINSIGHTS_INSTRUMENTATIONKEY || 'muted',
 };
