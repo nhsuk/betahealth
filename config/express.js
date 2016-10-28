@@ -18,6 +18,7 @@ const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
 const changeCase = require('change-case');
+const slashify = require('slashify');
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
@@ -236,6 +237,7 @@ module.exports = (app, config) => {
   }
 
   // router
+  app.use(slashify());
   app.use('/', router);
 
   app.use((req, res, next) => {
