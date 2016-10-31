@@ -1,0 +1,12 @@
+{
+  "layout": "content-simple",
+  "title": "Hernia operation",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "main": [
+    {
+      "type": "content_block",
+      "content": "!file=main-content.md"
+    }
+  ]
+}

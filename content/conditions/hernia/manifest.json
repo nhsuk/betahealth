@@ -1,0 +1,88 @@
+{
+  "layout": "content-sidebar-last",
+  "title": "Hernia",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "localHeader": [
+    {
+      "type": "markdown",
+      "content": "A hernia looks like a lump under the skin. It can be different sizes."
+    }
+  ],
+  "main": [
+    {
+      "type": "panel",
+      "content": {
+        "main": "!file=panel-content.md",
+        "footer": "!file=panel-footer-content.md"
+      }
+    },
+    {
+      "type": "markdown",
+      "content": "!file=image-set.md"
+    },
+    {
+      "type": "image_set",
+      "content": [
+        {
+          "name": "Groin",
+          "image": {
+            "srcset": [
+              "assets/images/hernia/groin_400.jpg 400w",
+              "assets/images/hernia/groin_640.jpg 640w",
+              "assets/images/hernia/groin_800.jpg 800w",
+              "assets/images/hernia/groin_1280.jpg 1280w"
+            ],
+            "alt": ""
+          }
+        },
+        {
+          "name": "Upper thigh",
+          "image": {
+            "srcset": [
+              "assets/images/hernia/upper-thigh_400.jpg 400w",
+              "assets/images/hernia/upper-thigh_640.jpg 640w",
+              "assets/images/hernia/upper-thigh_800.jpg 800w",
+              "assets/images/hernia/upper-thigh_1280.jpg 1280w"
+            ],
+            "alt": ""
+          }
+        },
+        {
+          "name": "Tummy area",
+          "image": {
+            "srcset": [
+              "assets/images/hernia/tummy-area_400.jpg 400w",
+              "assets/images/hernia/tummy-area_640.jpg 640w",
+              "assets/images/hernia/tummy-area_800.jpg 800w",
+              "assets/images/hernia/tummy-area_1280.jpg 1280w"
+            ],
+            "alt": ""
+          }
+        },
+        {
+          "name": "Testicle",
+          "image": {
+            "srcset": [
+              "assets/images/hernia/testicle_400.jpg 400w",
+              "assets/images/hernia/testicle_640.jpg 640w",
+              "assets/images/hernia/testicle_800.jpg 800w",
+              "assets/images/hernia/testicle_1280.jpg 1280w"
+            ],
+            "alt": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "content": "!file=sidebar-content.md"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 .global-footer {
-  background-color: $grey-3;
-  border-top: 1px solid tint($grey-3, 80%);
-  color: $grey-1;
+  background-color: $nhs-blue;
+  border-top: $baseline-grid-unit solid shade($nhs-blue, 20);
+  color: $white;
 
   * {
     @include core-font(16);
@@ -12,15 +12,37 @@
   }
 
   a {
-    color: $grey-1;
-
-    &:hover {
-      color: $black;
-    }
+    @extend %link__reverse-polarity;
   }
 }
 
   .global-footer--inner {
     @extend %site-width-container;
-    padding: 0 0 ($baseline-grid-unit * 16);
+    padding-bottom: $baseline-grid-unit * 24;
+    padding-top: $baseline-grid-unit * 8;
+
+    @include media(desktop) {
+      padding-bottom: $baseline-grid-unit * 32;
+      padding-top: $baseline-grid-unit * 12;
+    }
+
+    &:before {
+      background: url("../images/logotype-nhs-colour.png") no-repeat;
+      background-size: contain;
+      content: "";
+      display: block;
+      height: 32px;
+      margin-bottom: $baseline-grid-unit * 8;
+      text-indent: -999em;
+      width: 79px;
+
+      @include media(desktop) {
+        margin-bottom: $baseline-grid-unit * 12;
+      }
+
+      @include device-pixel-ratio {
+        background-image: url("../images/logotype-nhs-colour@2x.png");
+        background-size: 79px 32px;
+      }
+    }
   }

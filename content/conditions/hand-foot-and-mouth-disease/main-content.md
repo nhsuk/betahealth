@@ -12,7 +12,7 @@ You can buy mouth ulcer gels, sprays, and mouthwashes to ease the
   blisters. Always check they are suitable for children and give the
   correct dose.
 
-!!! info
+!!! attention
 ## See a GP if
 
 * your child isn’t better after a week

@@ -1,0 +1,13 @@
+{
+  "layout": "content-sidebar-header",
+  "title": "Your pre-operative assessment appointment",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "returnPath": "/conditions/hernia/surgery-guide",
+  "main": [
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ]
+}

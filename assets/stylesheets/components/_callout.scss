@@ -11,14 +11,32 @@
     @extend %site-width-container;
   }
 
-.callout__full-width {
-  background-color: $light-blue;
-  color: $white;
-  padding-left: 0;
-  padding-right: 0;
+.callout__muted {
+  background-color: $grey-3;
+}
+
+.callout__info {
+  background-color: $grey-4;
+  border: solid $grey-2;
+  border-width: 0 0 0 $baseline-grid-unit;
+}
+
+.callout__attention {
+  border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
+}
+
+.callout__warning {
+  background-color: tint($yellow, 20);
+  border: solid shade($yellow, 20);
+  border-width: $baseline-grid-unit 0;
 }
 
 .callout__alert {
+  background-color: $red-10;
+  border-top: $baseline-grid-unit * 3 solid $red;
+}
+
+.callout__severe {
   background-color: $red;
   color: $white;
 
@@ -27,16 +45,13 @@
   }
 }
 
-.callout__info {
-  border: ($baseline-grid-unit * 3) solid tint($light-blue, 25%);
-}
-
-.callout__warning {
-  background-color: tint($yellow, 20%);
-}
-
 .callout__error {
   border: $baseline-grid-unit solid $red;
+}
+
+.callout__compact {
+  display: inline-block;
+  padding: $baseline-grid-unit * 4 $baseline-grid-unit * 6;
 }
 
 .callout__overlap {
@@ -45,7 +60,7 @@
     position: relative;
     top: -($baseline-grid-unit * 16);
 
-    &.callout__alert {
+    &.callout__severe {
       border-top: ($baseline-grid-unit * 8) solid rgba($red, .9);
       padding-top: 0;
 

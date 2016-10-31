@@ -42,19 +42,50 @@
 {% macro figure_list(list) %}
   <div class="page-section page-section__collapse-bottom">
     {% for figure in list %}
-      <figure class="card">
-        {{ image({
-          srcset: figure.srcset,
-          alt: figure.alt,
-          analyticsType: 'figure'
-        }) }}
-
-        <figcaption class="card--caption">
-          {{ markdown(figure.caption) }}
-        </figcaption>
-      </figure>
+      {{ figure_item(figure) }}
     {% endfor %}
   </div>
+{% endmacro %}
+
+{% macro figure_item(figure) %}
+  <figure class="card{{ ' card__full-width' if figure.fullWidth }}">
+    {{ image({
+      srcset: figure.srcset,
+      alt: figure.alt,
+      analyticsType: 'figure'
+    }) }}
+
+    {% if figure.caption %}
+      <figcaption class="card--caption">
+        {{ markdown(figure.caption) }}
+      </figcaption>
+    {% endif %}
+  </figure>
+{% endmacro %}
+
+{% macro image_set(list) %}
+  <section class="tabs js-tabs">
+
+    <div class="tabs--tab-container js-tabs-content">
+      {% for item in list %}
+        <div class="tabs--tab js-tab-pane" id="tab-{{ item.name | kebabcase }}">
+          <h3 class="tabs--tab-heading">{{ item.name }}</h3>
+          <div class="tabs--tab-content">
+            {{ image(item.image) }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <ul class="tabs--nav js-tabs-nav">
+      {% for item in list %}
+        <li class="tabs--nav-item">
+          <a href="#tab-{{ item.name | kebabcase }}" class="tabs--nav-link">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
 {% endmacro %}
 
 {% macro section_list(content) %}
@@ -62,8 +93,10 @@
     <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
 
     {% for section in content.sections %}
-      <article class="section-unit">
-        <h3>{{ section.title }}</h3>
+      <article class="section-unit section-unit__divider">
+        {% if section.title %}
+          <h3>{{ section.title }}</h3>
+        {% endif %}
 
         {% for component in section.content %}
           {{ loadComponent(component.type)(component.content) }}
@@ -71,6 +104,29 @@
       </article>
     {% endfor %}
   </section>
+{% endmacro %}
+
+{% macro article_list(content) %}
+  {% for article in content.articles %}
+    <article class="section-unit">
+      {% if article.label %}
+        <h3 class="section-unit--prefix">{{ article.label }}</h3>
+      {% endif %}
+
+      {% if article.title %}
+        <h2 id="{{ article.title | kebabcase }}">
+          {% if content.numbered %}
+            {{ loop.index }}.
+          {% endif %}
+          {{ article.title }}
+        </h2>
+      {% endif %}
+
+      {% for component in article.content %}
+        {{ loadComponent(component.type)(component.content) }}
+      {% endfor %}
+    </article>
+  {% endfor %}
 {% endmacro %}
 
 {% macro section_nav(components) %}
@@ -87,6 +143,24 @@
       {% endif %}
     {% endfor %}
   </ul>
+{% endmacro %}
+
+{% macro article_nav(components) %}
+  <ol class="step-list">
+    {% for component in components %}
+      {% if component.type == 'article_list' %}
+        {% for article in component.content.articles %}
+          <li class="step-list--item{{ ' is-last' if loop.last }}">
+            <a href="#{{ article.title | kebabcase }}"
+               class="link__reverse-polarity"
+               data-analytics="anchor">
+              {{ article.title }}
+            </a>
+          </li>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ol>
 {% endmacro %}
 
 {% macro numbered_navigation(pages, current_slug) %}
@@ -153,4 +227,18 @@
       {% endif %}
     </ul>
   </nav>
+{% endmacro %}
+
+{% macro panel(content) %}
+  <article class="panel">
+    <div class="panel--content">
+      {{ markdown(content.main) }}
+    </div>
+
+    {% if content.footer %}
+      <footer class="panel--footer">
+        {{ markdown(content.footer) }}
+      </footer>
+    {% endif %}
+  </article>
 {% endmacro %}

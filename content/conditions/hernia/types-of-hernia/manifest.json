@@ -1,0 +1,32 @@
+{
+  "layout": "content-simple",
+  "title": "What is a hernia?",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "main": [
+    {
+      "type": "content_block",
+      "content": "!file=main-content-1.md"
+    },
+    {
+      "type": "figure_list",
+      "content": [
+        {
+          "fullWidth": true,
+          "srcset": [
+            "assets/images/hernia/diagram_400.jpg 400w",
+            "assets/images/hernia/diagram_640.jpg 640w",
+            "assets/images/hernia/diagram_800.jpg 800w",
+            "assets/images/hernia/diagram_1280.jpg 1280w"
+          ],
+          "caption": "A hernia happens when your bowel or fatty tissue pokes through a gap in the muscle.",
+          "alt": "Diagram of hernia poking through gap in muscle"
+        }
+      ]
+    },
+    {
+      "type": "content_block",
+      "content": "!file=main-content-2.md"
+    }
+  ]
+}

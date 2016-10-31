@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "JSON2": "~0.1.0",
+    "applicationinsights": "^0.16.0",
     "babel-core": "~6.17.0",
     "babel-loader": "~6.2.5",
     "babel-preset-es2015": "~6.16.0",
@@ -73,8 +74,10 @@
     "request-ip": "~1.2.2",
     "require-dir": "~0.3.0",
     "serve-favicon": "~2.3.0",
-    "webpack": "~1.13.2",
-    "winston": "~2.2.0"
+    "slashify": "^1.0.0",
+    "webpack": "1.13.2",
+    "winston": "~2.2.0",
+    "winston-azure-application-insights": "nhsuk/winston-azure-application-insights#843afd2b8a631eae3537cfee0e146b761ba0a939"
   },
   "devDependencies": {
     "chai": "~3.5.0",

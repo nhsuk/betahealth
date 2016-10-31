@@ -4,6 +4,7 @@ const paths = require('./gulp/paths');
 module.exports = {
   entry: {
     nhsuk: [
+      './assets/javascripts/vendor/polyfills/details.polyfill.js',
       './assets/javascripts/nhsuk.js',
     ],
     webtrends: [

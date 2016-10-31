@@ -1,4 +1,4 @@
-!!! alert
+!!! severe
 ## Call 999 or go to A&E if your child has a rash and they:
 
 * have a stiff neck

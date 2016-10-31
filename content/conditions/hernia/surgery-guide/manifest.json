@@ -1,0 +1,88 @@
+{
+  "layout": "content-sidebar-header",
+  "title": "A guide to hernia surgery",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "localHeader": [
+    {
+      "type": "article_nav"
+    }
+  ],
+  "main": [
+    {
+      "type": "article_list",
+      "content": {
+        "numbered": true,
+        "articles": [
+          {
+            "title": "Booking a hospital appointment with the surgeon",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-1.md"
+              }
+            ]
+          },
+          {
+            "title": "Seeing a surgeon",
+            "label": "Approx 6 weeks",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-2.md"
+              }
+            ]
+          },
+          {
+            "title": "Confirming your surgery date",
+            "label": "Approx 2 weeks",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-3.md"
+              }
+            ]
+          },
+          {
+            "title": "Checking you’re fit for surgery",
+            "label": "Approx 3 weeks",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-4.md"
+              }
+            ]
+          },
+          {
+            "title": "Getting ready for surgery",
+            "label": "Approx 2 weeks",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-5.md"
+              }
+            ]
+          },
+          {
+            "title": "Day of your surgery",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-6.md"
+              }
+            ]
+          },
+          {
+            "title": "Going home and recovery",
+            "content": [
+              {
+                "type": "markdown",
+                "content": "!file=section-7.md"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

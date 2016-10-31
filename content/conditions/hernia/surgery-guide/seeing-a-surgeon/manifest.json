@@ -1,0 +1,19 @@
+{
+  "layout": "content-sidebar-header",
+  "title": "Questions to ask your surgeon",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
+  "returnPath": "/conditions/hernia/surgery-guide",
+  "localHeader": [
+    {
+      "type": "markdown",
+      "content": "Your first appointment will be with a surgeon. You can bring someone with you."
+    }
+  ],
+  "main": [
+    {
+      "type": "markdown",
+      "content": "!file=main-content.md"
+    }
+  ]
+}

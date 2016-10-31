@@ -3,28 +3,9 @@
 
 {% block content %}
   <article role="article">
-    <div class="local-header">
-      <div class="local-header--inner">
-        <h1 class="local-header--title">{{ guide.title if guide else title }}</h1>
-        {% block local_header %}
-          {% if localHeader or guide %}
-            <div class="local-header--intro">
-              {% if guide %}
-                {{ components.numbered_navigation(guide.pages, slug) }}
-              {% endif %}
-
-              {% for component in localHeader %}
-                {% if component.type == 'section_nav' %}
-                  {{ components[component.type](main) }}
-                {% else %}
-                  {{ components[component.type](component.content) }}
-                {% endif %}
-              {% endfor %}
-            </div>
-          {% endif %}
-        {% endblock %}
-      </div>
-    </div>
+    {% block local_header %}
+      {% include '_includes/local-header.nunjucks' %}
+    {% endblock %}
 
     {% block main_content_before %}
       {% for component in before %}
