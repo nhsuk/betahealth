@@ -7,6 +7,6 @@ On the morning of your surgery, you should:
 * remove all jewellery, including any piercings
 
 !!! warning
-On the morning of the surgery you must not eat after midnight, and not drink
+On the morning of your surgery you must not eat after midnight, and not drink
 after 6am.
 !!!

@@ -1,7 +1,7 @@
 !!! alert
 ## See a GP now or go to A&E
 
-If you have a hernia and
+If you have a hernia and:
 
 * it feels hot
 * it's hard and tender

@@ -1,13 +1,9 @@
 {
   "layout": "content-sidebar-header",
-  "title": "Hernia surgery",
+  "title": "A guide to hernia surgery",
   "nonEmergencyCallout": false,
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "localHeader": [
-    {
-      "type": "markdown",
-      "content": "A hernia looks like a lump under the skin. It can be different sizes."
-    },
     {
       "type": "article_nav"
     }
@@ -48,7 +44,7 @@
             ]
           },
           {
-            "title": "Checking your are fit for surgery",
+            "title": "Checking you’re fit for surgery",
             "label": "Approx 3 weeks",
             "content": [
               {

@@ -1,14 +1,14 @@
 ## Going home
 
 You can go home when you feel well enough, and can eat and drink. You must be
-able to walk (if you are not in a wheelchair), and pee.
+able to walk (if you’re not in a wheelchair) and pee.
 
-Your surgeon will check on your before you go home.
+Your surgeon will check on you before you go home.
 
 You’ll get a box of medication including painkillers to take home.
 
-You’ll get a copy of your discharge letter explaining what has happened, which
-will also be sent to your GP and a sick note if you need one.
+You’ll get a copy of your discharge letter explaining what has happened (which
+will also be sent to your GP) and a sick note if you need one.
 
 ## Help with your recovery
 

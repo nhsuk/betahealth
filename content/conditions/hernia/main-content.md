@@ -1,4 +1,4 @@
-[Different types of hernia and causes](/conditions/hernia/types-of-hernia)
+[Different types of hernia and causes.](/conditions/hernia/types-of-hernia)
 
 ## Your hernia treatment
 
@@ -11,9 +11,11 @@ although this could take months or even years.
 
 ### Hernia surgery
 
-You should be able to have an operation for hernia within 18 weeks of your GP
+You should be able to have a hernia operation within 18 weeks of your GP
 appointment.
 
 You’ll need to have some appointments before you have your hernia operation.
 
-[<span class="link--document-type">A guide to</span> Hernia surgery](/conditions/hernia/surgery-guide){.link__document}
+!!! info_compact
+[A guide to hernia surgery](/conditions/hernia/surgery-guide)
+!!!

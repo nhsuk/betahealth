@@ -2,7 +2,7 @@
   "layout": "content-sidebar-header",
   "title": "Questions to ask your surgeon",
   "nonEmergencyCallout": false,
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "returnPath": "/conditions/hernia/surgery-guide",
   "localHeader": [
     {

@@ -2,7 +2,7 @@
   "layout": "content-simple",
   "title": "Hernia operation",
   "nonEmergencyCallout": false,
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "main": [
     {
       "type": "content_block",

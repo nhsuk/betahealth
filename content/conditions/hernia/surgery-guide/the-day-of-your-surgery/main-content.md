@@ -27,7 +27,7 @@ The operation will take 90 minutes.
 
 ## After your Operation
 
-When your anaesthetic wears off, you will be looked after by a recovery nurse
+When your anaesthetic wears off, you’ll be looked after by a recovery nurse
 who will closely monitor you.
 
 You may feel drowsy, sick, and have some pain --- ask the nurse to give you
