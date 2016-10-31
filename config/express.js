@@ -39,6 +39,15 @@ md.use(markdownItContainer, 'info', {
     return '</section>\n';
   },
 });
+md.use(markdownItContainer, 'info_compact', {
+  marker: '!',
+  render: (tokens, idx) => {
+    if (tokens[idx].nesting === 1) {
+      return '<section class="callout callout__info callout__compact">\n';
+    }
+    return '</section>\n';
+  },
+});
 md.use(markdownItContainer, 'attention', {
   marker: '!',
   render: (tokens, idx) => {

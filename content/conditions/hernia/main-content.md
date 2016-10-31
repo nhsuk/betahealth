@@ -16,4 +16,6 @@ appointment.
 
 You’ll need to have some appointments before you have your hernia operation.
 
-[<span class="link--document-type">A guide to</span> Hernia surgery](/conditions/hernia/surgery-guide){.link__document}
+!!! info_compact
+[A guide to hernia surgery](/conditions/hernia/surgery-guide)
+!!!
