@@ -2,7 +2,7 @@
   "layout": "content-sidebar-last",
   "title": "Hernia",
   "nonEmergencyCallout": false,
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "localHeader": [
     {
       "type": "markdown",

@@ -2,7 +2,7 @@
   "layout": "content-sidebar-header",
   "title": "A guide to hernia surgery",
   "nonEmergencyCallout": false,
-  "choicesOrigin": "",
+  "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "localHeader": [
     {
       "type": "article_nav"
