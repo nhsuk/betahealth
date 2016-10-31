@@ -4,4 +4,4 @@ decide if you want to go ahead with the operation.
 
 [About your hernia operation](/conditions/hernia/operation)
 
-[Questions to ask your surgeon](/conditions/hernia/surgery-guide/seeing-the-surgeon)
+[Questions to ask the surgeon](/conditions/hernia/surgery-guide/seeing-a-surgeon)

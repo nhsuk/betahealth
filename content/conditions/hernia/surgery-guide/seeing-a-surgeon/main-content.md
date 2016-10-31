@@ -1,7 +1,7 @@
 The surgeon will talk you through the treatments that could help you, and you
 can decide the best treatment together. You might decide it’s not surgery.
 
-## Questions you might want to ask:
+## Questions you might want to ask
 
 * What are the different types of treatment, including non-surgical options?
 * What will happen if I don’t have surgery?
@@ -9,7 +9,7 @@ can decide the best treatment together. You might decide it’s not surgery.
 * What type of anaesthetic will I need?
 * What’s the difference between keyhole and open surgery?
 
-## Other practical questions you may want to ask:
+## Other practical questions you may want to ask
 
 * How long is the waiting list for this operation?
 * How long will I stay in hospital?
@@ -19,9 +19,9 @@ can decide the best treatment together. You might decide it’s not surgery.
 
 You can ask any question you want. This is your time with the surgeon.
 
-[The Royal College of Surgeons of England (RCS) website](https://www.rcseng.ac.uk/patient-care/having-surgery/)
-have answers to more questions about surgery.
+[Answers to common surgery questions](https://www.rcseng.ac.uk/patient-care/having-surgery/)
+from The Royal College of Surgeons of England (RCS).
 
 Your surgeon may be able to book you the date for your operation.
 
-This appointment usually lasts 15 to 20 mins.
+This appointment usually lasts 15 to 20 minutes.

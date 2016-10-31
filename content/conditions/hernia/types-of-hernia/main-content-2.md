@@ -4,7 +4,7 @@ Different types of hernia develop in different parts of the body.
 
 ### Hernias in the groin
 
-An Inguinal hernia shows in the upper thigh, groin or a swelling around the
+An inguinal hernia shows in the upper thigh, groin or as a swelling around the
 scrotum. The bowel pushes into an area called the inguinal canal. It’s the most
 common type of hernia and mostly affects men.
 
@@ -15,16 +15,16 @@ mostly affect women.
 ### Hernias in the tummy area
 
 An [umbilical hernia](http://www.nhs.uk/Conditions/UmbilicalHernia/Pages/Whatisitpage.aspx)
-shows a as a lump near the belly button. It’s common in babies but can
+shows as a lump near the belly button. It’s common in babies but can
 affect adults.
 
 An epigastric hernia usually appears between your belly button and your
 breastbone.
 
 A spigelian hernia usually appears on the side of your tummy area (below the
-belly button)
+belly button).
 
-### Hernias in chest
+### Hernias in the chest
 
 A [hiatus hernia](http://www.nhs.uk/Conditions/Hernia-hiatus/Pages/Introduction.aspx)
 happens when part of the stomach pushes into your chest. It may not cause a
@@ -34,7 +34,7 @@ lump, but it can cause heartburn and a funny taste in your mouth.
 
 ## Hernia complications
 
-Hernias can sometimes cause problems.
+Hernias can sometimes cause problems, which should be treated immediately.
 
 If the bowel gets stuck in the hernia, it can become blocked (obstruction).
 
@@ -44,7 +44,7 @@ its blood supply (strangulation).
 !!! alert
 ## See a GP now or go to A&E
 
-If you have a hernia and
+If you have a hernia and:
 
 * it's painful
 * it feels hot
