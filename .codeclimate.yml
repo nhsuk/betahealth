@@ -11,3 +11,13 @@ engines:
       - javascript
   nodesecurity:
     enabled: true
+ratings:
+  paths:
+  - "app/**"
+  - "config/**"
+  - "lib/**"
+  - "app.js"
+exclude_paths:
+- "**/vendor/"
+- "test/"
+- "gulp/"
