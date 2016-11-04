@@ -34,7 +34,7 @@ md.use(markdownItContainer, 'info', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__info">\n';
+      return '<section class="callout callout--info">\n';
     }
     return '</section>\n';
   },
@@ -43,7 +43,7 @@ md.use(markdownItContainer, 'info_compact', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__info callout__compact">\n';
+      return '<section class="callout callout--info callout--compact">\n';
     }
     return '</section>\n';
   },
@@ -52,7 +52,7 @@ md.use(markdownItContainer, 'attention', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__attention">\n';
+      return '<section class="callout callout--attention">\n';
     }
     return '</section>\n';
   },
@@ -61,7 +61,7 @@ md.use(markdownItContainer, 'warning', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__warning">\n';
+      return '<section class="callout callout--warning">\n';
     }
     return '</section>\n';
   },
@@ -70,7 +70,7 @@ md.use(markdownItContainer, 'alert', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__alert">\n';
+      return '<section class="callout callout--alert">\n';
     }
     return '</section>\n';
   },
@@ -79,7 +79,7 @@ md.use(markdownItContainer, 'severe', {
   marker: '!',
   render: (tokens, idx) => {
     if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout__severe">\n';
+      return '<section class="callout callout--severe">\n';
     }
     return '</section>\n';
   },
@@ -93,7 +93,7 @@ md.use(markdownItContainer, 'reveal', {
     const m = tokens[idx].info.trim().match(/^reveal\s+(.*)$/);
 
     if (tokens[idx].nesting === 1) {
-      return `<details>\n<summary><span class="details--summary">${md.utils.escapeHtml(m[1])}</span></summary>\n<div>\n`;
+      return `<details>\n<summary data-analytics="summary"><span class="details__summary">${md.utils.escapeHtml(m[1])}</span></summary>\n<div>\n`;
     }
     return '</div>\n</details>\n';
   },
@@ -109,11 +109,11 @@ md.use(markdownItContainer, 'inline_reveal', {
     if (tokens[idx].nesting === 1) {
       const summary = md.utils.escapeHtml(m[1]);
       const cta = summary.slice(summary.indexOf('['), summary.indexOf(']') + 1);
-      const ctaHtml = cta.replace('[', '<span class="details--cta">').replace(']', '</span>');
+      const ctaHtml = cta.replace('[', '<span class="details__cta">').replace(']', '</span>');
 
-      return `<details class="details__inline">
-        <summary>
-          <span class="details--summary">${summary.replace(cta, ctaHtml)}</span>
+      return `<details class="details--inline">
+        <summary data-analytics="summary">
+          <span class="details__summary">${summary.replace(cta, ctaHtml)}</span>
         </summary>
         <div>`;
     }
