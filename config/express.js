@@ -1,4 +1,6 @@
+const path = require('path');
 const express = require('express');
+const favicon = require('serve-favicon');
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -174,6 +176,7 @@ module.exports = (app, config) => {
   app.use(compress());
   app.use(methodOverride());
 
+  app.use(favicon(path.join(__dirname, '..', 'assets', 'images', 'favicon.ico')));
   app.use(express.static(`${config.root}/public`));
   if (config.env !== 'production') {
     app.use(express.static(`${config.root}/.tmp`));
