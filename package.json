@@ -13,7 +13,8 @@
     "test:acceptance-headless": "LOG_LEVEL=info wdio test/acceptance/wdio.headless.conf.js",
     "test:acceptance-cloud": "LOG_LEVEL=info wdio test/acceptance/wdio.cloud.conf.js",
     "test:acceptance-ci": "bash ./bin/run-acceptance-tests.sh",
-    "coverage": "npm_config_coverage=true npm run test:unit"
+    "coverage": "npm_config_coverage=true npm run test:unit",
+    "check-coverage": "istanbul check-coverage --config .istanbul.yml"
   },
   "engines": {
     "node": "~6.9.1",
