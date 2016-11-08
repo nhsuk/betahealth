@@ -40,10 +40,9 @@ describe('guide page navigation', () => {
   it('should have both next and previous navigation item on middle page', () => {
     GuidePage.nextLink.click();
 
-    browser.pause(500);
-    GuidePage.pagination.waitForExist(5000);
-    GuidePage.nextLink.isExisting().should.be.true;
+    GuidePage.prevLink.waitForExist();
     GuidePage.prevLink.isExisting().should.be.true;
+    GuidePage.nextLink.isExisting().should.be.true;
   });
 
   it('should only have a previous navigation item on last page', () => {
@@ -53,9 +52,8 @@ describe('guide page navigation', () => {
 
     browser.elementIdClick(lastLink.ELEMENT);
 
-    browser.pause(500);
-    GuidePage.pagination.waitForExist(5000);
-    GuidePage.nextLink.isExisting().should.be.false;
+    GuidePage.prevLink.waitForExist();
     GuidePage.prevLink.isExisting().should.be.true;
+    GuidePage.nextLink.isExisting().should.be.false;
   });
 });

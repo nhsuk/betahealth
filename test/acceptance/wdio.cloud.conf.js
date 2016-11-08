@@ -6,6 +6,8 @@ const wdioConfig = require('./wdio.conf.js').config;
 const project = 'nhsuk';
 const build = `nhsuk [${config.travis.jobNum}]`;
 const maxInstances = 1;
+const seleniumVersion = '3.0.1';
+const safariDriver = '2.48';
 
 exports.config = (function headlessConfig(globalConfig) {
   globalConfig.user = config.browserstack.user;
@@ -23,6 +25,8 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
+    'browserstack.safari.driver': safariDriver,
   }, {
     browserName: 'chrome',
     os: 'WINDOWS',
@@ -30,6 +34,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'firefox',
     os: 'WINDOWS',
@@ -37,6 +42,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'edge',
     os: 'Windows',
@@ -44,6 +50,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'ie',
     version: '9',
@@ -52,6 +59,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'ie',
     version: '8',
@@ -60,6 +68,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'iPhone',
     platform: 'MAC',
@@ -67,6 +76,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }, {
     browserName: 'android',
     platform: 'ANDROID',
@@ -74,6 +84,7 @@ exports.config = (function headlessConfig(globalConfig) {
     project,
     build,
     maxInstances,
+    'browserstack.selenium_version': seleniumVersion,
   }];
 
   globalConfig.onPrepare = globalConfig.onComplete = globalConfig.afterTest = () => {
