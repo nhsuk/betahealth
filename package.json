@@ -14,7 +14,8 @@
     "test:acceptance-cloud": "LOG_LEVEL=info wdio test/acceptance/wdio.cloud.conf.js",
     "test:acceptance-ci": "bash ./bin/run-acceptance-tests.sh",
     "coverage": "npm_config_coverage=true npm run test:unit",
-    "check-coverage": "istanbul check-coverage --config .istanbul.yml"
+    "coverage:send": "codeclimate-test-reporter < ./coverage/lcov.info",
+    "coverage:check": "istanbul check-coverage --config .istanbul.yml"
   },
   "engines": {
     "node": "~6.9.1",
@@ -85,6 +86,7 @@
     "chai": "~3.5.0",
     "chai-as-promised": "~5.3.0",
     "chai-string": "~1.2.0",
+    "codeclimate-test-reporter": "^0.4.0",
     "istanbul": "~0.4.5",
     "mkdirp": "~0.5.1",
     "mocha": "~3.1.2",
