@@ -22,6 +22,18 @@ function startSelenium() {
 
   return new Promise((resolve, reject) => {
     request(statusUrl, (error) => {
+      const version = '3.0.1';
+      const drivers = {
+        chrome: {
+          version: '2.25',
+        },
+        firefox: {
+          version: '0.11.1',
+        },
+        ie: {
+          version: '3.0.1',
+        },
+      };
       let bar;
 
       if (!error) {
@@ -30,15 +42,8 @@ function startSelenium() {
         resolve();
       } else {
         selenium.install({
-          version: '2.53.1',
-          drivers: {
-            chrome: {
-              version: '2.24',
-            },
-            firefox: {
-              version: '0.10.0',
-            },
-          },
+          version,
+          drivers,
           progressCb: (total, progress, chunk) => {
             if (!bar) {
               logger.info('Installing selenium and drivers');
@@ -58,7 +63,10 @@ function startSelenium() {
           }
 
           logger.info('Starting selenium');
-          selenium.start((startError, child) => {
+          selenium.start({
+            version,
+            drivers,
+          }, (startError, child) => {
             if (startError) {
               logger.error(startError);
               reject(startError);
@@ -144,7 +152,7 @@ const wdioConfig = {
   baseUrl: config.webdriver.baseUrl,
   //
   // Default timeout for all waitFor* commands.
-  waitforTimeout: 150000,
+  waitforTimeout: 20000,
   //
   // Default timeout in milliseconds for request
   // if Selenium Grid doesn't send response
