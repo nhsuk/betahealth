@@ -18,7 +18,7 @@
     "coverage:check": "istanbul check-coverage --config .istanbul.yml"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.0.0 <7.0.0"
   },
   "dependencies": {
     "JSON2": "~0.1.0",
