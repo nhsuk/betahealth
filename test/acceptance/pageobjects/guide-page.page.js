@@ -16,32 +16,27 @@ const guidePage = Object.create(page, {
   },
   navigation: {
     get: () => {
-      return browser.element('.local-header nav.link-list--row');
+      return browser.element('.local-header nav.link-list__row');
     },
   },
   navigationLinks: {
     get: () => {
-      return browser.elements('.local-header nav.link-list--row a');
+      return browser.elements('.local-header nav.link-list__row a');
     },
   },
   currentPage: {
     get: () => {
-      return browser.element('.local-header nav.link-list--row .is-active');
-    },
-  },
-  pagination: {
-    get: () => {
-      return browser.element('.article-pagination');
+      return browser.element('.local-header nav.link-list__row .is-active');
     },
   },
   nextLink: {
     get: () => {
-      return browser.element('.article-pagination').element('*=Next page');
+      return browser.element('.article-pagination__item a[rel="next"]');
     },
   },
   prevLink: {
     get: () => {
-      return browser.element('.article-pagination').element('*=Previous page');
+      return browser.element('.article-pagination__item a[rel="prev"]');
     },
   },
 
