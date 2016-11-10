@@ -1,5 +1,8 @@
+const parseurl = require('parseurl');
+
 function index(req, res) {
-  res.redirect('/');
+  const parsedUrl = parseurl.original(req);
+  res.redirect(`/${parsedUrl.search || ''}`);
 }
 
 module.exports = {
