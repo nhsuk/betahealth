@@ -11,8 +11,8 @@ describe('Redirect controller', () => {
   });
 
   describe('#index', () => {
-    describe('a route is called', () => {
-      it('redirect to the site root', (done) => {
+    describe('a route is called without a querystring', () => {
+      it('redirect to the site root without a querystring', (done) => {
         const res = {
           redirect: (path) => {
             path.should.equal('/');
@@ -20,7 +20,24 @@ describe('Redirect controller', () => {
           },
         };
 
-        redirectController.index({}, res);
+        redirectController.index({
+          originalUrl: '/something',
+        }, res);
+      });
+    });
+
+    describe('a route is called with a querystring', () => {
+      it('redirect to the site root including the querystring', (done) => {
+        const res = {
+          redirect: (path) => {
+            path.should.equal('/?foo=bar');
+            done();
+          },
+        };
+
+        redirectController.index({
+          originalUrl: '/something?foo=bar',
+        }, res);
       });
     });
   });
