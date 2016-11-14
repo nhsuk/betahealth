@@ -264,27 +264,32 @@ module.exports = (app, config) => {
 
   // eslint-disable-next-line no-unused-vars
   app.use((err, req, res, next) => {
-    let message = err.message;
+    const error = err;
+    let template = 'error';
+    let title = 'Something went wrong';
 
-    if (err.code === 'EBADCSRFTOKEN') {
-      message = 'Invalid form token';
+    if (error.code === 'EBADCSRFTOKEN') {
+      title = 'Invalid form token';
     }
 
-    if (err.message.indexOf('template not found') !== -1) {
-      // eslint-disable-next-line no-param-reassign
-      err.status = 404;
-      message = 'Page not found';
+    if (error.message.indexOf('template not found') !== -1) {
+      error.status = 404;
     }
 
-    if (err.status !== 404) {
-      logger.error(err);
+    if (error.status !== 404) {
+      logger.error(error);
     }
 
-    res.status(err.status || 500);
-    res.render('error', {
-      message,
-      error: config.env === 'development' ? err : {},
-      title: 'Error',
+    if (error.status === 404) {
+      template = 'page-not-found';
+      title = 'Page not found';
+    }
+
+    res.status(error.status || 500);
+    res.render(template, {
+      title,
+      message: error.message,
+      error: config.env === 'development' ? error : {},
     });
   });
 };
