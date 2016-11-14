@@ -137,6 +137,9 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('kebabcase', (str) => {
     return changeCase.paramCase(str);
   });
+  nunjucksEnv.addFilter('renderString', (str) => {
+    return nunjucksEnv.renderString(str);
+  });
   nunjucksEnv.addGlobal('isCurrent', (str, search) => {
     const current = str || '';
     return current.indexOf(search) !== -1;
@@ -144,6 +147,7 @@ module.exports = (app, config) => {
   nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
     return (name) ? this.ctx[name] : this.ctx;
   });
+  nunjucksEnv.addGlobal('findersBaseUrl', config.findersBaseUrl);
 
   markdown.register(nunjucksEnv, (body) => {
     return md.render(body);
