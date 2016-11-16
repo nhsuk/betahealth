@@ -87,9 +87,7 @@ exports.config = (function headlessConfig(globalConfig) {
     'browserstack.selenium_version': seleniumVersion,
   }];
 
-  globalConfig.onPrepare = globalConfig.onComplete = globalConfig.afterTest = () => {
-    return;
-  };
+  globalConfig.onPrepare = globalConfig.onComplete = globalConfig.afterTest = () => {};
 
   return globalConfig;
 }(wdioConfig));
