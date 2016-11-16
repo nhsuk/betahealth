@@ -27,8 +27,8 @@
 
 {% macro markdown(content) %}
 {% markdown %}
-  {{ content | safe }}
-{% endmarkdown%}
+  {{ content | renderString }}
+{% endmarkdown %}
 {% endmacro %}
 
 {% macro content_block(content) %}
