@@ -190,6 +190,7 @@ module.exports = (app, config) => {
     app.use(express.static(`${config.root}/build`));
 
     app.use(helmet.contentSecurityPolicy({
+      loose: true,
       directives: {
         defaultSrc: [
           '\'self\'',
