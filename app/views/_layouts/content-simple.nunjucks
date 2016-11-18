@@ -9,13 +9,13 @@
 
     {% block main_content_before %}
       {% for component in before %}
-        {{ components[component.type](component.content) }}
+        {{ components[component.type | snakecase](component.value) }}
       {% endfor %}
     {% endblock %}
 
     {% block main_content %}
       {% for component in main %}
-        {{ components[component.type](component.content) }}
+        {{ components[component.type | snakecase](component.value) }}
       {% endfor %}
     {% endblock %}
 

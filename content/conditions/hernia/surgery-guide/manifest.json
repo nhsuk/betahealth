@@ -11,73 +11,73 @@
   "main": [
     {
       "type": "article_list",
-      "content": {
+      "value": {
         "numbered": true,
         "articles": [
           {
             "title": "Booking a hospital appointment with the surgeon",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-1.md"
+                "value": "!file=section-1.md"
               }
             ]
           },
           {
             "title": "Seeing a surgeon",
             "label": "Approx 6 weeks",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-2.md"
+                "value": "!file=section-2.md"
               }
             ]
           },
           {
             "title": "Confirming your surgery date",
             "label": "Approx 2 weeks",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-3.md"
+                "value": "!file=section-3.md"
               }
             ]
           },
           {
             "title": "Checking you’re fit for surgery",
             "label": "Approx 3 weeks",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-4.md"
+                "value": "!file=section-4.md"
               }
             ]
           },
           {
             "title": "Getting ready for surgery",
             "label": "Approx 2 weeks",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-5.md"
+                "value": "!file=section-5.md"
               }
             ]
           },
           {
             "title": "Day of your surgery",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-6.md"
+                "value": "!file=section-6.md"
               }
             ]
           },
           {
             "title": "Going home and recovery",
-            "content": [
+            "value": [
               {
                 "type": "markdown",
-                "content": "!file=section-7.md"
+                "value": "!file=section-7.md"
               }
             ]
           }

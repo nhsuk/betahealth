@@ -6,11 +6,11 @@
   "before": [
     {
       "type": "content_block",
-      "content": "!file=main-content-before.md"
+      "value": "!file=main-content-before.md"
     },
     {
       "type": "figure_list",
-      "content": [
+      "value": [
         {
           "srcset": [
             "assets/images/shingles/shingles-rash-300.jpg 300w",
@@ -41,7 +41,7 @@
   "main": [
     {
       "type": "content_block",
-      "content": "!file=main-content.md"
+      "value": "!file=main-content.md"
     }
   ]
 }

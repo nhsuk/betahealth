@@ -7,13 +7,13 @@
   "localHeader": [
     {
       "type": "markdown",
-      "content": "Your first appointment will be with a surgeon. You can bring someone with you."
+      "value": "Your first appointment will be with a surgeon. You can bring someone with you."
     }
   ],
   "main": [
     {
       "type": "markdown",
-      "content": "!file=main-content.md"
+      "value": "!file=main-content.md"
     }
   ]
 }

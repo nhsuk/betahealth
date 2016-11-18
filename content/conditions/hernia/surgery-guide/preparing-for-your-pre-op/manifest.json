@@ -7,7 +7,7 @@
   "main": [
     {
       "type": "markdown",
-      "content": "!file=main-content.md"
+      "value": "!file=main-content.md"
     }
   ]
 }
