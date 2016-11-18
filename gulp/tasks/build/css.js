@@ -1,11 +1,10 @@
-const gulp = require('gulp');
 const sass = require('gulp-sass');
 const gulpif = require('gulp-if');
 const autoprefixer = require('gulp-autoprefixer');
 const preprocess = require('gulp-preprocess');
 const sourcemaps = require('gulp-sourcemaps');
-const config = require('../../config/config');
-const paths = require('../paths');
+const config = require('../../../config/config');
+const paths = require('../../paths');
 
 const isProduction = config.env === 'production';
 
@@ -14,7 +13,7 @@ const SASS_PATHS = [
   `${paths.nodeModules}`,
 ];
 
-gulp.task('css', () => {
+module.exports = (gulp) => {
   return gulp.src(`${paths.sourceStyles}/**/*.scss`)
     .pipe(gulpif(!isProduction, sourcemaps.init()))
     .pipe(sass({
@@ -31,4 +30,4 @@ gulp.task('css', () => {
     }))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(gulp.dest(`${paths.outputStyles}`));
-});
+};

@@ -1,10 +1,9 @@
 const gutil = require('gulp-util');
 const webpack = require('webpack');
-const browserSync = require('browser-sync').get('bs-proxy');
 
-const paths = require('../paths');
+const paths = require('../../paths');
 // eslint-disable-next-line import/no-dynamic-require
-const webpackConfig = require(paths.webpackConfig);
+const webpackConfig = require(paths.webpackProductionConfig);
 
 module.exports = (gulp, done) => {
   return webpack(webpackConfig).run((err, stats) => {
@@ -17,7 +16,6 @@ module.exports = (gulp, done) => {
       chunks: false,
     }));
 
-    browserSync.reload();
     return done();
   });
 };

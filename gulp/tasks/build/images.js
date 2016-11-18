@@ -1,9 +1,8 @@
-const gulp = require('gulp');
-const paths = require('../paths');
+const paths = require('../../paths');
 const imagemin = require('gulp-imagemin');
 
-gulp.task('images', () => {
+module.exports = (gulp) => {
   return gulp.src(`${paths.sourceImages}/**/*`)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.outputImages));
-});
+};

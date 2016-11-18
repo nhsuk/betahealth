@@ -1,15 +1,14 @@
-const gulp = require('gulp');
 const gulpIgnore = require('gulp-ignore');
 const print = require('gulp-print');
 const revAll = require('gulp-rev-all');
 
-const paths = require('../paths');
-const config = require('../../config/config');
+const paths = require('../../paths');
+const config = require('../../../config/config');
 
-gulp.task('rev', () => {
+module.exports = (gulp, done) => {
   // only revision if on production
   if (config.env !== 'production') {
-    return gulp;
+    return done();
   }
 
   return gulp.src(`${paths.output}/**/*.*`)
@@ -36,4 +35,4 @@ gulp.task('rev', () => {
     .pipe(gulp.dest(paths.build))
     .pipe(revAll.manifestFile())
     .pipe(gulp.dest(paths.build));
-});
+};
