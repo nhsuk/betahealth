@@ -7,9 +7,7 @@ exports.config = (function headlessConfig(globalConfig) {
     browserName: 'phantomjs',
   }];
 
-  globalConfig.afterTest = () => {
-    return;
-  };
+  globalConfig.afterTest = () => {};
 
   return globalConfig;
 }(config));

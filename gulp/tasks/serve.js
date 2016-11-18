@@ -2,26 +2,26 @@
 
 'use strict';
 
-const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 
 // Start a development Node server which will
 // autorestart when changes are made to server side code
-gulp.task('serve', (cb) => {
+module.exports = (gulp, done) => {
   let started = false;
 
-  return nodemon({
+  nodemon({
     script: 'app.js',
     ext: 'js nunjucks',
     ignore: [
       './assets',
       './tmp',
+      './build',
     ],
   }).on('start', () => {
     // to avoid nodemon being started multiple times
     if (!started) {
-      cb();
       started = true;
+      done();
     }
   });
-});
+};

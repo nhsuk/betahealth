@@ -1,8 +1,13 @@
 # Betahealth
 
+[![GitHub release](https://img.shields.io/github/release/nhsuk/betahealth.svg?style=flat-square)](https://github.com/nhsuk/betahealth)
 [![Build Status](https://img.shields.io/travis/nhsuk/betahealth.svg?branch=develop&style=flat-square)](https://travis-ci.org/nhsuk/betahealth)
+[![Gemnasium](https://img.shields.io/gemnasium/nhsuk/betahealth.svg?style=flat-square&label=gemnasium)](https://gemnasium.com/github.com/nhsuk/betahealth)
 [![dependencies](https://img.shields.io/david/nhsuk/betahealth.svg?style=flat-square&label=dependencies)](https://david-dm.org/nhsuk/betahealth)
 [![devDependencies](https://img.shields.io/david/dev/nhsuk/betahealth.svg?style=flat-square&label=devDependencies)](https://david-dm.org/nhsuk/betahealth?type=dev)
+[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/nhsuk/betahealth.svg?style=flat-square)](https://codeclimate.com/github/nhsuk/betahealth/coverage)
+[![Code Climate](https://img.shields.io/codeclimate/github//nhsuk/betahealth.svg?style=flat-square)](https://codeclimate.com/github/nhsuk/betahealth)
+[![Issue Count](https://img.shields.io/codeclimate/issues/github/nhsuk/betahealth.svg?style=flat-square)](https://codeclimate.com/github/nhsuk/betahealth)
 
 This application is a Node based application that runs on [beta.nhs.uk](http://beta.nhs.uk).
 
