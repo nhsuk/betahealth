@@ -5,7 +5,7 @@
   "choicesOrigin": "conditions/Diabetes-type2/Pages/Introduction.aspx",
   "main": [
     {
-      "type": "content_block",
+      "type": "markdown",
       "value": "!file=main-content.md"
     }
   ]

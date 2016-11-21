@@ -9,13 +9,29 @@
 
     {% block main_content_before %}
       {% for component in before %}
-        {{ components[component.type | snakecase](component.value) }}
+        {% if component.type == 'markdown' %}
+          <div class="page-section">
+            <div class="reading-width">
+              {{ components[component.type | snakecase](component.value) }}
+            </div>
+          </div>
+        {% else %}
+          {{ components[component.type | snakecase](component.value) }}
+        {% endif %}
       {% endfor %}
     {% endblock %}
 
     {% block main_content %}
       {% for component in main %}
-        {{ components[component.type | snakecase](component.value) }}
+        {% if component.type == 'markdown' %}
+          <div class="page-section">
+            <div class="reading-width">
+              {{ components[component.type | snakecase](component.value) }}
+            </div>
+          </div>
+        {% else %}
+          {{ components[component.type | snakecase](component.value) }}
+        {% endif %}
       {% endfor %}
     {% endblock %}
 

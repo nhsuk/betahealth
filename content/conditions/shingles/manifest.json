@@ -5,7 +5,7 @@
   "choicesOrigin": "conditions/shingles/pages/introduction.aspx",
   "before": [
     {
-      "type": "content_block",
+      "type": "markdown",
       "value": "!file=main-content-before.md"
     },
     {
@@ -40,7 +40,7 @@
   ],
   "main": [
     {
-      "type": "content_block",
+      "type": "markdown",
       "value": "!file=main-content.md"
     }
   ]

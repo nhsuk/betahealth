@@ -43,7 +43,7 @@
   ],
   "main": [
     {
-      "type": "content_block",
+      "type": "markdown",
       "value": "!file=main-content.md"
     }
   ]

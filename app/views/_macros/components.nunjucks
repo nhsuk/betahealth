@@ -31,14 +31,6 @@
 {% endmarkdown %}
 {% endmacro %}
 
-{% macro content_block(content) %}
-  <div class="page-section">
-    <div class="reading-width">
-      {{ markdown(content) }}
-    </div>
-  </div>
-{% endmacro %}
-
 {% macro figure_list(list) %}
   <div class="page-section page-section--collapse-bottom">
     {% for figure in list %}

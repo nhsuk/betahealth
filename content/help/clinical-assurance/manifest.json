@@ -3,7 +3,7 @@
   "title": "How we make sure NHS.UK Beta content is medically sound",
   "main": [
     {
-      "type": "content_block",
+      "type": "markdown",
       "value": "!file=main-content.md"
     }
   ]
