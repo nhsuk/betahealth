@@ -129,6 +129,15 @@ npm run lint
 
 If you want to update build related code and scripts then each task is a [gulp](http://gulpjs.com/) script located at '*gulp/tasks*'.
 
+#### .env file
+`npm run develop` command pre-loads local ENV variables from `.env` file (ignored by Git) before running development server.
+If you need to include local environment variables in development add them to `.env` file in the root of the app directory in the following format:
+
+```
+VARIABLE_NAME=value
+```
+
+
 ### Testing
 
 #### Unit tests
