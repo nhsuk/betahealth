@@ -5,13 +5,13 @@ const contentPageController = require('../../app/controllers/content-page-contro
 
 const contentApiMiddleware = require('../../app/middleware/content-api');
 const guideContainerMiddleware = require('../../app/middleware/guide-container');
-const guideMiddleware = require('../../app/middleware/guide');
+const paginationMiddleware = require('../../app/middleware/pagination');
 const setFeedbackMiddleware = require('../../app/middleware/set-feedback');
 
 const middlewares = [
   contentApiMiddleware,
   guideContainerMiddleware,
-  guideMiddleware,
+  paginationMiddleware,
   setFeedbackMiddleware,
 ];
 

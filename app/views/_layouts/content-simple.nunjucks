@@ -36,10 +36,10 @@
     {% endblock %}
 
     {% block main_content_after %}
-      {% if guide %}
+      {% if pagination %}
         <div class="page-section">
           <div class="reading-width">
-            {{ components.pagination(guide.previous, guide.next) }}
+            {{ components.pagination(pagination.previous, pagination.next) }}
           </div>
         </div>
       {% endif %}

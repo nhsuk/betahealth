@@ -1,13 +1,16 @@
 {
   "layout": "guide",
   "title": "Type 2 diabetes",
-  "pages": [
-    "check-if-you-have-it",
-    "getting-diagnosed",
-    "understanding-medication",
-    "going-for-regular-check-ups",
-    "health-problems",
-    "food-and-keeping-active",
-    "finding-help-and-support"
-  ]
+  "guide": true,
+  "meta": {
+    "children": [
+      { "slug": "check-if-you-have-it" },
+      { "slug": "getting-diagnosed" },
+      { "slug": "understanding-medication" },
+      { "slug": "going-for-regular-check-ups" },
+      { "slug": "health-problems" },
+      { "slug": "food-and-keeping-active" },
+      { "slug": "finding-help-and-support" }
+    ]
+  }
 }

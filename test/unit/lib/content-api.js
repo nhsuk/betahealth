@@ -43,7 +43,7 @@ describe('Content API library', () => {
 
       it('should return a JavaScript object', () => {
         const record = contentApi.getRecordFile(slug);
-        return record.should.deep.equal(mockData);
+        record.should.deep.equal(mockData);
       });
     });
 
@@ -58,7 +58,7 @@ describe('Content API library', () => {
 
       it('should return false', () => {
         const record = contentApi.getRecordFile(slug);
-        return record.should.equal(false);
+        record.should.equal(false);
       });
     });
   });
