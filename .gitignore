@@ -20,3 +20,6 @@ test/acceptance/report
 
 # Ignore FSMe font from source control
 assets/fonts/fsme
+
+# Ignore local env settings
+.env

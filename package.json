@@ -5,7 +5,7 @@
   "scripts": {
     "heroku-postbuild": "gulp build",
     "start": "node app.js",
-    "develop": "gulp watch",
+    "develop": "env $(cat .env) gulp watch",
     "lint": "gulp lint",
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test LOG_LEVEL=silent istanbul test _mocha -- ./test/unit --opts ./test/unit/mocha.opts -R spec",
