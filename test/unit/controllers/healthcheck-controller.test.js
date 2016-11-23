@@ -21,7 +21,7 @@ describe('Healthcheck controller', () => {
           done();
         },
       };
-      const controller = proxyquire(`${appFolder}/controllers/healthcheck`, {
+      const controller = proxyquire(`${appFolder}/controllers/healthcheck-controller`, {
         '../../package.json': {
           version: this.version,
         },
@@ -41,7 +41,7 @@ describe('Healthcheck controller', () => {
           done();
         },
       };
-      const controller = proxyquire(`${appFolder}/controllers/healthcheck`, {
+      const controller = proxyquire(`${appFolder}/controllers/healthcheck-controller`, {
         '../../package.json': {
           version: pkgVersion,
         },
@@ -61,7 +61,7 @@ describe('Healthcheck controller', () => {
           done();
         },
       };
-      const controller = proxyquire(`${appFolder}/controllers/healthcheck`, {
+      const controller = proxyquire(`${appFolder}/controllers/healthcheck-controller`, {
         '../../lib/git-lookup': {
           getGitSha: this.getGitSha.returns(sha),
         },

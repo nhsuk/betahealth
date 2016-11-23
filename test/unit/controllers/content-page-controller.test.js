@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-dynamic-require
-const contentPageController = require(`${appFolder}/controllers/content-page`);
+const contentPageController = require(`${appFolder}/controllers/content-page-controller`);
 
 describe('Content page controller', () => {
   beforeEach(() => {
