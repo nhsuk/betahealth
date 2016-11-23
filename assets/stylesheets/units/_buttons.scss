@@ -2,7 +2,7 @@
   @include bold-font(20);
   @include element-spacing;
 
-  -webkit-appearance: none;
+  appearance: none;
   background-color: $button-background;
   border: 0;
   color: $white;
