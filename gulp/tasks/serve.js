@@ -12,6 +12,7 @@ module.exports = (gulp, done) => {
   nodemon({
     script: 'app.js',
     ext: 'js nunjucks',
+    exec: 'node --debug',
     ignore: [
       './assets',
       './tmp',
