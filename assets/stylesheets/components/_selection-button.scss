@@ -97,7 +97,6 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
     }
 
     &::after {
-      @include rotate(-45);
       background: transparent;
       border: solid;
       border-width: 0 0 5px 5px;
@@ -108,6 +107,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
       opacity: 0;
       position: absolute;
       top: 10px;
+      transform: rotate(-45deg);
       width: 22px;
       zoom: 1;
     }
@@ -119,7 +119,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   .js-enabled & {
     &.is-focused {
       &::before {
-        @include box-shadow(0 0 0 3px $focus-colour);
+        box-shadow: 0 0 0 3px $focus-colour;
       }
     }
 
