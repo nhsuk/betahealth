@@ -2,7 +2,7 @@ const gutil = require('gulp-util');
 const webpack = require('webpack');
 const browserSync = require('browser-sync').get('bs-proxy');
 
-const paths = require('../paths');
+const paths = require('../../paths');
 // eslint-disable-next-line import/no-dynamic-require
 const webpackConfig = require(paths.webpackConfig);
 

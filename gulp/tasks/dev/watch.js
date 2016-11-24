@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const paths = require('../paths');
+const paths = require('../../paths');
 const browserSync = require('browser-sync').get('bs-proxy');
 
 // Monitor sass, js and view code for changes and trigger

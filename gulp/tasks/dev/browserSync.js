@@ -1,4 +1,4 @@
-const paths = require('../paths');
+const paths = require('../../paths');
 const browserSync = require('browser-sync').create('bs-proxy');
 
 // This process starts a browser sync instance

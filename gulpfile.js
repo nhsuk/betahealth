@@ -14,15 +14,18 @@ const gulpRequireTasks = require('gulp-require-tasks');
 const config = require('./config/config');
 
 gulpRequireTasks({
-  path: `${process.cwd()}/gulp/tasks/build`,
+  path: `${process.cwd()}/gulp/tasks/shared`,
 });
 
-
-// Only load development tasks when not in production.
-// This means we can move some of the dependencies to devDependencies
-if (config.env !== 'production') {
+if (config.env === 'development') {
   gulpRequireTasks({
-    path: `${process.cwd()}/gulp/tasks`,
+    path: `${process.cwd()}/gulp/tasks/dev`,
+  });
+}
+
+if (config.env === 'production') {
+  gulpRequireTasks({
+    path: `${process.cwd()}/gulp/tasks/prod`,
   });
 }
 

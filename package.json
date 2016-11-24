@@ -6,7 +6,7 @@
     "heroku-postbuild": "gulp build",
     "start": "node app.js",
     "develop": "env $(cat .env) gulp watch",
-    "lint": "gulp lint",
+    "lint": "gulp lint-js && gulp lint-css",
     "test": "npm run test:unit",
     "test:unit": "NODE_ENV=test LOG_LEVEL=silent istanbul test _mocha -- ./test/unit --opts ./test/unit/mocha.opts -R spec",
     "test:acceptance": "LOG_LEVEL=info wdio test/acceptance/wdio.conf.js",
