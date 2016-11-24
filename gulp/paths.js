@@ -17,7 +17,7 @@ module.exports = {
   sourceApp: `${projectDir}/app`,
   sourceViews: `${projectDir}/app/views`,
   webpackConfig: `${projectDir}/webpack.config.js`,
-  webpackProductionConfig: `${projectDir}/webpack.production.config.js`,
+  webpackProductionConfig: `${projectDir}/webpack.config.prod.js`,
   nodeModules: `${projectDir}/node_modules`,
   projectDir,
 };
