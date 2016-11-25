@@ -38,4 +38,9 @@ module.exports = {
   },
   appInsightsKey: process.env.APPINSIGHTS_INSTRUMENTATIONKEY || 'muted',
   findersBaseUrl: process.env.CONNECTINGTOSERVICES_BASEURL || '/',
+  contentStore: {
+    timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
+    baseUrl: process.env.CONTENTSTORE_BASEURL,
+    authToken: process.env.CONTENTSTORE_AUTH_TOKEN,
+  },
 };

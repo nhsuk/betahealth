@@ -62,8 +62,16 @@ environment.
 | `DISABLE_FEEDBACK`               | Whether to disable feedback. On by default. Set this to `true` to disable |                          |
 | `FEEDBACK_API_BASEURL`           | Base feedback endpoint                                                    |                          |
 | `FEEDBACK_API_KEY`               | Key for feedback API if needed                                            |                          |
+| `FEEDBACK_TIMEOUT`               | Timeout before the request to the API fails                               | 5000                     |
 | `APPINSIGHTS_INSTRUMENTATIONKEY` | Application insights instrumentation key                                  |                          |
 | `CONNECTINGTOSERVICES_BASEURL`   | Base URL for connecting to services application                           | /                        |
+| `CONTENTSTORE_BASEURL`           | Base URL for the content store API                                        |                          |
+| `CONTENTSTORE_AUTH_TOKEN`        | OAuth2 bearer token for authenticating with the API                       |                          |
+| `CONTENTSTORE_TIMEOUT`           | Timeout before the request to the API fails                               | 5000                     |
+
+timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
+baseUrl: process.env.CONTENTSTORE_BASEURL,
+authToken: process.env.CONTENTSTORE_AUTH_TOKEN,
 
 ## Development
 

@@ -137,6 +137,9 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('kebabcase', (str) => {
     return changeCase.paramCase(str);
   });
+  nunjucksEnv.addFilter('snakecase', (str) => {
+    return changeCase.snakeCase(str);
+  });
   nunjucksEnv.addFilter('renderString', (str) => {
     return nunjucksEnv.renderString(str);
   });

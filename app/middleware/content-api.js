@@ -4,18 +4,21 @@ const parseurl = require('parseurl');
 module.exports = (req, res, next) => {
   const parsedUrl = parseurl.original(req);
   const slug = parsedUrl.pathname.replace(/^\//, '') || 'index';
-  const record = contentApi.getRecord(`${slug}`);
-  let layout = slug;
 
-  if (record) {
-    layout = `_layouts/${record.layout}`;
-  }
+  contentApi.getRecord(`${slug}`)
+    .then((record) => {
+      let layout = slug;
 
-  record.slug = slug;
+      if (record) {
+        layout = `_layouts/${record.layout}`;
+      }
 
-  /* eslint-disable no-param-reassign */
-  req.layout = layout;
-  req.pageData = record;
-  /* eslint-enable no-param-reassign */
-  next();
+      /* eslint-disable no-param-reassign */
+      record.slug = slug;
+      req.layout = layout;
+      req.pageData = record;
+      /* eslint-enable no-param-reassign */
+      next();
+    })
+    .catch(next);
 };

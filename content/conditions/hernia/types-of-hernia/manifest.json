@@ -5,12 +5,12 @@
   "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "main": [
     {
-      "type": "content_block",
-      "content": "!file=main-content-1.md"
+      "type": "markdown",
+      "value": "!file=main-content-1.md"
     },
     {
       "type": "figure_list",
-      "content": [
+      "value": [
         {
           "fullWidth": true,
           "srcset": [
@@ -25,8 +25,8 @@
       ]
     },
     {
-      "type": "content_block",
-      "content": "!file=main-content-2.md"
+      "type": "markdown",
+      "value": "!file=main-content-2.md"
     }
   ]
 }

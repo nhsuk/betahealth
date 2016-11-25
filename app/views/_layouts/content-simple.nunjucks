@@ -9,21 +9,37 @@
 
     {% block main_content_before %}
       {% for component in before %}
-        {{ components[component.type](component.content) }}
+        {% if component.type == 'markdown' %}
+          <div class="page-section">
+            <div class="reading-width">
+              {{ components[component.type | snakecase](component.value) }}
+            </div>
+          </div>
+        {% else %}
+          {{ components[component.type | snakecase](component.value) }}
+        {% endif %}
       {% endfor %}
     {% endblock %}
 
     {% block main_content %}
       {% for component in main %}
-        {{ components[component.type](component.content) }}
+        {% if component.type == 'markdown' %}
+          <div class="page-section">
+            <div class="reading-width">
+              {{ components[component.type | snakecase](component.value) }}
+            </div>
+          </div>
+        {% else %}
+          {{ components[component.type | snakecase](component.value) }}
+        {% endif %}
       {% endfor %}
     {% endblock %}
 
     {% block main_content_after %}
-      {% if guide %}
+      {% if pagination %}
         <div class="page-section">
           <div class="reading-width">
-            {{ components.pagination(guide.previous, guide.next) }}
+            {{ components.pagination(pagination.previous, pagination.next) }}
           </div>
         </div>
       {% endif %}

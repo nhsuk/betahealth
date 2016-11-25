@@ -9,7 +9,7 @@ describe('Content API library', () => {
     mock.restore();
   });
 
-  describe('#getRecord', () => {
+  describe('#getRecordFile', () => {
     describe('when a file exists', () => {
       const slug = 'path/to/real/dir';
       const mockData = {
@@ -42,8 +42,8 @@ describe('Content API library', () => {
       });
 
       it('should return a JavaScript object', () => {
-        const getRecord = contentApi.getRecord(slug);
-        return getRecord.should.deep.equal(mockData);
+        const record = contentApi.getRecordFile(slug);
+        record.should.deep.equal(mockData);
       });
     });
 
@@ -57,8 +57,8 @@ describe('Content API library', () => {
       });
 
       it('should return false', () => {
-        const getRecord = contentApi.getRecord(slug);
-        return getRecord.should.equal(false);
+        const record = contentApi.getRecordFile(slug);
+        record.should.equal(false);
       });
     });
   });
