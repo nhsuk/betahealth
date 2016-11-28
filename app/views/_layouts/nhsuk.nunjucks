@@ -3,6 +3,7 @@
 
   <head>
     {% include '_includes/global/head.nunjucks' %}
+    {% block head %}{% endblock %}
   </head>
 
   <body>

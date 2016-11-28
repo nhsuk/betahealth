@@ -1,0 +1,13 @@
+//@import "../../../assets/stylesheets/nhsuk";
+
+.example {
+  padding: 20px;
+  border: 1px solid #ddd;
+
+  > pre {
+    border-top: 1px solid #ddd;
+    margin: 20px -20px -20px;
+    padding: 20px;
+    background-color: #ddd;
+  }
+}
