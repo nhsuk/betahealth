@@ -94,6 +94,7 @@
     "mock-fs": "~3.12.1",
     "progress": "~1.1.8",
     "proxyquire": "~1.7.10",
+    "rewire": "^2.5.2",
     "selenium-standalone": "~5.8.0",
     "sinon": "~1.17.6",
     "sinon-chai": "~2.8.0",
