@@ -13,6 +13,7 @@ module.exports = {
     gulp.watch([
       `${paths.sourceApp}/**/*.js`,
       `${paths.sourceViews}/**/*.nunjucks`,
+      `${paths.projectDir}/**/*.md`,
     ]).on('change', browserSync.reload);
   },
 };

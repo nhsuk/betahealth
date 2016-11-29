@@ -1,0 +1,10 @@
+<details class="details--inline">
+  <summary data-analytics="summary">
+    <span class="details__summary">
+      {{ title.replace('[', '<span class="details__cta">').replace(']', '</span>') | safe }}
+    </span>
+  </summary>
+  <div>
+    <!--content-->
+  </div>
+</details>
