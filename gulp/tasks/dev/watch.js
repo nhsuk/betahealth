@@ -12,6 +12,7 @@ module.exports = {
     gulp.watch(`${paths.sourceStyles}/**/*.scss`, ['css']);
     gulp.watch([
       `${paths.sourceApp}/**/*.js`,
+      `${paths.projectDir}/+(config|lib|public)/**/*.js`,
       `${paths.sourceViews}/**/*.nunjucks`,
       `${paths.projectDir}/**/*.md`,
     ]).on('change', browserSync.reload);
