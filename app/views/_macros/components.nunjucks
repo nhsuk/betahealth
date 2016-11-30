@@ -1,34 +1,36 @@
 {% macro image(options) %}
-  <!--[if gt IE 7]><!-->
-  <img
-    srcset="
-      {% for src in options.srcset %}
-        {% set splitSrc = src | split(' ') %}
-        {% set path = asset_path(splitSrc[0]) %}
-        {% set width = splitSrc[1] %}
-
-        {% if loop.last %}
-          {{ path }} {{ width }}
-        {% else %}
-          {{ path }} {{ width }},
-        {% endif %}
-      {% endfor %}
-    "
-    alt="{{ options.alt }}"
-    data-analytics="image"
-    data-analytics-type="{{ options.analyticsType | default('inline') }}"
-    />
-  <!--<![endif]-->
-  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-    {% set fallback = options.srcset[0] | split(' ') %}
-    <img src="{{ asset_path(fallback[0]) }}" alt="{{ options.alt }}" />
-  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+  {% if options.srcset %}
+    <!--[if gt IE 7]><!-->
+    <img
+      srcset="{{ srcset(options.srcset) }}"
+      alt="{{ options.alt }}"
+      data-analytics="image"
+      data-analytics-type="{{ options.analyticsType | default('inline') }}"
+      />
+    <!--<![endif]-->
+    <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+      {% set fallback = options.srcset[0] | split(' ') %}
+      <img src="{{ asset_path(fallback[0]) }}" alt="{{ options.alt }}" />
+    <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+  {% endif %}
 {% endmacro %}
 
 {% macro markdown(content) %}
 {% markdown %}
   {{ content | renderString | safe }}
 {% endmarkdown %}
+{% endmacro %}
+
+{% macro srcset(list) %}
+  {% set comma = joiner() %}
+
+  {% for src in list %}
+    {% set splitSrc = src | split(' ') %}
+    {% set path = asset_path(splitSrc[0]) %}
+    {% set width = splitSrc[1] %}
+
+    {{ comma() }} {{ path }} {{ width }}
+  {% endfor %}
 {% endmacro %}
 
 {% macro figure_list(list) %}

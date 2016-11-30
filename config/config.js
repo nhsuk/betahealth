@@ -42,5 +42,7 @@ module.exports = {
     timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
     baseUrl: process.env.CONTENTSTORE_BASEURL,
     authToken: process.env.CONTENTSTORE_AUTH_TOKEN,
+    imageSignatureKey: process.env.CONTENTSTORE_IMAGE_SIGNATURE_KEY,
+    imageProxyPath: process.env.CONTENTSTORE_IMAGE_PROXY_PATH || '/content-images',
   },
 };
