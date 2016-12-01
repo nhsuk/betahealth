@@ -70,6 +70,7 @@ environment.
 | `CONTENTSTORE_TIMEOUT`             | Timeout before the request to the API fails                               | 5000                     |
 | `CONTENTSTORE_IMAGE_SIGNATURE_KEY` | Key used to generate the signature for image paths from the content store |                          |
 | `CONTENTSTORE_IMAGE_PROXY_PATH`    | The local path to use for the image proxy                                 | /content-images          |
+| `PREVIEW_SIGNATURE_KEY`            | Key used to generate the signature for preview  pages in content store    |                          |
 
 timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
 baseUrl: process.env.CONTENTSTORE_BASEURL,
