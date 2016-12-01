@@ -63,7 +63,7 @@ and have hot, sweaty feet.
 Treat athlete’s foot as soon as possible to avoid it spreading to the nails.
 !!!
 
-To prevent fungal nail infection you should:
+To prevent fungal nail infection:
 
 * keep your feet clean and dry
 * wear clean socks every day

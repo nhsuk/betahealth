@@ -2,11 +2,11 @@
   "layout": "content-simple",
   "guide": true,
   "title": "Getting diagnosed",
-  "choicesOrigin": "conditions/Diabetes-type2/Pages/Diagnosis.aspx ",
+  "choicesOrigin": "conditions/Diabetes-type2/Pages/Diagnosis.aspx",
   "main": [
     {
-      "type": "content_block",
-      "content": "!file=main-content.md"
+      "type": "markdown",
+      "value": "!file=main-content.md"
     }
   ]
 }

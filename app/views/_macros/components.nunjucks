@@ -31,14 +31,6 @@
 {% endmarkdown %}
 {% endmacro %}
 
-{% macro content_block(content) %}
-  <div class="page-section">
-    <div class="reading-width">
-      {{ markdown(content) }}
-    </div>
-  </div>
-{% endmacro %}
-
 {% macro figure_list(list) %}
   <div class="page-section page-section--collapse-bottom">
     {% for figure in list %}
@@ -101,7 +93,7 @@
         {% endif %}
 
         {% for component in section.content %}
-          {{ loadComponent(component.type)(component.content) }}
+          {{ loadComponent(component.type)(component.value) }}
         {% endfor %}
       </article>
     {% endfor %}
@@ -124,8 +116,8 @@
         </h2>
       {% endif %}
 
-      {% for component in article.content %}
-        {{ loadComponent(component.type)(component.content) }}
+      {% for component in article.value %}
+        {{ loadComponent(component.type)(component.value) }}
       {% endfor %}
     </article>
   {% endfor %}
@@ -136,10 +128,10 @@
     {% for component in components %}
       {% if component.type == 'section_list' %}
         <li class="link-list--item">
-          <a href="#{{ component.content.title | kebabcase }}"
+          <a href="#{{ component.value.title | kebabcase }}"
              class="link--reverse-polarity"
              data-analytics="anchor">
-            {{ component.content.title }}
+            {{ component.value.title }}
           </a>
         </li>
       {% endif %}
@@ -151,7 +143,7 @@
   <ol class="step-list">
     {% for component in components %}
       {% if component.type == 'article_list' %}
-        {% for article in component.content.articles %}
+        {% for article in component.value.articles %}
           <li class="step-list__item{{ ' is-last' if loop.last }}">
             <a href="#{{ article.title | kebabcase }}"
                class="link--reverse-polarity"

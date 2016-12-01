@@ -5,6 +5,16 @@
     "import/no-extraneous-dependencies": 0,
     "no-prototype-builtins": 0,
     "no-underscore-dangle": 0,
-    "prefer-spread": 0
+    "prefer-spread": 0,
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "ignore"
+      }
+    ]
   }
 }

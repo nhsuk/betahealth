@@ -143,7 +143,7 @@ Analytics.prototype._getEventData = function _getEventData(e) {
       value = $el.prop('tagName');
       break;
     case 'image-set':
-      name = `${this.wtPrefix}ImageSet`;
+      name = `${this.wtPrefix}imageSet`;
       value = $el.attr('href');
       break;
     case 'summary':

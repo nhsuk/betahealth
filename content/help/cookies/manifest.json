@@ -3,8 +3,8 @@
   "title": "Cookies",
   "main": [
     {
-      "type": "content_block",
-      "content": "!file=main-content.md"
+      "type": "markdown",
+      "value": "!file=main-content.md"
     }
   ]
 }

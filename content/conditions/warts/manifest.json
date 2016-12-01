@@ -5,12 +5,12 @@
   "choicesOrigin": "conditions/warts/pages/introduction.aspx",
   "before": [
     {
-      "type": "content_block",
-      "content": "!file=main-content-before.md"
+      "type": "markdown",
+      "value": "!file=main-content-before.md"
     },
     {
       "type": "figure_list",
-      "content": [
+      "value": [
         {
           "srcset": [
             "assets/images/warts/standard-wart-300.jpg 300w",
@@ -48,8 +48,8 @@
   ],
   "main": [
     {
-      "type": "content_block",
-      "content": "!file=main-content.md"
+      "type": "markdown",
+      "value": "!file=main-content.md"
     }
   ]
 }

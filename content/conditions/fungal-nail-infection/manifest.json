@@ -7,13 +7,13 @@
   "localHeader": [
     {
       "type": "markdown",
-      "content": "Fungal nail infections are common. They’re not serious but they can take a long time to treat."
+      "value": "Fungal nail infections are common. They’re not serious but they can take a long time to treat."
     }
   ],
   "before": [
     {
       "type": "figure_list",
-      "content": [
+      "value": [
         {
           "srcset": [
             "assets/images/fungal-nail-infection/stage-1-300.jpg 300w",
@@ -43,8 +43,8 @@
   ],
   "main": [
     {
-      "type": "content_block",
-      "content": "!file=main-content.md"
+      "type": "markdown",
+      "value": "!file=main-content.md"
     }
   ]
 }

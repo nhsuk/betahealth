@@ -13,13 +13,18 @@ const SASS_PATHS = [
   `${paths.nodeModules}`,
 ];
 
+function handleError(error) {
+  sass.logError.call(this, error);
+  process.exit(1);
+}
+
 module.exports = (gulp) => {
   return gulp.src(`${paths.sourceStyles}/**/*.scss`)
     .pipe(gulpif(!isProduction, sourcemaps.init()))
     .pipe(sass({
       includePaths: SASS_PATHS,
       outputStyle: isProduction ? 'compressed' : 'expanded',
-    }).on('error', sass.logError))
+    }).on('error', handleError))
     .pipe(autoprefixer({
       browsers: ['> 0%', 'IE 8'],
     }))

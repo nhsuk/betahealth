@@ -6,19 +6,19 @@
   "localHeader": [
     {
       "type": "markdown",
-      "content": "Most stomach aches aren’t anything serious and will go away after a few days."
+      "value": "Most stomach aches aren’t anything serious and will go away after a few days."
     }
   ],
   "main": [
     {
       "type": "markdown",
-      "content": "!file=main-content.md"
+      "value": "!file=main-content.md"
     }
   ],
   "sidebar": [
     {
       "type": "markdown",
-      "content": "!file=sidebar-content.md"
+      "value": "!file=sidebar-content.md"
     }
   ]
 }

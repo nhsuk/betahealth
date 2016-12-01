@@ -1,5 +1,5 @@
 const eslint = require('gulp-eslint');
-const paths = require('../paths');
+const paths = require('../../paths');
 
 module.exports = (gulp) => {
   return gulp.src([

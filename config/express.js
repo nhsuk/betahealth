@@ -22,6 +22,7 @@ const csrf = require('csurf');
 const changeCase = require('change-case');
 const slashify = require('slashify');
 const logger = require('../lib/logger');
+const customMdFilter = require('../lib/custom-md-filter');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const assetPath = require('../app/middleware/asset-path');
@@ -32,95 +33,13 @@ const router = require('./routes');
 
 md.use(markdownItAbbr);
 md.use(markdownItAttrs);
-md.use(markdownItContainer, 'info', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--info">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'info_compact', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--info callout--compact">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'attention', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--attention">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'warning', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--warning">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'alert', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--alert">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'severe', {
-  marker: '!',
-  render: (tokens, idx) => {
-    if (tokens[idx].nesting === 1) {
-      return '<section class="callout callout--severe">\n';
-    }
-    return '</section>\n';
-  },
-});
-md.use(markdownItContainer, 'reveal', {
-  marker: ':',
-  validate: (params) => {
-    return params.trim().match(/^reveal\s+(.*)$/);
-  },
-  render: (tokens, idx) => {
-    const m = tokens[idx].info.trim().match(/^reveal\s+(.*)$/);
 
-    if (tokens[idx].nesting === 1) {
-      return `<details>\n<summary data-analytics="summary"><span class="details__summary">${md.utils.escapeHtml(m[1])}</span></summary>\n<div>\n`;
-    }
-    return '</div>\n</details>\n';
-  },
+['info', 'info_compact', 'attention', 'warning', 'alert', 'severe'].forEach((filterName) => {
+  md.use.call(md, markdownItContainer, filterName, customMdFilter('!', filterName));
 });
-md.use(markdownItContainer, 'inline_reveal', {
-  marker: ':',
-  validate: (params) => {
-    return params.trim().match(/^inline_reveal\s+(.*)$/);
-  },
-  render: (tokens, idx) => {
-    const m = tokens[idx].info.trim().match(/^inline_reveal\s+(.*)$/);
 
-    if (tokens[idx].nesting === 1) {
-      const summary = md.utils.escapeHtml(m[1]);
-      const cta = summary.slice(summary.indexOf('['), summary.indexOf(']') + 1);
-      const ctaHtml = cta.replace('[', '<span class="details__cta">').replace(']', '</span>');
-
-      return `<details class="details--inline">
-        <summary data-analytics="summary">
-          <span class="details__summary">${summary.replace(cta, ctaHtml)}</span>
-        </summary>
-        <div>`;
-    }
-    return '</div>\n</details>\n';
-  },
+['reveal', 'inline_reveal'].forEach((filterName) => {
+  md.use.call(md, markdownItContainer, filterName, customMdFilter(':', filterName, true));
 });
 
 module.exports = (app, config) => {
@@ -136,6 +55,9 @@ module.exports = (app, config) => {
   });
   nunjucksEnv.addFilter('kebabcase', (str) => {
     return changeCase.paramCase(str);
+  });
+  nunjucksEnv.addFilter('snakecase', (str) => {
+    return changeCase.snakeCase(str);
   });
   nunjucksEnv.addFilter('renderString', (str) => {
     return nunjucksEnv.renderString(str);
