@@ -1,28 +1,41 @@
+const rewire = require('rewire');
+
 const slug = 'path/to/page';
 const config = {
   contentStore: {
-    baseUrl: 'http://api-baseurl.com/',
+    baseUrl: 'http://api-baseurl.com',
     authToken: 'APIKEY123456789',
     timeout: 5000,
+    imageSignatureKey: 'signaturekey',
+    imageProxyPath: '/image-path',
   },
 };
 
 describe('REST API Handler library', () => {
-  beforeEach(() => {
-    this.sandbox = sinon.sandbox.create();
-    this.request = this.sandbox.stub();
-
-    this.restHandler = proxyquire(`${rootFolder}/lib/content-store/rest-handler`, {
-      request: this.request,
-      '../../config/config': config,
-    });
-  });
-
   afterEach(() => {
     this.sandbox.restore();
   });
 
   describe('#get', () => {
+    beforeEach(() => {
+      this.sandbox = sinon.sandbox.create();
+      this.request = this.sandbox.stub();
+      this.createHmac = this.sandbox.stub().returnsThis();
+      this.update = this.sandbox.stub().returnsThis();
+      this.digest = this.sandbox.stub();
+      this.config = Object.assign({}, config);
+
+      this.restHandler = proxyquire(`${rootFolder}/lib/content-store/rest-handler`, {
+        crypto: {
+          createHmac: this.createHmac,
+          update: this.update,
+          digest: this.digest,
+        },
+        request: this.request,
+        '../../config/config': this.config,
+      });
+    });
+
     describe('API base url is not set', () => {
       beforeEach(() => {
         this.restHandler = proxyquire(`${rootFolder}/lib/content-store/rest-handler`, {
@@ -76,7 +89,7 @@ describe('REST API Handler library', () => {
             method: 'GET',
             json: true,
             timeout: config.contentStore.timeout,
-            uri: `${config.contentStore.baseUrl}/pages/with-path/${slug}/`,
+            uri: `${config.contentStore.baseUrl}/api/pages/with-path/${slug}/`,
             headers: {
               Authorization: `Bearer ${config.contentStore.authToken}`,
             },
@@ -121,6 +134,150 @@ describe('REST API Handler library', () => {
           });
         });
       });
+
+      describe('record contains an image', () => {
+        beforeEach(() => {
+          this.request.yields(null, { statusCode: 200 }, {
+            meta: {
+              type: 'page',
+            },
+            main: [
+              {
+                type: 'image',
+                value: {
+                  id: 2,
+                  meta: {
+                    type: 'images.Image',
+                  },
+                  slug: 'image-slug.jpeg',
+                  version: 1,
+                },
+              },
+              {
+                type: 'figureList',
+                value: [{
+                  id: 2,
+                  meta: {
+                    type: 'images.Image',
+                  },
+                  slug: 'image-slug.jpeg',
+                  version: 1,
+                }],
+              },
+            ],
+          });
+          this.digest.returns('signature');
+        });
+
+        it('should transform image data', () => {
+          const getRecord = this.restHandler.get(slug);
+
+          this.createHmac.should.have.been.called;
+          this.update.should.have.been.called;
+
+          return getRecord.should.become({
+            layout: 'content-simple',
+            meta: {
+              type: 'page',
+            },
+            main: [
+              {
+                type: 'image',
+                value: {
+                  id: 2,
+                  meta: {
+                    type: 'images.Image',
+                  },
+                  slug: 'image-slug.jpeg',
+                  srcset: [
+                    '/image-path/signature/2/width-400/1/image-slug.jpeg 400w',
+                    '/image-path/signature/2/width-640/1/image-slug.jpeg 640w',
+                    '/image-path/signature/2/width-800/1/image-slug.jpeg 800w',
+                    '/image-path/signature/2/width-1280/1/image-slug.jpeg 1280w',
+                  ],
+                  version: 1,
+                },
+              },
+              {
+                type: 'figureList',
+                value: [{
+                  id: 2,
+                  meta: {
+                    type: 'images.Image',
+                  },
+                  slug: 'image-slug.jpeg',
+                  srcset: [
+                    '/image-path/signature/2/width-300/1/image-slug.jpeg 300w',
+                    '/image-path/signature/2/width-600/1/image-slug.jpeg 600w',
+                  ],
+                  version: 1,
+                }],
+              },
+            ],
+          });
+        });
+
+        describe('image signature key is not set', () => {
+          before(() => {
+            this.config.contentStore.imageSignatureKey = undefined;
+            this.restHandler = proxyquire(`${rootFolder}/lib/content-store/rest-handler`, {
+              crypto: {
+                createHmac: this.createHmac,
+                update: this.update,
+                digest: this.digest,
+              },
+              request: this.request,
+              '../../config/config': this.config,
+            });
+          });
+
+          it('should return the original image object', () => {
+            const getRecord = this.restHandler.get(slug);
+
+            this.createHmac.should.not.have.been.called;
+
+            return getRecord.should.become({
+              layout: 'content-simple',
+              meta: {
+                type: 'page',
+              },
+              main: [
+                {
+                  type: 'image',
+                  value: {
+                    id: 2,
+                    meta: {
+                      type: 'images.Image',
+                    },
+                    slug: 'image-slug.jpeg',
+                    version: 1,
+                  },
+                },
+                {
+                  type: 'figureList',
+                  value: [{
+                    id: 2,
+                    meta: {
+                      type: 'images.Image',
+                    },
+                    slug: 'image-slug.jpeg',
+                    version: 1,
+                  }],
+                },
+              ],
+            });
+          });
+        });
+      });
+    });
+  });
+
+  describe('#transform', () => {
+    const restHandler = rewire(`${rootFolder}/lib/content-store/rest-handler`);
+    const transform = restHandler.__get__('transform');
+
+    it('should return null if not given an object', () => {
+      should.equal(transform('string'), null);
     });
   });
 });
