@@ -65,6 +65,7 @@ environment.
 | `FEEDBACK_TIMEOUT`                 | Timeout before the request to the API fails                               | 5000                     |
 | `APPINSIGHTS_INSTRUMENTATIONKEY`   | Application insights instrumentation key                                  |                          |
 | `CONNECTINGTOSERVICES_BASEURL`     | Base URL for connecting to services application                           | /                        |
+| `CONTENTSTORE_TYPE`                | Operational mode for content store (`rest` or `file`)                     | file                     |
 | `CONTENTSTORE_BASEURL`             | Base URL for the content store API                                        |                          |
 | `CONTENTSTORE_AUTH_TOKEN`          | OAuth2 bearer token for authenticating with the API                       |                          |
 | `CONTENTSTORE_TIMEOUT`             | Timeout before the request to the API fails                               | 5000                     |

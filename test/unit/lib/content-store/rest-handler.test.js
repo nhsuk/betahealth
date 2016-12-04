@@ -280,4 +280,8 @@ describe('REST API Handler library', () => {
       should.equal(transform('string'), null);
     });
   });
+
+  describe('#preview', () => {
+    // Same interface as #get
+  });
 });
