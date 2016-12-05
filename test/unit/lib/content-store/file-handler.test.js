@@ -102,4 +102,25 @@ describe('File Handler library', () => {
       });
     });
   });
+
+  describe('#preview', () => {
+    const slug = 'path/to/real/dir';
+
+    before(() => {
+      mock({
+        [path.resolve(__dirname, '../../../../content', slug)]: {
+          'manifest.json': JSON.stringify({
+            title: 'foo',
+          }),
+          'markdown.md': '!file=markdown.md',
+        },
+      });
+    });
+
+    it('should throw "not implemented" error', () => {
+      (() => {
+        fileHandler.preview(slug);
+      }).should.throw('File preview is not implemented');
+    });
+  });
 });

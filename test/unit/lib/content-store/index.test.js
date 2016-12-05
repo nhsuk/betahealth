@@ -1,4 +1,7 @@
 const path = 'record-path';
+
+const contentStore = require('../../../../lib/content-store');
+
 const apiRecord = {
   from: 'API',
 };
@@ -12,43 +15,68 @@ describe('Content Store library', () => {
       this.sandbox = sinon.sandbox.create();
       this.restHandler = this.sandbox.stub().returnsPromise();
       this.fileHandler = this.sandbox.stub().returnsPromise();
-
-      this.contentStore = proxyquire(`${rootFolder}/lib/content-store`, {
-        './rest-handler': {
-          get: this.restHandler,
-        },
-        './file-handler': {
-          get: this.fileHandler,
-        },
-      });
     });
 
     afterEach(() => {
       this.sandbox.restore();
     });
 
-    describe('API resolves the promise', () => {
+    describe('REST handler', () => {
+      beforeEach(() => {
+        contentStore.handler = { get: this.restHandler };
+      });
+
       it('should return the record from API', () => {
         this.restHandler.resolves(apiRecord);
-        return this.contentStore.getRecord(path).should.become(apiRecord);
+        contentStore.getRecord(path).should.become(apiRecord);
+        this.restHandler.should.be.called;
       });
     });
 
-    describe('API rejects the promise', () => {
-      describe('File system resolves the promise', () => {
-        it('should return the record from file', () => {
-          this.restHandler.rejects('API failed to respond');
-          this.fileHandler.resolves(fileRecord);
-          return this.contentStore.getRecord(path).should.become(fileRecord);
-        });
+    describe('File system handler', () => {
+      beforeEach(() => {
+        contentStore.handler = { get: this.fileHandler };
       });
 
-      describe('File system rejects the promise', () => {
-        it('should reject the promise', () => {
-          this.restHandler.rejects('No record in API');
-          this.fileHandler.rejects('No record on file');
-          return this.contentStore.getRecord(path).should.be.rejected;
-        });
+      it('should return the record from file', () => {
+        this.fileHandler.resolves(fileRecord);
+        contentStore.getRecord(path).should.become(fileRecord);
+        this.fileHandler.should.be.called;
+      });
+    });
+  });
+
+  describe('#getPreview', () => {
+    beforeEach(() => {
+      this.sandbox = sinon.sandbox.create();
+      this.restHandler = this.sandbox.stub().returnsPromise();
+      this.fileHandler = this.sandbox.stub().returnsPromise();
+    });
+
+    afterEach(() => {
+      this.sandbox.restore();
+    });
+
+    describe('REST handler', () => {
+      beforeEach(() => {
+        contentStore.handler = { preview: this.restHandler };
+      });
+
+      it('should return the record from API', () => {
+        this.restHandler.resolves(apiRecord);
+        contentStore.getPreview(path).should.become(apiRecord);
+        this.restHandler.should.be.called;
+      });
+    });
+
+    describe('File system handler', () => {
+      beforeEach(() => {
+        contentStore.handler = { preview: this.fileHandler };
+      });
+
+      it('should be called', () => {
+        contentStore.getPreview(path);
+        this.fileHandler.should.be.called;
       });
     });
   });

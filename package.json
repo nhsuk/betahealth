@@ -72,6 +72,7 @@
     "request-ip": "~1.2.3",
     "serve-favicon": "~2.3.0",
     "slashify": "~1.0.0",
+    "tsscmp": "~1.0.5",
     "webpack": "1.13.2",
     "winston": "~2.3.0",
     "winston-azure-application-insights": "nhsuk/winston-azure-application-insights#843afd2b8a631eae3537cfee0e146b761ba0a939"

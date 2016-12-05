@@ -65,11 +65,13 @@ environment.
 | `FEEDBACK_TIMEOUT`                 | Timeout before the request to the API fails                               | 5000                     |
 | `APPINSIGHTS_INSTRUMENTATIONKEY`   | Application insights instrumentation key                                  |                          |
 | `CONNECTINGTOSERVICES_BASEURL`     | Base URL for connecting to services application                           | /                        |
+| `CONTENTSTORE_TYPE`                | Operational mode for content store (`rest` or `file`)                     | file                     |
 | `CONTENTSTORE_BASEURL`             | Base URL for the content store API                                        |                          |
 | `CONTENTSTORE_AUTH_TOKEN`          | OAuth2 bearer token for authenticating with the API                       |                          |
 | `CONTENTSTORE_TIMEOUT`             | Timeout before the request to the API fails                               | 5000                     |
 | `CONTENTSTORE_IMAGE_SIGNATURE_KEY` | Key used to generate the signature for image paths from the content store |                          |
 | `CONTENTSTORE_IMAGE_PROXY_PATH`    | The local path to use for the image proxy                                 | /content-images          |
+| `PREVIEW_SIGNATURE_KEY`            | Key used to generate the signature for preview  pages in content store    |                          |
 
 timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
 baseUrl: process.env.CONTENTSTORE_BASEURL,
