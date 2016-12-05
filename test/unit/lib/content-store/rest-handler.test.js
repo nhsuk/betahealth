@@ -3,9 +3,10 @@ const rewire = require('rewire');
 const slug = 'path/to/page';
 const config = {
   contentStore: {
-    baseUrl: 'http://api-baseurl.com',
+    apiBaseUrl: 'http://api-baseurl.com/api',
     authToken: 'APIKEY123456789',
     timeout: 5000,
+    imageBaseUrl: 'http://api-baseurl.com/images',
     imageSignatureKey: 'signaturekey',
     imageProxyPath: '/image-path',
   },
@@ -89,7 +90,7 @@ describe('REST API Handler library', () => {
             method: 'GET',
             json: true,
             timeout: config.contentStore.timeout,
-            uri: `${config.contentStore.baseUrl}/api/pages/with-path/${slug}/`,
+            uri: `${config.contentStore.apiBaseUrl}/pages/with-path/${slug}/`,
             headers: {
               Authorization: `Bearer ${config.contentStore.authToken}`,
             },
