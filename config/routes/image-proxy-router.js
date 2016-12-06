@@ -6,9 +6,9 @@ const config = require('../config');
 
 
 router.use(config.contentStore.imageProxyPath, proxy({
-  target: `${config.contentStore.baseUrl}`,
+  target: `${config.contentStore.imageBaseUrl}`,
   pathRewrite: {
-    '^/content-images': '/images',
+    '^/content-images': '',
   },
   changeOrigin: true,
 }));
