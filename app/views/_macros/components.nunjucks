@@ -128,7 +128,7 @@
 {% macro section_nav(components) %}
   <ul class="link-list">
     {% for component in components %}
-      {% if component.type == 'section_list' %}
+      {% if component.type | snakecase == 'section_list' %}
         <li class="link-list--item">
           <a href="#{{ component.value.title | kebabcase }}"
              class="link--reverse-polarity"
@@ -144,7 +144,7 @@
 {% macro article_nav(components) %}
   <ol class="step-list">
     {% for component in components %}
-      {% if component.type == 'article_list' %}
+      {% if component.type | snakecase == 'article_list' %}
         {% for article in component.value.articles %}
           <li class="step-list__item{{ ' is-last' if loop.last }}">
             <a href="#{{ article.title | kebabcase }}"
