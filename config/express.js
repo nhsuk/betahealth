@@ -15,6 +15,7 @@ const md = require('markdown-it')({
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItContainer = require('markdown-it-container');
+const markdownItNamedHeaders = require('markdown-it-named-headers');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
@@ -33,6 +34,7 @@ const router = require('./routes');
 
 md.use(markdownItAbbr);
 md.use(markdownItAttrs);
+md.use(markdownItNamedHeaders);
 
 ['info', 'info_compact', 'attention', 'warning', 'alert', 'severe'].forEach((filterName) => {
   md.use.call(md, markdownItContainer, filterName, customMdFilter('!', filterName));
