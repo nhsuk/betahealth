@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
   const parsedUrl = parseurl.original(request);
   const slug = parsedUrl.pathname.replace(/^\//, '') || 'index';
 
-  contentStore.getRecord(`${slug}`)
+  contentStore.getRecord(slug)
     .then((response) => {
       const record = response;
 

@@ -12,6 +12,10 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Shingles](/conditions/shingles)
 * [Warts](/conditions/warts)
 * [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
+* [Insect bites and stings](/conditions/insect-bites-and-stings)
+* [Indigestion](/conditions/indigestion)
+* [Earwax](/conditions/earwax)
+* [Sore throat](/conditions/sore-throat)
 
 ## Symptoms
 

@@ -9,7 +9,7 @@
 
     {% block main_content_before %}
       {% for component in before %}
-        {% if component.type == 'markdown' %}
+        {% if component.type | snakecase == 'markdown' %}
           <div class="page-section">
             <div class="reading-width">
               {{ components[component.type | snakecase](component.value) }}
@@ -23,7 +23,7 @@
 
     {% block main_content %}
       {% for component in main %}
-        {% if component.type == 'markdown' %}
+        {% if component.type | snakecase in ['markdown', 'panel'] %}
           <div class="page-section">
             <div class="reading-width">
               {{ components[component.type | snakecase](component.value) }}
