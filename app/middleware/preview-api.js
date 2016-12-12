@@ -13,7 +13,7 @@ module.exports = (req, res, next) => {
 
   const message = `${pageId}/${revisionId}/`;
   const hmacSha1 = crypto.createHmac('sha1', process.env.PREVIEW_SIGNATURE_KEY).update(message).digest('base64');
-  const expectedSignature = hmacSha1.replace(/\+/, '-').replace(/\//, '_');
+  const expectedSignature = hmacSha1.replace(/\+/g, '-').replace(/\//g, '_');
 
   // Ensure the signature is valid
   if (!timingSafeCompare(expectedSignature, givenSignature)) {
