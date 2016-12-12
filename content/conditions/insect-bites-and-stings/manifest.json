@@ -1,0 +1,24 @@
+{
+  "layout": "content-sidebar-last",
+  "title": "Insect bites and stings",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/bites-insect/pages/introduction.aspx",
+  "localHeader": [
+    {
+      "type": "markdown",
+      "value": "Most insect bites and stings clear up on their own in a few hours or 2 to 3 days. You can usually treat them without seeing a GP."
+    }
+  ],
+  "main": [
+    {
+      "type": "markdown",
+      "value": "!file=main-content.md"
+    }
+  ],
+  "sidebar": [
+    {
+      "type": "markdown",
+      "value": "!file=sidebar-content.md"
+    }
+  ]
+}
