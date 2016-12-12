@@ -1,0 +1,5 @@
+<div class="notification-banner notification-banner--system">
+  <p class="notification-banner__inner">
+    This is a preview of the <strong>{{ title }}</strong> page (revision {{ previewRevisionId }})
+  </p>
+</div>

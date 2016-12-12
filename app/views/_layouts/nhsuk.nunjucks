@@ -14,9 +14,13 @@
       </div>
     </div>
 
-    {% include '_includes/cookie-message.nunjucks' %}
-
-    {% include '_includes/new-site-message.nunjucks' %}
+    {% block messages %}
+      {% if previewRevisionId %}
+        {% include '_includes/preview-message.nunjucks' %}
+      {% endif %}
+      {% include '_includes/cookie-message.nunjucks' %}
+      {% include '_includes/new-site-message.nunjucks' %}
+    {% endblock %}
 
     <header role="banner">
       {% include '_includes/global/header.nunjucks' %}

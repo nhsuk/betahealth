@@ -26,6 +26,7 @@ module.exports = (req, res, next) => {
     .then((response) => {
       req.layout = `_layouts/${response.layout}`;
       req.pageData = response;
+      req.pageData.previewRevisionId = revisionId;
 
       next();
     })
