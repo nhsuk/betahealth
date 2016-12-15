@@ -1,4 +1,4 @@
-<div class="local-header">
+<div class="local-header" data-region="local header">
   {% if returnPath %}
     <a href="{{ returnPath }}"
       class="local-header__return"

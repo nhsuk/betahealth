@@ -8,23 +8,25 @@
     {% endblock %}
 
     {% block main_content_before %}
-      {% for component in before %}
-        {% if component.type | snakecase == 'markdown' %}
-          <div class="page-section">
-            <div class="reading-width">
-              {{ components[component.type | snakecase](component.value) }}
+      <div data-region="before">
+        {% for component in before %}
+          {% if component.type | snakecase == 'markdown' %}
+            <div class="page-section">
+              <div class="reading-width">
+                {{ components[component.type | snakecase](component.value) }}
+              </div>
             </div>
-          </div>
-        {% else %}
-          {{ components[component.type | snakecase](component.value) }}
-        {% endif %}
-      {% endfor %}
+          {% else %}
+            {{ components[component.type | snakecase](component.value) }}
+          {% endif %}
+        {% endfor %}
+      </div>
     {% endblock %}
 
     {% block main_content %}
       {% for component in main %}
         {% if component.type | snakecase in ['markdown', 'panel'] %}
-          <div class="page-section">
+          <div class="page-section" data-region="main">
             <div class="reading-width">
               {{ components[component.type | snakecase](component.value) }}
             </div>
@@ -36,13 +38,15 @@
     {% endblock %}
 
     {% block main_content_after %}
-      {% if pagination %}
-        <div class="page-section">
-          <div class="reading-width">
-            {{ components.pagination(pagination.previous, pagination.next) }}
+      <div data-region="after">
+        {% if pagination %}
+          <div class="page-section"
+            <div class="reading-width">
+              {{ components.pagination(pagination.previous, pagination.next) }}
+            </div>
           </div>
-        </div>
-      {% endif %}
+        {% endif %}
+      </div>
     {% endblock %}
 
     {% if nonEmergencyCallout %}

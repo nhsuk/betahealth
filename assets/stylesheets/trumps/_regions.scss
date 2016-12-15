@@ -1,0 +1,15 @@
+[data-region] {
+  // background-color: tint($light-green, 90%);
+  border: 2px dashed $aqua-green;
+  position: relative;
+
+  &:before {
+    background: $aqua-green;
+    color: $white;
+    content: attr(data-region);
+    left: -2px;
+    padding: 5px 10px;
+    position: absolute;
+    top: -28px;
+  }
+}
