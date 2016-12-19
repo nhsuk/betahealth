@@ -31,56 +31,11 @@ This application is a Node based application that runs on [beta.nhs.uk](http://b
   npm install
   ```
 
-3. Run the application
-
-  ```
-  npm start
-  ```
-
-### Environment variables
-
-Environment variables are used to set application level settings for each
-environment.
-
-| Variable                           | Description                                                                         | Default                  |
-|:-----------------------------------|:------------------------------------------------------------------------------------|:-------------------------|
-| `NODE_ENV`                         | node environment                                                                    | development              |
-| `PORT`                             | server port                                                                         | 3000                     |
-| `GOOGLE_ANALYTICS_TRACKING_ID`     | Google Analytics property id                                                        |                          |
-| `WEBTRENDS_TRACKING_ID`            | [Webtrends](https://www.webtrends.com/) tracking id                                 |                          |
-| `HOTJAR_TRACKING_ID`               | [Hotjar](https://www.hotjar.com/) tracking id                                       |                          |
-| `FONT_CDN`                         | Base url where the font is served                                                   | /                        |
-| `STATIC_CDN`                       | Base url where all other assets are served                                          |                          |
-| `LOG_LEVEL`                        | Level of logging to user                                                            | warn                     |
-| `WDIO_BASEURL`                     | base URL for webdriver to use for acceptance tests                                  | http://localhost:${PORT} |
-| `WDIO_SCREENSHOTPATH`              | path where webdriver screenshots are saved                                          |                          |
-| `WDIO_REPORTPATH`                  | path where webdriverio test runner reports are saved                                |                          |
-| `BROWSERSTACK_USERNAME`            | Browserstack username                                                               |                          |
-| `BROWSERSTACK_ACCESS_KEY`          | Browserstack access key                                                             |                          |
-| `TRAVIS_BUILD_NUMBER`              | The number of the current Travis build                                              |                          |
-| `TRAVIS_JOB_NUMBER`                | The number of the current Travis job                                                |                          |
-| `DISABLE_FEEDBACK`                 | Whether to disable feedback. On by default. Set this to `true` to disable           |                          |
-| `FEEDBACK_API_BASEURL`             | Base feedback endpoint                                                              |                          |
-| `FEEDBACK_API_KEY`                 | Key for feedback API if needed                                                      |                          |
-| `FEEDBACK_TIMEOUT`                 | Timeout before the request to the API fails                                         | 5000                     |
-| `APPINSIGHTS_INSTRUMENTATIONKEY`   | Application insights instrumentation key                                            |                          |
-| `CONNECTINGTOSERVICES_BASEURL`     | Base URL for connecting to services application                                     | /                        |
-| `CONTENTSTORE_TYPE`                | Operational mode for content store (`rest` or `file`)                               | file                     |
-| `CONTENTSTORE_API_BASEURL`         | Base URL for the content store API, eg `http://hostname.com/api`. No trailing slash |                          |
-| `CONTENTSTORE_AUTH_TOKEN`          | OAuth2 bearer token for authenticating with the API                                 |                          |
-| `CONTENTSTORE_TIMEOUT`             | Timeout before the request to the API fails                                         | 5000                     |
-| `CONTENTSTORE_IMAGE_BASEURL`       | Base url for the image endpoint, eg `http://hostname.com/images`. No trailing slash |                          |
-| `CONTENTSTORE_IMAGE_SIGNATURE_KEY` | Key used to generate the signature for image paths from the content store           |                          |
-| `CONTENTSTORE_IMAGE_PROXY_PATH`    | The local path to use for the image proxy                                           | /content-images          |
-| `PREVIEW_SIGNATURE_KEY`            | Key used to generate the signature for preview  pages in content store              |                          |
-
-timeout: process.env.CONTENTSTORE_TIMEOUT || 5000,
-baseUrl: process.env.CONTENTSTORE_BASEURL,
-authToken: process.env.CONTENTSTORE_AUTH_TOKEN,
-
 ## Development
 
 ### Development dependencies
+
+*Note: you only need this if you want to run lint.*
 
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Bundler](http://bundler.io/)
@@ -92,26 +47,6 @@ so scss-lint will need to be installed.
 To install ruby dependencies:
 ```
 bundle install
-```
-
-### Fonts
-
-The FS Me web font can only be used in a license permitted manor which means
-they cannot be included in this repository as it is publicly accessible.
-
-If you want to run the fonts in a development environment you will need to
-include them in a directory that is ignored by git: `./assets/fonts/fsme/`.
-The files in this directory should then be:
-
-```
-FSMeWeb-Bold.eot
-FSMeWeb-Bold.woff
-FSMeWeb-Heavy.eot
-FSMeWeb-Heavy.woff
-FSMeWeb-Light.eot
-FSMeWeb-Light.woff
-FSMeWeb-Regular.eot
-FSMeWeb-Regular.woff
 ```
 
 ### Run development mode
@@ -142,7 +77,18 @@ npm run lint
 
 If you want to update build related code and scripts then each task is a [gulp](http://gulpjs.com/) script located at '*gulp/tasks*'.
 
+### Content Store
+
+The project can run without a Content Store at the moment.
+
+If you set `CONTENTSTORE_TYPE` to `file`, it will use the content contained in the [content](./tree/develop/content) folder.
+
+If you do want to use a Content Store, manage the content via an admin area and access it via REST API, you'll have to
+have a copy of the [NHS.UK Content Store](https://github.com/nhsuk/nhsuk-content-store) running on port `8000` and set
+`CONTENTSTORE_TYPE` to `rest`.
+
 #### .env file
+
 `npm run develop` command pre-loads local ENV variables from `.env` file (ignored by Git) before running development server.
 If you need to include local environment variables in development add them to `.env` file in the root of the app directory in the following format:
 
@@ -150,6 +96,72 @@ If you need to include local environment variables in development add them to `.
 VARIABLE_NAME=value
 ```
 
+There's an `.env.example` with pre-populated development data including urls to the Content Store.
+
+To use that, copy the file:
+
+```
+cp .env.example .env
+```
+
+Grab the auth token from the Content Store Django admin [http://localhost:8000/django-admin/oauth2_provider/accesstoken/](http://localhost:8000/django-admin/oauth2_provider/accesstoken/) and add it to the `CONTENTSTORE_AUTH_TOKEN` var in your .env file.
+
+### Fonts
+
+The FS Me web font can only be used in a license permitted manor which means
+they cannot be included in this repository as it is publicly accessible.
+
+If you want to run the fonts in a development environment you will need to
+include them in a directory that is ignored by git: `./assets/fonts/fsme/`.
+The files in this directory should then be:
+
+```
+FSMeWeb-Bold.eot
+FSMeWeb-Bold.woff
+FSMeWeb-Heavy.eot
+FSMeWeb-Heavy.woff
+FSMeWeb-Light.eot
+FSMeWeb-Light.woff
+FSMeWeb-Regular.eot
+FSMeWeb-Regular.woff
+```
+
+### Environment variables
+
+Environment variables are used to set application level settings for each
+environment.
+
+| Variable                           | Description                                                                         | Default                  |
+|:-----------------------------------|:------------------------------------------------------------------------------------|:-------------------------|
+| `NODE_ENV`                         | node environment                                                                    | development              |
+| `PORT`                             | server port                                                                         | 3000                     |
+| `GOOGLE_ANALYTICS_TRACKING_ID`     | Google Analytics property id                                                        |                          |
+| `WEBTRENDS_TRACKING_ID`            | [Webtrends](https://www.webtrends.com/) tracking id                                 |                          |
+| `HOTJAR_TRACKING_ID`               | [Hotjar](https://www.hotjar.com/) tracking id                                       |                          |
+| `FONT_CDN`                         | Base url where the font is served                                                   | /                        |
+| `STATIC_CDN`                       | Base url where all other assets are served                                          |                          |
+| `LOG_LEVEL`                        | Level of logging to user                                                            | warn                     |
+| `WDIO_BASEURL`                     | base URL for webdriver to use for acceptance tests                                  | http://localhost:${PORT} |
+| `WDIO_SCREENSHOTPATH`              | path where webdriver screenshots are saved                                          |                          |
+| `WDIO_REPORTPATH`                  | path where webdriverio test runner reports are saved                                |                          |
+| `BROWSERSTACK_USERNAME`            | Browserstack username                                                               |                          |
+| `BROWSERSTACK_ACCESS_KEY`          | Browserstack access key                                                             |                          |
+| `TRAVIS_BUILD_NUMBER`              | The number of the current Travis build                                              |                          |
+| `TRAVIS_JOB_NUMBER`                | The number of the current Travis job                                                |                          |
+| `DISABLE_FEEDBACK`                 | Whether to disable feedback. On by default. Set this to `true` to disable           |                          |
+| `FEEDBACK_API_BASEURL`             | Base feedback endpoint                                                              |                          |
+| `FEEDBACK_API_KEY`                 | Key for feedback API if needed                                                      |                          |
+| `FEEDBACK_TIMEOUT`                 | Timeout before the request to the API fails                                         | 5000                     |
+| `APPINSIGHTS_INSTRUMENTATIONKEY`   | Application insights instrumentation key                                            |                          |
+| `CONNECTINGTOSERVICES_BASEURL`     | Base URL for connecting to services application                                     | /                        |
+| `CONTENTSTORE_TYPE`                | Operational mode for content store. Accepted options: `rest`, `file` or `fallback` (which tries `rest` first and falls back to `file`)                               | file                     |
+| `CONTENTSTORE_API_BASEURL`         | Base URL for the content store API, eg `http://hostname.com/api`. No trailing slash |                          |
+| `CONTENTSTORE_AUTH_TOKEN`          | OAuth2 bearer token for authenticating with the API                                 |                          |
+| `CONTENTSTORE_TIMEOUT`             | Timeout before the request to the API fails                                         | 5000                     |
+| `CONTENTSTORE_IMAGE_BASEURL`       | Base url for the image endpoint, eg `http://hostname.com/images`. No trailing slash |                          |
+| `CONTENTSTORE_IMAGE_SIGNATURE_KEY` | Key used to generate the signature for image paths from the content store           |                          |
+| `CONTENTSTORE_IMAGE_PROXY_PATH`    | The local path to use for the image proxy                                           | /content-images          |
+| `PREVIEW_SIGNATURE_KEY`            | Key used to generate the signature for preview  pages in content store              |                          |
 
 ### Testing
 
