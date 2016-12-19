@@ -3,16 +3,18 @@
   "title": "Indigestion",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/indigestion/pages/introduction.aspx",
-  "localHeader": [
-    {
-      "type": "markdown",
-      "value": "Most people have indigestion at some point. Usually, it's not a sign of anything more serious and you can treat indigestion yourself."
-    }
-  ],
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Most people have indigestion at some point. Usually, it's not a sign of anything more serious and you can treat indigestion yourself."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

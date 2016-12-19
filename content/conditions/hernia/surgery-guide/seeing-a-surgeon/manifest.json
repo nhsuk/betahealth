@@ -4,16 +4,18 @@
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "returnPath": "/conditions/hernia/surgery-guide",
-  "localHeader": [
-    {
-      "type": "markdown",
-      "value": "Your first appointment will be with a surgeon. You can bring someone with you."
-    }
-  ],
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Your first appointment will be with a surgeon. You can bring someone with you."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

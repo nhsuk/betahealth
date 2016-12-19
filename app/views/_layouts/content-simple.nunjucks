@@ -12,7 +12,7 @@
 
     {% block main_content %}
       <div class="page-section">
-        {% for component in main %}
+        {% for component in content.main %}
           {{ components[component.type | snakecase](component.value) }}
         {% endfor %}
       </div>
