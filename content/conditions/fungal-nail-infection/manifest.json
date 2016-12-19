@@ -10,7 +10,7 @@
       "value": "Fungal nail infections are common. They’re not serious but they can take a long time to treat."
     }
   ],
-  "before": [
+  "main": [
     {
       "type": "figure_list",
       "value": [
@@ -39,9 +39,7 @@
           "alt": "Brittle nail with pieces missing"
         }
       ]
-    }
-  ],
-  "main": [
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"

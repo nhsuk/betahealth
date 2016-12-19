@@ -16,9 +16,11 @@
 {% endmacro %}
 
 {% macro markdown(content) %}
-{% markdown %}
-  {{ content | renderString | safe }}
-{% endmarkdown %}
+  <div class="reading-width">
+    {% markdown %}
+      {{ content | renderString | safe }}
+    {% endmarkdown %}
+  </div>
 {% endmacro %}
 
 {% macro srcset(list) %}
@@ -34,7 +36,7 @@
 {% endmacro %}
 
 {% macro figure_list(list) %}
-  <div class="page-section page-section--collapse-bottom">
+  <div class="card__container">
     {% for figure in list %}
       {{ figure_item(figure) }}
     {% endfor %}

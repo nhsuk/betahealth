@@ -9,7 +9,7 @@
       "value": "Hand, foot and mouth disease is a common infection that mostly affects children under 10. It usually clears up by itself, within about a week."
     }
   ],
-  "before": [
+  "main": [
     {
       "type": "markdown",
       "value": "!file=main-content-before.md"
@@ -42,9 +42,7 @@
           "alt": "Blister on small toe"
         }
       ]
-    }
-  ],
-  "main": [
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"

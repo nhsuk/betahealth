@@ -3,7 +3,7 @@
   "title": "Shingles",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/shingles/pages/introduction.aspx",
-  "before": [
+  "main": [
     {
       "type": "markdown",
       "value": "!file=main-content-before.md"
@@ -36,9 +36,7 @@
           "alt": "A rash band"
         }
       ]
-    }
-  ],
-  "main": [
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"
