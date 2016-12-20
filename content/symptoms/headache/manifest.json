@@ -1,5 +1,5 @@
 {
-  "layout": "content-sidebar-last",
+  "layout": "content-simple",
   "title": "Headache",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/headache/pages/introduction.aspx",
@@ -13,9 +13,7 @@
     {
       "type": "markdown",
       "value": "!file=main-content.md"
-    }
-  ],
-  "sidebar": [
+    },
     {
       "type": "markdown",
       "value": "!file=sidebar-content.md"

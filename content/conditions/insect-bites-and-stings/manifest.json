@@ -1,5 +1,5 @@
 {
-  "layout": "content-sidebar-last",
+  "layout": "content-simple",
   "title": "Insect bites and stings",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/bites-insect/pages/introduction.aspx",
@@ -13,9 +13,7 @@
     {
       "type": "markdown",
       "value": "!file=main-content.md"
-    }
-  ],
-  "sidebar": [
+    },
     {
       "type": "markdown",
       "value": "!file=sidebar-content.md"

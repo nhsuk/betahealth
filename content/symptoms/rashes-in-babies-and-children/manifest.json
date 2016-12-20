@@ -1,5 +1,5 @@
 {
-  "layout": "content-sidebar-first",
+  "layout": "content-simple",
   "title": "Rashes in babies and children",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/skin-rash-children/pages/introduction.aspx",
@@ -13,6 +13,10 @@
     }
   ],
   "main": [
+    {
+      "type": "markdown",
+      "value": "!file=sidebar-content.md"
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"
@@ -292,12 +296,6 @@
           }
         ]
       }
-    }
-  ],
-  "sidebar": [
-    {
-      "type": "markdown",
-      "value": "!file=sidebar-content.md"
     }
   ]
 }

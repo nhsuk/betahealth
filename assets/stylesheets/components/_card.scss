@@ -1,3 +1,7 @@
+.card__container + * {
+  margin-top: 0;
+}
+
 .card {
   @include element-spacing(bottom);
   background-color: tint($blue, 80%);

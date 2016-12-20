@@ -9,7 +9,7 @@
       "value": "Head lice and nits are very common in young children. They don’t have anything to do with dirty hair, and are usually picked up by head-to-head contact."
     }
   ],
-  "before": [
+  "main": [
     {
       "type": "markdown",
       "value": "!file=main-content-before.md"
@@ -42,9 +42,7 @@
           "alt": "Head lice eggs"
         }
       ]
-    }
-  ],
-  "main": [
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"

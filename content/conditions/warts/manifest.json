@@ -3,7 +3,7 @@
   "title": "Warts and verrucas",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/warts/pages/introduction.aspx",
-  "before": [
+  "main": [
     {
       "type": "markdown",
       "value": "!file=main-content-before.md"
@@ -44,9 +44,7 @@
           "alt": "A cluster of warts"
         }
       ]
-    }
-  ],
-  "main": [
+    },
     {
       "type": "markdown",
       "value": "!file=main-content.md"

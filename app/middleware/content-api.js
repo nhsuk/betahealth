@@ -9,14 +9,10 @@ module.exports = (req, res, next) => {
   contentStore.getRecord(slug)
     .then((response) => {
       const record = response;
-
-      let layout = slug;
-      if (record) {
-        layout = `_layouts/${record.layout}`;
-      }
+      const layout = record.layout || 'content-simple';
 
       record.slug = slug;
-      request.layout = layout;
+      request.layout = `_layouts/${layout}`;
       request.pageData = record;
 
       // eslint-disable-next-line no-param-reassign

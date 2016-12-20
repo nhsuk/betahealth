@@ -1,5 +1,9 @@
 $_border-colour: shade($grey-3, 20);
 
+.tabs {
+  @extend %measure;
+}
+
   .tabs__tab-container {
     margin-top: 0;
   }
