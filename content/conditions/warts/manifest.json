@@ -4,6 +4,12 @@
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/warts/pages/introduction.aspx",
   "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Warts and verrucas are small lumps on the skin that most people have at some point in their life. They usually go away on their own, but it can take months or even years."
+      }
+    ],
     "main": [
       {
         "type": "markdown",
@@ -25,7 +31,7 @@
               "assets/images/warts/verruca-300.jpg 300w",
               "assets/images/warts/verruca-600.jpg 600w"
             ],
-            "caption": "Warts on your feet are called verrucas. They have tiny black dots under the hard skin and can be painful - like standing on a needle.",
+            "caption": "Verrucas appear on your feet. They have tiny black dots under the hard skin.",
             "alt": "A verruca"
           },
           {
@@ -48,7 +54,18 @@
       },
       {
         "type": "markdown",
-        "value": "!file=main-content.md"
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
       }
     ]
   }
