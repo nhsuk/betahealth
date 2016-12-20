@@ -231,7 +231,7 @@
         <div class="panel__content panel__content--half">
           <h3>Do</h3>
 
-          <ul>
+          <ul class="list--check">
             <li>this thing</li>
             <li>another thing</li>
             <li>and also this</li>
@@ -241,9 +241,9 @@
         <div class="panel__content panel__content--half">
           <h3>Don't</h3>
 
-          <ul>
+          <ul class="list--cross">
             <li>this thing</li>
-            <li>Vivamus magna. Cras in mi at felis aliquet congue</li>
+            <li>vivamus magna</li>
             <li>and also this</li>
           </ul>
         </div>
