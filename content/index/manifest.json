@@ -1,10 +1,12 @@
 {
   "layout": "content-simple",
   "title": "Test pages for NHS.UK",
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

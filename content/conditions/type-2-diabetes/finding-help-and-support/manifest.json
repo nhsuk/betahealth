@@ -3,10 +3,12 @@
   "guide": true,
   "title": "Finding help and support",
   "choicesOrigin": "conditions/Diabetes-type2/Pages/Introduction.aspx",
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

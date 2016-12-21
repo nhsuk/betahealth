@@ -3,10 +3,12 @@
   "guide": true,
   "title": "Getting diagnosed",
   "choicesOrigin": "conditions/Diabetes-type2/Pages/Diagnosis.aspx",
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }
