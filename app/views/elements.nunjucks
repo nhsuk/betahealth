@@ -208,32 +208,72 @@
       <div class="callout callout--severe">
         <p>A severe callout</p>
       </div>
+
+      <h2>Panels</h2>
+
+      <article class="panel">
+        <div class="panel__content">
+          <h2>Panel heading</h2>
+
+          <ul class="list--chevron">
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+            <li>Officiis excepturi atque et, a</li>
+            <li>Totam, dolorum culpa eum tenetur temporibus in assumenda vel mollitia alias</li>
+          </ul>
+        </div>
+
+        <footer class="panel__footer">
+          <p><strong>Panel footer, usually an action to take.</strong></p>
+        </footer>
+      </article>
+
+      <section class="panel">
+        <div class="panel__content panel__content--half">
+          <h3>Do</h3>
+
+          <ul class="list--check">
+            <li>this thing</li>
+            <li>another thing</li>
+            <li>and also this</li>
+          </ul>
+        </div>
+
+        <div class="panel__content panel__content--half">
+          <h3>Don't</h3>
+
+          <ul class="list--cross">
+            <li>this thing</li>
+            <li>vivamus magna</li>
+            <li>and also this</li>
+          </ul>
+        </div>
+      </section>
+
+      <h2>Hidden text (progressive disclosure)</h2>
+
+      <details>
+        <summary>
+          <span class="details__summary">Help with something</span>
+        </summary>
+
+        <div>
+          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
+        </div>
+      </details>
+
+      <details class="details--inline">
+        <summary>
+          <span class="details__summary">
+            Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
+          </span>
+        </summary>
+
+        <div>
+          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
+            ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
+            congue. Ut a est eget ligula molestie gravida.</p>
+        </div>
+      </details>
     </div>
-
-    <h2>Hidden text (progressive disclosure)</h2>
-
-    <details>
-      <summary>
-        <span class="details__summary">Help with something</span>
-      </summary>
-
-      <div>
-        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
-      </div>
-    </details>
-
-    <details class="details--inline">
-      <summary>
-        <span class="details__summary">
-          Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
-        </span>
-      </summary>
-
-      <div>
-        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
-          ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
-          congue. Ut a est eget ligula molestie gravida.</p>
-      </div>
-    </details>
   </div>
 {% endblock %}

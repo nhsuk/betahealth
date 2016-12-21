@@ -1,7 +1,5 @@
 // scss-lint:disable NestingDepth
 
-$_chevron-padding: $default-spacing-unit * 2;
-
 ul {
   @include core-font(20);
   list-style: disc outside;
@@ -43,8 +41,10 @@ dl {
 }
 
 .list--chevron {
+  $_list-padding: $default-spacing-unit * 2;
+
   list-style: none;
-  padding-left: $_chevron-padding;
+  padding-left: $_list-padding;
 
   @include ie-lte(7) {
     list-style: disc;
@@ -68,7 +68,7 @@ dl {
     &:before {
       border-color: transparent transparent transparent $grey-1;
       border-width: 10px 0 10px 10px;
-      left: -$_chevron-padding;
+      left: -$_list-padding;
 
       // variations for different coloured backgrounds
       .callout--warning & {
@@ -83,7 +83,7 @@ dl {
     &:after {
       border-color: transparent transparent transparent $white;
       border-width: 10px 0 10px 10px;
-      left: -($_chevron-padding + 6px);
+      left: -($_list-padding + 6px);
 
       // variations for different coloured backgrounds
       .callout--info &,
@@ -103,5 +103,56 @@ dl {
         border-left-color: $red;
       }
     }
+  }
+}
+
+.list--check,
+.list--cross {
+  $_list-padding: $default-spacing-unit * 2;
+
+  list-style: none;
+  padding-left: $_list-padding;
+
+  @include ie-lte(8) {
+    list-style: disc;
+    padding-left: 1em;
+  }
+
+  li {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      left: -$_list-padding;
+      position: absolute;
+      zoom: 1;
+    }
+  }
+}
+
+.list--check li::before {
+  background: transparent;
+  border: solid;
+  border-color: $green;
+  border-width: 0 0 5px 5px;
+  height: 12px;
+  top: 7px;
+  transform: rotate(-45deg);
+  width: 22px;
+}
+
+.list--cross li {
+  &::before,
+  &::after {
+    background: $red;
+    height: 5px;
+    top: 12px;
+    transform: rotate(45deg);
+    width: 24px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
