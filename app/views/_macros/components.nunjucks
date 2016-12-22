@@ -240,3 +240,15 @@
     {% endif %}
   </article>
 {% endmacro %}
+
+{% macro split_panel(content) %}
+  <article class="panel">
+    <div class="panel__content panel__content--half">
+      {{ markdown(content[0]) }}
+    </div>
+
+    <div class="panel__content panel__content--half">
+      {{ markdown(content[1]) }}
+    </div>
+  </article>
+{% endmacro %}
