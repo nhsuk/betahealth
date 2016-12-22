@@ -227,8 +227,8 @@
   </nav>
 {% endmacro %}
 
-{% macro panel(content) %}
-  <article class="panel">
+{% macro panel(content, reading_width=true) %}
+  <article class="panel{{ ' reading-width' if reading_width }}">
     <div class="panel__content">
       {{ markdown(content.main) }}
     </div>
@@ -242,7 +242,7 @@
 {% endmacro %}
 
 {% macro split_panel(content) %}
-  <article class="panel">
+  <div class="panel">
     <div class="panel__content panel__content--half">
       {{ markdown(content[0]) }}
     </div>
@@ -250,5 +250,5 @@
     <div class="panel__content panel__content--half">
       {{ markdown(content[1]) }}
     </div>
-  </article>
+  </div>
 {% endmacro %}

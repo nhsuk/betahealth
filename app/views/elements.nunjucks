@@ -208,47 +208,49 @@
       <div class="callout callout--severe">
         <p>A severe callout</p>
       </div>
+    </div>
 
-      <h2>Panels</h2>
+    <h2>Panels</h2>
 
-      <article class="panel">
-        <div class="panel__content">
-          <h2>Panel heading</h2>
+    <article class="panel">
+      <div class="panel__content">
+        <h2>Panel heading</h2>
 
-          <ul class="list--chevron">
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-            <li>Officiis excepturi atque et, a</li>
-            <li>Totam, dolorum culpa eum tenetur temporibus in assumenda vel mollitia alias</li>
-          </ul>
-        </div>
+        <ul class="list--chevron">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+          <li>Officiis excepturi atque et, a</li>
+          <li>Totam, dolorum culpa eum tenetur temporibus in assumenda vel mollitia alias</li>
+        </ul>
+      </div>
 
-        <footer class="panel__footer">
-          <p><strong>Panel footer, usually an action to take.</strong></p>
-        </footer>
-      </article>
+      <footer class="panel__footer">
+        <p><strong>Panel footer, usually an action to take.</strong></p>
+      </footer>
+    </article>
 
-      <section class="panel">
-        <div class="panel__content panel__content--half">
-          <h3>Do</h3>
+    <section class="panel">
+      <div class="panel__content panel__content--half">
+        <h3>Do</h3>
 
-          <ul class="list--check">
-            <li>this thing</li>
-            <li>another thing</li>
-            <li>and also this</li>
-          </ul>
-        </div>
+        <ul class="list--check">
+          <li>this thing</li>
+          <li>another thing</li>
+          <li>and also this</li>
+        </ul>
+      </div>
 
-        <div class="panel__content panel__content--half">
-          <h3>Don't</h3>
+      <div class="panel__content panel__content--half">
+        <h3>Don't</h3>
 
-          <ul class="list--cross">
-            <li>this thing</li>
-            <li>vivamus magna</li>
-            <li>and also this</li>
-          </ul>
-        </div>
-      </section>
+        <ul class="list--cross">
+          <li>this thing</li>
+          <li>vivamus magna</li>
+          <li>and also this</li>
+        </ul>
+      </div>
+    </section>
 
+    <div class="reading-width">
       <h2>Hidden text (progressive disclosure)</h2>
 
       <details>
