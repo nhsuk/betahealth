@@ -53,7 +53,7 @@ You can buy these from a pharmacist without a prescription.
 
 
 !!! attention
-  ## See a GP if:
+  ## See your GP if
 
   - the symptoms don’t improve after 2 to 3 days 
   - you’re worried about the bite or sting 

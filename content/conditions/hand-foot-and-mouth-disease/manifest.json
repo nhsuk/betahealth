@@ -7,7 +7,7 @@
     "header": [
       {
         "type": "markdown",
-        "value": "Hand, foot and mouth disease is a common infection that mostly affects children under 10. It usually clears up by itself, within about a week."
+        "value": "Hand, foot and mouth disease is a common childhood illness that can affect adults. It usually clears up by itself in 7 to 10 days."
       }
     ],
     "main": [
@@ -23,7 +23,7 @@
               "assets/images/hand-foot-mouth-disease/mouth-ulcer-300.jpg 300w",
               "assets/images/hand-foot-mouth-disease/mouth-ulcer-600.jpg 600w"
             ],
-            "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and it may be difficult to eat and drink.",
+            "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and make it difficult to eat or drink.",
             "alt": "Mouth ulcer on a tongue"
           },
           {
@@ -31,7 +31,7 @@
               "assets/images/hand-foot-mouth-disease/rash-300.jpg 300w",
               "assets/images/hand-foot-mouth-disease/rash-600.jpg 600w"
             ],
-            "caption": "A rash usually also appears on the hands and feet. The spots are often red and may develop into a blister.",
+            "caption": "Red spots usually appear on the hands and feet that will develop into blisters.",
             "alt": "Rash on a hand"
           },
           {
@@ -39,7 +39,7 @@
               "assets/images/hand-foot-mouth-disease/blisters-300.jpg 300w",
               "assets/images/hand-foot-mouth-disease/blisters-600.jpg 600w"
             ],
-            "caption": "The blisters are grey and they can be painful.",
+            "caption": "The blisters are grey in the centre and can be painful.",
             "alt": "Blister on small toe"
           }
         ]

@@ -1,1 +1,1 @@
-## Check if you have them
+## Check if you have a wart or verruca

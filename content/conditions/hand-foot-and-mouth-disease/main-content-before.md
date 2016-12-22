@@ -1,7 +1,9 @@
-The first sign of hand, foot and mouth disease can be:
+## Check if it’s hand, foot and mouth disease
 
-* a sore throat
-* a fever, typically 38 to 39&deg;C
-* not wanting to eat
+The first signs of hand, foot and mouth disease can be:
+
+- a sore throat  
+- a high temperature, above 38C
+- not wanting to eat
 
 After a few days mouth ulcers and a rash will appear.
