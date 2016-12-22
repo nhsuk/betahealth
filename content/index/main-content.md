@@ -5,20 +5,21 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
+* [Diarrhoea](/conditions/diarrhoea)
+* [Earwax](/conditions/earwax)
 * [Fungal nail infection](/conditions/fungal-nail-infection)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
 * [Hernia](/conditions/hernia)
 * [Head lice](/conditions/head-lice)
-* [Shingles](/conditions/shingles)
-* [Warts](/conditions/warts)
-* [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
 * [Insect bites and stings](/conditions/insect-bites-and-stings)
 * [Indigestion](/conditions/indigestion)
-* [Earwax](/conditions/earwax)
+* [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
+* [Warts](/conditions/warts)
 
 ## Symptoms
 
+* [Headache](/symptoms/headache)
 * [Rashes in babies and children](/symptoms/rashes-in-babies-and-children)
 * [Stomach ache](/symptoms/stomach-ache)
-* [Headache](/symptoms/headache)
