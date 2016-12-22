@@ -1,5 +1,5 @@
 !!! severe
-  ## Call 999 or go to A&E if: 
+  ## Call 999 or go to A&E if 
   
   - you have difficulty swallowing or breathing
   - you’re drooling 

@@ -32,7 +32,7 @@ You can buy them from a supermarket or from a pharmacist without a prescription.
 
 
 !!! attention
-  ## See a GP if:
+  ## See your GP if
 
   - your sore throat doesn’t improve after a week 
   - you often get sore throats 

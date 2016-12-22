@@ -1,24 +1,24 @@
 {
-  "layout": "content-sidebar-last",
+  "layout": "content-simple",
   "title": "Sore throat",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/sore-throat/pages/introduction.aspx",
-  "localHeader": [
-    {
-      "type": "markdown",
-      "value": "Sore throats are very common and usually nothing to worry about. They normally get better by themselves within a week."
-    }
-  ],
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ],
-  "sidebar": [
-    {
-      "type": "markdown",
-      "value": "!file=sidebar-content.md"
-    }
-  ]
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Sore throats are very common and usually nothing to worry about. They normally get better by themselves within a week."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      },
+      {
+        "type": "markdown",
+        "value": "!file=sidebar-content.md"
+      }
+    ]
+  }
 }

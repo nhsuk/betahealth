@@ -8,13 +8,13 @@
 
   <h1 class="local-header__title">{{ meta.parent.title if guide else title }}</h1>
 
-  {% if localHeader and localHeader.length > 0 or guide %}
+  {% if content.header.length or guide %}
     <div class="local-header__intro">
       {% if guide %}
         {{ components.numbered_navigation(meta.siblings, slug) }}
       {% endif %}
 
-      {% for component in localHeader %}
+      {% for component in content.header %}
         {% if component.type.toLowerCase().indexOf('nav') != -1 %}
           {{ components[component.type | snakecase](main) }}
         {% else %}

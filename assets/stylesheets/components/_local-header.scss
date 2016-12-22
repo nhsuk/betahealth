@@ -23,6 +23,10 @@
     }
   }
 
+  a {
+    @extend %link--reverse-polarity;
+  }
+
   // the lobotomized owl
   // see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
   * + * {

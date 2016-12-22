@@ -8,31 +8,14 @@
     {% endblock %}
 
     {% block main_content_before %}
-      {% for component in before %}
-        {% if component.type | snakecase == 'markdown' %}
-          <div class="page-section">
-            <div class="reading-width">
-              {{ components[component.type | snakecase](component.value) }}
-            </div>
-          </div>
-        {% else %}
-          {{ components[component.type | snakecase](component.value) }}
-        {% endif %}
-      {% endfor %}
     {% endblock %}
 
     {% block main_content %}
-      {% for component in main %}
-        {% if component.type | snakecase in ['markdown', 'panel'] %}
-          <div class="page-section">
-            <div class="reading-width">
-              {{ components[component.type | snakecase](component.value) }}
-            </div>
-          </div>
-        {% else %}
+      <div class="page-section">
+        {% for component in content.main %}
           {{ components[component.type | snakecase](component.value) }}
-        {% endif %}
-      {% endfor %}
+        {% endfor %}
+      </div>
     {% endblock %}
 
     {% block main_content_after %}
@@ -48,6 +31,8 @@
     {% if nonEmergencyCallout %}
       {% include '_includes/non-emergency-callout.nunjucks' %}
     {% endif %}
+
+    {% include '_includes/feedback-message.nunjucks' %}
 
   </article>
 {% endblock %}

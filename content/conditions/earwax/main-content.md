@@ -21,7 +21,7 @@ Don’t use drops if you have a hole in your eardrum. Ask your pharmacist what y
 !!!
 
 !!! attention
-  ## See a nurse in your GP practice if:
+  ## See a nurse in your GP practice if
   
   - your ear hasn’t cleared after 5 days 
   - your ear is badly blocked and you can’t hear anything (you can get an infection if it isn’t cleared)

@@ -1,4 +1,5 @@
 .section-unit--divider {
+  @extend %measure;
   @include element-padding(bottom);
   position: relative;
 

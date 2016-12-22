@@ -3,51 +3,51 @@
   "title": "Hand, foot and mouth disease",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/hand-foot-and-mouth-disease/pages/introduction.aspx",
-  "localHeader": [
-    {
-      "type": "markdown",
-      "value": "Hand, foot and mouth disease is a common infection that mostly affects children under 10. It usually clears up by itself, within about a week."
-    }
-  ],
-  "before": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content-before.md"
-    },
-    {
-      "type": "figure_list",
-      "value": [
-        {
-          "srcset": [
-            "assets/images/hand-foot-mouth-disease/mouth-ulcer-300.jpg 300w",
-            "assets/images/hand-foot-mouth-disease/mouth-ulcer-600.jpg 600w"
-          ],
-          "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and it may be difficult to eat and drink.",
-          "alt": "Mouth ulcer on a tongue"
-        },
-        {
-          "srcset": [
-            "assets/images/hand-foot-mouth-disease/rash-300.jpg 300w",
-            "assets/images/hand-foot-mouth-disease/rash-600.jpg 600w"
-          ],
-          "caption": "A rash usually also appears on the hands and feet. The spots are often red and may develop into a blister.",
-          "alt": "Rash on a hand"
-        },
-        {
-          "srcset": [
-            "assets/images/hand-foot-mouth-disease/blisters-300.jpg 300w",
-            "assets/images/hand-foot-mouth-disease/blisters-600.jpg 600w"
-          ],
-          "caption": "The blisters are grey and they can be painful.",
-          "alt": "Blister on small toe"
-        }
-      ]
-    }
-  ],
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Hand, foot and mouth disease is a common childhood illness that can affect adults. It usually clears up by itself in 7 to 10 days."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-before.md"
+      },
+      {
+        "type": "figure_list",
+        "value": [
+          {
+            "srcset": [
+              "assets/images/hand-foot-mouth-disease/mouth-ulcer-300.jpg 300w",
+              "assets/images/hand-foot-mouth-disease/mouth-ulcer-600.jpg 600w"
+            ],
+            "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and make it difficult to eat or drink.",
+            "alt": "Mouth ulcer on a tongue"
+          },
+          {
+            "srcset": [
+              "assets/images/hand-foot-mouth-disease/rash-300.jpg 300w",
+              "assets/images/hand-foot-mouth-disease/rash-600.jpg 600w"
+            ],
+            "caption": "Red spots usually appear on the hands and feet that will develop into blisters.",
+            "alt": "Rash on a hand"
+          },
+          {
+            "srcset": [
+              "assets/images/hand-foot-mouth-disease/blisters-300.jpg 300w",
+              "assets/images/hand-foot-mouth-disease/blisters-600.jpg 600w"
+            ],
+            "caption": "The blisters are grey in the centre and can be painful.",
+            "alt": "Blister on small toe"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

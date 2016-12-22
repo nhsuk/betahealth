@@ -12,11 +12,9 @@
       </div>
 
       <div class="column--two-thirds">
-        <div class="reading-width">
-          {% for component in main %}
-            {{ components[component.type | snakecase](component.value) }}
-          {% endfor %}
-        </div>
+        {% for component in content.main %}
+          {{ components[component.type | snakecase](component.value) }}
+        {% endfor %}
       </div>
 
     </div>

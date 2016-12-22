@@ -4,47 +4,47 @@
   "title": "Fungal nail infection",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/fungal-nail-infection/pages/introduction.aspx",
-  "localHeader": [
-    {
-      "type": "markdown",
-      "value": "Fungal nail infections are common. They’re not serious but they can take a long time to treat."
-    }
-  ],
-  "before": [
-    {
-      "type": "figure_list",
-      "value": [
-        {
-          "srcset": [
-            "assets/images/fungal-nail-infection/stage-1-300.jpg 300w",
-            "assets/images/fungal-nail-infection/stage-1-600.jpg 600w"
-          ],
-          "caption": "Fungal nail infections usually start at the edge of the nail.",
-          "alt": "Fungal infection at the edge of the nail"
-        },
-        {
-          "srcset": [
-            "assets/images/fungal-nail-infection/stage-2-300.jpg 300w",
-            "assets/images/fungal-nail-infection/stage-2-600.jpg 600w"
-          ],
-          "caption": "They often then spread to the middle. The nail becomes discoloured and lifts off.",
-          "alt": "Infection spread to the middle of the toe"
-        },
-        {
-          "srcset": [
-            "assets/images/fungal-nail-infection/stage-3-300.jpg 300w",
-            "assets/images/fungal-nail-infection/stage-3-600.jpg 600w"
-          ],
-          "caption": "The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.",
-          "alt": "Brittle nail with pieces missing"
-        }
-      ]
-    }
-  ],
-  "main": [
-    {
-      "type": "markdown",
-      "value": "!file=main-content.md"
-    }
-  ]
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Fungal nail infections are common. They’re not serious but they can take a long time to treat."
+      }
+    ],
+    "main": [
+      {
+        "type": "figure_list",
+        "value": [
+          {
+            "srcset": [
+              "assets/images/fungal-nail-infection/stage-1-300.jpg 300w",
+              "assets/images/fungal-nail-infection/stage-1-600.jpg 600w"
+            ],
+            "caption": "Fungal nail infections usually start at the edge of the nail.",
+            "alt": "Fungal infection at the edge of the nail"
+          },
+          {
+            "srcset": [
+              "assets/images/fungal-nail-infection/stage-2-300.jpg 300w",
+              "assets/images/fungal-nail-infection/stage-2-600.jpg 600w"
+            ],
+            "caption": "They often then spread to the middle. The nail becomes discoloured and lifts off.",
+            "alt": "Infection spread to the middle of the toe"
+          },
+          {
+            "srcset": [
+              "assets/images/fungal-nail-infection/stage-3-300.jpg 300w",
+              "assets/images/fungal-nail-infection/stage-3-600.jpg 600w"
+            ],
+            "caption": "The nail becomes brittle and pieces can break off. It can cause pain and swelling in the skin around the nail.",
+            "alt": "Brittle nail with pieces missing"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
 }

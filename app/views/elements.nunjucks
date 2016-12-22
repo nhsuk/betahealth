@@ -210,30 +210,72 @@
       </div>
     </div>
 
-    <h2>Hidden text (progressive disclosure)</h2>
+    <h2>Panels</h2>
 
-    <details>
-      <summary>
-        <span class="details__summary">Help with something</span>
-      </summary>
+    <article class="panel">
+      <div class="panel__content">
+        <h2>Panel heading</h2>
 
-      <div>
-        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
+        <ul class="list--chevron">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+          <li>Officiis excepturi atque et, a</li>
+          <li>Totam, dolorum culpa eum tenetur temporibus in assumenda vel mollitia alias</li>
+        </ul>
       </div>
-    </details>
 
-    <details class="details--inline">
-      <summary>
-        <span class="details__summary">
-          Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
-        </span>
-      </summary>
+      <footer class="panel__footer">
+        <p><strong>Panel footer, usually an action to take.</strong></p>
+      </footer>
+    </article>
 
-      <div>
-        <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
-          ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
-          congue. Ut a est eget ligula molestie gravida.</p>
+    <section class="panel">
+      <div class="panel__content panel__content--half">
+        <h3>Do</h3>
+
+        <ul class="list--check">
+          <li>this thing</li>
+          <li>another thing</li>
+          <li>and also this</li>
+        </ul>
       </div>
-    </details>
+
+      <div class="panel__content panel__content--half">
+        <h3>Don't</h3>
+
+        <ul class="list--cross">
+          <li>this thing</li>
+          <li>vivamus magna</li>
+          <li>and also this</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="reading-width">
+      <h2>Hidden text (progressive disclosure)</h2>
+
+      <details>
+        <summary>
+          <span class="details__summary">Help with something</span>
+        </summary>
+
+        <div>
+          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
+        </div>
+      </details>
+
+      <details class="details--inline">
+        <summary>
+          <span class="details__summary">
+            Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
+          </span>
+        </summary>
+
+        <div>
+          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
+            ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
+            congue. Ut a est eget ligula molestie gravida.</p>
+        </div>
+      </details>
+    </div>
   </div>
 {% endblock %}

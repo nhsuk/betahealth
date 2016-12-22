@@ -32,19 +32,44 @@ describe('File Handler library', () => {
               },
             },
           ],
+          list: [
+            '!file=markdown-2.md',
+          ]
         };
 
         before(() => {
           mock({
             [path.resolve(__dirname, '../../../../content', slug)]: {
               'manifest.json': JSON.stringify(mockData),
-              'markdown.md': mockData.top,
+              'markdown.md': '## Markdown from file',
+              'markdown-2.md': '### More markdown from file',
             },
           });
         });
 
         it('should return a JavaScript object', () => {
-          return fileHandler.get(slug).should.become(mockData);
+          return fileHandler.get(slug).should.become({
+            title: 'foo',
+            top: '## Markdown from file',
+            main: [
+              {
+                content: '## Heading 2',
+              },
+              {
+                content: {
+                  title: 'bar',
+                  content: [
+                    {
+                      content: '### Heading 3',
+                    },
+                  ],
+                },
+              },
+            ],
+            list: [
+              '### More markdown from file',
+            ]
+          });
         });
       });
 

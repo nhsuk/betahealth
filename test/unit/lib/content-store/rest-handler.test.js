@@ -96,9 +96,7 @@ describe('REST API Handler library', () => {
             },
           });
 
-          return get.should.become({
-            layout: 'content-simple',
-          });
+          return get.should.become({});
         });
       });
 
@@ -112,7 +110,6 @@ describe('REST API Handler library', () => {
 
         it('should resolve the promise with the record', () => {
           return this.restHandler.get(slug).should.become({
-            layout: 'content-sidebar-first',
             sidebarOrder: 'first',
             sidebar: [{}],
           });
@@ -129,7 +126,6 @@ describe('REST API Handler library', () => {
 
         it('should resolve the promise with the record', () => {
           return this.restHandler.get(slug).should.become({
-            layout: 'content-sidebar-last',
             sidebarOrder: 'last',
             sidebar: [{}],
           });
@@ -177,7 +173,6 @@ describe('REST API Handler library', () => {
           this.update.should.have.been.called;
 
           return getRecord.should.become({
-            layout: 'content-simple',
             meta: {
               type: 'page',
             },
@@ -238,7 +233,6 @@ describe('REST API Handler library', () => {
             this.createHmac.should.not.have.been.called;
 
             return getRecord.should.become({
-              layout: 'content-simple',
               meta: {
                 type: 'page',
               },
