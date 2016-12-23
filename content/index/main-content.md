@@ -5,6 +5,9 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Common cold](/conditions/cold)
+* [Constipation](/conditions/constipation)
+* [Dehydration](/conditions/dehydration)
 * [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
 * [Diarrhoea](/conditions/diarrhoea)
 * [Earwax](/conditions/earwax)
