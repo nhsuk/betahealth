@@ -1,5 +1,9 @@
+@import "../toolbox";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .media__container {
-  @extend %clearfix;
+  @include clearfix;
 
   & + * {
     margin-top: 0;

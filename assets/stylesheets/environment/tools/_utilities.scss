@@ -1,5 +1,7 @@
+@import "../../toolbox/index";
+
 .util-visuallyhidden {
-  @extend %visuallyhidden;
+  @include visuallyhidden;
 }
 
 .util-nofocus:focus {

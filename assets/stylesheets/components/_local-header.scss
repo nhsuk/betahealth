@@ -1,5 +1,9 @@
+@import "../toolbox/index";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .local-header {
-  @extend %site-width-container;
+  @include site-width-container;
   @include element-padding;
   @include element-spacing;
   background-color: $nhs-blue;
@@ -24,7 +28,7 @@
   }
 
   a {
-    @extend %link--reverse-polarity;
+    @include reverse-polarity;
   }
 
   // the lobotomized owl
@@ -35,7 +39,7 @@
 }
 
 .local-header__return {
-  @extend %link--reverse-polarity;
+  @include reverse-polarity;
   background-color: $nhs-blue;
   border: $baseline-grid-unit / 2 solid tint($nhs-blue, 20);
   display: inline-block;

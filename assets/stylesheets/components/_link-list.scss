@@ -1,5 +1,9 @@
+@import "../environment/settings/typography";
+@import "../environment/tools/mixins/grid-layout";
+@import "../environment/tools/mixins/conditionals";
+
 .link-list__row {
-  @extend %grid-row;
+  @include grid-row;
 }
 
 .link-list {

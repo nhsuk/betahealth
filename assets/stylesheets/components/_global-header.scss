@@ -1,10 +1,15 @@
+@import "../toolbox/index";
+@import "../environment/settings/typography";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/device-pixels";
+
 .global-header {
   background-color: $white;
   border-bottom: $baseline-grid-unit / 2 solid $nhs-blue;
 }
 
 .global-header__inner {
-  @extend %site-width-container;
+  @include site-width-container;
   padding-bottom: $baseline-grid-unit * 4;
   padding-top: $baseline-grid-unit * 4;
 

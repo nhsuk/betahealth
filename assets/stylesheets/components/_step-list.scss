@@ -1,3 +1,6 @@
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 $_step-width: $baseline-grid-unit * 8;
 
 .step-list {

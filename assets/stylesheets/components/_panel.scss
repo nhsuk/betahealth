@@ -1,5 +1,9 @@
+@import "../toolbox/index";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .panel {
-  @extend %clearfix;
+  @include clearfix;
   background-color: $grey-4;
   display: table;
   width: 100%;

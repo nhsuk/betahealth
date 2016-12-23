@@ -1,5 +1,9 @@
+@import "../toolbox";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .article-pagination {
-  @extend %clearfix;
+  @include clearfix;
   @include element-padding(top);
   border-top: 1px solid tint($nhs-blue, 80%);
   list-style: none;

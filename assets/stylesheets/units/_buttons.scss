@@ -1,3 +1,7 @@
+@import "../toolbox";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .button {
   @include bold-font(20);
   @include element-spacing;

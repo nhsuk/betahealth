@@ -1,3 +1,5 @@
+@import "../environment/tools/mixins/grid-layout";
+
 // Grid layout
 // ==========================================================================
 
@@ -15,7 +17,7 @@
 
 // Use .grid-row to define a row for grid columns to sit in
 .grid-row {
-  @extend %grid-row;
+  @include grid-row;
 }
 
 // Use .grid-column to create a grid column with 15px gutter
@@ -59,4 +61,8 @@
 
 .column--three-quarters-right {
   @include grid-column(3 / 4, $float: right);
+}
+
+.reading-width {
+  @include reading-width;
 }

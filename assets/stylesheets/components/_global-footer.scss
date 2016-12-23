@@ -1,3 +1,7 @@
+@import "../toolbox/index";
+@import "../environment/tools/mixins/typography";
+@import "../environment/tools/mixins/device-pixels";
+
 .global-footer {
   background-color: $nhs-blue;
   border-top: $baseline-grid-unit solid shade($nhs-blue, 20);
@@ -12,12 +16,12 @@
   }
 
   a {
-    @extend %link--reverse-polarity;
+    @include reverse-polarity;
   }
 }
 
 .global-footer__inner {
-  @extend %site-width-container;
+  @include site-width-container;
   padding-bottom: $baseline-grid-unit * 24;
   padding-top: $baseline-grid-unit * 8;
 

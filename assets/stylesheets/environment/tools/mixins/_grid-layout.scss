@@ -1,3 +1,6 @@
+@import "../../../toolbox/mixins";
+@import "../../settings/grid-layout";
+
 /// Grid column
 /// -----------
 /// Creates a cross browser grid column with a standardised gutter between the
@@ -37,5 +40,20 @@
 
   @include ie-lte(7) {
     width: (($site-width + $gutter) * $width) - $gutter;
+  }
+}
+
+
+@mixin grid-row {
+  @include clearfix;
+  margin: 0 (-($gutter / 2));
+
+  @include media(desktop) {
+    .page-section &,
+    .local-header & {
+      > * {
+        margin-top: 0;
+      }
+    }
   }
 }

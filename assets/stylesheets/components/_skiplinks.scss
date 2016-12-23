@@ -1,9 +1,12 @@
+@import "../toolbox/index";
+@import "../environment/settings/colours";
+
 .skiplinks {
   background-color: tint($blue, 65%);
 }
 
 .skiplinks__inner {
-  @extend %site-width-container;
+  @include site-width-container;
 }
 
 .skiplinks__link {

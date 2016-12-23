@@ -1,5 +1,8 @@
+@import "../environment/tools/mixins/typography";
+@import "../environment/tools/mixins/grid-layout";
+
 .page-section {
-  @extend %site-width-container;
+  @include site-width-container;
   @include element-padding(vertical);
 
   + .page-section {

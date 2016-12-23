@@ -1,4 +1,6 @@
 // sass-lint:disable class-name-format nesting-depth
+@import "../environment/tools/mixins/typography";
+@import "../toolbox/mixins";
 
 $_border-colour: $grey-2;
 $_border-width: 2px;

@@ -1,7 +1,10 @@
+@import "../toolbox/index";
+@import "../environment/settings/colours";
+
 $_border-colour: shade($grey-3, 20);
 
 .tabs {
-  @extend %measure;
+  @include reading-width;
 }
 
 .tabs__tab {
@@ -19,13 +22,13 @@ $_border-colour: shade($grey-3, 20);
 .tabs__tab-heading {
   // sass-lint:disable class-name-format
   .js-enabled & {
-    @extend %visuallyhidden;
+    @include visuallyhidden;
   }
   // sass-lint:enable class-name-format
 }
 
 .tabs__nav {
-  @extend %clearfix;
+  @include clearfix;
   border: solid $_border-colour;
   border-width: 0 1px 0 0;
   margin-top: 0;

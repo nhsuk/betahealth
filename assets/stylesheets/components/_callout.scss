@@ -1,3 +1,7 @@
+@import "../toolbox/index";
+@import "../environment/settings/colours";
+@import "../environment/tools/mixins/typography";
+
 .callout {
   @include element-padding;
   background-color: $white;
@@ -37,7 +41,7 @@
   color: $white;
 
   a {
-    @extend %link--reverse-polarity;
+    @include reverse-polarity;
   }
 }
 
