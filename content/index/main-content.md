@@ -9,6 +9,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Diarrhoea](/conditions/diarrhoea)
 * [Earwax](/conditions/earwax)
 * [Fungal nail infection](/conditions/fungal-nail-infection)
+* [Flu](/conditions/flu)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
 * [Hernia](/conditions/hernia)
 * [Head lice](/conditions/head-lice)
