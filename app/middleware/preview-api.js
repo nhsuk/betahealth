@@ -24,8 +24,11 @@ module.exports = (req, res, next) => {
 
   return contentStore.getPreview(`${pageId}/?revision-id=${revisionId}`)
     .then((response) => {
-      req.layout = `_layouts/${response.layout}`;
-      req.pageData = response;
+      const record = response;
+      const layout = record.layout || 'content-simple';
+
+      req.layout = `_layouts/${layout}`;
+      req.pageData = record;
       req.pageData.previewRevisionId = revisionId;
 
       next();
