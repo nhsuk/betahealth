@@ -1,0 +1,13 @@
+@import "../environment/tools/mixins/conditionals";
+
+@mixin clearfix {
+  @include ie-lte(7) {
+    zoom: 1;
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
