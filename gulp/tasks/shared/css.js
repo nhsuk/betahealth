@@ -1,4 +1,5 @@
 const sass = require('gulp-sass');
+const importOnce = require('node-sass-import-once');
 const gulpif = require('gulp-if');
 const autoprefixer = require('gulp-autoprefixer');
 const preprocess = require('gulp-preprocess');
@@ -24,6 +25,11 @@ module.exports = (gulp) => {
     .pipe(sass({
       includePaths: SASS_PATHS,
       outputStyle: isProduction ? 'compressed' : 'expanded',
+      importer: importOnce,
+      importOnce: {
+        index: true,
+        css: true
+      }
     }).on('error', handleError))
     .pipe(autoprefixer({
       browsers: ['> 0%', 'IE 8'],
