@@ -1,4 +1,4 @@
-// scss-lint:disable SelectorFormat NestingDepth
+// sass-lint:disable class-name-format nesting-depth
 
 $_border-colour: $grey-2;
 $_border-width: 2px;
@@ -24,22 +24,22 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
   }
 }
 
-  .selection-button__input {
-    cursor: pointer;
-    margin-right: 10px;
+.selection-button__input {
+  cursor: pointer;
+  margin-right: 10px;
 
-    @if ($is-ie == false) or ($ie-version == 9) {
-      .js-enabled & {
-        @extend %visuallyhidden;
-        height: $_element-size;
-        left: 0;
-        margin-right: 0;
-        position: absolute;
-        top: 0;
-        width: $_element-size;
-      }
+  @if ($is-ie == false) or ($ie-version == 9) {
+    .js-enabled & {
+      @extend %visuallyhidden;
+      height: $_element-size;
+      left: 0;
+      margin-right: 0;
+      position: absolute;
+      top: 0;
+      width: $_element-size;
     }
   }
+}
 
 .selection-button--inline {
   @include media(tablet) {
@@ -51,7 +51,6 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
     }
   }
 }
-
 
 .selection-button--radio {
   .js-enabled & {
@@ -71,7 +70,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
       background: currentColor;
       border-radius: 50%;
       content: "";
-      filter: alpha(opacity = 0);
+      filter: alpha(opacity=0);
       height: $_radio-size;
       left: $_radio-spacing;
       opacity: 0;
@@ -101,7 +100,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
       border: solid;
       border-width: 0 0 5px 5px;
       content: "";
-      filter: alpha(opacity = 0);
+      filter: alpha(opacity=0);
       height: 12px;
       left: 8px;
       opacity: 0;
@@ -125,7 +124,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 
     &.is-selected {
       &::after {
-        filter: alpha(opacity = 100);
+        filter: alpha(opacity=100);
         opacity: 1;
         zoom: 1;
       }

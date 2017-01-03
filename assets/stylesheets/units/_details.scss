@@ -1,4 +1,4 @@
-// scss-lint:disable NestingDepth
+// sass-lint:disable nesting-depth
 
 details {
   clear: both;
@@ -28,10 +28,10 @@ details {
     // Hopefully they’ll fix <summary> first but if not it’ll fall back to no arrow:
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1270163
     // If Mozilla add display: revert and remove list-item from summary then this will fall through.
-    @-moz-document regexp('.*') {
+    @-moz-document regexp(".*") {
       &:not([tabindex]) {
         // Allow duplicate properties, override the summary display property
-        // scss-lint:disable DuplicateProperty
+        // sass-lint:disable no-duplicate-properties
         display: list-item;
         display: revert;
       }
@@ -39,30 +39,30 @@ details {
   }
 }
 
-  // Underline only summary text (not the arrow)
-  .details__summary {
-    text-decoration: underline;
+// Underline only summary text (not the arrow)
+.details__summary {
+  text-decoration: underline;
 
-    .details--inline & {
-      text-decoration: none;
-    }
+  .details--inline & {
+    text-decoration: none;
   }
+}
 
-  // Match fallback arrow spacing with -webkit default
-  .details__arrow {
-    font-style: normal;
-    margin-right: .35em;
+// Match fallback arrow spacing with -webkit default
+.details__arrow {
+  font-style: normal;
+  margin-right: .35em;
 
-    .details--inline & {
-      display: none;
-    }
+  .details--inline & {
+    display: none;
   }
+}
 
-  .details__cta {
-    color: $link-colour;
-    cursor: pointer;
-    text-decoration: underline;
-  }
+.details__cta {
+  color: $link-colour;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .details--inline {
   summary {

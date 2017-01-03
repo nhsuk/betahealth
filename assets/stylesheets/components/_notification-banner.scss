@@ -6,13 +6,12 @@
   }
 }
 
-
 .notification-banner--js-hidden {
-  // scss-lint:disable SelectorFormat
+  // sass-lint:disable class-name-format
   .js-enabled & {
     display: none;
   }
-  // scss-lint:enable SelectorFormat
+  // scss-lint:enable class-name-format
 }
 
 .notification-banner--hiviz {
@@ -54,7 +53,7 @@
   }
 }
 
-  .notification-banner__inner {
-    @extend %site-width-container;
-    padding: ($baseline-grid-unit * 2) 0;
-  }
+.notification-banner__inner {
+  @extend %site-width-container;
+  padding: ($baseline-grid-unit * 2) 0;
+}

@@ -2,21 +2,21 @@
   background-color: tint($blue, 65%);
 }
 
-  .skiplinks__inner {
-    @extend %site-width-container;
-  }
+.skiplinks__inner {
+  @extend %site-width-container;
+}
 
-  .skiplinks__link {
-    color: $white;
-    display: inline-block;
-    left: -999em;
-    padding: ($baseline-grid-unit * 2);
-    position: absolute;
+.skiplinks__link {
+  color: $white;
+  display: inline-block;
+  left: -999em;
+  padding: ($baseline-grid-unit * 2);
+  position: absolute;
 
-    &:focus {
-      background-color: tint($blue, 95%);
-      border: 3px solid $yellow;
-      outline: none;
-      position: static;
-    }
+  &:focus {
+    background-color: tint($blue, 95%);
+    border: 3px solid $yellow;
+    outline: none;
+    position: static;
   }
+}
