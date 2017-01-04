@@ -4,9 +4,9 @@ You may not need an operation straight away. Your hernia won’t get better
 without surgery, but it doesn’t always get worse. You can discuss with your
 doctor whether or not you need surgery. They’ll consider:
 
-* the type of hernia you have --- some are more prone to complications
+* the type of hernia you have - some are more prone to complications
 * if your hernia is causing problems, such as pain
-* your health --- surgery may be a risk in some cases
+* your health - surgery may be a risk in some cases
 
 !!! info
 This section focuses on hernia in the groin. For information about other hernias
@@ -45,13 +45,13 @@ There are 2 types of keyhole surgery for hernia:
 
 ::: reveal Transabdominal preperitoneal (TAPP)
   !!! info
-  **Transabdominal preperitoneal (TAPP)** --- instruments are inserted through the
+  **Transabdominal preperitoneal (TAPP)** - instruments are inserted through the
   lining of your tummy into the space around your organs (the peritoneum).
   !!!
 :::
 ::: reveal Totally extraperitoneal (TEP)
   !!! info
-  **Totally extraperitoneal (TEP)** --- a newer type of surgery. The hernia is
+  **Totally extraperitoneal (TEP)** - a newer type of surgery. The hernia is
   repaired without going through the lining of your organs.
   !!!
 :::

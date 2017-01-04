@@ -30,7 +30,7 @@ The operation will take 90 minutes.
 When your anaesthetic wears off, you’ll be looked after by a recovery nurse
 who will closely monitor you.
 
-You may feel drowsy, sick, and have some pain --- ask the nurse to give you
+You may feel drowsy, sick, and have some pain - ask the nurse to give you
 medicine to help.
 
 You’ll be moved to another ward where you’ll be monitored until you can go home.
