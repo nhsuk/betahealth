@@ -26,7 +26,9 @@ Be careful not to use them if you’re taking paracetamol and ibuprofen tablets 
 
 Speak to your pharmacist before giving medicines to children. 
 
-[Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
+!!! info_compact
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
+!!!
 
 !!! attention
   ## See your GP if

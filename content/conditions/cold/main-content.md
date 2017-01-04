@@ -32,7 +32,9 @@ if you are using paracetamol or ibuprofen with other medicines that contain them
 
 There’s little evidence that supplements (such as vitamin c, zinc, echinacea or garlic) prevent colds or speed up recovery. 
 
-[Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
+!!! info_compact
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
+!!!
 
 !!! attention
   ## See your GP if
