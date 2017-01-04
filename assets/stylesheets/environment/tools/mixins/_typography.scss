@@ -95,8 +95,7 @@
   @if map-has-key($type-settings-map, $font-size) {
     @include _type-setting(map-get($type-settings-map, $font-size));
   } @else {
-    @warn "`#{$font-size}` is not a core font size. " +
-      "See `settings/_typography.scss` for a list of valid sizes.";
+    @warn "`#{$font-size}` is not a core font size. See `settings/_typography.scss` for a list of valid sizes.";
   }
 }
 
@@ -118,8 +117,7 @@
   @if map-has-key($type-settings-map, $font-size) {
     @include _type-setting(map-get($type-settings-map, $font-size), $font-weight: 600);
   } @else {
-    @warn "`#{$font-size}` is not a core font size. " +
-      "See `settings/_typography.scss` for a list of valid sizes.";
+    @warn "`#{$font-size}` is not a core font size. See `settings/_typography.scss` for a list of valid sizes.";
   }
 }
 
