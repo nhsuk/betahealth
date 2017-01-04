@@ -1,0 +1,60 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "plugin/selector-bem-pattern": {
+      "preset": "bem"
+    },
+    "no-missing-end-of-source-newline": true,
+    "declaration-property-value-blacklist": {
+      "/^border/": ["none"]
+    },
+    "declaration-block-trailing-semicolon": "always",
+    "block-opening-brace-space-before": "always-single-line",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-block-single-line-max-declarations": 1,
+    "value-list-comma-space-after": "always-single-line",
+    "function-comma-space-after": "always-single-line",
+    "function-parentheses-space-inside": "never-single-line",
+    "string-quotes": "double",
+    "shorthand-property-no-redundant-values": true,
+    "selector-no-empty": true,
+    "selector-list-comma-newline-after": "always",
+    "no-duplicate-selectors": true,
+    "declaration-no-important": true,
+    "function-url-quotes": "always",
+    "function-url-scheme-whitelist": ["data"],
+    "length-zero-no-unit": true,
+    "declaration-block-properties-order": "alphabetical",
+    "number-no-trailing-zeros": true,
+    "number-leading-zero": "never",
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+    "color-named": "never",
+    "selector-no-id": true,
+    "selector-no-qualifying-type": [true, {
+      "ignore": ["attribute"]
+    }],
+    "property-no-unknown": true,
+    "max-nesting-depth": 3,
+    "indentation": [2, {
+      "ignore": ["inside-parens", "value"]
+    }],
+    "rule-nested-empty-line-before": ["always", {
+      "except": ["first-nested"],
+      "ignore": ["after-comment"]
+    }],
+    "unit-no-unknown": true,
+    "scss/at-import-no-partial-leading-underscore": true,
+    "scss/at-import-partial-extension-whitelist": ["css"],
+    "scss/selector-no-redundant-nesting-selector": true,
+    "scss/at-function-pattern": "^[_a-z0-9-]+$",
+    "scss/at-mixin-pattern": "^[_a-z0-9-]+$",
+    "scss/percent-placeholder-pattern": "^[a-z0-9-]+$",
+    "scss/dollar-variable-pattern": "^[_a-z0-9-]+$"
+  }
+}
