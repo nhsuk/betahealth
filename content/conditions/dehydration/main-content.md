@@ -37,7 +37,7 @@ They contain salt, sugar and minerals that your body loses when you’re not dri
 Ask your pharmacist which ones are right for you or your child. 
 
 !!! info_compact
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help) 
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help) 
 !!!
 
 !!! attention

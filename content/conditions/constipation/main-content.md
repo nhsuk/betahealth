@@ -132,7 +132,7 @@ Laxatives are not recommended for children unless they are prescribed by your GP
 Different [types of laxatives](http://www.nhs.uk/conditions/Laxatives/Pages/Introduction.aspx#Types) and how they work.
 
 !!! info
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 !!! attention

@@ -23,7 +23,7 @@ Frail or elderly people can dehydrate more easily. You can get sachets with salt
 that will help you stay hydrated. They’re called oral rehydration solutions. 
 
 !!! info_compact
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 !!! attention

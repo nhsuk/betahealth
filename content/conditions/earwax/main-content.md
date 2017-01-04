@@ -17,7 +17,7 @@ The earwax should fall out on its own or dissolve after about a week.
 Don’t use drops if you have a hole in your eardrum. Ask your pharmacist what you can do instead.
 
 !!! info
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 !!! attention

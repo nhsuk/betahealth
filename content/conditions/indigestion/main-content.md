@@ -41,7 +41,7 @@ It’s best to take the medicine after eating. On a full stomach they’ll last 
 
 
 !!! info
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 ## Pregnant women: treating indigestion

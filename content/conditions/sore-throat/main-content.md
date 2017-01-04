@@ -27,7 +27,7 @@ To help relieve the pain and discomfort of a sore throat you can:
 You can buy them from a supermarket or from a pharmacist without a prescription. 
 
 !!! info
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!! 
 
 
