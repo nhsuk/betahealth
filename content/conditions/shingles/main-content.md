@@ -24,7 +24,7 @@ after the rash has gone, but it usually settles in time.
 ### Don’t
 
 * let dressings or plasters stick to the rash
-* use antibiotic cream --- this slows healing
+* use antibiotic cream - this slows healing
 
 ## Stay away from certain groups of people if you have shingles
 

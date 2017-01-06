@@ -48,7 +48,7 @@ You can buy these from a pharmacist without a prescription.
 
 
 !!! info_compact
-  [Find your nearest pharmacist]({{ findersBaseUrl }}finders/find-help)
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 

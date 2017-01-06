@@ -69,7 +69,7 @@ your exemption certificate so you can claim money back.
 
 If you’re going on holiday:
 
-* pack extra medicine --- speak to your diabetes nurse about how much
+* pack extra medicine - speak to your diabetes nurse about how much
 * carry your medicine in your hand luggage in case your checked-in bags go
   missing or are damaged
 * if you're flying with a medicine you inject, get a letter from your GP that

@@ -18,9 +18,9 @@ You should:
 If the look of your nail bothers you or it’s painful, speak to your
 pharmacist. They may suggest:
 
-* antifungal nail cream --- it can take up to 12 months to cure the infection
+* antifungal nail cream - it can take up to 12 months to cure the infection
   and doesn’t always work
-* nail softening cream --- used for 2 weeks to soften the nail so the
+* nail softening cream - used for 2 weeks to soften the nail so the
   infection can be scraped off
 
 The infection is cured when you see healthy nail growing back at the base.

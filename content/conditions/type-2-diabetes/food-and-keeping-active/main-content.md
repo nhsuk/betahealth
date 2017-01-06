@@ -9,10 +9,10 @@ There’s nothing you can’t eat, but you’ll have to limit certain foods.
 
 You should:
 
-* eat a wide range of foods --- including fruit, vegetables, some starchy foods
+* eat a wide range of foods - including fruit, vegetables, some starchy foods
   such as pasta
 * keep sugar, fat and salt to a minimum
-* eat breakfast, lunch and dinner every day --- don’t skip meals
+* eat breakfast, lunch and dinner every day - don’t skip meals
 
 If you need to change your diet, it might be easier to make small changes every
 week.

@@ -5,7 +5,7 @@
 Your GP will confirm if your lump is a hernia and discuss how it can be treated.
 
 You’ll need an [operation](/conditions/hernia/operation) to repair your hernia.
-You may not need one straight away --- it depends on the the type of hernia and
+You may not need one straight away - it depends on the the type of hernia and
 if it’s causing you problems. Your hernia may get bigger if it’s not treated,
 although this could take months or even years.
 

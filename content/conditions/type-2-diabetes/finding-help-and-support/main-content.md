@@ -29,11 +29,11 @@ talk and find out how others live with the condition.
 
 ### Blogs and forums about diabetes
 
-* [Diabetes.co.uk forum](http://www.diabetes.co.uk/forum/) --- discussions about
+* [Diabetes.co.uk forum](http://www.diabetes.co.uk/forum/) - discussions about
   living with and managing diabetes
-* [Diabetes UK blogs](http://blogs.diabetes.org.uk/) --- collection of different
+* [Diabetes UK blogs](http://blogs.diabetes.org.uk/) - collection of different
   blogs on food, eyes, work and diabetes and more
-* [Diabetes Chat](http://www.diabetes.co.uk/diabetes-chat/) --- offers scheduled
+* [Diabetes Chat](http://www.diabetes.co.uk/diabetes-chat/) - offers scheduled
   chats with healthcare professionals or just the chance to talk to others
 
 ### Telling others can be difficult
@@ -42,7 +42,7 @@ However, it can help for certain people to know you have diabetes:
 
 * family can support you, especially as you will need to make changes to what you eat
 * it’s important your colleagues or employer know in case of an emergency
-* being diagnosed with diabetes can affect your mood --- telling your partner
+* being diagnosed with diabetes can affect your mood - telling your partner
   will help them understand how you feel
 
 ### Carry Medical ID in case of an emergency
