@@ -1,4 +1,4 @@
-/* globals Webtrends, window */
+/* globals window */
 
 // Analytics Utility module
 // This module offers ways to send custom events to analytics packages:
@@ -74,7 +74,7 @@ Analytics.prototype.send = function send(args, callback) {
 
     try {
       // call webtrends track function with arguments
-      Webtrends.multiTrack({
+      window.Webtrends.multiTrack({
         argsa: args,
         callback,
       });
@@ -169,11 +169,11 @@ Analytics.prototype._getEventData = function _getEventData(e) {
 };
 
 Analytics.prototype._gaExists = () => {
-  return typeof ga === typeof Function;
+  return typeof window.ga === typeof Function;
 };
 
 Analytics.prototype._wtExists = () => {
-  return Webtrends instanceof Object;
+  return window.Webtrends instanceof Object;
 };
 
 module.exports = new Analytics();
