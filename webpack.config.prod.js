@@ -5,7 +5,7 @@ const webpackConfig = require('./webpack.config.js');
 module.exports = (function headlessConfig(config) {
   config.plugins.push(new webpack.optimize.UglifyJsPlugin());
 
-  config.devtool = 'hidden-source-map';
+  config.devtool = null;
 
   return config;
 }(webpackConfig));
