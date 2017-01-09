@@ -23,7 +23,7 @@ If you’re already being treated for high cholesterol and high blood pressure,
 keep taking your medicine.
 
 Diabetes also worsens the effects of smoking on your heart.
-[Get help to quit smoking.](http://www.nhs.uk/LiveWell/Smoking/Pages/stopsmokingnewhome.aspx)
+[Get help to quit smoking](http://www.nhs.uk/LiveWell/Smoking/Pages/stopsmokingnewhome.aspx).
 
 ### Loss of feeling
 

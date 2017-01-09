@@ -7,13 +7,17 @@ table {
   th,
   td {
     @include core-font(16);
-    border-bottom: 1px solid $grey-3;
+    border-bottom: 2px solid $grey-3;
     padding: ($baseline-grid-unit * 3) ($baseline-grid-unit * 3) ($baseline-grid-unit * 3) 0;
     vertical-align: top;
   }
 
   th {
-    @include bold-font(16);
+    @include bold-font(20);
     text-align: left;
   }
+}
+
+.table--two-column th {
+  width: 50%;
 }

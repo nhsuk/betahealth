@@ -23,7 +23,7 @@ stop any vomiting and diarrhoea.
 Find out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)
 
 !!! attention
-## See your GP if
+## See your GP if:
 
 * the pain gets much worse in a short space of time
 * the pain or bloating won’t go away or keeps coming back

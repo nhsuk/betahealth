@@ -6,11 +6,11 @@
 
 Usually earwax falls out on its own. If it doesn’t and blocks your ear, put 2 to 3 drops of olive or almond oil in your ear twice a day for a few days. Over a week or 2 weeks large lumps of earwax can fall out of your ear, especially at night when you’re lying down.
 
-There is no proof that ear candles or ear vacuums get rid of earwax. 
+There is no proof that ear candles or ear vacuums get rid of earwax.
 
 ## Your pharmacist can help with earwax build-up
 
-To dissolve the earwax you can buy chemical drops from a pharmacy. 
+To dissolve the earwax you can buy chemical drops from a pharmacy.
 
 The earwax should fall out on its own or dissolve after about a week.
 
@@ -21,9 +21,9 @@ Don’t use drops if you have a hole in your eardrum. Ask your pharmacist what y
 !!!
 
 !!! attention
-  ## See a nurse in your GP practice if
-  
-  - your ear hasn’t cleared after 5 days 
+  ## See a nurse in your GP practice if:
+
+  - your ear hasn’t cleared after 5 days
   - your ear is badly blocked and you can’t hear anything (you can get an infection if it isn’t cleared)
 !!!
 
@@ -40,16 +40,16 @@ These treatments are usually painless.
 
 ## Preventing earwax
 
-You can’t prevent earwax. It’s there to protect your ears from dirt and germs. 
+You can’t prevent earwax. It’s there to protect your ears from dirt and germs.
 
-However, you can keep using ear drops to soften the wax. This will help it fall out on its own and should prevent blocked ears. 
+However, you can keep using ear drops to soften the wax. This will help it fall out on its own and should prevent blocked ears.
 
 
-## Causes of earwax 
+## Causes of earwax
 
-You might have earwax build-up because: 
+You might have earwax build-up because:
 
-- you just have more wax in your ears (some people naturally do) 
+- you just have more wax in your ears (some people naturally do)
 - you have hairy or narrow canals (the tubes that link the eardrum and outer ear)
 - of your age - wax gets harder and more difficult to fall out
 - of hearing aids, earplugs and other things you put in your ear - these can push the wax further in

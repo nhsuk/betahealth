@@ -1,5 +1,5 @@
 !!! severe
-## Call 999 or go to A&E if you
+## Call 999 or go to A&E if you:
 
 You hurt your head badly, for example from a fall or accident.
 

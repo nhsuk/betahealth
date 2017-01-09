@@ -19,7 +19,7 @@ Things to look out for in babies and toddlers includes:
 
 ## What causes constipation
 
-Constipation in adults has many possible causes. Sometimes there is no obvious reason. 
+Constipation in adults has many possible causes. Sometimes there is no obvious reason.
 
 The most common causes include:
 
@@ -47,7 +47,7 @@ You may notice a difference within a few days. Sometimes it takes a few weeks be
 To make your poo softer and easier to pass:
 
 - drink plenty of fluids and avoid alcohol
-- [increase the fibre in your diet](http://www.nhs.uk/Livewell/Goodfood/Pages/how-to-get-more-fibre-into-your-diet.aspx) 
+- [increase the fibre in your diet](http://www.nhs.uk/Livewell/Goodfood/Pages/how-to-get-more-fibre-into-your-diet.aspx)
 - add some wheat bran to your diet
 
 ### Increase your activity
@@ -68,7 +68,7 @@ raise your knees above your hips.
 
 ## Babies and toddlers: what causes constipation
 
-Constipation in babies and toddlers has many possible causes. Sometimes there is no obvious reason. 
+Constipation in babies and toddlers has many possible causes. Sometimes there is no obvious reason.
 
 It usually happens when your child:
 
@@ -105,7 +105,7 @@ The best fruits for constipation include apples, grapes, pears and strawberries.
 
 Don’t force your child to eat as this can make mealtimes stressful.
 
-[What to feed young children.](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/understanding-food-groups.aspx)
+[What to feed young children](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/understanding-food-groups.aspx)
 
 ### Helping your child with potty training
 
@@ -136,18 +136,18 @@ Different [types of laxatives](http://www.nhs.uk/conditions/Laxatives/Pages/Intr
 !!!
 
 !!! attention
-  ## See a GP if you or your child
-  
+  ## See a GP if you or your child:
+
   - are not improving with treatment
-  - are regularly constipated and it lasts a long time 
+  - are regularly constipated and it lasts a long time
   - have [blood in your poo](http://www.nhs.uk/conditions/rectal-bleeding/Pages/Introduction.aspx)
   - have unexpectedly lost weight
   - feel very tired all the time
-  
+
   Speak to your doctor before you stop taking any prescribed medication.
 !!!
 
-!!! info
+!!! info_compact
   If you’re not sure what to do, call 111.
 !!!
 
@@ -157,9 +157,9 @@ Long-term constipation can lead to faecal impaction. This is where poo has built
 The main symptom is [diarrhoea](/conditions/diarrhoea/)
 after a long bout of constipation.
 
-Faecal impaction may be treated with: 
+Faecal impaction may be treated with:
 
 - stronger laxatives - prescribed by your GP
-- a suppository - medicine you place in your bottom 
+- a suppository - medicine you place in your bottom
 - a mini enema - where fluid is passed through your bottom, into your bowel
 - a doctor removing some of the poo

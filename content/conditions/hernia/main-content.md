@@ -1,4 +1,4 @@
-[Different types of hernia and causes.](/conditions/hernia/types-of-hernia)
+[Different types of hernia and causes](/conditions/hernia/types-of-hernia)
 
 ## Your hernia treatment
 

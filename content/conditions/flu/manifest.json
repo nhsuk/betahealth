@@ -12,13 +12,6 @@
     ],
     "main": [
       {
-        "type": "panel",
-        "value": {
-          "main": "!file=panel-main.md",
-          "footer": "The symptoms are similar for children but they can also get pain in their ear and appear less active."
-        }
-      },
-      {
         "type": "markdown",
         "value": "!file=main-content.md"
       }
