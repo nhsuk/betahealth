@@ -6,6 +6,6 @@
     {% else %}
       Go
     {% endif %}
-    <a href="http://www.nhs.uk/{{ choicesOrigin }}?nobeta=true" data-analytics="external">back to the current site.</a>
+    <a href="http://www.nhs.uk/{{ choicesOrigin }}?nobeta=true" data-analytics="external">back to the current site</a>.
   </p>
 </div>

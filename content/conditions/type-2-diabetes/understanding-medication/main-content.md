@@ -28,7 +28,7 @@ Insulin isn't often used for type 2 diabetes in the early years. It’s needed
 only when other medicines no longer work.
 
 Diabetes UK has more information about
-[taking medicines for type 2 diabetes.](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/)
+[taking medicines for type 2 diabetes](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/).
 
 ### Taking your medicine
 

@@ -89,10 +89,10 @@ The flu vaccine reduces the risk of catching flu as well as spreading it to othe
 
 It’s more effective to get the vaccine before the start of the flu season (December to March).
 
-[Find out if you’re eligible for the free NHS flu vaccine.](http://www.nhs.uk/Conditions/vaccinations/Pages/who-should-have-flu-vaccine.aspx)
+[Find out if you’re eligible for the free NHS flu vaccine](http://www.nhs.uk/Conditions/vaccinations/Pages/who-should-have-flu-vaccine.aspx)
 
-[Flu vaccination and side effects for adults.](http://www.nhs.uk/conditions/vaccinations/pages/flu-influenza-vaccine.aspx)
+[Flu vaccination and side effects for adults](http://www.nhs.uk/conditions/vaccinations/pages/flu-influenza-vaccine.aspx)
 
-[Flu vaccination and side effects for children.](http://www.nhs.uk/conditions/vaccinations/pages/child-flu-vaccine.aspx)
+[Flu vaccination and side effects for children](http://www.nhs.uk/conditions/vaccinations/pages/child-flu-vaccine.aspx)
 
 *[A&E]: Accident and Emergency

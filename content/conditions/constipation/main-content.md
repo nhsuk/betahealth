@@ -105,7 +105,7 @@ The best fruits for constipation include apples, grapes, pears and strawberries.
 
 Don’t force your child to eat as this can make mealtimes stressful.
 
-[What to feed young children.](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/understanding-food-groups.aspx)
+[What to feed young children](http://www.nhs.uk/Conditions/pregnancy-and-baby/Pages/understanding-food-groups.aspx)
 
 ### Helping your child with potty training
 

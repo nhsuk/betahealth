@@ -21,7 +21,7 @@ risk of hypoglycaemia. You can be fined if you don’t tell DVLA.
 
 ### Support groups for type 2 diabetes
 
-The charity Diabetes UK runs [local support groups.](https://www.diabetes.org.uk/How_we_help/Local_support_groups/)
+The charity Diabetes UK runs [local support groups](https://www.diabetes.org.uk/How_we_help/Local_support_groups/).
 
 They can help with things like managing your diabetes on a daily basis, diet,
 exercise or dealing with emotional problems like depression. They’re a place to

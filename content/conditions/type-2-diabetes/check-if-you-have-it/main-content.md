@@ -26,9 +26,9 @@ You’re more at risk of developing type 2 diabetes if you:
 See your GP if you have any of the symptoms of type 2 diabetes, or you're
 worried you may have a higher risk of developing it.
 
-[Your GP can diagnose diabetes.](getting-diagnosed) You’ll need a blood test
-which you may have to go to your local health center for if it can’t be done at
+[Your GP can diagnose diabetes](getting-diagnosed). You’ll need a blood test
+which you may have to go to your local health centre for if it can’t be done at
 your GP surgery.
 
 The earlier diabetes is diagnosed and treatment starts, the better. Treating
-diabetes early reduces your risk of [other health problems.](health-problems)
+diabetes early reduces your risk of [other health problems](health-problems).

@@ -3,7 +3,7 @@ your finger nails too.
 
 !!! warning
 If you have diabetes you should see a foot specialist because any foot injury
-[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)
+[can lead to complications](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx).
 !!!
 
 ## Treating fungal nail infections at home
@@ -73,4 +73,4 @@ To prevent fungal nail infection:
 * throw out old shoes
 * don’t wear other people’s shoes
 
-[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)
+[Medical detail about fungal nail infections](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)
