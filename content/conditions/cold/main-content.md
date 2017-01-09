@@ -1,11 +1,28 @@
+## Check if you have a cold
+
+Cold symptoms come on gradually and can include:
+
+- headaches
+- muscle aches
+- sore throat
+- coughs
+- sneezing
+- blocked or runny nose
+- a high temperature (38C in adults, 37.5C in children)
+- pressure in your ears and face
+- loss of taste and smell
+
+The symptoms are the same in adults and children. Sometimes, symptoms last
+longer in children.
+
 ::: reveal Telling the difference between cold and flu
   Cold and [flu symptoms](/conditions/flu#check-if-you-have-flu) are similar but flu tends to be more severe.
-  
+
   | Cold | Flu |
   |------|-----|
-  | Appears gradually | Appears quickly within a few hours | 
-  | Affects mainly your nose and throat | Affects more than just your nose and throat | 
-  | Makes you feel unwell but you’re okay to carry on as normal – for example, go to work | Makes you feel exhausted and too unwell to carry on as normal | 
+  | Appears gradually | Appears quickly within a few hours |
+  | Affects mainly your nose and throat | Affects more than just your nose and throat |
+  | Makes you feel unwell but you’re okay to carry on as normal – for example, go to work | Makes you feel exhausted and too unwell to carry on as normal |
 :::
 
 ## How you can treat a cold yourself
@@ -15,22 +32,22 @@ To help you get better more quickly:
 - rest and sleep
 - keep warm
 - drink plenty of water (fruit juice or squash mixed with water is ok) to [avoid dehydration](/conditions/dehydration#how-to-prevent-dehydration)
-- [gargle salt water](http://www.nhs.uk/conditions/sore-throat/Pages/Introduction.aspx) to soothe a sore throat 
+- [gargle salt water](http://www.nhs.uk/conditions/sore-throat/Pages/Introduction.aspx) to soothe a sore throat
 
 ## Your pharmacist can help with cold medicines
 
 You can buy cough and cold medicines from pharmacies or supermarkets. Your pharmacist can
 advise you on the best medicine. You can:
 
-- relieve a blocked nose with decongestant sprays or tablets 
-- ease aches or lower a temperature with painkillers like paracetamol or ibuprofen 
+- relieve a blocked nose with decongestant sprays or tablets
+- ease aches or lower a temperature with painkillers like paracetamol or ibuprofen
 
-Some are not suitable for children, babies and pregnant women. 
+Some are not suitable for children, babies and pregnant women.
 
 Also, cough and cold medicines can contain paracetamol or ibuprofen. Be careful not to go over the maximum dosage
-if you are using paracetamol or ibuprofen with other medicines that contain them. 
+if you are using paracetamol or ibuprofen with other medicines that contain them.
 
-There’s little evidence that supplements (such as vitamin c, zinc, echinacea or garlic) prevent colds or speed up recovery. 
+There’s little evidence that supplements (such as vitamin c, zinc, echinacea or garlic) prevent colds or speed up recovery.
 
 !!! info_compact
   [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
@@ -48,18 +65,18 @@ There’s little evidence that supplements (such as vitamin c, zinc, echinacea o
   - you have a weakened immune system – for example, because you’re having chemotherapy
 !!!
 
-### Antibiotics 
+### Antibiotics
 
 GPs don’t recommend antibiotics for colds because they won’t relieve your symptoms or speed up your recovery.
 Antibiotics are only effective against bacterial infections and colds are caused by viruses.
 
 ## How to avoid spreading a cold
 
-Colds are caused by viruses and easily spread to other people. You’re infectious until all your symptoms have gone. This usually takes a week or two.  
+Colds are caused by viruses and easily spread to other people. You’re infectious until all your symptoms have gone. This usually takes a week or two.
 
 Colds are spread by germs from coughs and sneezes which can live on hands and surfaces for 24 hours.
 
-To reduce the risk of spreading a cold: 
+To reduce the risk of spreading a cold:
 
 - wash your hands often with warm water and soap
 - use tissues to trap germs when you cough or sneeze
@@ -67,11 +84,11 @@ To reduce the risk of spreading a cold:
 
 ## How to prevent catching a cold
 
-A person with a cold can start spreading it from a few days before their symptoms begin until the symptoms have finished. The best ways to avoid catching a cold are: 
+A person with a cold can start spreading it from a few days before their symptoms begin until the symptoms have finished. The best ways to avoid catching a cold are:
 
 -  washing your hands with warm water and soap
 -  not sharing towels or household items (like cups) with someone who has a cold
 -  not touching your eyes or nose in case you’ve come into contact with the virus - it can infect the body this way
 -  staying fit and healthy
 
-The flu vaccine helps prevent the flu but not colds. 
+The flu vaccine helps prevent the flu but not colds.

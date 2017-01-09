@@ -12,13 +12,6 @@
     ],
     "main": [
       {
-        "type": "panel",
-        "value": {
-          "main": "!file=panel-main.md",
-          "footer": "The symptoms are the same in adults and children. Sometimes, symptoms last longer in children."
-        }
-      },
-      {
         "type": "markdown",
         "value": "!file=main-content.md"
       }
