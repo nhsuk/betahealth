@@ -136,7 +136,7 @@ Different [types of laxatives](http://www.nhs.uk/conditions/Laxatives/Pages/Intr
 !!!
 
 !!! attention
-  ## See a GP if you or your child
+  ## See a GP if you or your child:
 
   - are not improving with treatment
   - are regularly constipated and it lasts a long time

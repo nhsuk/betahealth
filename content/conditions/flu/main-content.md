@@ -48,7 +48,7 @@ Speak to your pharmacist before giving medicines to children.
 !!!
 
 !!! attention
-  ## See your GP if
+  ## See your GP if:
 
   - your symptoms don’t improve after 7 days
   - your temperature is 38C or above
@@ -64,7 +64,7 @@ Speak to your pharmacist before giving medicines to children.
 GPs don’t usually recommend antibiotics for flu because they won’t relieve your symptoms or speed up your recovery.
 
 !!! severe
-  ## Call 999 or go to A&E if you
+  ## Call 999 or go to A&E if you:
 
   - develop sudden chest pain
   - have difficulty breathing

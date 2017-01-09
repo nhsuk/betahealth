@@ -44,7 +44,7 @@ They should start to cool down and feel better within 30 minutes.
 !!!
 
 !!! severe
-  ## Call 999 if the person
+  ## Call 999 if the person:
 
   - is no better after 30 minutes
   - feels hot and dry

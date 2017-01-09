@@ -54,7 +54,7 @@ There’s little evidence that supplements (such as vitamin c, zinc, echinacea o
 !!!
 
 !!! attention
-  ## See your GP if
+  ## See your GP if:
 
   - your symptoms don’t improve after three weeks
   - your symptoms get suddenly worse
