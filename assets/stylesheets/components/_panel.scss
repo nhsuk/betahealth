@@ -5,37 +5,36 @@
   width: 100%;
 }
 
-  .panel__content {
-    @include element-padding;
-  }
+.panel__content {
+  @include element-padding;
+}
 
-  .panel__content--half {
-    border: solid $grey-3;
-    border-width: 4px 0 0;
+.panel__content--half {
+  border: solid $grey-3;
+  border-width: 4px 0 0;
 
-    @include media(desktop) {
-      border-width: 0 0 0 4px;
-      display: table-cell;
-      width: 50%;
+  @include media(desktop) {
+    border-width: 0 0 0 4px;
+    display: table-cell;
+    width: 50%;
 
-      @include ie-lte(7) {
-        border-width: 4px 0 0;
-        display: block;
-        width: auto;
-      }
-    }
-
-    + * {
-      margin-top: 0;
+    @include ie-lte(7) {
+      border-width: 4px 0 0;
+      display: block;
+      width: auto;
     }
   }
 
-
-  .panel__footer {
-    @include element-padding;
-    background-color: $grey-3;
-
-    * + & {
-      margin-top: 0;
-    }
+  + * {
+    margin-top: 0;
   }
+}
+
+.panel__footer {
+  @include element-padding;
+  background-color: $grey-3;
+
+  * + & {
+    margin-top: 0;
+  }
+}

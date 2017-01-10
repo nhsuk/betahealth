@@ -5,8 +5,6 @@ engines:
     checks:
       import/no-unresolved:
         enabled: false
-  scss-lint:
-    enabled: true
   duplication:
     enabled: true
     config:

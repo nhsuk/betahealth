@@ -7,7 +7,7 @@ Speak to your pharmacist about medicine to help with:
 * constipation (can’t poo)
 
 !!! info_compact
-[Find an open pharmacy near you]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)
+[Find a pharmacy]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)
 !!!
 
 There are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)
@@ -23,7 +23,7 @@ stop any vomiting and diarrhoea.
 Find out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)
 
 !!! attention
-## See your GP if
+## See your GP if:
 
 * the pain gets much worse in a short space of time
 * the pain or bloating won’t go away or keeps coming back

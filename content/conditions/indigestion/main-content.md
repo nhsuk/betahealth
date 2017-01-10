@@ -40,8 +40,8 @@ These medicines make your stomach less acidic. They’re called antacids.
 It’s best to take the medicine after eating. On a full stomach they’ll last up to 3 hours. On an empty stomach they’ll only last 20 minutes to an hour. 
 
 
-!!! info
-  [Find your nearest pharmacy]({{ findersBaseUrl }}finders/find-help)
+!!! info_compact
+  [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
 !!!
 
 ## Pregnant women: treating indigestion

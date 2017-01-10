@@ -1,0 +1,20 @@
+{
+  "layout": "content-simple",
+  "title": "Flu",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/flu/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "You can often treat the flu without seeing your GP and you should begin to feel better in about a week."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
+}

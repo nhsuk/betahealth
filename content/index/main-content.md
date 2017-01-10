@@ -1,19 +1,24 @@
 This is where NHS.UK tests new pages and services to get feedback. Please
 take a look and tell us what you think. It will help us to improve what we do.
 
-[Read more about NHS.UK on our blog.](http://transformation.blog.nhs.uk/){rel=external}
+[Read more about NHS.UK on our blog](http://transformation.blog.nhs.uk/){rel=external}
 
 ## Conditions
 
+* [Common cold](/conditions/cold)
+* [Constipation](/conditions/constipation)
+* [Dehydration](/conditions/dehydration)
 * [Diabetes](/conditions/type-2-diabetes/check-if-you-have-it)
 * [Diarrhoea](/conditions/diarrhoea)
 * [Earwax](/conditions/earwax)
 * [Fungal nail infection](/conditions/fungal-nail-infection)
+* [Flu](/conditions/flu)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
-* [Hernia](/conditions/hernia)
 * [Head lice](/conditions/head-lice)
-* [Insect bites and stings](/conditions/insect-bites-and-stings)
+* [Heat exhaustion and heat stroke](/conditions/heat-exhaustion-and-heatstroke)
+* [Hernia](/conditions/hernia)
 * [Indigestion](/conditions/indigestion)
+* [Insect bites and stings](/conditions/insect-bites-and-stings)
 * [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
 * [Warts](/conditions/warts)

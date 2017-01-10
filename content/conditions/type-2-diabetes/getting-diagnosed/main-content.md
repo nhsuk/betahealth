@@ -52,8 +52,8 @@ Usually the following things happen after your diagnosis:
 
 1. Your GP will prescribe [medication](understanding-medication). It might take
    time for you to get used to the medication and to find the right amounts for you.
-2. You might need to make changes to your [diet and be more active.](food-and-keeping-active)
-3. You’ll have to go for [regular type 2 diabetes check ups.](going-for-regular-check-ups)
+2. You might need to make changes to your [diet and be more active](food-and-keeping-active)
+3. You’ll have to go for [regular type 2 diabetes check ups](going-for-regular-check-ups)
 4. You’ll have to look out for certain signs to avoid
-   [other health problems.](health-problems)
+   [other health problems](health-problems)
 5. Ask your GP about a [free education course for type 2 diabetes](http://www.desmond-project.org.uk/newlydiagnosedandfoundationmodules-278.html)

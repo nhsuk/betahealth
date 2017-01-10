@@ -24,10 +24,10 @@
                     {% endif %}
 
                     {% if FEEDBACKFORM.errors['feedback-form-found'] %}
-                      <a href="#looking-for-group">if you found it.</a>
+                      <a href="#looking-for-group">if you found it</a>.
                     {% endif %}
                   {% elif FEEDBACKFORM.errorType == "server" %}
-                    Sorry, there’s been an error, <a href="#feedback-form-comments">please try again.</a>
+                    Sorry, there’s been an error, <a href="#feedback-form-comments">please try again</a>.
                   {% endif %}
                 </p>
               </div>

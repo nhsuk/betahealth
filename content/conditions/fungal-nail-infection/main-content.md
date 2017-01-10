@@ -3,7 +3,7 @@ your finger nails too.
 
 !!! warning
 If you have diabetes you should see a foot specialist because any foot injury
-[can lead to complications.](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx)
+[can lead to complications](http://www.nhs.uk/Conditions/Diabetes-type2/Pages/Complications.aspx).
 !!!
 
 ## Treating fungal nail infections at home
@@ -18,9 +18,9 @@ You should:
 If the look of your nail bothers you or it’s painful, speak to your
 pharmacist. They may suggest:
 
-* antifungal nail cream --- it can take up to 12 months to cure the infection
+* antifungal nail cream - it can take up to 12 months to cure the infection
   and doesn’t always work
-* nail softening cream --- used for 2 weeks to soften the nail so the
+* nail softening cream - used for 2 weeks to soften the nail so the
   infection can be scraped off
 
 The infection is cured when you see healthy nail growing back at the base.
@@ -73,4 +73,4 @@ To prevent fungal nail infection:
 * throw out old shoes
 * don’t wear other people’s shoes
 
-[Medical detail about fungal nail infections.](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)
+[Medical detail about fungal nail infections](http://cks.nice.org.uk/fungal-skin-infection-foot#!scenario)

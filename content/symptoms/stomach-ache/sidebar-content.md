@@ -1,5 +1,5 @@
 !!! severe
-## Call 999 or go to A&E if you
+## Call 999 or go to A&E if you:
 
 * have sudden, severe stomach pain
 * have pain when you touch your stomach

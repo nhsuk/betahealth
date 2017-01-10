@@ -28,7 +28,7 @@ Insulin isn't often used for type 2 diabetes in the early years. It’s needed
 only when other medicines no longer work.
 
 Diabetes UK has more information about
-[taking medicines for type 2 diabetes.](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/)
+[taking medicines for type 2 diabetes](https://www.diabetes.org.uk/Guide-to-diabetes/What-is-diabetes/Diabetes-treatments/).
 
 ### Taking your medicine
 
@@ -69,7 +69,7 @@ your exemption certificate so you can claim money back.
 
 If you’re going on holiday:
 
-* pack extra medicine --- speak to your diabetes nurse about how much
+* pack extra medicine - speak to your diabetes nurse about how much
 * carry your medicine in your hand luggage in case your checked-in bags go
   missing or are damaged
 * if you're flying with a medicine you inject, get a letter from your GP that
