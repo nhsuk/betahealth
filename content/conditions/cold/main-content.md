@@ -2,12 +2,12 @@
 
 Cold symptoms come on gradually and can include:
 
+- blocked or runny nose
+- sore throat
 - headaches
 - muscle aches
-- sore throat
 - coughs
 - sneezing
-- blocked or runny nose
 - a high temperature (38C in adults, 37.5C in children)
 - pressure in your ears and face
 - loss of taste and smell
@@ -16,7 +16,7 @@ The symptoms are the same in adults and children. Sometimes, symptoms last
 longer in children.
 
 ::: reveal Telling the difference between cold and flu
-  Cold and [flu symptoms](/conditions/flu#check-if-you-have-flu) are similar but flu tends to be more severe.
+  Cold and [flu](/conditions/flu#check-if-you-have-flu) symptoms are similar but flu tends to be more severe.
 
   | Cold | Flu |
   |------|-----|
@@ -32,7 +32,7 @@ To help you get better more quickly:
 - rest and sleep
 - keep warm
 - drink plenty of water (fruit juice or squash mixed with water is ok) to [avoid dehydration](/conditions/dehydration#how-to-prevent-dehydration)
-- [gargle salt water](http://www.nhs.uk/conditions/sore-throat/Pages/Introduction.aspx) to soothe a sore throat
+- gargle salt water to soothe a [sore throat](/conditions/sore-throat)
 
 ## Your pharmacist can help with cold medicines
 
@@ -42,12 +42,13 @@ advise you on the best medicine. You can:
 - relieve a blocked nose with decongestant sprays or tablets
 - ease aches or lower a temperature with painkillers like paracetamol or ibuprofen
 
+Be careful not to use them if you're taking paracetamol and ibuprofen tablets
+as it’s easy to take more than the recommended dose.
+
 Some are not suitable for children, babies and pregnant women.
 
-Also, cough and cold medicines can contain paracetamol or ibuprofen. Be careful not to go over the maximum dosage
-if you are using paracetamol or ibuprofen with other medicines that contain them.
-
-There’s little evidence that supplements (such as vitamin c, zinc, echinacea or garlic) prevent colds or speed up recovery.
+There’s little evidence that supplements (such as vitamin c, zinc, echinacea or
+garlic) prevent colds or speed up recovery.
 
 !!! info_compact
   [Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
