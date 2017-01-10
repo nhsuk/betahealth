@@ -14,10 +14,6 @@
       {
         "type": "markdown",
         "value": "!file=main-content.md"
-      },
-      {
-        "type": "markdown",
-        "value": "!file=sidebar-content.md"
       }
     ]
   }
