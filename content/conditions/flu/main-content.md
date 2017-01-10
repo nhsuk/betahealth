@@ -51,7 +51,6 @@ Speak to your pharmacist before giving medicines to children.
   ## See your GP if:
 
   - your symptoms don’t improve after 7 days
-  - your temperature is 38C or above
   - you’re worried about your child’s symptoms
   - you're 65 or over
   - you're pregnant
@@ -61,7 +60,7 @@ Speak to your pharmacist before giving medicines to children.
 
 ### Antibiotics
 
-GPs don’t usually recommend antibiotics for flu because they won’t relieve your symptoms or speed up your recovery.
+GPs don’t recommend antibiotics for flu because they won’t relieve your symptoms or speed up your recovery.
 
 !!! severe
   ## Call 999 or go to A&E if you:

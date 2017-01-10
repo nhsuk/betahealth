@@ -10,7 +10,6 @@ To help soothe a sore throat and shorten how long it lasts you can:
   small and hard to suck because of the risk of choking
 - rest
 
-
 ::: reveal How to gargle with salt water
   1. Dissolve half a teaspoon of salt in a glass of warm water - warm water helps salt dissolve.
   2. Gargle with the solution then spit it out - don’t swallow it.

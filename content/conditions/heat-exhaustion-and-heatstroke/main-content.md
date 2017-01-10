@@ -9,9 +9,10 @@ The signs of heat exhaustion include:
 - cramps in the arms, legs and stomach
 - fast breathing or pulse
 - temperature of 37C or above
-- very thirsty
+- intense thirst
 
-The symptoms are often same in adults and children, although children may become floppy and sleepy.
+The symptoms are often the same in adults and children, although children may
+become floppy and sleepy.
 
 Heat exhaustion can lead to heat stroke if left untreated.
 
@@ -28,10 +29,10 @@ Heat exhaustion can lead to heat stroke if left untreated.
 You need to cool the person down. Follow these 5 steps:
 
 1. move them to a cool place
-2. remove any unnecessary clothing
-3. get them to lie down and raise their feet slightly
-4. get them to drink plenty of water (sports or rehydration drinks are ok)
-5. cool their skin - spray or sponge them with cool water and fan them (ice packs around the armpits or neck are good too)
+1. remove any unnecessary clothing
+1. get them to lie down and raise their feet slightly
+1. get them to drink plenty of water (sports or rehydration drinks are ok)
+1. cool their skin - spray or sponge them with cool water and fan them (ice packs around the armpits or neck are good too)
 
 Every few minutes, check that their breathing and pulse are ok.
 
