@@ -47,5 +47,8 @@
 
 .callout--compact {
   display: inline-block;
-  padding: $baseline-grid-unit * 4 $baseline-grid-unit * 6;
+  
+  @include media(desktop) {
+    padding: $baseline-grid-unit * 4 $baseline-grid-unit * 6;
+  }
 }
