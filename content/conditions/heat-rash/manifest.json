@@ -1,0 +1,38 @@
+{
+  "layout": "content-simple",
+  "title": "Heat rash (prickly heat)",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/prickly-heat/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Heat rash is uncomfortable but usually harmless. It should clear up on its own after a few days."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "panel",
+        "value": {
+          "header": "### To keep your skin cool:",
+          "main": "!file=panel-1-content.md"
+        }
+      },
+      {
+        "type": "panel",
+        "value": {
+          "header": "### To calm the itching or prickly rash:",
+          "main": "!file=panel-2-content.md"
+        }
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      }
+    ]
+  }
+}
