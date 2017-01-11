@@ -21,6 +21,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Hives](/conditions/hives)
 * [Indigestion](/conditions/indigestion)
 * [Insect bites and stings](/conditions/insect-bites-and-stings)
+* [Nosebleed](/conditions/nosebleed)
 * [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
 * [Sprains and strains](/conditions/sprains-and-strains)
