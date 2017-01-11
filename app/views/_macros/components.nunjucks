@@ -229,6 +229,12 @@
 
 {% macro panel(content, reading_width=true) %}
   <article class="panel{{ ' reading-width' if reading_width }}">
+    {% if content.header %}
+      <div class="panel__header">
+        {{ markdown(content.header) }}
+      </div>
+    {% endif %}
+
     <div class="panel__content">
       {{ markdown(content.main) }}
     </div>
