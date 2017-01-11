@@ -18,6 +18,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Heat exhaustion and heat stroke](/conditions/heat-exhaustion-and-heatstroke)
 * [Heat rash](/conditions/heat-rash)
 * [Hernia](/conditions/hernia)
+* [Hives](/conditions/hives)
 * [Indigestion](/conditions/indigestion)
 * [Insect bites and stings](/conditions/insect-bites-and-stings)
 * [Shingles](/conditions/shingles)
