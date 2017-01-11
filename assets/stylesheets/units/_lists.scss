@@ -20,11 +20,19 @@ ol {
 
 dl {
   @include core-font(20);
+
+  dt {
+    @include bold-font(20);
+  }
 }
 
 .local-header,
 .page-section,
 .global-footer {
+  dd {
+    margin-top: $baseline-grid-unit * 2;
+  }
+
   li {
     + li {
       margin-top: $baseline-grid-unit * 2;
