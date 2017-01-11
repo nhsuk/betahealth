@@ -15,6 +15,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Fungal nail infection](/conditions/fungal-nail-infection)
 * [Flu](/conditions/flu)
 * [Hand, foot and mouth disease](/conditions/hand-foot-and-mouth-disease)
+* [Hay fever](/conditions/hay-fever)
 * [Head lice](/conditions/head-lice)
 * [Heat exhaustion and heat stroke](/conditions/heat-exhaustion-and-heatstroke)
 * [Heat rash](/conditions/heat-rash)
