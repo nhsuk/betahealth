@@ -5,6 +5,15 @@
   width: 100%;
 }
 
+.panel__header {
+  @include element-padding;
+  background-color: $grey-3;
+
+  & + * {
+    margin-top: 0;
+  }
+}
+
 .panel__content {
   @include element-padding;
 }

@@ -1,0 +1,45 @@
+{
+  "layout": "content-simple",
+  "title": "Hives",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/nettle-rash/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Hives rashes usually settle down within a few minutes to a few days. You can often treat hives yourself."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-before.md"
+      },
+      {
+        "type": "figure_list",
+        "value": [
+          {
+            "srcset": [
+              "assets/images/hives/blotchy-300.jpg 300w",
+              "assets/images/hives/blotchy-600.jpg 600w"
+            ],
+            "caption": "Hives can look like red, raised patches",
+            "alt": "Hives on the side of a thigh"
+          },
+          {
+            "srcset": [
+              "assets/images/hives/spots-300.jpg 300w",
+              "assets/images/hives/spots-600.jpg 600w"
+            ],
+            "caption": "The rash can also be red spots",
+            "alt": "Red spots on the hand and leg"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
+}
