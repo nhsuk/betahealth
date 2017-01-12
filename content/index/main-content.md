@@ -27,6 +27,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
 * [Sprains and strains](/conditions/sprains-and-strains)
+* [Stye](/conditions/stye)
 * [Warts](/conditions/warts)
 
 ## Symptoms
