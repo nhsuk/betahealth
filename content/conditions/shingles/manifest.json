@@ -40,7 +40,18 @@
       },
       {
         "type": "markdown",
-        "value": "!file=main-content.md"
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
       }
     ]
   }
