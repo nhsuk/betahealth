@@ -120,6 +120,10 @@ module.exports = (app, config) => {
           '\'self\'',
           config.staticCdn,
         ],
+        frameSrc: [
+          '\'self\'',
+          '*.hotjar.com',
+        ],
         scriptSrc: [
           '\'self\'',
           '\'unsafe-inline\'',
@@ -127,8 +131,7 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
-          'static.hotjar.com',
-          'script.hotjar.com',
+          '*.hotjar.com',
           'cdn.jsdelivr.net',
           config.staticCdn,
         ],
@@ -142,6 +145,7 @@ module.exports = (app, config) => {
         ],
         styleSrc: [
           '\'self\'',
+          '\'unsafe-inline\'',
           'fast.fonts.net',
           config.staticCdn,
         ],
@@ -151,7 +155,7 @@ module.exports = (app, config) => {
         ],
         connectSrc: [
           '\'self\'',
-          'https://*.hotjar.com',
+          'https://*.hotjar.com:*',
           'wss://*.hotjar.com',
         ],
       },
