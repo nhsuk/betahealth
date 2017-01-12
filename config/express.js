@@ -14,6 +14,7 @@ const md = require('markdown-it')({
 });
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItDeflist = require('markdown-it-deflist');
 const markdownItContainer = require('markdown-it-container');
 const markdownItNamedHeaders = require('markdown-it-named-headers');
 const enforce = require('express-sslify');
@@ -34,6 +35,7 @@ const router = require('./routes');
 
 md.use(markdownItAbbr);
 md.use(markdownItAttrs);
+md.use(markdownItDeflist);
 md.use(markdownItNamedHeaders);
 
 ['info', 'info_compact', 'attention', 'warning', 'alert', 'severe'].forEach((filterName) => {
@@ -120,6 +122,10 @@ module.exports = (app, config) => {
           '\'self\'',
           config.staticCdn,
         ],
+        frameSrc: [
+          '\'self\'',
+          '*.hotjar.com',
+        ],
         scriptSrc: [
           '\'self\'',
           '\'unsafe-inline\'',
@@ -127,8 +133,7 @@ module.exports = (app, config) => {
           'www.google-analytics.com',
           's.webtrends.com',
           'statse.webtrendslive.com',
-          'static.hotjar.com',
-          'script.hotjar.com',
+          '*.hotjar.com',
           'cdn.jsdelivr.net',
           config.staticCdn,
         ],
@@ -142,6 +147,7 @@ module.exports = (app, config) => {
         ],
         styleSrc: [
           '\'self\'',
+          '\'unsafe-inline\'',
           'fast.fonts.net',
           config.staticCdn,
         ],
@@ -151,7 +157,7 @@ module.exports = (app, config) => {
         ],
         connectSrc: [
           '\'self\'',
-          'https://*.hotjar.com',
+          'https://*.hotjar.com:*',
           'wss://*.hotjar.com',
         ],
       },
