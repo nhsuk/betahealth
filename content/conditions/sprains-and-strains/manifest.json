@@ -1,0 +1,20 @@
+{
+  "layout": "content-simple",
+  "title": "Sprains and strains",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/sprains/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Sprains and strains are common injuries affecting the muscles and ligaments. Most can be treated at home without seeing a GP."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
+}

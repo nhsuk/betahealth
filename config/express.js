@@ -14,6 +14,7 @@ const md = require('markdown-it')({
 });
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItDeflist = require('markdown-it-deflist');
 const markdownItContainer = require('markdown-it-container');
 const markdownItNamedHeaders = require('markdown-it-named-headers');
 const enforce = require('express-sslify');
@@ -34,6 +35,7 @@ const router = require('./routes');
 
 md.use(markdownItAbbr);
 md.use(markdownItAttrs);
+md.use(markdownItDeflist);
 md.use(markdownItNamedHeaders);
 
 ['info', 'info_compact', 'attention', 'warning', 'alert', 'severe'].forEach((filterName) => {
