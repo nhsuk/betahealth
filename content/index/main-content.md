@@ -5,6 +5,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Blisters](/conditions/blisters)
 * [Common cold](/conditions/cold)
 * [Constipation](/conditions/constipation)
 * [Dehydration](/conditions/dehydration)
