@@ -26,7 +26,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Insect bites and stings](/conditions/insect-bites-and-stings)
 * [Mouth ulcers](/conditions/mouth-ulcers)
 * [Nosebleed](/conditions/nosebleed)
-* [Piles](/conditions/haemorrhoids)
+* [Piles](/conditions/piles)
 * [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
 * [Sprains and strains](/conditions/sprains-and-strains)
