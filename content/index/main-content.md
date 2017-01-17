@@ -5,6 +5,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Blisters](/conditions/blisters)
 * [Common cold](/conditions/cold)
 * [Constipation](/conditions/constipation)
 * [Dehydration](/conditions/dehydration)
@@ -23,10 +24,13 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Hives](/conditions/hives)
 * [Indigestion](/conditions/indigestion)
 * [Insect bites and stings](/conditions/insect-bites-and-stings)
+* [Mouth ulcers](/conditions/mouth-ulcers)
 * [Nosebleed](/conditions/nosebleed)
+* [Piles](/conditions/piles)
 * [Shingles](/conditions/shingles)
 * [Sore throat](/conditions/sore-throat)
 * [Sprains and strains](/conditions/sprains-and-strains)
+* [Stye](/conditions/stye)
 * [Warts](/conditions/warts)
 
 ## Symptoms

@@ -1,0 +1,54 @@
+{
+  "layout": "content-simple",
+  "title": "Mouth ulcers",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/mouth-ulcers/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Mouth ulcers are common and should clear up on their own within a week or two. They’re rarely a sign of anything serious, but may be uncomfortable to live with."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      },
+      {
+        "type": "figure_list",
+        "value": [
+          {
+            "srcset": [
+              "assets/images/mouth-ulcers/ulcer-mouth_300.jpg 300w",
+              "assets/images/mouth-ulcers/ulcer-mouth_600.jpg 600w"
+            ],
+            "alt": "Small cluster of 4 clear coloured mouth ulcers on the inside of the bottom lip"
+          },
+          {
+            "srcset": [
+              "assets/images/mouth-ulcers/ulcer-tongue_300.jpg 300w",
+              "assets/images/mouth-ulcers/ulcer-tongue_600.jpg 600w"
+            ],
+            "alt": "Clear white coloured mouth ulcer on the tip of the tongue"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-3.md"
+      }
+    ]
+  }
+}
