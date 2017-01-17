@@ -35,12 +35,27 @@
   {% endfor %}
 {% endmacro %}
 
-{% macro figure_list(list) %}
-  <div class="card__container">
-    {% for figure in list %}
-      {{ figure_item(figure) }}
-    {% endfor %}
-  </div>
+{% macro figure_list(list, options) %}
+  {% if options.reveal and options.title %}
+    <details>
+      <summary data-analytics="summary">
+        <span class="details__summary">{{ options.title }}</span>
+      </summary>
+      <div>
+        <div class="card__container">
+          {% for figure in list %}
+            {{ figure_item(figure) }}
+          {% endfor %}
+        </div>
+      </div>
+    </details>
+  {% else %}
+    <div class="card__container">
+      {% for figure in list %}
+        {{ figure_item(figure) }}
+      {% endfor %}
+    </div>
+  {% endif %}
 {% endmacro %}
 
 {% macro figure_item(figure) %}

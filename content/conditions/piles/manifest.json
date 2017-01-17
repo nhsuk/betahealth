@@ -1,0 +1,64 @@
+{
+  "layout": "content-simple",
+  "title": "Piles (haemorrhoids)",
+  "nonEmergencyCallout": false,
+  "choicesOrigin": "conditions/haemorrhoids/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Piles (haemorrhoids) are swellings inside or around the bottom. They are common and often clear up on their own after a few days."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-before.md"
+      },
+      {
+        "type": "panel",
+        "value": {
+          "main": "!file=panel-content.md",
+          "footer": "!file=panel-footer-content.md"
+        }
+      },
+      {
+        "type": "figure_list",
+        "options": {
+          "reveal": true,
+          "title": "See what piles look like"
+        },
+        "value": [
+          {
+            "srcset": [
+              "assets/images/piles/piles-small_300.jpg 300w",
+              "assets/images/piles/piles-small_600.jpg 600w"
+            ],
+            "caption": "They can be small lumps, around the size of a pea",
+            "alt": "A small clump of skin coloured piles around the rim of the anus and each about the size of a pea"
+          },
+          {
+            "srcset": [
+              "assets/images/piles/piles-pink_300.jpg 300w",
+              "assets/images/piles/piles-pink_600.jpg 600w"
+            ],
+            "caption": "They can be pink or purple",
+            "alt": "A small purple coloured pile on the rim of the anus and about the size of a pea"
+          },
+          {
+            "srcset": [
+              "assets/images/piles/piles-large_300.jpg 300w",
+              "assets/images/piles/piles-large_600.jpg 600w"
+            ],
+            "caption": "They can grow into larger lumps, the size of grapes",
+            "alt": "A clump of larger sized piles around the rim of the anus, each about the size of a small grape and a reddy purple colour"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      }
+    ]
+  }
+}
