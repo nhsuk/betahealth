@@ -1,7 +1,7 @@
 <div class="global-header">
   <div class="global-header__inner">
-    <a href="/" class="global-header__link" title="Go to the NHS.UK homepage">
-      <img src="{{ asset_path('assets/images/logotype-nhs-mono.png') }}" alt="">
+    <a href="/" class="global-header__link">
+      <img src="{{ asset_path('assets/images/logotype-nhs-mono.png') }}" alt="Go to the NHS.UK homepage">
     </a>
   </div>
 </div>
