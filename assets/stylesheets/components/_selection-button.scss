@@ -30,10 +30,11 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 
   @if ($is-ie == false) or ($ie-version == 9) {
     .js-enabled & {
-      @extend %visuallyhidden;
+      filter: alpha(opacity=0);
       height: $_element-size;
       left: 0;
-      margin-right: 0;
+      margin: 0;
+      opacity: 0;
       position: absolute;
       top: 0;
       width: $_element-size;
@@ -67,16 +68,16 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
     }
 
     &::after {
-      background: currentColor;
+      border: 10px solid;
       border-radius: 50%;
       content: "";
       filter: alpha(opacity=0);
-      height: $_radio-size;
+      height: 0;
       left: $_radio-spacing;
       opacity: 0;
       position: absolute;
       top: $_radio-spacing;
-      width: $_radio-size;
+      width: 0;
       zoom: 1;
     }
   }
