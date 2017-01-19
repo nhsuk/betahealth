@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Common cold",
+  "description": "You can often treat a cold without seeing your GP. You should begin to feel better in about a week or two.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/cold-common/pages/introduction.aspx",
   "content": {

@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Earwax build-up",
+  "description": "Normally earwax just falls out on its own. When it’s blocking your ears a pharmacist can help.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/earwax/pages/introduction.aspx",
   "content": {

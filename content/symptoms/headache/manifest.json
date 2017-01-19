@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Headache",
+  "description": "Most headaches will go away on their own and aren’t a sign of something more serious.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/headache/pages/introduction.aspx",
   "content": {

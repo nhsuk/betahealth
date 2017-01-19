@@ -1,13 +1,14 @@
 {
   "layout": "content-simple",
   "title": "Rashes in babies and children",
+  "description": "Many things can cause a rash in children and they’re often nothing to worry about.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/skin-rash-children/pages/introduction.aspx",
   "content": {
     "header": [
       {
         "type": "markdown",
-        "value": "!file=local-header.md"
+        "value": "Many things can cause a rash in children and they’re often nothing to worry about."
       },
       {
         "type": "section_nav"

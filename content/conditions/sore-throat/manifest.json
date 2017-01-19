@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Sore throat",
+  "description": "Sore throats are very common and usually nothing to worry about. They normally get better by themselves within a week.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/sore-throat/pages/introduction.aspx",
   "content": {
