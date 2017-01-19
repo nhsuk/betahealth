@@ -2,35 +2,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-{% if CDN_HOST != '/' %}
+{% if CDN_HOST -%}
   <link href="{{ CDN_HOST }}" rel="dns-prefetch">
-{% endif %}
-{% if FONT_CDN_HOST != '/' %}
+{% endif -%}
+
+{% if FONT_CDN_HOST != '/' -%}
   <link href="{{ FONT_CDN_HOST }}" rel="dns-prefetch">
-{% endif %}
+{% endif -%}
 
 <!--[if IE]><link rel="shortcut icon" href="{{ asset_path('assets/images/favicon.ico') }}"><![endif]-->
 <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
 <link rel="apple-touch-icon" href="{{ asset_path('assets/images/apple-touch-icon.png') }}">
 <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
-{% if previewRevisionId %}
+{% if previewRevisionId -%}
   <link rel="icon" href="{{ asset_path('assets/images/favicon-preview.png') }}">
 {% else %}
   <link rel="icon" href="{{ asset_path('assets/images/favicon.png') }}">
-{% endif %}
+{% endif -%}
 
 <title>{{ title }}{{ ' - ' + meta.parent.title if meta.parent }} - NHS.UK</title>
-{% if description %}
+{% if description -%}
   <meta name="description" content="{{ description }}">
-{% endif %}
+{% endif -%}
 
 {# Webtrends journey tracking #}
 <meta name="WT.si_n" content="{{ meta.parent.title if meta.parent else title }}">
 <meta name="WT.si_p" content="{{ ORIGINAL_URL }}">
 
+<!-- opengraph -->
+<meta property="og:url" content="{{ CANONICAL_URL }}">
+<meta property="og:site_name" content="NHS.UK">
+<meta property="og:title" content="{{ title }}{{ ' - ' + meta.parent.title if meta.parent }} - NHS.UK">
+{% if description  -%}
+  <meta property="og:description" content="{{ description }}">
+{% endif -%}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
 <meta property="og:image" content="{{ asset_path('assets/images/opengraph-image.png') }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
+
+<!-- twitter -->
+<meta name="twitter:card" value="summary">
+<meta name="twitter:domain" value="beta.nhs.uk">
+<meta name="twitter:title" content="{{ title }}{{ ' - ' + meta.parent.title if meta.parent }} - NHS.UK">
+{% if description  -%}
+  <meta name="twitter:description" content="{{ description }}">
+{% endif -%}
 
 {% if font %}
   <!--[if gt IE 8]><!--><link href="{{ asset_path('assets/stylesheets/nhsuk-' + font + '.css') }}" media="screen" rel="stylesheet" type="text/css"><!--<![endif]-->
