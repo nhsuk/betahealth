@@ -5,6 +5,7 @@ const analytics = require('./modules/analytics');
 const labelFocus = require('./modules/label-focus');
 const labelSelect = require('./modules/label-select');
 const tabs = require('./modules/tabs');
+const print = require('./modules/print');
 
 cookieMessage('global-cookies-banner');
 
@@ -14,4 +15,5 @@ $(() => {
   labelFocus.init();
   labelSelect.init();
   tabs.init();
+  print.init();
 });
