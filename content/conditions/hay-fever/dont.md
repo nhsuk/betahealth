@@ -1,6 +1,6 @@
 ### Don’t
 
-- avoid cutting grass or walking in grass
+- cut grass or walk on grass
 - spend too much time outside
 - keep fresh flowers in the house
 - smoke or be around smoke - it makes your symptoms worse
