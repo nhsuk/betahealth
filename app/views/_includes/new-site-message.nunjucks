@@ -1,4 +1,4 @@
-<div class="notification-banner notification-banner--hiviz js-feedback-banner">
+<div class="notification-banner notification-banner--hiviz js-feedback-banner util-print-hide">
   <p class="notification-banner__inner">
     We are testing a new page.
     {% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
