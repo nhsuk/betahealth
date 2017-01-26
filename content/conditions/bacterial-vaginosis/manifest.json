@@ -1,0 +1,32 @@
+{
+  "layout": "content-simple",
+  "title": "Bacterial vaginosis",
+  "description": "Bacterial vaginosis is a common infection of the vagina. It’s harmless and easily treated with antibiotics. It's not classed as a sexually transmitted infection (STI).",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/bacterialvaginosis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Bacterial vaginosis is a common infection of the vagina. It’s harmless and easily treated with antibiotics. It's not classed as a sexually transmitted infection (STI)."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      }
+    ]
+  }
+}
