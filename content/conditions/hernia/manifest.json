@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Hernia",
+  "description": "A hernia looks like a lump under the skin. It can be different sizes.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "content": {

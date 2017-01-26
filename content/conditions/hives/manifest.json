@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Hives",
+  "description": "Hives rashes usually settle down within a few minutes to a few days. You can often treat hives yourself.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/nettle-rash/pages/introduction.aspx",
   "content": {

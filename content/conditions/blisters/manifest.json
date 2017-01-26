@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Blisters",
+  "description": "Blisters should heal on their own within a week. They can be painful while they heal, but you shouldn’t need to see a GP.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/blisters/pages/introduction.aspx",
   "content": {

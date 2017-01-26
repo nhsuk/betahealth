@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Shingles",
+  "description": "Usually you get shingles on your chest and tummy, but it can appear on your face, eyes and genitals.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/shingles/pages/introduction.aspx",
   "content": {

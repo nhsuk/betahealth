@@ -1,13 +1,14 @@
 {
   "layout": "content-simple",
   "title": "Hay fever",
+  "description": "Hay fever is usually worse between late March and September, especially when it’s warm, humid and windy. This is when the pollen count is at its highest.",
   "nonEmergencyCallout": false,
   "choicesorigin": "conditions/hay-fever/pages/introduction.aspx",
   "content": {
     "header": [
       {
         "type": "markdown",
-        "value": "Hay fever is usually worse between late March and September, especially when it’s warm, humid and windy. This is when the pollen count is at its highest. "
+        "value": "Hay fever is usually worse between late March and September, especially when it’s warm, humid and windy. This is when the pollen count is at its highest."
       }
     ],
     "main": [

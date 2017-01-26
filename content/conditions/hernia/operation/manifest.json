@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Hernia operation",
+  "description": "You’ll need an operation to fix a hernia. You may not need an operation straight away. Your hernia won’t get better without surgery, but it doesn’t always get worse. You can discuss with your doctor whether or not you need surgery.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/hernia/pages/introduction.aspx",
   "content": {

@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Nosebleed",
+  "description": "Nosebleeds aren’t usually a sign of anything serious. They’re common, particularly in children, and most can be easily treated at home.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/nosebleed/pages/introduction.aspx",
   "content": {
