@@ -9,3 +9,15 @@
 .util-bg-tint__yellow {
   background-color: tint($yellow, 80%);
 }
+
+.util-print-only {
+  @media screen {
+    display: none;
+  }
+}
+
+.util-print-hide {
+  @media print {
+    display: none;
+  }
+}
