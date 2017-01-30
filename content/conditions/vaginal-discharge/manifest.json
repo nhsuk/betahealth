@@ -1,0 +1,28 @@
+{
+  "layout": "content-simple",
+  "title": "Vaginal discharge",
+  "description": "Vaginal discharge is normal and most women and girls get it. It’s a fluid or mucus that keeps the vagina moist, clean and protects it from infection.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/vaginal-discharge/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Vaginal discharge is normal and most women and girls get it. It’s a fluid or mucus that keeps the vagina moist, clean and protects it from infection."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      }
+    ]
+  }
+}
