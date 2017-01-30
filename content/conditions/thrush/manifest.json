@@ -1,0 +1,69 @@
+{
+  "layout": "content-simple",
+  "title": "Thrush in men and women",
+  "description": "Thrush is a common yeast infection that affects men and women. It's usually harmless but it can be uncomfortable and keep coming back.  It isn't classed as a sexually transmitted infection (STI).",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/thrush/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Thrush is a common yeast infection that affects men and women.  It's usually harmless but it can be uncomfortable and keep coming back.  It isn't classed as a sexually transmitted infection (STI)."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "figure_list",
+        "options": {
+          "reveal": true,
+          "title": "See what thrush looks like on the vagina, penis and skin"
+        },
+        "value": [
+          {
+            "srcset": [
+              "assets/images/thrush/thrush-penis_300.jpg 300w",
+              "assets/images/thrush/thrush-penis_600.jpg 600w"
+            ],
+            "caption": "Thrush on the penis",
+            "alt": "Penis with foreskin pulled back showing red and sore glans"
+          },
+          {
+            "srcset": [
+              "assets/images/thrush/thrush-vagina_300.jpg 300w",
+              "assets/images/thrush/thrush-vagina_600.jpg 600w"
+            ],
+            "caption": "Thrush on the vagina",
+            "alt": "Thick, white discharge around a reddened vagina, inside the labia"
+          },
+          {
+            "srcset": [
+              "assets/images/thrush/thrush-skin_300.jpg 300w",
+              "assets/images/thrush/thrush-skin_600.jpg 600w"
+            ],
+            "caption": "Thrush on the skin",
+            "alt": "A red, scaly rash in the shape of a circle with white discharge around the edge, on white skin"
+          }
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-3.md"
+      }
+    ]
+  }
+}

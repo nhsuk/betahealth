@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Stye",
+  "description": "Styes are common and should clear up on their own within a week or two. They’re rarely a sign of anything serious but may be painful until they heal.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/stye/pages/introduction.aspx",
   "content": {

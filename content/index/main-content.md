@@ -5,6 +5,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 
 ## Conditions
 
+* [Bacterial vaginosis](/conditions/bacterial-vaginosis)
 * [Blisters](/conditions/blisters)
 * [Common cold](/conditions/cold)
 * [Constipation](/conditions/constipation)
@@ -31,6 +32,8 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Sore throat](/conditions/sore-throat)
 * [Sprains and strains](/conditions/sprains-and-strains)
 * [Stye](/conditions/stye)
+* [Thrush](/conditions/thrush)
+* [Vaginal discharge](/conditions/vaginal-discharge)
 * [Warts](/conditions/warts)
 
 ## Symptoms

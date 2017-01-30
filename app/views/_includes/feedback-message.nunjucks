@@ -1,5 +1,5 @@
 {% if feedback and not FEEDBACKFORM.disabled and FEEDBACKFORM.outcome != "success"  %}
-  <div class="page-section">
+  <div class="page-section util-print-hide">
     <div class="reading-width">
       <p>
         <a href="#page-feedback"

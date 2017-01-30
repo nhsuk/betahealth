@@ -88,7 +88,7 @@
       {% endfor %}
     </div>
 
-    <ul class="tabs__nav js-tabs-nav">
+    <ul class="tabs__nav js-tabs-nav util-print-hide">
       {% for item in list %}
         <li class="tabs__nav-item">
           <a href="#{{ item.name | kebabcase }}"

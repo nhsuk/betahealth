@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Heat exhaustion and heat stroke",
+  "description": "Heat exhaustion and heat stroke are serious if not treated quickly. You should give first aid and call 999 if you think there are signs of heat stroke.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "Conditions/Heat-exhaustion-and-heatstroke/Pages/Introduction.aspx",
   "content": {

@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Earache and pain",
+  "description": "Earache and pain is common, particularly in young children. It’s not usually a sign of anything serious, but it can be painful.",
   "nonEmergencyCallout": true,
   "choicesorigin": "conditions/earache/pages/introduction.aspx",
   "content": {

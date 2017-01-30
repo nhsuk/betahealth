@@ -1,4 +1,5 @@
 // PRINT STYLESHEET COMPILER
+// sass-lint:disable no-important
 
 $is-print: true;
 
@@ -10,7 +11,9 @@ $is-print: true;
 @import "environment/tools/mixins/conditionals";
 @import "environment/tools/mixins/typography";
 @import "environment/tools/placeholders/shims";
+@import "environment/tools/utilities";
 
+@import "environment/generic/box-sizing";
 @import "environment/generic/reset";
 @import "normalize.css/normalize";
 
@@ -29,6 +32,14 @@ body {
 }
 
 a {
+  color: $black !important;
+  font-weight: 700;
+  text-decoration: none;
+
+  &::after {
+    font-weight: 400;
+  }
+
   &:visited {
     word-wrap: break-word;
   }
@@ -50,12 +61,80 @@ a {
   }
 }
 
+img {
+  max-width: 15cm;
+}
+
+.card__caption {
+  font-size: .9em;
+  font-style: italic;
+  margin-top: 0;
+}
+
 select {
   background: $white;
 }
 
+hr {
+  border: 1mm solid $grey-3;
+  margin: .8cm 0;
+  width: 15%;
+}
+
+.global-header__link::after {
+  content: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1cm 0 .5cm;
+  page-break-after: avoid;
+}
+
+p,
+figure {
+  margin: .5cm 0;
+}
+
+details {
+  margin: 1cm 0;
+
+  summary {
+    @include bold-font(24);
+    margin-bottom: .5cm;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
+
+.list--cross li {
+  &::before,
+  &::after {
+    border: 2px solid $red;
+    height: 0;
+  }
+}
+
+.tabs-panel,
+.callout {
+  page-break-inside: avoid;
+}
+
+.callout--compact {
+  display: inline-block;
+}
+
 // hide the unnecessary page elements
+// sass-lint:disable class-name-format
 body footer,
-.visuallyhidden {
+.visuallyhidden,
+.skiplinks,
+.local-header .link-list {
   display: none;
 }

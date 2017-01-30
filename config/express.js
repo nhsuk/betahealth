@@ -83,8 +83,6 @@ module.exports = (app, config) => {
     app.use(churchill(logger));
   }
 
-  app.use(locals(config));
-
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
     extended: true,
@@ -95,6 +93,7 @@ module.exports = (app, config) => {
     trustProtoHeader: config.trustProtoHeader,
     trustAzureHeader: config.trustAzureHeader,
   }));
+  app.use(locals(config));
   app.use(assetPath(config, nunjucksEnv));
   app.use(feedback());
 

@@ -1,6 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Flu",
+  "description": "You can often treat the flu without seeing your GP and you should begin to feel better in about a week.",
   "nonEmergencyCallout": false,
   "choicesOrigin": "conditions/flu/pages/introduction.aspx",
   "content": {
