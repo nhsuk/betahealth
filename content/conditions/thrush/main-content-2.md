@@ -39,9 +39,9 @@ You’ll be asked about your symptoms. If it’s not clear it’s thrush:
 
 ## Thrush treatment
 
-You’ll often need anti-fungal medicine to get rid of thrush. This can be tablet you
-take, a tablet you insert into your vagina (pessary) or a cream to relieve the
-irritation.
+You’ll often need anti-fungal medicine to get rid of thrush. This can be a tablet
+you take, a tablet you insert into your vagina (pessary) or a cream to relieve
+the irritation.
 
 Thrush should clear up within a week, after one dose of medicine or using the
 cream daily.
