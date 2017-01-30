@@ -35,14 +35,15 @@ This won’t hurt, but it may feel uncomfortable.
 
 ## Treatment for bacterial vaginosis
 
-BV is usually treated with antibiotic tablets or gel.
+BV is usually treated with antibiotic tablets or gel. These are prescribed by
+your GP or sexual health clinic.
 
 If you’re pregnant, it’s often safe to use treatment.
 
-There are treatments available at supermarkets and pharmacies to treat BV,
-but it’s not clear if they work.
-
 Partners don’t need treatment, unless female partners have symptoms.
+
+You can get gels to treat BV at supermarkets and pharmacies but there’s no
+clear proof they work.
 
 ### Recurring bacterial vaginosis
 
