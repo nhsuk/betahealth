@@ -63,6 +63,9 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('snakecase', (str) => {
     return changeCase.snakeCase(str);
   });
+  nunjucksEnv.addFilter('sentencecase', (str) => {
+    return changeCase.sentenceCase(str);
+  });
   nunjucksEnv.addFilter('renderString', (str) => {
     return nunjucksEnv.renderString(str);
   });
