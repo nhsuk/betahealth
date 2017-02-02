@@ -7,47 +7,89 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Hand, foot and mouth disease is a common childhood illness that can affect adults. It usually clears up by itself in 7 to 10 days."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Hand, foot and mouth disease is a common childhood illness that can affect adults. It usually clears up by itself in 7 to 10 days."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-before.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-before.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/hand-foot-mouth-disease/mouth-ulcer-300.jpg 300w",
-              "assets/images/hand-foot-mouth-disease/mouth-ulcer-600.jpg 600w"
-            ],
-            "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and make it difficult to eat or drink.",
-            "alt": "Mouth ulcer on a tongue"
-          },
-          {
-            "srcset": [
-              "assets/images/hand-foot-mouth-disease/rash-300.jpg 300w",
-              "assets/images/hand-foot-mouth-disease/rash-600.jpg 600w"
-            ],
-            "caption": "Red spots usually appear on the hands and feet that will develop into blisters.",
-            "alt": "Rash on a hand"
-          },
-          {
-            "srcset": [
-              "assets/images/hand-foot-mouth-disease/blisters-300.jpg 300w",
-              "assets/images/hand-foot-mouth-disease/blisters-600.jpg 600w"
-            ],
-            "caption": "The blisters are grey in the centre and can be painful.",
-            "alt": "Blister on small toe"
-          }
-        ]
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/hand-foot-mouth-disease/mouth-ulcer-300.jpg 300w",
+                  "assets/images/hand-foot-mouth-disease/mouth-ulcer-600.jpg 600w"
+                ],
+                "caption": "Ulcers appear in the mouth and on the tongue. These can be painful and make it difficult to eat or drink.",
+                "alt": "Mouth ulcer on a tongue"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/hand-foot-mouth-disease/rash-300.jpg 300w",
+                  "assets/images/hand-foot-mouth-disease/rash-600.jpg 600w"
+                ],
+                "caption": "Red spots usually appear on the hands and feet that will develop into blisters.",
+                "alt": "Rash on a hand"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/hand-foot-mouth-disease/blisters-300.jpg 300w",
+                  "assets/images/hand-foot-mouth-disease/blisters-600.jpg 600w"
+                ],
+                "caption": "The blisters are grey in the centre and can be painful.",
+                "alt": "Blister on small toe"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
       }
     ]
   }

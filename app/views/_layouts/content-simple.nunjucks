@@ -13,7 +13,7 @@
     {% block main_content %}
       <div class="page-section">
         {% for component in content.main %}
-          {{ components[component.type | snakecase](component.value, component.options) }}
+          {{ components[component.type | snakecase](component.props) }}
         {% endfor %}
       </div>
     {% endblock %}

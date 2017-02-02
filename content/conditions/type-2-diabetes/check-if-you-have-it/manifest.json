@@ -6,8 +6,11 @@
   "content": {
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
       }
     ]
   }

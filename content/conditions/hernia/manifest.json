@@ -7,82 +7,185 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "A hernia looks like a lump under the skin. It can be different sizes."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "A hernia looks like a lump under the skin. It can be different sizes."
+        }
       }
     ],
     "main": [
       {
         "type": "panel",
-        "value": {
-          "main": "!file=panel-content.md",
-          "footer": "!file=panel-footer-content.md"
+        "props": {
+          "body": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=panel-content.md"
+              }
+            }
+          ],
+          "footer": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=panel-footer-content.md"
+              }
+            }
+          ]
         }
       },
       {
-        "type": "markdown",
-        "value": "!file=image-set.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=image-set.md"
+        }
       },
       {
-        "type": "image_set",
-        "value": [
-          {
-            "name": "Groin",
-            "image": {
-              "srcset": [
-                "assets/images/hernia/groin_400.jpg 400w",
-                "assets/images/hernia/groin_640.jpg 640w",
-                "assets/images/hernia/groin_800.jpg 800w",
-                "assets/images/hernia/groin_1280.jpg 1280w"
-              ],
-              "alt": ""
+        "type": "tabs",
+        "props": {
+          "variant": "bottom",
+          "children": [
+            {
+              "type": "tab",
+              "props": {
+                "label": "Groin",
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/hernia/groin_400.jpg 400w",
+                        "assets/images/hernia/groin_640.jpg 640w",
+                        "assets/images/hernia/groin_800.jpg 800w",
+                        "assets/images/hernia/groin_1280.jpg 1280w"
+                      ],
+                      "alt": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "tab",
+              "props": {
+                "label": "Upper thigh",
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/hernia/upper-thigh_400.jpg 400w",
+                        "assets/images/hernia/upper-thigh_640.jpg 640w",
+                        "assets/images/hernia/upper-thigh_800.jpg 800w",
+                        "assets/images/hernia/upper-thigh_1280.jpg 1280w"
+                      ],
+                      "alt": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "tab",
+              "props": {
+                "label": "Tummy area",
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/hernia/tummy-area_400.jpg 400w",
+                        "assets/images/hernia/tummy-area_640.jpg 640w",
+                        "assets/images/hernia/tummy-area_800.jpg 800w",
+                        "assets/images/hernia/tummy-area_1280.jpg 1280w"
+                      ],
+                      "alt": ""
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "tab",
+              "props": {
+                "label": "Testicle",
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/hernia/testicle_400.jpg 400w",
+                        "assets/images/hernia/testicle_640.jpg 640w",
+                        "assets/images/hernia/testicle_800.jpg 800w",
+                        "assets/images/hernia/testicle_1280.jpg 1280w"
+                      ],
+                      "alt": ""
+                    }
+                  }
+                ]
+              }
             }
-          },
-          {
-            "name": "Upper thigh",
-            "image": {
-              "srcset": [
-                "assets/images/hernia/upper-thigh_400.jpg 400w",
-                "assets/images/hernia/upper-thigh_640.jpg 640w",
-                "assets/images/hernia/upper-thigh_800.jpg 800w",
-                "assets/images/hernia/upper-thigh_1280.jpg 1280w"
-              ],
-              "alt": ""
-            }
-          },
-          {
-            "name": "Tummy area",
-            "image": {
-              "srcset": [
-                "assets/images/hernia/tummy-area_400.jpg 400w",
-                "assets/images/hernia/tummy-area_640.jpg 640w",
-                "assets/images/hernia/tummy-area_800.jpg 800w",
-                "assets/images/hernia/tummy-area_1280.jpg 1280w"
-              ],
-              "alt": ""
-            }
-          },
-          {
-            "name": "Testicle",
-            "image": {
-              "srcset": [
-                "assets/images/hernia/testicle_400.jpg 400w",
-                "assets/images/hernia/testicle_640.jpg 640w",
-                "assets/images/hernia/testicle_800.jpg 800w",
-                "assets/images/hernia/testicle_1280.jpg 1280w"
-              ],
-              "alt": ""
-            }
-          }
-        ]
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=sidebar-content.md"
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "alert",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-urgent.md"
+              }
+            },
+            {
+              "type": "reveal",
+              "props": {
+                "summary": "This could mean you have a [strangulated hernia].",
+                "variant": "inline",
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=reveal.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   }

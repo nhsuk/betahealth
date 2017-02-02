@@ -7,14 +7,57 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Nosebleeds aren’t usually a sign of anything serious. They’re common, particularly in children, and most can be easily treated at home."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Nosebleeds aren’t usually a sign of anything serious. They’re common, particularly in children, and most can be easily treated at home."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "alert",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-alert.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
       }
     ]
   }

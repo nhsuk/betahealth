@@ -7,25 +7,153 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "!file=local-header.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=local-header.md"
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp-babies.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "alert",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-urgent-babies.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Conditions that can cause diarrhoea",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
       }
     ]
   }

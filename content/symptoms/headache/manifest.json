@@ -7,18 +7,50 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Most headaches will go away on their own and aren’t a sign of something more serious."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Most headaches will go away on their own and aren’t a sign of something more serious."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=sidebar-content.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
       }
     ]
   }

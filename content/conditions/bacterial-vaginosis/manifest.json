@@ -7,25 +7,92 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Bacterial vaginosis is a common infection of the vagina. It’s harmless and easily treated with antibiotics. It's not classed as a sexually transmitted infection (STI)."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Bacterial vaginosis is a common infection of the vagina. It’s harmless and easily treated with antibiotics. It's not classed as a sexually transmitted infection (STI)."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-info.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
       }
     ]
   }

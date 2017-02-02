@@ -7,62 +7,186 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Thrush is a common yeast infection that affects men and women.  It's usually harmless but it can be uncomfortable and keep coming back.  It isn't classed as a sexually transmitted infection (STI)."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Thrush is a common yeast infection that affects men and women.  It's usually harmless but it can be uncomfortable and keep coming back.  It isn't classed as a sexually transmitted infection (STI)."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "figure_list",
-        "options": {
-          "reveal": true,
-          "title": "See what thrush looks like on the vagina, penis and skin"
-        },
-        "value": [
-          {
-            "srcset": [
-              "assets/images/thrush/thrush-penis_300.jpg 300w",
-              "assets/images/thrush/thrush-penis_600.jpg 600w"
-            ],
-            "caption": "Thrush on the penis",
-            "alt": "Penis with foreskin pulled back showing red and sore glans"
-          },
-          {
-            "srcset": [
-              "assets/images/thrush/thrush-vagina_300.jpg 300w",
-              "assets/images/thrush/thrush-vagina_600.jpg 600w"
-            ],
-            "caption": "Thrush on the vagina",
-            "alt": "Thick, white discharge around a reddened vagina, inside the labia"
-          },
-          {
-            "srcset": [
-              "assets/images/thrush/thrush-skin_300.jpg 300w",
-              "assets/images/thrush/thrush-skin_600.jpg 600w"
-            ],
-            "caption": "Thrush on the skin",
-            "alt": "A red, scaly rash in the shape of a circle with white discharge around the edge, on white skin"
-          }
-        ]
+        "type": "reveal",
+        "props": {
+          "summary": "See what thrush looks like on the vagina, penis and skin",
+          "variant": "block",
+          "children": [
+            {
+              "type": "gallery",
+              "props": {
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/thrush/thrush-penis_300.jpg 300w",
+                        "assets/images/thrush/thrush-penis_600.jpg 600w"
+                      ],
+                      "caption": "Thrush on the penis",
+                      "alt": "Penis with foreskin pulled back showing red and sore glans"
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/thrush/thrush-vagina_300.jpg 300w",
+                        "assets/images/thrush/thrush-vagina_600.jpg 600w"
+                      ],
+                      "caption": "Thrush on the vagina",
+                      "alt": "Thick, white discharge around a reddened vagina, inside the labia"
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/thrush/thrush-skin_300.jpg 300w",
+                        "assets/images/thrush/thrush-skin_600.jpg 600w"
+                      ],
+                      "caption": "Thrush on the skin",
+                      "alt": "A red, scaly rash in the shape of a circle with white discharge around the edge, on white  skin"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-info.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-3.md"
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
       }
     ]
   }

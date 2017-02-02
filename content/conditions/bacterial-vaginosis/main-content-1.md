@@ -1,22 +1,3 @@
-!!! attention
-## See a GP or sexual health clinic if your discharge:
-
-- has a strong fishy smell, particularly after sex
-- is white or grey
-- is thin and watery
-!!!
-
-!!! info
-### Sexual health clinics can help with bacterial vaginosis
-
-Sexual health clinics treat problems with the genitals and urine system.
-
-Many sexual health clinics offer a walk-in service, where you don’t need an
-appointment. They’ll often get test results quicker than GP practices.
-
-[Find a sexual health clinic](http://www.nhs.uk/service-search/Sexual-health-information-and-support/LocationSearch/734)
-!!!
-
 Bacterial vaginosis (BV) doesn’t usually cause any soreness or itching. If
 you’re unsure it’s BV check [vaginal discharge](/conditions/vaginal-discharge).
 

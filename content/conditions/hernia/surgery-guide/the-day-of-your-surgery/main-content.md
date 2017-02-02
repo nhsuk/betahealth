@@ -34,8 +34,3 @@ You may feel drowsy, sick, and have some pain - ask the nurse to give you
 medicine to help.
 
 You’ll be moved to another ward where you’ll be monitored until you can go home.
-
-!!! warning
-You’ll be going home the same day as your operation. Make sure you’ve arranged
-for someone to take you home.
-!!!
