@@ -1,26 +1,114 @@
-{% macro image(options) %}
-  {% if options.srcset %}
-    <!--[if gt IE 7]><!-->
-    <img
-      srcset="{{ srcset(options.srcset) }}"
-      alt="{{ options.alt }}"
-      data-analytics="image"
-      data-analytics-type="{{ options.analyticsType | default('inline') }}"
-      />
-    <!--<![endif]-->
-    <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-      {% set fallback = options.srcset[0] | split(' ') %}
-      <img src="{{ asset_path(fallback[0]) }}" alt="{{ options.alt }}" />
-    <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
-  {% endif %}
+{% macro callout(props) %}
+  <section class="callout callout--{{ props.variant }}{{ ' callout--compact' if props.compact }}">
+    {% for component in props.children %}
+      {{ loadComponent(component.type)(component.props) }}
+    {% endfor %}
+  </section>
 {% endmacro %}
 
-{% macro markdown(content) %}
+{% macro reveal(props) %}
+  <details class="{{ 'details--inline' if props.variant == 'inline' }}">
+    <summary data-analytics="summary">
+      <span class="details__summary">
+        {% if props.variant == 'inline' %}
+          {{ props.summary.replace('[', '<span class="details__cta">').replace(']', '</span>') | safe }}
+        {% else %}
+          {{ props.summary }}
+        {% endif %}
+      </span>
+    </summary>
+
+    <div>
+      {% for component in props.children %}
+        {{ loadComponent(component.type)(component.props) }}
+      {% endfor %}
+    </div>
+  </details>
+{% endmacro %}
+
+{% macro text(props) %}
   <div class="reading-width">
-    {% markdown %}
-      {{ content | renderString | safe }}
-    {% endmarkdown %}
+    {% if props.variant == 'markdown' %}
+      {% markdown %}
+        {{ props.value | renderString | safe }}
+      {% endmarkdown %}
+    {% elseif props.variant == 'html' %}
+      {{ props.value | safe}}
+    {% elseif props.variant == 'plain' %}
+      {{ props.value }}
+    {% endif %}
   </div>
+{% endmacro %}
+
+{% macro split_content(props) %}
+  <div class="panel">
+    {% for area in props.children %}
+      {{ split_area(area.props) }}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro split_area(props) %}
+  <div class="panel__content panel__content--half">
+    {% for component in props.children %}
+      {{ loadComponent(component.type)(component.props) }}
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro panel(props) %}
+  <article class="panel{{ ' reading-width' if props.reading_width }}">
+    {% if props.header.length %}
+      <div class="panel__header">
+        {% for component in props.header %}
+          {{ loadComponent(component.type)(component.props) }}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if props.body.length %}
+      <div class="panel__content">
+        {% for component in props.body %}
+          {{ loadComponent(component.type)(component.props) }}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if props.footer.length %}
+      <footer class="panel__footer">
+        {% for component in props.footer %}
+          {{ loadComponent(component.type)(component.props) }}
+        {% endfor %}
+      </footer>
+    {% endif %}
+  </article>
+{% endmacro %}
+
+{% macro image(props) %}
+  {% if props.srcset %}
+    <figure class="media">
+      <!--[if gt IE 7]><!-->
+      <img
+        srcset="{{ srcset(props.srcset) }}"
+        alt="{{ props.alt }}"
+        data-analytics="image"
+        data-analytics-type="{{ props.analyticsType | default('inline') }}"
+        />
+      <!--<![endif]-->
+      <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+        {% set fallback = props.srcset[0] | split(' ') %}
+        <img src="{{ asset_path(fallback[0]) }}" alt="{{ props.alt }}" />
+      <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+
+      {% if props.caption %}
+        <figcaption class="media__caption">
+          {% markdown %}
+            {{ props.caption | renderString | safe }}
+          {% endmarkdown %}
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
 {% endmacro %}
 
 {% macro srcset(list) %}
@@ -35,108 +123,93 @@
   {% endfor %}
 {% endmacro %}
 
-{% macro figure_list(list, options) %}
-  {% if options.reveal and options.title %}
-    <details>
-      <summary data-analytics="summary">
-        <span class="details__summary">{{ options.title }}</span>
-      </summary>
-      <div>
-        <div class="media__container">
-          {% for figure in list %}
-            {{ figure_item(figure) }}
-          {% endfor %}
-        </div>
-      </div>
-    </details>
-  {% else %}
-    <div class="media__container">
-      {% for figure in list %}
-        {{ figure_item(figure) }}
-      {% endfor %}
-    </div>
-  {% endif %}
+{% macro gallery(props) %}
+  <div class="media__container">
+    {% for component in props.children %}
+      {{ loadComponent(component.type)(component.props) }}
+    {% endfor %}
+  </div>
 {% endmacro %}
 
-{% macro figure_item(figure) %}
-  <figure class="media{{ ' media--full-width' if figure.fullWidth }}">
-    {{ image({
-      srcset: figure.srcset,
-      alt: figure.alt,
-      analyticsType: 'figure'
-    }) }}
-
-    {% if figure.caption %}
-      <figcaption class="media__caption">
-        {{ markdown(figure.caption) }}
-      </figcaption>
-    {% endif %}
-  </figure>
-{% endmacro %}
-
-{% macro image_set(list) %}
+{% macro tabs(props) %}
   <section class="tabs js-tabs">
 
+    {% if props.variant == 'top' %}
+      {{ tabs_nav(props) }}
+    {% endif %}
+
     <div class="tabs__tab-container js-tabs-content">
-      {% for item in list %}
-        <div class="tabs__tab js-tab-pane" id="{{ item.name | kebabcase }}">
-          <h3 class="tabs__tab-heading">{{ item.name }}</h3>
+      {% for tab in props.children %}
+        <div class="tabs__tab js-tab-pane" id="{{ tab.props.label | kebabcase }}">
+          <h3 class="tabs__tab-heading">{{ tab.props.label }}</h3>
           <div class="tabs__tab-content">
-            {{ image(item.image) }}
+            {% for component in tab.props.children %}
+              {{ loadComponent(component.type)(component.props) }}
+            {% endfor %}
           </div>
         </div>
       {% endfor %}
     </div>
 
-    <ul class="tabs__nav js-tabs-nav util-print-hide">
-      {% for item in list %}
-        <li class="tabs__nav-item">
-          <a href="#{{ item.name | kebabcase }}"
-              class="tabs__nav-link"
-              data-analytics="image-set">{{ item.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    {% if props.variant != 'top' %}
+      {{ tabs_nav(props) }}
+    {% endif %}
 
   </section>
 {% endmacro %}
 
-{% macro section_list(content) %}
+{% macro tabs_nav(props) %}
+  <ul class="tabs__nav js-tabs-nav util-print-hide{{ ' tabs__nav--top' if props.variant == 'top'}}">
+    {% for tab in props.children %}
+      <li class="tabs__nav-item">
+        <a href="#{{ tab.props.label | kebabcase }}"
+            class="tabs__nav-link"
+            data-analytics="image-set">{{ tab.props.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro section_list(props) %}
   <section>
-    <h2 id="{{ content.title | kebabcase }}">{{ content.title }}</h2>
+    <h2 id="{{ props.title | kebabcase }}">{{ props.title }}</h2>
 
-    {% for section in content.sections %}
-      <article class="section-unit section-unit--divider">
-        {% if section.title %}
-          <h3>{{ section.title }}</h3>
-        {% endif %}
-
-        {% for component in section.content %}
-          {{ loadComponent(component.type)(component.value) }}
-        {% endfor %}
-      </article>
+    {% for component in props.children %}
+      {{ loadComponent(component.type)(component.props) }}
     {% endfor %}
   </section>
 {% endmacro %}
 
-{% macro article_list(content) %}
-  {% for article in content.articles %}
+{% macro section(props) %}
+  <article class="section-unit section-unit--divider">
+    {% if props.title %}
+      <h3>{{ props.title }}</h3>
+    {% endif %}
+
+    {% for component in props.children %}
+      {{ loadComponent(component.type)(component.props) }}
+    {% endfor %}
+  </article>
+{% endmacro %}
+
+{% macro article_list(props) %}
+  {% for article in props.children %}
     <article class="section-unit">
-      {% if article.label %}
-        <h3 class="section-unit__prefix">{{ article.label }}</h3>
+      {% if article.props.label %}
+        <h3 class="section-unit__prefix">{{ article.props.label }}</h3>
       {% endif %}
 
-      {% if article.title %}
-        <h2 id="{{ article.title | kebabcase }}">
-          {% if content.numbered %}
+      {% if article.props.title %}
+        <h2 id="{{ article.props.title | kebabcase }}">
+          {% if props.numbered %}
             {{ loop.index }}.
           {% endif %}
-          {{ article.title }}
+          {{ article.props.title }}
         </h2>
       {% endif %}
 
-      {% for component in article.value %}
-        {{ loadComponent(component.type)(component.value) }}
+      {% for component in article.props.children %}
+        {{ loadComponent(component.type)(component.props) }}
       {% endfor %}
     </article>
   {% endfor %}
@@ -147,10 +220,10 @@
     {% for component in components %}
       {% if component.type | snakecase == 'section_list' %}
         <li class="link-list--item">
-          <a href="#{{ component.value.title | kebabcase }}"
+          <a href="#{{ component.props.title | kebabcase }}"
              class="link--reverse-polarity"
              data-analytics="anchor">
-            {{ component.value.title }}
+            {{ component.props.title }}
           </a>
         </li>
       {% endif %}
@@ -162,12 +235,12 @@
   <ol class="step-list">
     {% for component in components %}
       {% if component.type | snakecase == 'article_list' %}
-        {% for article in component.value.articles %}
+        {% for article in component.props.children %}
           <li class="step-list__item{{ ' is-last' if loop.last }}">
-            <a href="#{{ article.title | kebabcase }}"
+            <a href="#{{ article.props.title | kebabcase }}"
                class="link--reverse-polarity"
                data-analytics="anchor">
-              {{ article.title }}
+              {{ article.props.title }}
             </a>
           </li>
         {% endfor %}
@@ -240,36 +313,4 @@
       {% endif %}
     </ul>
   </nav>
-{% endmacro %}
-
-{% macro panel(content, reading_width=true) %}
-  <article class="panel{{ ' reading-width' if reading_width }}">
-    {% if content.header %}
-      <div class="panel__header">
-        {{ markdown(content.header) }}
-      </div>
-    {% endif %}
-
-    <div class="panel__content">
-      {{ markdown(content.main) }}
-    </div>
-
-    {% if content.footer %}
-      <footer class="panel__footer">
-        {{ markdown(content.footer) }}
-      </footer>
-    {% endif %}
-  </article>
-{% endmacro %}
-
-{% macro split_panel(content) %}
-  <div class="panel">
-    <div class="panel__content panel__content--half">
-      {{ markdown(content[0]) }}
-    </div>
-
-    <div class="panel__content panel__content--half">
-      {{ markdown(content[1]) }}
-    </div>
-  </div>
 {% endmacro %}

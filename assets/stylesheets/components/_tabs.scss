@@ -4,6 +4,10 @@ $_border-colour: shade($grey-3, 20);
   @extend %measure;
 }
 
+.tabs__tab {
+  margin-top: 0;
+}
+
 .tabs__tab-container {
   margin-top: 0;
 }
@@ -28,6 +32,11 @@ $_border-colour: shade($grey-3, 20);
   padding: 0;
 }
 
+.tabs__nav--top {
+  @include element-spacing(bottom);
+  border-top-width: 1px;
+}
+
 .tabs__nav-item {
   border: solid $_border-colour;
   border-width: 0 0 1px 1px;
@@ -45,6 +54,10 @@ $_border-colour: shade($grey-3, 20);
 
   + .tabs__nav-item {
     margin-top: 0;
+  }
+
+  .tabs__nav--top & {
+    border-bottom-width: 0;
   }
 }
 
