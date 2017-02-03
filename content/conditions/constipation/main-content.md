@@ -147,10 +147,6 @@ Different [types of laxatives](http://www.nhs.uk/conditions/Laxatives/Pages/Intr
   Speak to your doctor before you stop taking any prescribed medication.
 !!!
 
-!!! info_compact
-  If you’re not sure what to do, call 111.
-!!!
-
 ## Complications of long-term constipation
 
 Long-term constipation can lead to faecal impaction. This is where poo has built up in your rectum.

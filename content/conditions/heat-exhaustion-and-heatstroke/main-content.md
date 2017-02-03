@@ -40,10 +40,6 @@ Stay with them until they are better.
 
 They should start to cool down and feel better within 30 minutes.
 
-!!! info_compact
-  If you’re not sure what to do call 111.
-!!!
-
 !!! severe
   ## Call 999 if the person:
 
