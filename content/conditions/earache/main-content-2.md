@@ -7,7 +7,7 @@ They can give advice and recommend treatments, such as eardrops.
 !!!
 
 !!! attention
-## See a GP if:
+## See a GP if you have:
 
 - a high temperature
 - swelling around the ear
@@ -18,7 +18,7 @@ They can give advice and recommend treatments, such as eardrops.
 - other symptoms, like vomiting or a severe sore throat
 
 ***
-If you can’t get an appointment, contact 111 or go to a [walk in centre](http://www.nhs.uk/Service-Search/Walk-in%20centre/LocationSearch/663).
+If you can’t get an appointment, contact 111 or go to a [walk-in centre](http://www.nhs.uk/Service-Search/Walk-in%20centre/LocationSearch/663).
 !!!
 
 ## Spotting earache in babies and young children
