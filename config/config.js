@@ -9,6 +9,7 @@ module.exports = {
   env: process.env.NODE_ENV || 'development',
   ci: process.env.CI,
   port,
+  showDevelopmentRoutes: process.env.SHOW_DEVELOPMENT_ROUTES || false,
   googleAnalyticsId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
   webtrendsId: process.env.WEBTRENDS_TRACKING_ID,
   hotjarId: process.env.HOTJAR_TRACKING_ID,
