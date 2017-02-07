@@ -2,7 +2,7 @@
   "layout": "content-simple",
   "title": "Constipation",
   "description": "Constipation is common and it affects people of all ages. You can usually treat it at home with simple changes to your diet and lifestyle.",
-  "nonEmergencyCallout": false,
+  "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/constipation/pages/introduction.aspx",
   "content": {
     "header": [
