@@ -1,0 +1,32 @@
+{
+  "layout": "content-simple",
+  "title": "Glandular fever",
+  "description": "Glandular fever mostly affects teenagers and young adults. It gets better without treatment, but it can make you feel very ill and last for weeks.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/glandular-fever/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Glandular fever mostly affects teenagers and young adults. It gets better without treatment, but it can make you feel very ill and last for weeks."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      },
+      {
+        "type": "split_panel",
+        "value": [
+          "!file=do.md",
+          "!file=dont.md"
+        ]
+      },
+      {
+        "type": "markdown",
+        "value": "!file=main-content-2.md"
+      }
+    ]
+  }
+}
