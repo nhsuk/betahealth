@@ -54,10 +54,10 @@ Ear pain with change in hearing
 
 Ear pain with pain when swallowing
 ~ [Sore throat](/conditions/sore-throat)
-~ [Tonsilitis](http://www.nhs.uk/Conditions/Tonsillitis/Pages/Introduction.aspx)
+~ [Tonsillitis](/conditions/tonsillitis)
 ~ [Quinsy](http://www.nhs.uk/Conditions/quinsy/pages/introduction.aspx)
 
 Ear pain with a fever
-~ [Ear infection](http://www.nhs.uk/conditions/Otitis-media/Pages/Introduction.aspx)
+~ [Ear infection](/conditions/ear-infection)
 ~ [Flu](/conditions/flu)
 ~ [Cold](/conditions/cold)
