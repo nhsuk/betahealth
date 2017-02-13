@@ -1,0 +1,21 @@
+{
+  "layout": "content-simple",
+  "title": "Cough",
+  "description": "A cough will usually go away within 3 weeks on its own.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/cough/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "A cough will usually go away within 3 weeks on its own."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      }
+    ]
+  }
+}

@@ -63,10 +63,10 @@ The symptoms are similar for children, but children can also get a temperature a
 
 
 ::: reveal Conditions that can cause a sore throat
-  - [Laryngitis](http://www.nhs.uk/conditions/Laryngitis/Pages/Introduction.aspx)
-  - [Tonsillitis](http://www.nhs.uk/Conditions/Tonsillitis/Pages/Introduction.aspx)
+  - [Laryngitis](/conditions/laryngitis)
+  - [Tonsillitis](/conditions/tonsillitis)
   - [Strep throat](http://www.nhs.uk/conditions/streptococcal-infections/pages/introduction.aspx) (streptococcal infections)
-  - [Glandular fever](http://www.nhs.uk/conditions/glandular-fever/pages/introduction.aspx)
+  - [Glandular fever](/conditions/glandular-fever)
 :::
 
 !!! severe

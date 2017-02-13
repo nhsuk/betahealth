@@ -10,8 +10,8 @@ Speak to your pharmacist about medicine to help with:
 [Find a pharmacy]({{ findersBaseUrl }}finders/find-help?context=stomach-ache)
 !!!
 
-There are also things you can do yourself to [help ease indigestion](http://www.nhs.uk/Conditions/Indigestion/Pages/Treatment.aspx)
-and [constipation.](http://www.nhs.uk/Conditions/Constipation/Pages/Treatment.aspx)
+There are also things you can do yourself to [help ease indigestion](/conditions/indigestion)
+and [constipation](/conditions/constipation).
 
 If you have vomiting and diarrhoea with your stomach ache, it should
 stop after a few days. Try to drink a lot of fluids to avoid
@@ -20,7 +20,7 @@ dehydration.
 Painkillers like paracetamol can help with your stomach ache but won’t
 stop any vomiting and diarrhoea.
 
-Find out more about [treating vomiting and diarrhoea.](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx)
+Find out more about [treating vomiting and diarrhoea](http://www.nhs.uk/conditions/gastroenteritis/Pages/Introduction.aspx).
 
 !!! attention
 ## See your GP if:

@@ -1,0 +1,21 @@
+{
+  "layout": "content-simple",
+  "title": "Sinusitis (sinus infection)",
+  "description": "Sinusitis is swelling of the sinuses, usually caused by an infection. It's common and usually clears up on its own within 2 to 3 weeks. In some cases it lasts a long time.",
+  "nonEmergencyCallout": true,
+  "choicesOrigin": "conditions/sinusitis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "type": "markdown",
+        "value": "Sinusitis is swelling of the sinuses, usually caused by an infection. It's common and usually clears up on its own within 2 to 3 weeks. In some cases it lasts a long time."
+      }
+    ],
+    "main": [
+      {
+        "type": "markdown",
+        "value": "!file=main-content-1.md"
+      }
+    ]
+  }
+}

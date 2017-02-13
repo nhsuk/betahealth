@@ -2,7 +2,7 @@
 
 Diarrhoea should go away on its own within a few days. It’s normal to also have stomach cramps and headaches.
 
-It’s important that you drink enough fluids to [avoid dehydration](http://www.nhs.uk/Conditions/dehydration/Pages/Introduction.aspx).
+It’s important that you drink enough fluids to [avoid dehydration](/conditions/dehydration).
 Your pee should be light yellow or clear.
 
 Drink small sips of things like water mixed with juice and soup broth to make sure you get enough salt and sugar.
