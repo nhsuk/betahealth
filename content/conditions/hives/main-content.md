@@ -6,7 +6,7 @@ The rash is often itchy and sometimes feels like it’s stinging or burning.
 ::: reveal Other rashes that aren’t hives
 - [Rashes in babies and children](/symptoms/rashes-in-babies-and-children)
 - [Heat rash (prickly heat)](/conditions/heat-rash)
-- [Scarlet fever](http://www.nhs.uk/Conditions/Scarlet-fever/Pages/Introduction.aspx)
+- [Scarlet fever](/conditions/scarlet-fever)
 - [Measles](http://www.nhs.uk/conditions/measles/Pages/Introduction.aspx)
 - [Chickenpox](http://www.nhs.uk/Conditions/Chickenpox/Pages/Introduction.aspx)
 - [Meningitis](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)

@@ -1,4 +1,4 @@
-An itchy, ring-like rash can be [ringworm.](http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx)
+An itchy, ring-like rash can be [ringworm](http://www.nhs.uk/Conditions/Ringworm/Pages/Introduction.aspx).
 
 Ask your pharmacist for a cream or lotion to treat ringworm.
 

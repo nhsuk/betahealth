@@ -1,4 +1,4 @@
-A raised, red, itchy rash (hives) can appear as an allergic reaction to things
+A raised, red, itchy rash ([hives](/conditions/hives)) can appear as an allergic reaction to things
 like stings, medicines or food.
 
 It usually clears up within a day or two.

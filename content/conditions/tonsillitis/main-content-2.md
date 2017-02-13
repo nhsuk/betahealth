@@ -54,7 +54,7 @@ Your doctor can usually tell its tonsillitis by asking about your symptoms and
 looking at the back of your throat. Sometimes they might:
 
 - wipe a cotton bud at the back of your throat to test for bacteria
-- organise a blood test to rule out [glandular fever](http://www.nhs.uk/conditions/Glandular-fever/Pages/Introduction.aspx) (if your symptoms are severe or won’t go away)
+- organise a blood test to rule out [glandular fever](/conditions/glandular-fever) (if your symptoms are severe or won’t go away)
 
 Usually you’ll get any test results back within a couple of days.
 
