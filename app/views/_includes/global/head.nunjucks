@@ -43,8 +43,8 @@
 <meta property="og:image:height" content="1200">
 
 <!-- twitter -->
-<meta name="twitter:card" value="summary">
-<meta name="twitter:domain" value="beta.nhs.uk">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="beta.nhs.uk">
 <meta name="twitter:title" content="{{ title }}{{ ' - ' + meta.parent.title if meta.parent }} - NHS.UK">
 {% if description  -%}
   <meta name="twitter:description" content="{{ description }}">
