@@ -27,8 +27,10 @@
         margin-left: $default-spacing-unit;
       }
 
-      &.media--full-width {
-        max-width: 40em;
+      // reset margins and float every odd item
+      &:nth-child(2n+1) {
+        clear: left;
+        margin-left: 0;
       }
     }
   }

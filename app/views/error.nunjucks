@@ -1,16 +1,12 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
 {% block main_content %}
-  <div class="page-section">
-    <div class="reading-width">
-      <p>This page received an error. If you were trying to complete an action, please try again.</p>
+  <p>This page received an error. If you were trying to complete an action, please try again.</p>
 
-      <p>You can also <a href="/">browse the NHS.UK homepage</a> to find new pages and services.</p>
+  <p>You can also <a href="/">browse the NHS.UK homepage</a> to find new pages and services.</p>
 
-      {% if error %}
-        <h2>{{ error.status }}</h2>
-        <pre>{{ error.stack }}</pre>
-      {% endif %}
-    </div>
-  </div>
+  {% if error %}
+    <h2>{{ error.status }}</h2>
+    <pre>{{ error.stack }}</pre>
+  {% endif %}
 {% endblock %}

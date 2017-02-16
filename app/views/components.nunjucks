@@ -3,17 +3,15 @@
 {% set title = 'Components' %}
 
 {% block main_content %}
-  <div class="page-section">
-    {% for filename, component in componentsData %}
-      <h2>{{ component.name }} component</h2>
+  {% for filename, component in componentsData %}
+    <h2>{{ component.name }} component</h2>
 
-      {% for component in component.variants %}
-        {{ components[component.type | snakecase](component.props) }}
+    {% for component in component.variants %}
+      {{ components[component.type | snakecase](component.props) }}
 
-        {% if not loop.last %}
-          <hr>
-        {% endif %}
-      {% endfor %}
+      {% if not loop.last %}
+        <hr>
+      {% endif %}
     {% endfor %}
-  </div>
+  {% endfor %}
 {% endblock %}

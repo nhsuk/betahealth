@@ -1,9 +1,8 @@
 {% extends '_layouts/content-simple.nunjucks' %}
 
-{% block local_header %}
-{% endblock %}
+{% block local_header %}{% endblock %}
 
-{% block main_content %}
+{% block main %}
   <div class="page-section">
     <div class="grid-row">
 
@@ -12,9 +11,11 @@
       </div>
 
       <div class="column--two-thirds">
-        {% for component in content.main %}
-          {{ components[component.type | snakecase](component.props) }}
-        {% endfor %}
+        {% block main_content %}
+          {% for component in content.main %}
+            {{ components[component.type | snakecase](component.props) }}
+          {% endfor %}
+        {% endblock %}
       </div>
 
     </div>
