@@ -15,7 +15,6 @@ const md = require('markdown-it')({
 const markdownItAbbr = require('markdown-it-abbr');
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItDeflist = require('markdown-it-deflist');
-const markdownItContainer = require('markdown-it-container');
 const markdownItNamedHeaders = require('markdown-it-named-headers');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
@@ -24,7 +23,6 @@ const csrf = require('csurf');
 const changeCase = require('change-case');
 const slashify = require('slashify');
 const logger = require('../lib/logger');
-const customMdFilter = require('../lib/custom-md-filter');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
 const assetPath = require('../app/middleware/asset-path');
@@ -37,14 +35,6 @@ md.use(markdownItAbbr);
 md.use(markdownItAttrs);
 md.use(markdownItDeflist);
 md.use(markdownItNamedHeaders);
-
-['info', 'info_compact', 'attention', 'warning', 'alert', 'severe'].forEach((filterName) => {
-  md.use.call(md, markdownItContainer, filterName, customMdFilter('!', filterName));
-});
-
-['reveal', 'inline_reveal'].forEach((filterName) => {
-  md.use.call(md, markdownItContainer, filterName, customMdFilter(':', filterName, true));
-});
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
