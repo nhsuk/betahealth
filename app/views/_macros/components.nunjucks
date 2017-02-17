@@ -42,7 +42,7 @@
         <span class="details__summary">{{ options.title }}</span>
       </summary>
       <div>
-        <div class="card__container">
+        <div class="media__container">
           {% for figure in list %}
             {{ figure_item(figure) }}
           {% endfor %}
@@ -50,7 +50,7 @@
       </div>
     </details>
   {% else %}
-    <div class="card__container">
+    <div class="media__container">
       {% for figure in list %}
         {{ figure_item(figure) }}
       {% endfor %}
@@ -59,7 +59,7 @@
 {% endmacro %}
 
 {% macro figure_item(figure) %}
-  <figure class="card{{ ' card--full-width' if figure.fullWidth }}">
+  <figure class="media{{ ' media--full-width' if figure.fullWidth }}">
     {{ image({
       srcset: figure.srcset,
       alt: figure.alt,
@@ -67,7 +67,7 @@
     }) }}
 
     {% if figure.caption %}
-      <figcaption class="card__caption">
+      <figcaption class="media__caption">
         {{ markdown(figure.caption) }}
       </figcaption>
     {% endif %}
