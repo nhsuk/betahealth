@@ -118,6 +118,7 @@ environment.
 | `NODE_ENV`                         | node environment                                                                                                                       | development              |
 | `PORT`                             | server port                                                                                                                            | 3000                     |
 | `GOOGLE_ANALYTICS_TRACKING_ID`     | Google Analytics property id                                                                                                           |                          |
+| `SHOW_DEVELOPMENT_ROUTES`          | Will show development only routes in a production environment if `true` | false |
 | `WEBTRENDS_TRACKING_ID`            | [Webtrends](https://www.webtrends.com/) tracking id                                                                                    |                          |
 | `HOTJAR_TRACKING_ID`               | [Hotjar](https://www.hotjar.com/) tracking id                                                                                          |                          |
 | `FONT_CDN`                         | Base url where the font is served                                                                                                      | /                        |
