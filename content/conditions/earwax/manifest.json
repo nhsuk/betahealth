@@ -7,14 +7,80 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Normally earwax just falls out on its own. When it’s blocking your ears a pharmacist can help."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Normally earwax just falls out on its own. When it’s blocking your ears a pharmacist can help."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
       }
     ]
   }

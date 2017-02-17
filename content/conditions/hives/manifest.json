@@ -7,39 +7,139 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Hives rashes usually settle down within a few minutes to a few days. You can often treat hives yourself."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Hives rashes usually settle down within a few minutes to a few days. You can often treat hives yourself."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-before.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-before.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/hives/blotchy-300.jpg 300w",
-              "assets/images/hives/blotchy-600.jpg 600w"
-            ],
-            "caption": "Hives can look like red, raised patches",
-            "alt": "Hives on the side of a thigh"
-          },
-          {
-            "srcset": [
-              "assets/images/hives/spots-300.jpg 300w",
-              "assets/images/hives/spots-600.jpg 600w"
-            ],
-            "caption": "The rash can also be red spots",
-            "alt": "Red spots on the hand and leg"
-          }
-        ]
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/hives/blotchy-300.jpg 300w",
+                  "assets/images/hives/blotchy-600.jpg 600w"
+                ],
+                "caption": "Hives can look like red, raised patches",
+                "alt": "Hives on the side of a thigh"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/hives/spots-300.jpg 300w",
+                  "assets/images/hives/spots-600.jpg 600w"
+                ],
+                "caption": "The rash can also be red spots",
+                "alt": "Red spots on the hand and leg"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Other rashes that aren’t hives",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
       }
     ]
   }

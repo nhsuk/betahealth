@@ -1,24 +1,28 @@
 {% extends '_layouts/nhsuk.nunjucks' %}
 {% import '_macros/components.nunjucks' as components %}
 
-{% block content %}
+{% block body_main_content %}
   <article role="article">
+
     {% block local_header %}
       {% include '_includes/local-header.nunjucks' %}
     {% endblock %}
 
-    {% block main_content_before %}
-    {% endblock %}
-
-    {% block main_content %}
+    {% block main %}
       <div class="page-section">
-        {% for component in content.main %}
-          {{ components[component.type | snakecase](component.value, component.options) }}
-        {% endfor %}
+        <div class="grid-row">
+          <div class="column--two-thirds">
+            {% block main_content %}
+              {% for component in content.main %}
+                {{ components[component.type | snakecase](component.props) }}
+              {% endfor %}
+            {% endblock %}
+          </div>
+        </div>
       </div>
     {% endblock %}
 
-    {% block main_content_after %}
+    {% block main_after %}
       {% if pagination %}
         <div class="page-section">
           <div class="reading-width">

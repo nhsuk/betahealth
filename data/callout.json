@@ -1,0 +1,96 @@
+{
+  "name": "Callout",
+  "variants": [
+    {
+      "type": "callout",
+      "props": {
+        "variant": "info",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "Call 111 if you can’t speak to your GP or don’t know what to do next."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "props": {
+        "variant": "info",
+        "compact": true,
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "[Find a pharamacy](#)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "props": {
+        "variant": "attention",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## See a GP if:\n\n- the pain gets much worse in a short space of time\n- the pain or bloating won’t go away or keeps coming back\n- you have other symptoms like weight loss or vomiting"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "props": {
+        "variant": "warning",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "On the morning of your surgery you must not eat after midnight, and not drink after 6am."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "props": {
+        "variant": "alert",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## See a GP now or go to A&E if:\n\n- it feels hot\n- it’s hard and tender\n- it’s suddenly painful"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "props": {
+        "variant": "severe",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## Call 999 or go to A&E if you:\n\n- have sudden, severe stomach pain\n- have pain when you touch your stomach\n- are vomiting blood or a ground coffee like substance"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

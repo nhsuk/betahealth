@@ -7,32 +7,134 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Heat rash is uncomfortable but usually harmless. It should clear up on its own after a few days."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Heat rash is uncomfortable but usually harmless. It should clear up on its own after a few days."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "panel",
-        "value": {
-          "header": "### To keep your skin cool:",
-          "main": "!file=panel-1-content.md"
+        "type": "reveal",
+        "props": {
+          "summary": "Other rashes that aren’t heat rash",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
         }
       },
       {
         "type": "panel",
-        "value": {
-          "header": "### To calm the itching or prickly rash:",
-          "main": "!file=panel-2-content.md"
+        "props": {
+          "header": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "### To keep your skin cool:"
+              }
+            }
+          ],
+          "body": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=panel-1-content.md"
+              }
+            }
+          ]
         }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "panel",
+        "props": {
+          "header": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "### To calm the itching or prickly rash:"
+              }
+            }
+          ],
+          "body": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=panel-2-content.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
       }
     ]
   }

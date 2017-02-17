@@ -7,8 +7,81 @@
   "content": {
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-info.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Transabdominal preperitoneal (TAPP)",
+          "variant": "block",
+          "children": [
+            {
+              "type": "callout",
+              "props": {
+                "variant": "info",
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=reveal-1.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Totally extraperitoneal (TEP)",
+          "variant": "block",
+          "children": [
+            {
+              "type": "callout",
+              "props": {
+                "variant": "info",
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=reveal-2.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   }

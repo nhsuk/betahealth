@@ -7,14 +7,104 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Sinusitis is swelling of the sinuses, usually caused by an infection. It's common and usually clears up on its own within 2 to 3 weeks. In some cases it lasts a long time."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Sinusitis is swelling of the sinuses, usually caused by an infection. It's common and usually clears up on its own within 2 to 3 weeks. In some cases it lasts a long time."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "What are the sinuses?",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal-1.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "How to clean your nose with a salt water solution",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal-2.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
       }
     ]
   }

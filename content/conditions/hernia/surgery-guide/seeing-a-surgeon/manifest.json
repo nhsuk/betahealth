@@ -7,14 +7,20 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Your first appointment will be with a surgeon. You can bring someone with you."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Your first appointment will be with a surgeon. You can bring someone with you."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content.md"
+        }
       }
     ]
   }

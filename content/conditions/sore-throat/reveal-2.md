@@ -1,0 +1,4 @@
+- [Laryngitis](/conditions/laryngitis)
+- [Tonsillitis](/conditions/tonsillitis)
+- [Strep throat](http://www.nhs.uk/conditions/streptococcal-infections/pages/introduction.aspx) (streptococcal infections)
+- [Glandular fever](/conditions/glandular-fever)

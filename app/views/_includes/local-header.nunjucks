@@ -18,7 +18,7 @@
         {% if component.type.toLowerCase().indexOf('nav') != -1 %}
           {{ components[component.type | snakecase](content.main) }}
         {% else %}
-          {{ components[component.type | snakecase](component.value) }}
+          {{ components[component.type | snakecase](component.props) }}
         {% endif %}
       {% endfor %}
     </div>

@@ -7,25 +7,99 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Glandular fever mostly affects teenagers and young adults. It gets better without treatment, but it can make you feel very ill and last for weeks."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Glandular fever mostly affects teenagers and young adults. It gets better without treatment, but it can make you feel very ill and last for weeks."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
       }
     ]
   }

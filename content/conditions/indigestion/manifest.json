@@ -7,14 +7,81 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Most people have indigestion at some point. Usually, it's not a sign of anything more serious and you can treat indigestion yourself."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Most people have indigestion at some point. Usually, it's not a sign of anything more serious and you can treat indigestion yourself."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Illnesses that can cause indigestion",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
       }
     ]
   }

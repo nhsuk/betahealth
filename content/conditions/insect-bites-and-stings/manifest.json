@@ -7,18 +7,118 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Most insect bites and stings clear up on their own in a few hours or 2 to 3 days. You can usually treat them without seeing a GP."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Most insect bites and stings clear up on their own in a few hours or 2 to 3 days. You can usually treat them without seeing a GP."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=sidebar-content.md"
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "How to remove stings or caterpillar hairs",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
       }
     ]
   }

@@ -7,54 +7,139 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Styes are common and should clear up on their own within a week or two. They’re rarely a sign of anything serious but may be painful until they heal."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Styes are common and should clear up on their own within a week or two. They’re rarely a sign of anything serious but may be painful until they heal."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-before.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-before.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/stye/stye-eyelid_300.jpg 300w",
-              "assets/images/stye/stye-eyelid_600.jpg 600w"
-            ],
-            "caption": "A stye is a small, painful lump on or inside the eyelid or around the eye",
-            "alt": "A small stye that appears as a lump on the upper eyelid just above the eyelash and is skin coloured with slight yellow tint"
-          },
-          {
-            "srcset": [
-              "assets/images/stye/stye-yellow_300.jpg 300w",
-              "assets/images/stye/stye-yellow_600.jpg 600w"
-            ],
-            "caption": "The skin may be red, swollen and filled with yellow pus like a pimple",
-            "alt": "An infected style on the rim of the upper eyelid, the stye is filled with yellow pus and the eyelid is red and sore"
-          },
-          {
-            "srcset": [
-              "assets/images/stye/stye-lower-eyelid_300.jpg 300w",
-              "assets/images/stye/stye-lower-eyelid_600.jpg 600w"
-            ],
-            "caption": "Your eye may be red and watery but your vision should not be affected",
-            "alt": "A stye just on the lower eyelid that has caused the lower eyelid to swell"
-          }
-        ]
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/stye/stye-eyelid_300.jpg 300w",
+                  "assets/images/stye/stye-eyelid_600.jpg 600w"
+                ],
+                "caption": "A stye is a small, painful lump on or inside the eyelid or around the eye",
+                "alt": "A small stye that appears as a lump on the upper eyelid just above the eyelash and is skin coloured with slight yellow tint"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/stye/stye-yellow_300.jpg 300w",
+                  "assets/images/stye/stye-yellow_600.jpg 600w"
+                ],
+                "caption": "The skin may be red, swollen and filled with yellow pus like a pimple",
+                "alt": "An infected style on the rim of the upper eyelid, the stye is filled with yellow pus and the eyelid is red and sore"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/stye/stye-lower-eyelid_300.jpg 300w",
+                  "assets/images/stye/stye-lower-eyelid_600.jpg 600w"
+                ],
+                "caption": "Your eye may be red and watery but your vision should not be affected",
+                "alt": "A stye just on the lower eyelid that has caused the lower eyelid to swell"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       }
     ]
   }

@@ -58,7 +58,6 @@
     "markdown-it": "~8.2.2",
     "markdown-it-abbr": "~1.0.4",
     "markdown-it-attrs": "~0.8.0",
-    "markdown-it-container": "~2.0.0",
     "markdown-it-deflist": "~2.0.1",
     "markdown-it-named-headers": "0.0.4",
     "method-override": "~2.3.7",

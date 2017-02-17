@@ -1,0 +1,8 @@
+- [irritable bowel syndrome](http://www.nhs.uk/Conditions/Irritable-bowel-syndrome/Pages/Introduction.aspx)
+- [Crohn’s disease](http://www.nhs.uk/conditions/crohns-disease/pages/introduction.aspx)
+- [ulcerative colitis](http://www.nhs.uk/conditions/Ulcerative-colitis/Pages/Introduction.aspx)
+- [coeliac disease](http://www.nhs.uk/conditions/Coeliac-disease/Pages/Introduction.aspx)
+- [diverticular disease](http://www.nhs.uk/Conditions/Diverticular-disease-and-diverticulitis/Pages/Introduction.aspx)
+- [chronic pancreatitis](http://www.nhs.uk/conditions/Pancreatitis-chronic/Pages/Introduction.aspx)
+- [bowel cancer](http://www.nhs.uk/Conditions/Cancer-of-the-colon-rectum-or-bowel/Pages/Introduction.aspx)
+- [stomach cancer](http://www.nhs.uk/conditions/Cancer-of-the-stomach/Pages/Introduction.aspx)

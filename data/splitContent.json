@@ -1,0 +1,40 @@
+{
+  "name": "Split content panel",
+  "variants": [
+    {
+      "type": "splitContent",
+      "props": {
+        "children": [
+          {
+            "type": "splitArea",
+            "props": {
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "variant": "markdown",
+                    "value": "### Left content\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet excepturi unde dolor non sapiente, dignissimos ab itaque nulla nisi sequi molestias ullam hic enim architecto, provident ratione deserunt aspernatur obcaecati?"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "splitArea",
+            "props": {
+              "children": [
+                {
+                  "type": "text",
+                  "props": {
+                    "variant": "markdown",
+                    "value": "### Right content\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quae porro officia voluptatibus quis quia repudiandae, molestias id ipsum eaque aperiam saepe natus amet suscipit, nostrum est omnis! Odit, minima."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

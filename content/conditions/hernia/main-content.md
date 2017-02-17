@@ -15,7 +15,3 @@ You should be able to have a hernia operation within 18 weeks of your GP
 appointment.
 
 You’ll need to have some appointments before you have your hernia operation.
-
-!!! info_compact
-[A guide to hernia surgery](/conditions/hernia/surgery-guide)
-!!!

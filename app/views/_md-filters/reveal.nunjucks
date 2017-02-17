@@ -1,8 +1,0 @@
-<details>
-  <summary data-analytics="summary">
-    <span class="details__summary">{{ title }}</span>
-  </summary>
-  <div>
-    <!--content-->
-  </div>
-</details>
