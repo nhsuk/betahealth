@@ -170,28 +170,6 @@
   </ul>
 {% endmacro %}
 
-{% macro section_list(props) %}
-  <section>
-    <h2 id="{{ props.title | kebabcase }}">{{ props.title }}</h2>
-
-    {% for component in props.children %}
-      {{ loadComponent(component.type)(component.props) }}
-    {% endfor %}
-  </section>
-{% endmacro %}
-
-{% macro section(props) %}
-  <article class="section-unit section-unit--divider">
-    {% if props.title %}
-      <h3>{{ props.title }}</h3>
-    {% endif %}
-
-    {% for component in props.children %}
-      {{ loadComponent(component.type)(component.props) }}
-    {% endfor %}
-  </article>
-{% endmacro %}
-
 {% macro article_list(props) %}
   {% for article in props.children %}
     <article class="section-unit">
@@ -213,22 +191,6 @@
       {% endfor %}
     </article>
   {% endfor %}
-{% endmacro %}
-
-{% macro section_nav(components) %}
-  <ul class="link-list">
-    {% for component in components %}
-      {% if component.type | snakecase == 'section_list' %}
-        <li class="link-list--item">
-          <a href="#{{ component.props.title | kebabcase }}"
-             class="link--reverse-polarity"
-             data-analytics="anchor">
-            {{ component.props.title }}
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
 {% endmacro %}
 
 {% macro article_nav(components) %}

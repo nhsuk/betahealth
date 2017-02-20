@@ -2,3 +2,5 @@
 causes red spots that turn to blisters. They can be itchy. They eventually scab
 and fall off. Some children have a few spots, while others have them all over
 their body.
+
+### Blisters on hands and feet and in the mouth
