@@ -6,140 +6,41 @@
   "content": {
     "header": [
       {
-        "type": "article_nav"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=local-header.md"
+        }
       }
     ],
     "main": [
       {
-        "type": "article_list",
+        "type": "text",
         "props": {
-          "numbered": true,
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "warning",
           "children": [
             {
-              "type": "article",
+              "type": "text",
               "props": {
-                "title": "Booking a hospital appointment with the surgeon",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-1.md"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Seeing a surgeon",
-                "label": "Approx 6 weeks",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-2.md"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Confirming your surgery date",
-                "label": "Approx 2 weeks",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-3.md"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Checking you’re fit for surgery",
-                "label": "Approx 3 weeks",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-4.md"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Getting ready for surgery",
-                "label": "Approx 2 weeks",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-5.md"
-                    }
-                  },
-                  {
-                    "type": "callout",
-                    "props": {
-                      "variant": "warning",
-                      "children": [
-                        {
-                          "type": "text",
-                          "props": {
-                            "variant": "markdown",
-                            "value": "!file=section-5-callout-warning.md"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Day of your surgery",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-6.md"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "type": "article",
-              "props": {
-                "title": "Going home and recovery",
-                "children": [
-                  {
-                    "type": "text",
-                    "props": {
-                      "variant": "markdown",
-                      "value": "!file=section-7.md"
-                    }
-                  }
-                ]
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
               }
             }
           ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
         }
       }
     ]

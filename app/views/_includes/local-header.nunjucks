@@ -15,11 +15,7 @@
       {% endif %}
 
       {% for component in content.header %}
-        {% if component.type.toLowerCase().indexOf('nav') != -1 %}
-          {{ components[component.type | snakecase](content.main) }}
-        {% else %}
-          {{ components[component.type | snakecase](component.props) }}
-        {% endif %}
+        {{ components[component.type | snakecase](component.props) }}
       {% endfor %}
     </div>
   {% endif %}
