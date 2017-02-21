@@ -7,3 +7,5 @@ Speak to your GP if your child keeps getting this type of rash. They may be
 allergic to something.
 
 Call 999 if there's swelling around the mouth.
+
+### Itchy, round rash
