@@ -170,47 +170,6 @@
   </ul>
 {% endmacro %}
 
-{% macro article_list(props) %}
-  {% for article in props.children %}
-    <article class="section-unit">
-      {% if article.props.label %}
-        <h3 class="section-unit__prefix">{{ article.props.label }}</h3>
-      {% endif %}
-
-      {% if article.props.title %}
-        <h2 id="{{ article.props.title | kebabcase }}">
-          {% if props.numbered %}
-            {{ loop.index }}.
-          {% endif %}
-          {{ article.props.title }}
-        </h2>
-      {% endif %}
-
-      {% for component in article.props.children %}
-        {{ loadComponent(component.type)(component.props) }}
-      {% endfor %}
-    </article>
-  {% endfor %}
-{% endmacro %}
-
-{% macro article_nav(components) %}
-  <ol class="step-list">
-    {% for component in components %}
-      {% if component.type | snakecase == 'article_list' %}
-        {% for article in component.props.children %}
-          <li class="step-list__item{{ ' is-last' if loop.last }}">
-            <a href="#{{ article.props.title | kebabcase }}"
-               class="link--reverse-polarity"
-               data-analytics="anchor">
-              {{ article.props.title }}
-            </a>
-          </li>
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-  </ol>
-{% endmacro %}
-
 {% macro numbered_navigation(pages, current_slug) %}
   {% set items = pages %}
   {% set breakpoint = (items.length / 2) | round(0, 'ceil') %}
