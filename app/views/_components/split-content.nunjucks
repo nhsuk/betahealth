@@ -1,0 +1,18 @@
+{##
+ # Family: Display
+ #
+ # @param {array} [children] List of area components to render
+ #
+ # @return {string} HTML for split content with all rendered children
+ #
+ # @example
+ #   {% component 'split-content', {
+ #     children: [{ type: 'text', props: {...} }]
+ #   } %}
+ #}
+
+<div class="panel">
+  {% for area in children %}
+    {% component 'split-area', area.props %}
+  {% endfor %}
+</div>

@@ -13,7 +13,7 @@
       <div class="column--two-thirds">
         {% block main_content %}
           {% for component in content.main %}
-            {{ components[component.type | snakecase](component.props) }}
+            {% component name=component.type, context=component.props %}
           {% endfor %}
         {% endblock %}
       </div>

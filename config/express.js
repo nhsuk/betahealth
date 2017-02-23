@@ -8,6 +8,7 @@ const compress = require('compression');
 const methodOverride = require('method-override');
 const nunjucks = require('nunjucks');
 const markdown = require('nunjucks-markdown');
+const componentExtension = require('./nunjucks-component-extension');
 const md = require('markdown-it')({
   html: true,
   typographer: true,
@@ -56,6 +57,9 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('sentencecase', (str) => {
     return changeCase.sentenceCase(str);
   });
+  nunjucksEnv.addFilter('assign', (obj, ...objects) => {
+    return Object.assign({}, obj, ...objects);
+  });
   nunjucksEnv.addFilter('renderString', (str) => {
     return nunjucksEnv.renderString(str);
   });
@@ -66,7 +70,12 @@ module.exports = (app, config) => {
   nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
     return (name) ? this.ctx[name] : this.ctx;
   });
+  nunjucksEnv.addGlobal('getContext', function getContext() {
+    return this.ctx;
+  });
   nunjucksEnv.addGlobal('findersBaseUrl', config.findersBaseUrl);
+  nunjucksEnv.addExtension('ComponentExtension', componentExtension);
+
 
   markdown.register(nunjucksEnv, (body) => {
     return md.render(body);
