@@ -1,0 +1,21 @@
+{##
+ # Family: Display
+ #
+ # @param {string} [variant]  Variant of callout to display
+ # @param {bool}   [compact]  Whether to display compact presentation
+ # @param {array}  [children] List of components to display within callout
+ #
+ # @return {string} HTML for callout component with rendered children
+ #
+ # @example
+ #   {% component 'callout', {
+ #     varaint: 'attention',
+ #     children: [{...}, {...}]
+ #   } %}
+ #}
+
+<section class="callout callout--{{ variant }}{{ ' callout--compact' if compact }}">
+  {% for component in children %}
+    {% component name=component.type, context=component.props %}
+  {% endfor %}
+</section>

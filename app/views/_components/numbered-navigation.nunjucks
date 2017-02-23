@@ -1,0 +1,35 @@
+{##
+ # Family: Control
+ #
+ # @param {array}  [children]    List of page objects to loop through
+ # @param {string} [currentSlug] The current page slug. Used to determine which page to highlight
+ #
+ # @return {string} HTML for 2 column numbered navigation
+ #
+ # @example
+ #   {% component 'numbered-navigation', {
+ #     children: [{ slug: 'page-url', title: 'Page title' }, { slug: 'another-page', title: 'Another page title' }],
+ #     currentSlug: '/current/page-url'
+ #   } %}
+ #}
+
+{% set items = children %}
+{% set breakpoint = (items.length / 2) | round(0, 'ceil') %}
+{% set firstSplit = items.splice(0, breakpoint) %}
+
+<nav role="navigation" aria-label="Parts to this guide" class="link-list__row">
+  {% component 'link-list', {
+    children: firstSplit,
+    currentSlug: currentSlug,
+    numbered: true,
+    half: true
+  } %}
+
+  {% component 'link-list', {
+    children: items,
+    currentSlug: currentSlug,
+    numbered: true,
+    half: true,
+    start: breakpoint + 1
+  } %}
+</nav>

@@ -7,7 +7,7 @@
     <h2>{{ component.name }} component</h2>
 
     {% for component in component.variants %}
-      {{ components[component.type | snakecase](component.props) }}
+      {% component name=component.type, context=component.props %}
 
       {% if not loop.last %}
         <hr>

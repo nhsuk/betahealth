@@ -1,0 +1,26 @@
+{##
+ # Family: Display
+ #
+ # @param {string} [variant]  Determines whether the navigation appears at the top or bottom (top|bottom)
+ # @param {array}  [children] List of components to render
+ #
+ # @return {string} HTML for the tabs navigation
+ #
+ # @example
+ #   {% component 'tab', {
+ #     variant: 'top',
+ #     children: [{ type: 'text', props: {...} }, { type: 'text', props: {...} }]
+ #   } %}
+ #}
+
+{% if children.length %}
+  <ul class="tabs__nav js-tabs-nav util-print-hide{{ ' tabs__nav--top' if variant == 'top'}}">
+    {% for tab in children %}
+      <li class="tabs__nav-item">
+        <a href="#{{ tab.props.label | kebabcase }}"
+            class="tabs__nav-link"
+            data-analytics="image-set">{{ tab.props.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

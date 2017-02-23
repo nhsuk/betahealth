@@ -1,0 +1,41 @@
+{##
+ # Family: Control
+ #
+ # @param {array}  [children]    List of page objects
+ # @param {string} [currentSlug] The current page slug. Used to determine which page to highlight
+ # @param {int}    [start]       Optional start point for the list
+ # @param {bool}   [numbered]    Whether to display numbers
+ # @param {bool}   [half]        Whether to display list as a smaller column
+ #
+ # @return {string} HTML of the link list component
+ #
+ # @example
+ #   {% component 'link-list', {
+ #     children: [{ slug: 'page-url', title: 'Page title' }, { slug: 'another-page', title: 'Another page title' }],
+ #     currentSlug: '/current/page-url',
+ #     start: 5,
+ #     numbered: true,
+ #     half: false
+ #   } %}
+ #}
+
+{% set start = start | default (1) %}
+
+<ol class="link-list{{ ' link-list--numbered' if numbered }}{{ ' link-list--one-half' if half }}" start="{{ start }}">
+  {% for item in children %}
+    {% set active = item.slug in currentSlug %}
+    {% set step = loop.index + (start - 1) %}
+
+    <li class="link-list--item{{ ' is-active' if active }}">
+      {% if active %}
+        {{ item.title }}
+      {% else %}
+        <a href="{{ item.slug }}"
+           class="link--reverse-polarity"
+           title="Part {{ step }}: {{ item.title }}"
+           data-analytics="contents-navigation"
+           data-step="{{ step }}">{{ item.title }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>
