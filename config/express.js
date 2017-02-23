@@ -63,13 +63,6 @@ module.exports = (app, config) => {
   nunjucksEnv.addFilter('renderString', (str) => {
     return nunjucksEnv.renderString(str);
   });
-  nunjucksEnv.addGlobal('isCurrent', (str, search) => {
-    const current = str || '';
-    return current.indexOf(search) !== -1;
-  });
-  nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
-    return (name) ? this.ctx[name] : this.ctx;
-  });
   nunjucksEnv.addGlobal('getContext', function getContext() {
     return this.ctx;
   });

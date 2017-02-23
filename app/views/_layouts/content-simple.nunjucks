@@ -1,5 +1,4 @@
 {% extends '_layouts/nhsuk.nunjucks' %}
-{% import '_macros/components.nunjucks' as components %}
 
 {% block body_main_content %}
   <article role="article">
