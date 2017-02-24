@@ -8,9 +8,11 @@ describe('Text component', () => {
         variant: 'markdown',
         value: 'Some **markdown** text',
       },
-      `<div class="reading-width">
-        <p>Some <strong>markdown</strong> text</p>
-      </div>`
+`
+<div class="reading-width">
+  <p>Some <strong>markdown</strong> text</p>
+</div>
+`
     );
   });
 
@@ -21,9 +23,11 @@ describe('Text component', () => {
         variant: 'html',
         value: 'Some <strong>html</strong> text',
       },
-      `<div class="reading-width">
-        Some <strong>html</strong> text
-      </div>`
+`
+<div class="reading-width">
+  Some <strong>html</strong> text
+</div>
+`
     );
   });
 
@@ -34,9 +38,11 @@ describe('Text component', () => {
         variant: 'plain',
         value: 'Some plain text',
       },
-      `<div class="reading-width">
-        Some plain text
-      </div>`
+`
+<div class="reading-width">
+  Some plain text
+</div>
+`
     );
   });
 });

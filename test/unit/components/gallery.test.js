@@ -7,8 +7,10 @@ describe('Gallery component', () => {
       {
         children: [],
       },
-      `<div class="media__container">
-      </div>`
+`
+<div class="media__container">
+</div>
+`
     );
   });
 });

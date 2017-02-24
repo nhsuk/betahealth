@@ -9,16 +9,17 @@ describe('Reveal component', () => {
         summary: 'Summary text',
         children: [],
       },
-      `<details class="">
-        <summary data-analytics="summary">
-          <span class="details__summary">
+`
+<details class="">
+  <summary data-analytics="summary">
+    <span class="details__summary">
       Summary text
     </span>
-        </summary>
-
-        <div>
-        </div>
-      </details>`
+  </summary>
+  <div>
+  </div>
+</details>
+`
     );
   });
 
@@ -30,16 +31,17 @@ describe('Reveal component', () => {
         summary: 'Summary text with [inline link]',
         children: [],
       },
-      `<details class="details--inline">
-        <summary data-analytics="summary">
-          <span class="details__summary">
+`
+<details class="details--inline">
+  <summary data-analytics="summary">
+    <span class="details__summary">
       Summary text with <span class="details__cta">inline link</span>
     </span>
-        </summary>
-
-        <div>
-        </div>
-      </details>`
+  </summary>
+  <div>
+  </div>
+</details>
+`
     );
   });
 });

@@ -8,19 +8,22 @@ describe('Image component', () => {
         srcset: ['image-path.jpg 300w'],
         alt: 'Alternative description',
       },
-      `<figure class="media">
-        <!--[if gt IE 7]><!-->
-        <img
-          srcset="image-path.jpg 300w"
-          alt="Alternative description"
-          data-analytics="image"
-          data-analytics-type="inline"
-          />
-        <!--<![endif]-->
-        <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-          <img src="image-path.jpg" alt="Alternative description" />
-        <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
-      </figure>`
+`
+<figure class="media">
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="image-path.jpg 300w"
+    alt="Alternative description"
+    data-analytics="image"
+    data-analytics-type="inline"
+  />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    
+    <img src="image-path.jpg" alt="Alternative description" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+</figure>
+`
     );
   });
 
@@ -32,23 +35,25 @@ describe('Image component', () => {
         alt: 'Alternative description',
         caption: 'Image **caption**',
       },
-      `<figure class="media">
-        <!--[if gt IE 7]><!-->
-        <img
-          srcset="image-path.jpg 300w"
-          alt="Alternative description"
-          data-analytics="image"
-          data-analytics-type="inline"
-          />
-        <!--<![endif]-->
-        <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-          <img src="image-path.jpg" alt="Alternative description" />
-        <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
-
-        <figcaption class="media__caption">
-          <p>Image <strong>caption</strong></p>
-        </figcaption>
-      </figure>`
+      `
+<figure class="media">
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="image-path.jpg 300w"
+    alt="Alternative description"
+    data-analytics="image"
+    data-analytics-type="inline"
+  />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    
+    <img src="image-path.jpg" alt="Alternative description" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+  <figcaption class="media__caption">
+    <p>Image <strong>caption</strong></p>
+  </figcaption>
+</figure>
+`
     );
   });
 
@@ -60,19 +65,22 @@ describe('Image component', () => {
         alt: 'Alternative description',
         analyticsType: 'figure',
       },
-      `<figure class="media">
-        <!--[if gt IE 7]><!-->
-        <img
-          srcset="image-path.jpg 300w"
-          alt="Alternative description"
-          data-analytics="image"
-          data-analytics-type="figure"
-          />
-        <!--<![endif]-->
-        <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
-          <img src="image-path.jpg" alt="Alternative description" />
-        <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
-      </figure>`
+`
+<figure class="media">
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="image-path.jpg 300w"
+    alt="Alternative description"
+    data-analytics="image"
+    data-analytics-type="figure"
+    />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    
+    <img src="image-path.jpg" alt="Alternative description" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+</figure>
+`
     );
   });
 });

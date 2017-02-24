@@ -7,8 +7,10 @@ describe('Split area component', () => {
       {
         children: [],
       },
-      `<div class="panel__content panel__content--half">
-      </div>`
+`
+<div class="panel__content panel__content--half">
+</div>
+`
     );
   });
 });

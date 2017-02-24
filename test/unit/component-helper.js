@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const path = require('path');
 const changeCase = require('change-case');
-const html = require('html');
+const htmlBeautifier = require('js-beautify').html;
 
 const nunjucksConfig = require('../../config/nunjucks');
 
@@ -18,8 +18,9 @@ const COMPONENTS_PATH = '_components/';
 const COMPONENT_EXT = 'nunjucks';
 
 const normaliseHtml = (string) => {
-  return html.prettyPrint(string, {
+  return htmlBeautifier(string, {
     indent_size: 2,
+    max_preserve_newlines: 0,
   });
 };
 

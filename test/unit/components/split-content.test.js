@@ -7,8 +7,10 @@ describe('Split content component', () => {
       {
         children: [],
       },
-      `<div class="panel">
-      </div>`
+`
+<div class="panel">
+</div>
+`
     );
   });
 });

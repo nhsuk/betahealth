@@ -9,25 +9,27 @@ describe('Panel component', () => {
         body: [{ type: 'text', props: { variant: 'plain', value: 'Body' } }],
         footer: [{ type: 'text', props: { variant: 'plain', value: 'Footer' } }],
       },
-      `<article class="panel">
-        <div class="panel__header">
-          <div class="reading-width">
-            Header
-          </div>
-        </div>
+`
+<article class="panel">
+  <div class="panel__header">
+    <div class="reading-width">
+      Header
+    </div>
+  </div>
 
-        <div class="panel__content">
-          <div class="reading-width">
-            Body
-          </div>
-        </div>
+  <div class="panel__content">
+    <div class="reading-width">
+      Body
+    </div>
+  </div>
 
-        <footer class="panel__footer">
-          <div class="reading-width">
-            Footer
-          </div>
-        </footer>
-      </article>`
+  <footer class="panel__footer">
+    <div class="reading-width">
+      Footer
+    </div>
+  </footer>
+</article>
+`
     );
   });
 
@@ -39,13 +41,15 @@ describe('Panel component', () => {
         body: [],
         footer: [],
       },
-      `<article class="panel">
-        <div class="panel__header">
-          <div class="reading-width">
-            Header
-          </div>
-        </div>
-      </article>`
+`
+<article class="panel">
+  <div class="panel__header">
+    <div class="reading-width">
+      Header
+    </div>
+  </div>
+</article>
+`
     );
   });
 
@@ -57,13 +61,15 @@ describe('Panel component', () => {
         body: [{ type: 'text', props: { variant: 'plain', value: 'Body' } }],
         footer: [],
       },
-      `<article class="panel">
-        <div class="panel__content">
-          <div class="reading-width">
-            Body
-          </div>
-        </div>
-      </article>`
+`
+<article class="panel">
+  <div class="panel__content">
+    <div class="reading-width">
+      Body
+    </div>
+  </div>
+</article>
+`
     );
   });
 
@@ -75,13 +81,15 @@ describe('Panel component', () => {
         body: [],
         footer: [{ type: 'text', props: { variant: 'plain', value: 'Footer' } }],
       },
-      `<article class="panel">
-        <footer class="panel__footer">
-          <div class="reading-width">
-            Footer
-          </div>
-        </footer>
-      </article>`
+`
+<article class="panel">
+  <footer class="panel__footer">
+    <div class="reading-width">
+      Footer
+    </div>
+  </footer>
+</article>
+`
     );
   });
 });

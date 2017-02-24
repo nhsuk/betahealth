@@ -8,8 +8,10 @@ describe('Callout component', () => {
         variant: 'attention',
         children: [],
       },
-      `<section class="callout callout--attention">
-      </section>`
+`
+<section class="callout callout--attention">
+</section>
+`
     );
   });
 
@@ -21,8 +23,10 @@ describe('Callout component', () => {
         compact: true,
         children: [],
       },
-      `<section class="callout callout--info callout--compact">
-      </section>`
+`
+<section class="callout callout--info callout--compact">
+</section>
+`
     );
   });
 });

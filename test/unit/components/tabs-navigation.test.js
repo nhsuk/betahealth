@@ -15,13 +15,13 @@ describe('Tabs navigation component', () => {
           },
         ],
       },
-      `<ul class="tabs__nav js-tabs-nav util-print-hide">
-        <li class="tabs__nav-item">
-          <a href="#tab-label"
-              class="tabs__nav-link"
-              data-analytics="image-set">Tab label</a>
-        </li>
-      </ul>`
+`
+<ul class="tabs__nav js-tabs-nav util-print-hide">
+  <li class="tabs__nav-item">
+    <a href="#tab-label" class="tabs__nav-link" data-analytics="image-set">Tab label</a>
+  </li>
+</ul>
+`
     );
   });
 
@@ -32,8 +32,10 @@ describe('Tabs navigation component', () => {
         variant: 'top',
         children: [],
       },
-      `<ul class="tabs__nav js-tabs-nav util-print-hide tabs__nav--top">
-      </ul>`
+`
+<ul class="tabs__nav js-tabs-nav util-print-hide tabs__nav--top">
+</ul>
+`
     );
   });
 });

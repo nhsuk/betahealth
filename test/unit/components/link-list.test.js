@@ -8,18 +8,20 @@ describe('Link list component', () => {
         children: [{ slug: 'page-one', title: 'Page one' }, { slug: 'page-two', title: 'Page two' }],
         currentSlug: 'page-one',
       },
-      `<ol class="link-list" start="1">
-        <li class="link-list--item is-active">
-          Page one
-        </li>
-        <li class="link-list--item">
-          <a href="page-two"
-             class="link--reverse-polarity"
-             title="Part 2: Page two"
-             data-analytics="contents-navigation"
-             data-step="2">Page two</a>
-        </li>
-      </ol>`
+      `
+<ol class="link-list" start="1">
+  <li class="link-list--item is-active">
+    Page one
+  </li>
+  <li class="link-list--item">
+    <a href="page-two"
+       class="link--reverse-polarity"
+       title="Part 2: Page two"
+       data-analytics="contents-navigation"
+       data-step="2">Page two</a>
+  </li>
+</ol>
+`
     );
   });
 
@@ -31,11 +33,13 @@ describe('Link list component', () => {
         currentSlug: 'page-one',
         start: 5,
       },
-      `<ol class="link-list" start="5">
-        <li class="link-list--item is-active">
-          Page one
-        </li>
-      </ol>`
+      `
+<ol class="link-list" start="5">
+  <li class="link-list--item is-active">
+    Page one
+  </li>
+</ol>
+`
     );
   });
 
@@ -47,11 +51,13 @@ describe('Link list component', () => {
         currentSlug: 'page-one',
         numbered: true,
       },
-      `<ol class="link-list link-list--numbered" start="1">
-        <li class="link-list--item is-active">
-          Page one
-        </li>
-      </ol>`
+      `
+<ol class="link-list link-list--numbered" start="1">
+  <li class="link-list--item is-active">
+    Page one
+  </li>
+</ol>
+`
     );
   });
 
@@ -63,11 +69,13 @@ describe('Link list component', () => {
         currentSlug: 'page-one',
         half: true,
       },
-      `<ol class="link-list link-list--one-half" start="1">
-        <li class="link-list--item is-active">
-          Page one
-        </li>
-      </ol>`
+      `
+<ol class="link-list link-list--one-half" start="1">
+  <li class="link-list--item is-active">
+    Page one
+  </li>
+</ol>
+`
     );
   });
 });
