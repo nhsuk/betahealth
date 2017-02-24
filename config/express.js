@@ -6,71 +6,25 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
-const nunjucks = require('nunjucks');
-const markdown = require('nunjucks-markdown');
-const md = require('markdown-it')({
-  html: true,
-  typographer: true,
-});
-const markdownItAbbr = require('markdown-it-abbr');
-const markdownItAttrs = require('markdown-it-attrs');
-const markdownItDeflist = require('markdown-it-deflist');
-const markdownItNamedHeaders = require('markdown-it-named-headers');
 const enforce = require('express-sslify');
 const churchill = require('churchill');
 const validator = require('express-validator');
 const csrf = require('csurf');
-const changeCase = require('change-case');
 const slashify = require('slashify');
+
 const logger = require('../lib/logger');
 const checkSecure = require('../app/middleware/check-secure');
 const locals = require('../app/middleware/locals');
-const assetPath = require('../app/middleware/asset-path');
 const feedback = require('../app/middleware/feedback');
 const csrfToken = require('../app/middleware/csrf-token');
 const affinityCookie = require('../app/middleware/affinity-cookie');
-const router = require('./routes');
 
-md.use(markdownItAbbr);
-md.use(markdownItAttrs);
-md.use(markdownItDeflist);
-md.use(markdownItNamedHeaders);
+const nunjucks = require('./nunjucks');
+const router = require('./routes');
 
 module.exports = (app, config) => {
   app.set('views', `${config.root}/app/views`);
   app.set('view engine', 'nunjucks');
-
-  const nunjucksEnv = nunjucks.configure(`${config.root}/app/views`, {
-    autoescape: true,
-    express: app,
-  });
-  nunjucksEnv.addFilter('split', (str, seperator) => {
-    return str.split(seperator);
-  });
-  nunjucksEnv.addFilter('kebabcase', (str) => {
-    return changeCase.paramCase(str);
-  });
-  nunjucksEnv.addFilter('snakecase', (str) => {
-    return changeCase.snakeCase(str);
-  });
-  nunjucksEnv.addFilter('sentencecase', (str) => {
-    return changeCase.sentenceCase(str);
-  });
-  nunjucksEnv.addFilter('renderString', (str) => {
-    return nunjucksEnv.renderString(str);
-  });
-  nunjucksEnv.addGlobal('isCurrent', (str, search) => {
-    const current = str || '';
-    return current.indexOf(search) !== -1;
-  });
-  nunjucksEnv.addGlobal('loadComponent', function loadComponent(name) {
-    return (name) ? this.ctx[name] : this.ctx;
-  });
-  nunjucksEnv.addGlobal('findersBaseUrl', config.findersBaseUrl);
-
-  markdown.register(nunjucksEnv, (body) => {
-    return md.render(body);
-  });
 
   if (!config.ci) {
     app.use(churchill(logger));
@@ -87,7 +41,6 @@ module.exports = (app, config) => {
     trustAzureHeader: config.trustAzureHeader,
   }));
   app.use(locals(config));
-  app.use(assetPath(config, nunjucksEnv));
   app.use(feedback());
 
   app.use(csrf({
@@ -97,6 +50,9 @@ module.exports = (app, config) => {
 
   app.use(compress());
   app.use(methodOverride());
+
+  // Needs to be registered after checkSecure for asset_path middleware
+  nunjucks(app, config);
 
   app.use(favicon(path.join(__dirname, '..', 'assets', 'images', 'favicon.ico')));
   app.use(express.static(`${config.root}/public`));

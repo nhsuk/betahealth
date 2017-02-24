@@ -1,0 +1,32 @@
+{##
+ # Family: Display
+ #
+ # @param {string} [variant]  Determines whether the navigation appears at the top or bottom (top|bottom)
+ # @param {array}  [children] List of tabs to render. Each tab will contain a list of components
+ #
+ # @return {string} HTML for tabs with all rendered children of each tab
+ #
+ # @example
+ #   {% component 'tabs', {
+ #     variant: 'bottom',
+ #     children: [{ type: 'tab', props: {...} }, { type: 'tab', props: {...} }]
+ #   } %}
+ #}
+
+<section class="tabs js-tabs">
+
+  {% if variant == 'top' %}
+    {% component 'tabs-navigation', getContext() %}
+  {% endif %}
+
+  <div class="tabs__tab-container js-tabs-content">
+    {% for tab in children %}
+      {% component 'tab', tab.props %}
+    {% endfor %}
+  </div>
+
+  {% if variant != 'top' %}
+    {% component 'tabs-navigation', getContext() %}
+  {% endif %}
+
+</section>

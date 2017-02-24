@@ -1,0 +1,36 @@
+{##
+ # Family: Control
+ #
+ # @param {object} [next]     Next page object. Should contain `slug` and `title` properties
+ # @param {object} [previous] Previous page object. Should contain `slug` and `title` properties
+ #
+ # @return {string} HTML for pagination component
+ #
+ # @example
+ #   {% component 'pagination', {
+ #     next: { slug: 'page-url', title: 'Page title' },
+ #     previous: { slug: 'another-page', title: 'Another page title' },
+ #   } %}
+ #}
+
+<nav role="navigation" aria-label="Guide pagination">
+  <ul class="article-pagination">
+    {% if next %}
+      <li class="article-pagination__item article-pagination__item--right">
+        <a href="{{ next.slug }}" rel="next" data-analytics="pagination">
+          <span class="article-pagination__prefix">Next page:</span>
+          <span class="article-pagination__title">{{ next.title }}</span>
+        </a>
+      </li>
+    {% endif %}
+
+    {% if previous %}
+      <li class="article-pagination__item article-pagination__item--left">
+        <a href="{{ previous.slug }}" rel="prev" data-analytics="pagination">
+          <span class="article-pagination__prefix">Previous page:</span>
+          <span class="article-pagination__title">{{ previous.title }}</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>

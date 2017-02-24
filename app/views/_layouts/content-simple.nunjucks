@@ -1,5 +1,4 @@
 {% extends '_layouts/nhsuk.nunjucks' %}
-{% import '_macros/components.nunjucks' as components %}
 
 {% block body_main_content %}
   <article role="article">
@@ -14,7 +13,7 @@
           <div class="column--two-thirds">
             {% block main_content %}
               {% for component in content.main %}
-                {{ components[component.type | snakecase](component.props) }}
+                {% component name=component.type, context=component.props %}
               {% endfor %}
             {% endblock %}
           </div>
@@ -26,7 +25,7 @@
       {% if pagination %}
         <div class="page-section">
           <div class="reading-width">
-            {{ components.pagination(pagination.previous, pagination.next) }}
+            {% component 'pagination', pagination %}
           </div>
         </div>
       {% endif %}
