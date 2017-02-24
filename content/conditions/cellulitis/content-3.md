@@ -1,0 +1,1 @@
+You can get cellulitis on any part of your body but it usually affects:

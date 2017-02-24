@@ -1,0 +1,1 @@
+UTI symptoms may be difficult to spot in people with dementia.

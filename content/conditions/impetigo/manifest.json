@@ -1,0 +1,171 @@
+{
+  "layout": "content-simple",
+  "description": "Impetigo is a skin infection that’s very contagious, but not usually serious. It often gets better in 7 to 10 days if you get treatment. Anyone can get it, but it’s very common in young children.",
+  "choicesOrigin": "conditions/impetigo/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/impetigo/impetigo-face_300.jpg 300w",
+                  "assets/images/impetigo/impetigo-face_600.jpg 600w"
+                ],
+                "caption": "Sores (non-bullous impetigo) or blisters (bullous impetigo) can start anywhere - but usually on exposed areas like your face and hands.",
+                "alt": "Small red sores clustered around a child’s mouth and nose, with some golden-brown crusty patches of around 1 centimetre wide"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/impetigo/impetigo-body_300.jpg 300w",
+                  "assets/images/impetigo/impetigo-body_600.jpg 600w"
+                ],
+                "caption": "It’s also common for blisters to start around your middle.",
+                "alt": "A large cluster of small red blisters on a child’s side, around their middle between the armpit and waist"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/impetigo/impetigo-wrist_300.jpg 300w",
+                  "assets/images/impetigo/impetigo-wrist_600.jpg 600w"
+                ],
+                "caption": "The sores or blisters burst and form crusty patches.",
+                "alt": "A large, crusty red sore that looks inflamed, covering the whole area between a child’s wrist and thumb"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-3.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-4.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "If you\u2019re not sure it\u2019s impetigo",
+          "variant": "block"
+        },
+        "type": "reveal"
+      },
+      {
+        "props": {
+          "value": "!file=content-5.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-6.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "warning"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-7.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-8.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-9.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-10.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Impetigo"
+}

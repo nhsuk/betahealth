@@ -3,3 +3,5 @@
 - difficulty swallowing
 - difficulty breathing
 - extreme tummy pain
+
+*[A&E]: Accident and Emergency

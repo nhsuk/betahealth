@@ -1,0 +1,1 @@
+Impetigo is a skin infection that’s very contagious, but not usually serious. It often gets better in 7 to 10 days if you get treatment. Anyone can get it, but it’s very common in young children.

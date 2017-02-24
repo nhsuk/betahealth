@@ -1,0 +1,1 @@
+A hiatus hernia is when part of your stomach moves up into your chest. It’s very common if you’re over 50. It doesn’t normally need treatment if it’s not causing you problems.

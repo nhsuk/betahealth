@@ -6,3 +6,5 @@
 - the bleeding started after a blow to your head
 - you’re feeling weak or dizzy
 - you’re having difficulty breathing
+
+*[A&E]: Accident and Emergency

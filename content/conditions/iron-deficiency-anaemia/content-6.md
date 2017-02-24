@@ -1,0 +1,1 @@
+Keep iron supplement tablets out of the reach of children. An overdose of iron in a young child can be fatal.

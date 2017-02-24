@@ -1,0 +1,89 @@
+{
+  "layout": "content-simple",
+  "description": "Iron deficiency anaemia is caused by lack of iron, often because of blood loss or pregnancy. It’s treated with iron tablets prescribed by a GP and by eating iron-rich foods.",
+  "choicesOrigin": "conditions/anaemia-iron-deficiency-/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-3.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "Less common symptoms of iron deficiency anaemia",
+          "variant": "block"
+        },
+        "type": "reveal"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-4.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-5.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-6.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "warning"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-7.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Iron deficiency anaemia"
+}

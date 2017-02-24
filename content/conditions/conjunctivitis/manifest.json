@@ -1,0 +1,171 @@
+{
+  "layout": "content-simple",
+  "description": "Conjunctivitis is an eye condition caused by infection or allergies. It usually gets better without treatment in a couple of weeks.",
+  "choicesOrigin": "conditions/conjunctivitis-infective/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/conjunctivitis/conjunctivitis-sticky_300.jpg 300w",
+                  "assets/images/conjunctivitis/conjunctivitis-sticky_600.jpg 600w"
+                ],
+                "caption": "Conjunctivitis that produces sticky pus is contagious.",
+                "alt": "Close up of adult woman’s eye which is bloodshot and with sticky yellow fluid coating eyelashes"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/conjunctivitis/conjunctivitis-bacterial_300.jpg 300w",
+                  "assets/images/conjunctivitis/conjunctivitis-bacterial_600.jpg 600w"
+                ],
+                "caption": "If eyes are red and feel gritty this type of conjunctivitis is also usually contagious.",
+                "alt": "Close up of adult man’s eye which is red with clear fluid and clean lashes"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/conjunctivitis/conjunctivitis-allergic_300.jpg 300w",
+                  "assets/images/conjunctivitis/conjunctivitis-allergic_600.jpg 600w"
+                ],
+                "caption": "Conjunctivitis caused by allergies like hay fever makes eyes red and watery but can't be passed on.",
+                "alt": "Close up of adult woman’s eye showing minor redness and watering"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "value": "!file=content-3.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-4.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-5.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-6.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-7.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": true,
+          "variant": "info"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-8.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-9.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-10.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "severe"
+        },
+        "type": "callout"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Conjunctivitis"
+}

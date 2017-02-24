@@ -7,3 +7,5 @@
 
 ***
 These symptoms can make breathing more difficult.
+
+*[A&E]: Accident and Emergency

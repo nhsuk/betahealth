@@ -1,0 +1,1 @@
+Cellulitis is a skin infection that's treated with antibiotics. It can be serious if not treated quickly.

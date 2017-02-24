@@ -1,0 +1,1 @@
+Don’t stop using the antibiotic cream or tablets early, even if the impetigo starts to clear up.

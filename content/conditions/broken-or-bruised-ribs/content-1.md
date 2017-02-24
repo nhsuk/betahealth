@@ -1,0 +1,1 @@
+Bruised or broken ribs can be very painful but usually heal by themselves.

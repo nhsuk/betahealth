@@ -1,0 +1,1 @@
+Iron deficiency anaemia is caused by lack of iron, often because of blood loss or pregnancy. It’s treated with iron tablets prescribed by a GP and by eating iron-rich foods.

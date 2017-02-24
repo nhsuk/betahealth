@@ -7,3 +7,5 @@
 
 ***
 If you can’t get hold of your GP, go to A&E.
+
+*[A&E]: Accident and Emergency
