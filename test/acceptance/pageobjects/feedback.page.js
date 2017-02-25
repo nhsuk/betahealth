@@ -31,7 +31,17 @@ const feedbackPage = Object.create(page, {
   },
   comment: {
     get: () => {
-      return browser.element('#feedback-form-comments');
+      return browser.element('#input-feedback-form-comments');
+    },
+  },
+  reasonFirstOption: {
+    get: () => {
+      return browser.element('[for="input--feedback-form-theme--1"]');
+    },
+  },
+  foundFirstOption: {
+    get: () => {
+      return browser.element('[for="input--feedback-form-found--1"]');
     },
   },
   errorSummary: {
