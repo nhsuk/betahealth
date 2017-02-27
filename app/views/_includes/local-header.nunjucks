@@ -11,15 +11,14 @@
   {% if content.header.length or guide %}
     <div class="local-header__intro">
       {% if guide %}
-        {{ components.numbered_navigation(meta.siblings, slug) }}
+        {% component 'numbered-navigation', {
+          children: meta.siblings,
+          currentSlug: slug
+        } %}
       {% endif %}
 
       {% for component in content.header %}
-        {% if component.type.toLowerCase().indexOf('nav') != -1 %}
-          {{ components[component.type | snakecase](content.main) }}
-        {% else %}
-          {{ components[component.type | snakecase](component.value) }}
-        {% endif %}
+        {% component name=component.type, context=component.props %}
       {% endfor %}
     </div>
   {% endif %}

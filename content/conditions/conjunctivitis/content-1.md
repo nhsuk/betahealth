@@ -1,0 +1,1 @@
+Conjunctivitis is an eye condition caused by infection or allergies. It usually gets better without treatment in a couple of weeks.

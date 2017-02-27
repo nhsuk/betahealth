@@ -5,3 +5,5 @@ arms and thighs.
 The rash can disappear and reappear.
 
 It should clear up in a few weeks without treatment.
+
+### Pink or skin-coloured spots

@@ -3,279 +3,185 @@
 {% set title = 'HTML elements' %}
 
 {% block main_content %}
-  <div class="page-section">
-    <div class="reading-width">
-      <h1>Heading one</h1>
-      <h2>Heading two</h2>
-      <h3>Heading three</h3>
-      <h4>Heading four</h4>
-      <h5>Heading five</h5>
-      <h6>Heading six</h6>
+  <h1>Heading one</h1>
+  <h2>Heading two</h2>
+  <h3>Heading three</h3>
+  <h4>Heading four</h4>
+  <h5>Heading five</h5>
+  <h6>Heading six</h6>
 
-      <p>
-        <strong>Fusce vitae accumsan ex, eu semper sem.</strong> Donec sit amet metus a lacus feugiat gravida sit amet eget lorem. <em>Donec pulvinar</em> gravida consequat. Sed dolor felis, dignissim nec ipsum eu, molestie cursus elit. Donec commodo malesuada metus. Nulla efficitur, sapien ac interdum pellentesque, <a href="#">risus ligula</a> feugiat nulla, at ultrices mauris felis fringilla massa.
-      </p>
+  <p>
+    <strong>Fusce vitae accumsan ex, eu semper sem.</strong> Donec sit amet metus a lacus feugiat gravida sit amet eget lorem. <em>Donec pulvinar</em> gravida consequat. Sed dolor felis, dignissim nec ipsum eu, molestie cursus elit. Donec commodo malesuada metus. Nulla efficitur, sapien ac interdum pellentesque, <a href="#">risus ligula</a> feugiat nulla, at ultrices mauris felis fringilla massa.
+  </p>
 
+  <ul>
+    <li>Unordered list item one</li>
+    <li>Unordered list item two</li>
+    <li>Unordered list item three
       <ul>
-        <li>Unordered list item one</li>
-        <li>Unordered list item two</li>
-        <li>Unordered list item three
-          <ul>
-            <li>Nested list item one</li>
-            <li>Nested list item two</li>
-            <li>Nested list item three</li>
-          </ul>
-        </li>
+        <li>Nested list item one</li>
+        <li>Nested list item two</li>
+        <li>Nested list item three</li>
       </ul>
+    </li>
+  </ul>
 
+  <ol>
+    <li>Ordered list item one</li>
+    <li>Ordered list item two</li>
+    <li>Ordered list item three
       <ol>
-        <li>Ordered list item one</li>
-        <li>Ordered list item two</li>
-        <li>Ordered list item three
-          <ol>
-            <li>Nested list item one</li>
-            <li>Nested list item two</li>
-            <li>Nested list item three</li>
-          </ol>
-        </li>
+        <li>Nested list item one</li>
+        <li>Nested list item two</li>
+        <li>Nested list item three</li>
       </ol>
+    </li>
+  </ol>
 
-      <dl>
-        <dt>Definition list item one</dt>
-        <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.</dd>
-        <dt>Definition list item two</dt>
-        <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.</dd>
-        <dt>Definition list item three</dt>
-        <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.</dd>
-      </dl>
+  <dl>
+    <dt>Definition list item one</dt>
+    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.</dd>
+    <dt>Definition list item two</dt>
+    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.</dd>
+    <dt>Definition list item three</dt>
+    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.</dd>
+  </dl>
 
-      <hr>
+  <hr>
 
-      <blockquote>
-        <p>
-          Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
-        </p>
-      </blockquote>
+  <blockquote>
+    <p>
+      Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+    </p>
+  </blockquote>
 
-      <pre><code>
-        #header h1 {
-          font-weight: normal;
-          font-size: 50px;
-        }
-      </code></pre>
+  <pre><code>
+    #header h1 {
+      font-weight: normal;
+      font-size: 50px;
+    }
+  </code></pre>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Table header one</th>
-            <th>Table header two</th>
-            <th>Table header three</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Table row one, cell one</td>
-            <td>Table row one, cell two</td>
-            <td>Table row one, cell three</td>
-          </tr>
-          <tr>
-            <td>Table row two, cell one</td>
-            <td>Table row two, cell two</td>
-            <td>Table row two, cell three</td>
-          </tr>
-          <tr>
-            <td>Table row three, cell one</td>
-            <td>Table row three, cell two</td>
-            <td>Table row three, cell three</td>
-          </tr>
-        </tbody>
-      </table>
+  <table>
+    <thead>
+      <tr>
+        <th>Table header one</th>
+        <th>Table header two</th>
+        <th>Table header three</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Table row one, cell one</td>
+        <td>Table row one, cell two</td>
+        <td>Table row one, cell three</td>
+      </tr>
+      <tr>
+        <td>Table row two, cell one</td>
+        <td>Table row two, cell two</td>
+        <td>Table row two, cell three</td>
+      </tr>
+      <tr>
+        <td>Table row three, cell one</td>
+        <td>Table row three, cell two</td>
+        <td>Table row three, cell three</td>
+      </tr>
+    </tbody>
+  </table>
 
-      <h2>Inline markup</h2>
+  <h2>Inline markup</h2>
 
-      <ul>
-        <li><strong>Highlighted text</strong></li>
-        <li><em>Emphasised text</em></li>
-        <li><strike>Struckout text</strike></li>
-        <li><q>Quotation</q></li>
-        <li><abbr title="An abbreviation">Abbreviation</abbr></li>
-      </ul>
+  <ul>
+    <li><strong>Highlighted text</strong></li>
+    <li><em>Emphasised text</em></li>
+    <li><strike>Struckout text</strike></li>
+    <li><q>Quotation</q></li>
+    <li><abbr title="An abbreviation">Abbreviation</abbr></li>
+  </ul>
 
-      <form>
-        <h2>Basic form elements</h2>
+  <form>
+    <h2>Basic form elements</h2>
 
-        <fieldset>
-          <legend class="form-label">Stacked radio buttons</legend>
+    <fieldset>
+      <legend class="form-label">Stacked radio buttons</legend>
 
-          <div class="form-group">
-            <label for="radio-1" class="selection-button selection-button--radio">
-              <input id="radio-1" type="radio" name="radio-group" value="radio-1" class="selection-button__input">
-              Radio 1
-            </label>
-            <label for="radio-2" class="selection-button selection-button--radio">
-              <input id="radio-2" type="radio" name="radio-group" value="radio-2" class="selection-button__input">
-              Radio 2
-            </label>
-            <label for="radio-3" class="selection-button selection-button--radio">
-              <input id="radio-3" type="radio" name="radio-group" value="radio-3" class="selection-button__input">
-              Radio 3
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Inline radio buttons</legend>
-
-          <div class="form-group">
-            <label for="inline-radio-1" class="selection-button selection-button--inline selection-button--radio">
-              <input id="inline-radio-1" type="radio" name="inline-radio-group" value="inline-radio-1" class="selection-button__input">
-              Radio 1
-            </label>
-            <label for="inline-radio-2" class="selection-button selection-button--inline selection-button--radio">
-              <input id="inline-radio-2" type="radio" name="inline-radio-group" value="inline-radio-2" class="selection-button__input">
-              Radio 2
-            </label>
-            <label for="inline-radio-3" class="selection-button selection-button--inline selection-button--radio">
-              <input id="inline-radio-3" type="radio" name="inline-radio-group" value="inline-radio-3" class="selection-button__input">
-              Radio 3
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Stacked checkboxes</legend>
-
-          <div class="form-group">
-            <label for="checkbox-1" class="selection-button selection-button--checkbox">
-              <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1" class="selection-button__input">
-              Checkbox 1
-            </label>
-            <label for="checkbox-2" class="selection-button selection-button--checkbox">
-              <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" class="selection-button__input">
-              Checkbox 2
-            </label>
-            <label for="checkbox-3" class="selection-button selection-button--checkbox">
-              <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" class="selection-button__input">
-              Checkbox 3
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Inline checkboxes</legend>
-
-          <div class="form-group">
-            <label for="inline-checkbox-1" class="selection-button selection-button--inline selection-button--checkbox">
-              <input id="inline-checkbox-1" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-1" class="selection-button__input">
-              Checkbox 1
-            </label>
-            <label for="inline-checkbox-2" class="selection-button selection-button--inline selection-button--checkbox">
-              <input id="inline-checkbox-2" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-2" class="selection-button__input">
-              Checkbox 2
-            </label>
-            <label for="inline-checkbox-3" class="selection-button selection-button--inline selection-button--checkbox">
-              <input id="inline-checkbox-3" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-3" class="selection-button__input">
-              Checkbox 3
-            </label>
-          </div>
-        </fieldset>
-      </form>
-
-      <h2>Callouts</h2>
-
-      <div class="callout callout--info">
-        <p>An information callout</p>
+      <div class="form-group">
+        <label for="radio-1" class="selection-button selection-button--radio">
+          <input id="radio-1" type="radio" name="radio-group" value="radio-1" class="selection-button__input">
+          Radio 1
+        </label>
+        <label for="radio-2" class="selection-button selection-button--radio">
+          <input id="radio-2" type="radio" name="radio-group" value="radio-2" class="selection-button__input">
+          Radio 2
+        </label>
+        <label for="radio-3" class="selection-button selection-button--radio">
+          <input id="radio-3" type="radio" name="radio-group" value="radio-3" class="selection-button__input">
+          Radio 3
+        </label>
       </div>
+    </fieldset>
 
-      <div class="callout callout--attention">
-        <p>An attention callout</p>
+    <fieldset>
+      <legend>Inline radio buttons</legend>
+
+      <div class="form-group">
+        <label for="inline-radio-1" class="selection-button selection-button--inline selection-button--radio">
+          <input id="inline-radio-1" type="radio" name="inline-radio-group" value="inline-radio-1" class="selection-button__input">
+          Radio 1
+        </label>
+        <label for="inline-radio-2" class="selection-button selection-button--inline selection-button--radio">
+          <input id="inline-radio-2" type="radio" name="inline-radio-group" value="inline-radio-2" class="selection-button__input">
+          Radio 2
+        </label>
+        <label for="inline-radio-3" class="selection-button selection-button--inline selection-button--radio">
+          <input id="inline-radio-3" type="radio" name="inline-radio-group" value="inline-radio-3" class="selection-button__input">
+          Radio 3
+        </label>
       </div>
+    </fieldset>
 
-      <div class="callout callout--warning">
-        <p>A warning callout</p>
+    <fieldset>
+      <legend>Stacked checkboxes</legend>
+
+      <div class="form-group">
+        <label for="checkbox-1" class="selection-button selection-button--checkbox">
+          <input id="checkbox-1" type="checkbox" name="checkbox-group" value="checkbox-1" class="selection-button__input">
+          Checkbox 1
+        </label>
+        <label for="checkbox-2" class="selection-button selection-button--checkbox">
+          <input id="checkbox-2" type="checkbox" name="checkbox-group" value="checkbox-2" class="selection-button__input">
+          Checkbox 2
+        </label>
+        <label for="checkbox-3" class="selection-button selection-button--checkbox">
+          <input id="checkbox-3" type="checkbox" name="checkbox-group" value="checkbox-3" class="selection-button__input">
+          Checkbox 3
+        </label>
       </div>
+    </fieldset>
 
-      <div class="callout callout--alert">
-        <p>An alert callout</p>
+    <fieldset>
+      <legend>Inline checkboxes</legend>
+
+      <div class="form-group">
+        <label for="inline-checkbox-1" class="selection-button selection-button--inline selection-button--checkbox">
+          <input id="inline-checkbox-1" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-1" class="selection-button__input">
+          Checkbox 1
+        </label>
+        <label for="inline-checkbox-2" class="selection-button selection-button--inline selection-button--checkbox">
+          <input id="inline-checkbox-2" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-2" class="selection-button__input">
+          Checkbox 2
+        </label>
+        <label for="inline-checkbox-3" class="selection-button selection-button--inline selection-button--checkbox">
+          <input id="inline-checkbox-3" type="checkbox" name="inline-checkbox-group" value="inline-checkbox-3" class="selection-button__input">
+          Checkbox 3
+        </label>
       </div>
-
-      <div class="callout callout--severe">
-        <p>A severe callout</p>
-      </div>
-    </div>
-
-    <h2>Panels</h2>
-
-    <article class="panel">
-      <div class="panel__content">
-        <h2>Panel heading</h2>
-
-        <ul class="list--chevron">
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
-          <li>Officiis excepturi atque et, a</li>
-          <li>Totam, dolorum culpa eum tenetur temporibus in assumenda vel mollitia alias</li>
-        </ul>
-      </div>
-
-      <footer class="panel__footer">
-        <p><strong>Panel footer, usually an action to take.</strong></p>
-      </footer>
-    </article>
-
-    <section class="panel">
-      <div class="panel__content panel__content--half">
-        <h3>Do</h3>
-
-        <ul class="list--check">
-          <li>this thing</li>
-          <li>another thing</li>
-          <li>and also this</li>
-        </ul>
-      </div>
-
-      <div class="panel__content panel__content--half">
-        <h3>Don't</h3>
-
-        <ul class="list--cross">
-          <li>this thing</li>
-          <li>vivamus magna</li>
-          <li>and also this</li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="reading-width">
-      <h2>Hidden text (progressive disclosure)</h2>
-
-      <details>
-        <summary>
-          <span class="details__summary">Help with something</span>
-        </summary>
-
-        <div>
-          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.</p>
-        </div>
-      </details>
-
-      <details class="details--inline">
-        <summary>
-          <span class="details__summary">
-            Vivamus magna. Cras in mi at <span class="details__cta">felis aliquet congue.</span>
-          </span>
-        </summary>
-
-        <div>
-          <p>Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget
-            ligula molestie gravida. Vivamus magna. Cras in mi at felis aliquet
-            congue. Ut a est eget ligula molestie gravida.</p>
-        </div>
-      </details>
-    </div>
-  </div>
+    </fieldset>
+  </form>
 {% endblock %}

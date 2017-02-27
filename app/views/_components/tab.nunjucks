@@ -1,0 +1,30 @@
+{##
+ # Family: Display
+ #
+ # @param {string} [label]    Label of the tab in navigation
+ # @param {array}  [children] List of components to render
+ #
+ # @return {string} HTML for tab with all rendered children
+ #
+ # @example
+ #   {% component 'tab', {
+ #     label: 'Tab label',
+ #     children: [{ type: 'text', props: {} }, { type: 'text', props: {} }]
+ #   } %}
+ #}
+
+<div class="tabs__tab js-tab-pane" id="{{ label | kebabcase }}">
+  <h3 class="tabs__tab-heading">{{ label }}</h3>
+  <div class="tabs__tab-content">
+    {% for component in children %}
+      {# Change the analytics type used if the image is within a gallery #}
+      {% if component.type == 'image' %}
+        {% set context = component.props | assign({ analyticsType: 'tab' }) %}
+      {% else %}
+        {% set context = component.props %}
+      {% endif %}
+
+      {% component name=component.type, context=context %}
+    {% endfor %}
+  </div>
+</div>

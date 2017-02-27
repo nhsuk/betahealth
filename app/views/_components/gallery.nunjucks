@@ -1,0 +1,23 @@
+{##
+ # Family: Display
+ #
+ # @param {array} [children] List of components to display within gallery
+ #
+ # @return {string} HTML of gallery with nested children
+ #
+ # @example
+ #   {% component 'gallery', { children: [{...}, {...}] } %}
+ #}
+
+<div class="media__container">
+  {% for component in children %}
+    {# Change the analytics type used if the image is within a gallery #}
+    {% if component.type == 'image' %}
+      {% set context = component.props | assign({ analyticsType: 'figure' }) %}
+    {% else %}
+      {% set context = component.props %}
+    {% endif %}
+
+    {% component name=component.type, context=context %}
+  {% endfor %}
+</div>

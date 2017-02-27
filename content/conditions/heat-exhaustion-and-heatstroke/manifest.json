@@ -7,14 +7,65 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Heat exhaustion and heat stroke are serious if not treated quickly. You should give first aid and call 999 if you think there are signs of heat stroke."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Heat exhaustion and heat stroke are serious if not treated quickly. You should give first aid and call 999 if you think there are signs of heat stroke."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "The difference between heat exhaustion and heat stroke",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
       }
     ]
   }

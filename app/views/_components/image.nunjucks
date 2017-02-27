@@ -1,0 +1,52 @@
+{##
+ # Family: Display
+ #
+ # @param {array}  [srcset]        List of filepath and width options
+ # @param {string} [alt]           Alternative text used to describe the image
+ # @param {string} [caption]       Caption to be displayed beneath image
+ # @param {string} [analyticsType] Type used to tag interaction for analytics
+ #
+ # @return {string} HTML for image component
+ #
+ # @example
+ #   {% component 'image', {
+ #     srcset: ['image/path/1.jpg 300w', 'image/path/2.jpg 600w'],
+ #     alt: 'A rash on the leg',
+ #     caption: 'An image of a rash',
+ #     analyticsType: 'inline'
+ #   } %}
+ #}
+
+{% set srcsetValue = [] %}
+
+{% for src in srcset -%}
+  {% set splitSrc = src | split(' ') %}
+  {% set filepath = asset_path(splitSrc[0]) %}
+  {% set width = splitSrc[1] %}
+  {% set src = [filepath, width] | join(' ') %}
+
+  {% set srcsetValue = srcsetValue | push(src) %}
+{%- endfor %}
+
+<figure class="media">
+  <!--[if gt IE 7]><!-->
+  <img
+    srcset="{{ srcsetValue | join(',') }}"
+    alt="{{ alt }}"
+    data-analytics="image"
+    data-analytics-type="{{ analyticsType | default('inline') }}"
+    />
+  <!--<![endif]-->
+  <!--[if gt IE 7]><!--><noscript><!--<![endif]-->
+    {% set fallback = srcset[0] | split(' ') %}
+    <img src="{{ asset_path(fallback[0]) }}" alt="{{ alt }}" />
+  <!--[if gt IE 7]><!--></noscript><!--<![endif]-->
+
+  {% if caption %}
+    <figcaption class="media__caption">
+      {% markdown %}
+        {{ caption }}
+      {% endmarkdown %}
+    </figcaption>
+  {% endif %}
+</figure>

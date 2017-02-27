@@ -1,0 +1,1 @@
+Carpal tunnel syndrome is pressure on a nerve in your wrist. It causes tingling, numbness and pain in your hand and fingers. You can often treat it yourself, but it can take months to get better.

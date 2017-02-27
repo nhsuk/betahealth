@@ -7,58 +7,178 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Blisters should heal on their own within a week. They can be painful while they heal, but you shouldn’t need to see a GP."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Blisters should heal on their own within a week. They can be painful while they heal, but you shouldn’t need to see a GP."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/blisters/blister-clear_300.jpg 300w",
-              "assets/images/blisters/blister-clear_600.jpg 600w"
-            ],
-            "caption": "Blisters are small pockets of clear fluid under a layer of skin",
-            "alt": "Blister on the heel of the foot, clear coloured and about the size of a 5 pence piece"
-          },
-          {
-            "srcset": [
-              "assets/images/blisters/blister-blood_300.jpg 300w",
-              "assets/images/blisters/blister-blood_600.jpg 600w"
-            ],
-            "caption": "Blood blisters are red or black and filled with blood instead of clear fluid",
-            "alt": "Blood blister on the sole of the foot below the toes, about the size of a 5 pence piece with slight swelling and red colour"
-          },
-          {
-            "srcset": [
-              "assets/images/blisters/blister-infected_300.jpg 300w",
-              "assets/images/blisters/blister-infected_600.jpg 600w"
-            ],
-            "caption": "If the blister is infected it can be red, hot and filled with green or yellow pus",
-            "alt": "Infected blister on the heel of the foot, swollen with pus that is tinged with green and yellow"
-          }
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-3.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/blisters/blister-clear_300.jpg 300w",
+                  "assets/images/blisters/blister-clear_600.jpg 600w"
+                ],
+                "caption": "Blisters are small pockets of clear fluid under a layer of skin",
+                "alt": "Blister on the heel of the foot, clear coloured and about the size of a 5 pence piece"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/blisters/blister-blood_300.jpg 300w",
+                  "assets/images/blisters/blister-blood_600.jpg 600w"
+                ],
+                "caption": "Blood blisters are red or black and filled with blood instead of clear fluid",
+                "alt": "Blood blister on the sole of the foot below the toes, about the size of a 5 pence piece with slight swelling and red colour"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/blisters/blister-infected_300.jpg 300w",
+                  "assets/images/blisters/blister-infected_600.jpg 600w"
+                ],
+                "caption": "If the blister is infected it can be red, hot and filled with green or yellow pus",
+                "alt": "Infected blister on the heel of the foot, swollen with pus that is tinged with green and yellow"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "Conditions that can cause blisters",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
       }
     ]
   }

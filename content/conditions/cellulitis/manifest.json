@@ -1,0 +1,161 @@
+{
+  "layout": "content-simple",
+  "description": "Cellulitis is a skin infection that's treated with antibiotics. It can be serious if not treated quickly.",
+  "choicesOrigin": "conditions/cellulitis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-2.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-3.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/cellulitis/cellulitis-hands_300.jpg 300w",
+                  "assets/images/cellulitis/cellulitis-hands_600.jpg 600w"
+                ],
+                "caption": "Hands - causing swollen fingers.",
+                "alt": "Adult male’s left and right hands. One normal, the other with red, swollen fingers, showing difference in size"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/cellulitis/cellulitis-foot_300.jpg 300w",
+                  "assets/images/cellulitis/cellulitis-foot_600.jpg 600w"
+                ],
+                "caption": "Feet - sometimes near toes if you have athlete's foot.",
+                "alt": "Adult foot with red, swollen skin from base of toes to ankle"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/cellulitis/cellulitis-leg_300.jpg 300w",
+                  "assets/images/cellulitis/cellulitis-leg_600.jpg 600w"
+                ],
+                "caption": "Legs - usually the lower legs.",
+                "alt": "Adult lower calf with very red, inflamed, blistered skin, causing swelling to the leg"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-4.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "If you\u2019re not sure it\u2019s cellulitis",
+          "variant": "block"
+        },
+        "type": "reveal"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-5.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "alert"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-6.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-7.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "severe"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-8.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-9.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "Things that increase the risk of cellulitis",
+          "variant": "block"
+        },
+        "type": "reveal"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Cellulitis"
+}

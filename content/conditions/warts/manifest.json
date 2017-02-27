@@ -7,66 +7,142 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Warts and verrucas are small lumps on the skin that most people have at some point in their life. They usually go away on their own, but it can take months or even years."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Warts and verrucas are small lumps on the skin that most people have at some point in their life. They usually go away on their own, but it can take months or even years."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-before.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-before.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/warts/standard-wart-300.jpg 300w",
-              "assets/images/warts/standard-wart-600.jpg 600w"
-            ],
-            "caption": "Warts feel firm and rough. They can appear on palms, knuckles, knees and fingers.",
-            "alt": "A wart"
-          },
-          {
-            "srcset": [
-              "assets/images/warts/verruca-300.jpg 300w",
-              "assets/images/warts/verruca-600.jpg 600w"
-            ],
-            "caption": "Verrucas appear on your feet. They have tiny black dots under the hard skin.",
-            "alt": "A verruca"
-          },
-          {
-            "srcset": [
-              "assets/images/warts/plane-warts-300.jpg 300w",
-              "assets/images/warts/plane-warts-600.jpg 600w"
-            ],
-            "caption": "Some warts are round, flat and can be yellow (plane warts). You can have many of them.",
-            "alt": "A plane wart"
-          },
-          {
-            "srcset": [
-              "assets/images/warts/cluster-300.jpg 300w",
-              "assets/images/warts/cluster-600.jpg 600w"
-            ],
-            "caption": "Clusters of warts, spread over an area of skin (mosaic warts) are common on feet and hands.",
-            "alt": "A cluster of warts"
-          }
-        ]
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/warts/standard-wart-300.jpg 300w",
+                  "assets/images/warts/standard-wart-600.jpg 600w"
+                ],
+                "caption": "Warts feel firm and rough. They can appear on palms, knuckles, knees and fingers.",
+                "alt": "A wart"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/warts/verruca-300.jpg 300w",
+                  "assets/images/warts/verruca-600.jpg 600w"
+                ],
+                "caption": "Verrucas appear on your feet. They have tiny black dots under the hard skin.",
+                "alt": "A verruca"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/warts/plane-warts-300.jpg 300w",
+                  "assets/images/warts/plane-warts-600.jpg 600w"
+                ],
+                "caption": "Some warts are round, flat and can be yellow (plane warts). You can have many of them.",
+                "alt": "A plane wart"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/warts/cluster-300.jpg 300w",
+                  "assets/images/warts/cluster-600.jpg 600w"
+                ],
+                "caption": "Clusters of warts, spread over an area of skin (mosaic warts) are common on feet and hands.",
+                "alt": "A cluster of warts"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "split_panel",
-        "value": [
-          "!file=do.md",
-          "!file=dont.md"
-        ]
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "split_content",
+        "props": {
+          "children": [
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=do.md"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "split_area",
+              "props": {
+                "children": [
+                  {
+                    "type": "text",
+                    "props": {
+                      "variant": "markdown",
+                      "value": "!file=dont.md"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
       }
     ]
   }

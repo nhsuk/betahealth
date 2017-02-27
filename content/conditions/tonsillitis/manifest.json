@@ -7,35 +7,152 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Tonsillitis is a common childhood illness but teenagers and adults can get it too. It usually goes away on its own after a few days."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Tonsillitis is a common childhood illness but teenagers and adults can get it too. It usually goes away on its own after a few days."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-1.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
       },
       {
-        "type": "figure_list",
-        "options": {
-          "reveal": true,
-          "title": "What tonsils with pus-filled spots can look like"
-        },
-        "value": [
-          {
-            "srcset": [
-              "assets/images/tonsillitis/tonsillitis_300.jpg 300w",
-              "assets/images/tonsillitis/tonsillitis_600.jpg 600w"
-            ],
-            "caption": "Tonsils with pus-filled spots at the back of the throat.",
-            "alt": "Two fleshy, red lumps with yellow spots on them, inside the mouth either side of the back of the throat"
-          }
-        ]
+        "type": "reveal",
+        "props": {
+          "summary": "What tonsils with pus-filled spots can look like",
+          "variant": "block",
+          "children": [
+            {
+              "type": "gallery",
+              "props": {
+                "children": [
+                  {
+                    "type": "image",
+                    "props": {
+                      "srcset": [
+                        "assets/images/tonsillitis/tonsillitis_300.jpg 300w",
+                        "assets/images/tonsillitis/tonsillitis_600.jpg 600w"
+                      ],
+                      "caption": "Tonsils with pus-filled spots at the back of the throat.",
+                      "alt": "Two fleshy, red lumps with yellow spots on them, inside the mouth either side of the back of the throat"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content-2.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
+      },
+      {
+        "type": "reveal",
+        "props": {
+          "summary": "How to gargle with salty water",
+          "variant": "block",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=reveal.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-3.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "attention",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-gp.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-4.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-5.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "severe",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-emergency.md"
+              }
+            }
+          ]
+        }
       }
     ]
   }

@@ -1,0 +1,42 @@
+{##
+ # Family: Display
+ #
+ # @param {array} [header] List of components to render in the header region
+ # @param {array} [body]   List of components to render in the body region
+ # @param {array} [footer] List of components to render in the footer region
+ #
+ # @return {string} HTML for panel with all rendered children
+ #
+ # @example
+ #   {% component 'panel', {
+ #     header: [],
+ #     body: [{ type: 'text', props: {...} }],
+ #     footer: [{ type: 'text', props: {...} }]
+ #   } %}
+ #}
+
+<article class="panel">
+  {% if header.length %}
+    <div class="panel__header">
+      {% for component in header %}
+        {% component name=component.type, context=component.props %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if body.length %}
+    <div class="panel__content">
+      {% for component in body %}
+        {% component name=component.type, context=component.props %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if footer.length %}
+    <footer class="panel__footer">
+      {% for component in footer %}
+        {% component name=component.type, context=component.props %}
+      {% endfor %}
+    </footer>
+  {% endif %}
+</article>

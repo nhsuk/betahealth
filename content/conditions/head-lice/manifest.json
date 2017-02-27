@@ -7,47 +7,89 @@
   "content": {
     "header": [
       {
-        "type": "markdown",
-        "value": "Head lice and nits are very common in young children. They don’t have anything to do with dirty hair, and are usually picked up by head-to-head contact."
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "Head lice and nits are very common in young children. They don’t have anything to do with dirty hair, and are usually picked up by head-to-head contact."
+        }
       }
     ],
     "main": [
       {
-        "type": "markdown",
-        "value": "!file=main-content-before.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-before.md"
+        }
       },
       {
-        "type": "figure_list",
-        "value": [
-          {
-            "srcset": [
-              "assets/images/head-lice/head-lice-300.jpg 300w",
-              "assets/images/head-lice/head-lice-600.jpg 600w"
-            ],
-            "caption": "Head lice are small insects, up to 3mm long. They can be difficult to spot.",
-            "alt": "Head lice in hair"
-          },
-          {
-            "srcset": [
-              "assets/images/head-lice/head-lice-zoom-300.jpg 300w",
-              "assets/images/head-lice/head-lice-zoom-600.jpg 600w"
-            ],
-            "caption": "Close up view of a louse.",
-            "alt": "Close up view of a louse"
-          },
-          {
-            "srcset": [
-              "assets/images/head-lice/empty-eggs-300.jpg 300w",
-              "assets/images/head-lice/empty-eggs-600.jpg 600w"
-            ],
-            "caption": "Head lice eggs (nits) are yellow, brown or white (empty shells) and attached to the hair.",
-            "alt": "Head lice eggs"
-          }
-        ]
+        "type": "gallery",
+        "props": {
+          "children": [
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/head-lice/head-lice-300.jpg 300w",
+                  "assets/images/head-lice/head-lice-600.jpg 600w"
+                ],
+                "caption": "Head lice are small insects, up to 3mm long. They can be difficult to spot.",
+                "alt": "Head lice in hair"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/head-lice/head-lice-zoom-300.jpg 300w",
+                  "assets/images/head-lice/head-lice-zoom-600.jpg 600w"
+                ],
+                "caption": "Close up view of a louse.",
+                "alt": "Close up view of a louse"
+              }
+            },
+            {
+              "type": "image",
+              "props": {
+                "srcset": [
+                  "assets/images/head-lice/empty-eggs-300.jpg 300w",
+                  "assets/images/head-lice/empty-eggs-600.jpg 600w"
+                ],
+                "caption": "Head lice eggs (nits) are yellow, brown or white (empty shells) and attached to the hair.",
+                "alt": "Head lice eggs"
+              }
+            }
+          ]
+        }
       },
       {
-        "type": "markdown",
-        "value": "!file=main-content.md"
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-1.md"
+        }
+      },
+      {
+        "type": "callout",
+        "props": {
+          "variant": "warning",
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-warning.md"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "text",
+        "props": {
+          "variant": "markdown",
+          "value": "!file=main-content-2.md"
+        }
       }
     ]
   }

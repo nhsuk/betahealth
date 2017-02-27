@@ -1,0 +1,6 @@
+- [Rashes in babies and children](/symptoms/rashes-in-babies-and-children)
+- [Heat rash (prickly heat)](/conditions/heat-rash)
+- [Scarlet fever](/conditions/scarlet-fever)
+- [Measles](http://www.nhs.uk/conditions/measles/Pages/Introduction.aspx)
+- [Chickenpox](http://www.nhs.uk/Conditions/Chickenpox/Pages/Introduction.aspx)
+- [Meningitis](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)

@@ -1,0 +1,89 @@
+{
+  "name": "Hidden text/image (progressive disclosure)",
+  "variants": [
+    {
+      "type": "reveal",
+      "props": {
+        "summary": "Inline reveal where [this] becomes the link.",
+        "variant": "inline",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid exercitationem asperiores blanditiis, minus fuga eum cupiditate laudantium fugiat quisquam corporis at sint nisi, assumenda impedit et qui! Dicta, officiis, maxime."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "reveal",
+      "props": {
+        "summary": "A block link example reveal",
+        "variant": "block",
+        "children": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ut repellendus deleniti quod tempora perspiciatis autem adipisci perferendis architecto id consequatur harum nobis ducimus, sint cumque! Harum quibusdam, architecto perferendis."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "reveal",
+      "props": {
+        "summary": "Show hidden gallery component",
+        "variant": "block",
+        "children": [
+          {
+            "type": "gallery",
+            "props": {
+              "children": [
+                {
+                  "type": "image",
+                  "props": {
+                    "id": 1,
+                    "width": 600,
+                    "height": 400,
+                    "alt": "lorem ipsum alt",
+                    "caption": "lorem ipsum caption",
+                    "slug": "image-600.jpeg",
+                    "version": 1,
+                    "srcset": [
+                      "https://placekitten.com/g/1280/853 400w",
+                      "https://placekitten.com/g/1280/853 640w",
+                      "https://placekitten.com/g/1280/853 800w",
+                      "https://placekitten.com/g/1280/853 1280w"
+                    ]
+                  }
+                },
+                {
+                  "type": "image",
+                  "props": {
+                    "id": 1,
+                    "width": 600,
+                    "height": 400,
+                    "alt": "lorem ipsum alt",
+                    "caption": "lorem ipsum caption",
+                    "slug": "image-600.jpeg",
+                    "version": 1,
+                    "srcset": [
+                      "https://placekitten.com/g/1280/853 400w",
+                      "https://placekitten.com/g/1280/853 640w",
+                      "https://placekitten.com/g/1280/853 800w",
+                      "https://placekitten.com/g/1280/853 1280w"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

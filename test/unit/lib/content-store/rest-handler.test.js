@@ -141,7 +141,7 @@ describe('REST API Handler library', () => {
             main: [
               {
                 type: 'image',
-                value: {
+                props: {
                   id: 2,
                   meta: {
                     type: 'images.Image',
@@ -151,15 +151,20 @@ describe('REST API Handler library', () => {
                 },
               },
               {
-                type: 'figureList',
-                value: [{
-                  id: 2,
-                  meta: {
-                    type: 'images.Image',
-                  },
-                  slug: 'image-slug.jpeg',
-                  version: 1,
-                }],
+                type: 'gallery',
+                props: {
+                  children: [{
+                    type: 'image',
+                    props: {
+                      id: 3,
+                      meta: {
+                        type: 'images.Image',
+                      },
+                      slug: 'image-slug.jpeg',
+                      version: 4,
+                    },
+                  }],
+                },
               },
             ],
           });
@@ -179,7 +184,7 @@ describe('REST API Handler library', () => {
             main: [
               {
                 type: 'image',
-                value: {
+                props: {
                   id: 2,
                   meta: {
                     type: 'images.Image',
@@ -195,19 +200,24 @@ describe('REST API Handler library', () => {
                 },
               },
               {
-                type: 'figureList',
-                value: [{
-                  id: 2,
-                  meta: {
-                    type: 'images.Image',
-                  },
-                  slug: 'image-slug.jpeg',
-                  srcset: [
-                    '/image-path/signature/2/width-300/1/image-slug.jpeg 300w',
-                    '/image-path/signature/2/width-600/1/image-slug.jpeg 600w',
-                  ],
-                  version: 1,
-                }],
+                type: 'gallery',
+                props: {
+                  children: [{
+                    type: 'image',
+                    props: {
+                      id: 3,
+                      meta: {
+                        type: 'images.Image',
+                      },
+                      slug: 'image-slug.jpeg',
+                      srcset: [
+                        '/image-path/signature/3/width-300/4/image-slug.jpeg 300w',
+                        '/image-path/signature/3/width-600/4/image-slug.jpeg 600w',
+                      ],
+                      version: 4,
+                    },
+                  }],
+                },
               },
             ],
           });
@@ -239,7 +249,7 @@ describe('REST API Handler library', () => {
               main: [
                 {
                   type: 'image',
-                  value: {
+                  props: {
                     id: 2,
                     meta: {
                       type: 'images.Image',
@@ -249,15 +259,20 @@ describe('REST API Handler library', () => {
                   },
                 },
                 {
-                  type: 'figureList',
-                  value: [{
-                    id: 2,
-                    meta: {
-                      type: 'images.Image',
-                    },
-                    slug: 'image-slug.jpeg',
-                    version: 1,
-                  }],
+                  type: 'gallery',
+                  props: {
+                    children: [{
+                      type: 'image',
+                      props: {
+                        id: 3,
+                        meta: {
+                          type: 'images.Image',
+                        },
+                        slug: 'image-slug.jpeg',
+                        version: 4,
+                      },
+                    }],
+                  },
                 },
               ],
             });

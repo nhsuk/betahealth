@@ -1,0 +1,26 @@
+{##
+ # Family: Display
+ #
+ # @param {string} [variant] Type of text to format (markdown|html|plain)
+ # @param {string} [value]   Text to render
+ #
+ # @return {string} HTML for rendered text
+ #
+ # @example
+ #   {% component 'text', {
+ #     varaint: 'markdown',
+ #     value: 'Some **markdown** text to render'
+ #   } %}
+ #}
+
+<div class="reading-width">
+  {% if variant == 'markdown' %}
+    {% markdown %}
+      {{ value | renderString }}
+    {% endmarkdown %}
+  {% elseif variant == 'html' %}
+    {{ value | renderString | safe }}
+  {% elseif variant == 'plain' %}
+    {{ value | renderString }}
+  {% endif %}
+</div>

@@ -1,0 +1,5 @@
+- Hiatus hernia
+- Stomach ulcer
+- Stomach cancer
+- Helicobacter pylori infections
+- Gastro-oesophageal disease (GORD)

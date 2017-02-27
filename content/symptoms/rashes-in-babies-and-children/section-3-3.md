@@ -3,3 +3,5 @@ children and known as [molluscum contagiosum](http://www.nhs.uk/conditions/mollu
 
 Treatment isn’t recommended as the spots clear up, although it can take over
 a year.
+
+### Red patches on a baby’s bottom

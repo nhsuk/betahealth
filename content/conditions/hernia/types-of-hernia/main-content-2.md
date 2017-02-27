@@ -40,14 +40,3 @@ If the bowel gets stuck in the hernia, it can become blocked (obstruction).
 
 If the gap in the muscle becomes too tight, it can trap the bowel and cut off
 its blood supply (strangulation).
-
-!!! alert
-## See a GP now or go to A&E
-
-If you have a hernia and:
-
-* it's painful
-* it feels hot
-* it feels hard and tender
-* you have a fever
-!!!

@@ -27,7 +27,7 @@
     </header>
 
     <main id="content" role="main" tabindex="-1" class="util-nofocus">
-      {% block content %}{% endblock %}
+      {% block body_main_content %}{% endblock %}
     </main>
 
     {% if feedback and not FEEDBACKFORM.disabled %}

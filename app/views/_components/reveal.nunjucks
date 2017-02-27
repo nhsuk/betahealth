@@ -1,0 +1,32 @@
+{##
+ # Family: Control
+ #
+ # @param {string} [variant]  Type of reveal to display (inline|block)
+ # @param {string} [summary]  Text to display in the summary element
+ # @param {array}  [children] List of components to render
+ #
+ # @return {string} HTML for reveal component with all rendered children
+ #
+ # @example
+ #   {% component 'reveal', {
+ #     variant: 'block',
+ #     summary: 'Summary text for progressive reveal',
+ #     children: [{ type: 'text', props: {...} }]
+ #   } %}
+ #}
+
+{% if variant == 'inline' -%}
+  {% set summary = summary.replace('[', '<span class="details__cta">').replace(']', '</span>') | safe %}
+{%- endif %}
+
+<details class="{{ 'details--inline' if variant == 'inline' }}">
+  <summary data-analytics="summary">
+    <span class="details__summary">{{ summary }}</span>
+  </summary>
+
+  <div>
+    {% for component in children %}
+      {% component name=component.type, context=component.props %}
+    {% endfor %}
+  </div>
+</details>

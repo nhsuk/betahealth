@@ -1,0 +1,109 @@
+{
+  "name": "Panel",
+  "variants": [
+    {
+      "type": "panel",
+      "props": {
+        "header": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## A panel that contains a heading"
+            }
+          }
+        ],
+        "body": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "Some body content"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "**And a footer**"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "panel",
+      "props": {
+        "header": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## This is a heading example"
+            }
+          }
+        ],
+        "body": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "This is some content that appears in the body"
+            }
+          }
+        ],
+        "footer": []
+      }
+    },
+    {
+      "type": "panel",
+      "props": {
+        "header": [],
+        "body": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "This is some content that appears in the body"
+            }
+          }
+        ],
+        "footer": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "**This is an important footer point**"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "panel",
+      "props": {
+        "header": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "## This is a heading example"
+            }
+          }
+        ],
+        "body": [],
+        "footer": [
+          {
+            "type": "text",
+            "props": {
+              "variant": "markdown",
+              "value": "**This is an important footer point**"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

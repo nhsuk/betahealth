@@ -1,0 +1,1 @@
+UTIs can affect different parts of your urinary tract, including your bladder (cystitis), urethra (urethritis) or kidneys (kidney infection). Most UTIs can be easily treated with antibiotics.
