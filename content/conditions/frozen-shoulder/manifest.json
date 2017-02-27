@@ -1,0 +1,124 @@
+{
+  "layout": "content-simple",
+  "description": "Frozen shoulder means your shoulder is painful and stiff for months, sometimes years. It can be treated with shoulder exercises and painkillers.",
+  "choicesOrigin": "conditions/frozen-shoulder/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-2.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-3.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-4.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  },
+                  {
+                    "props": {
+                      "children": [
+                        {
+                          "props": {
+                            "value": "!file=content-5.md",
+                            "variant": "markdown"
+                          },
+                          "type": "text"
+                        }
+                      ],
+                      "summary": "Putting heat or cold packs on your shoulder",
+                      "variant": "block"
+                    },
+                    "type": "reveal"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-6.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-7.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-8.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": true,
+          "variant": "info"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-9.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Frozen shoulder"
+}

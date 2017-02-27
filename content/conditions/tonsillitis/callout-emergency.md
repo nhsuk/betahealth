@@ -8,3 +8,5 @@
 - difficulty opening your mouth
 
 These are signs of quinsy.
+
+*[A&E]: Accident and Emergency

@@ -1,0 +1,170 @@
+{
+  "layout": "content-simple",
+  "description": "Tendonitis is when a tendon swells up and becomes painful after a tendon injury. You can treat mild tendon injuries yourself and should feel better within 2 to 3 weeks.",
+  "choicesOrigin": "conditions/tendonitis/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-3.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": true,
+          "variant": "info"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-4.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-5.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "Types of tendonitis",
+          "variant": "block"
+        },
+        "type": "reveal"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-6.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-7.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": true,
+          "variant": "info"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-8.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-9.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": true,
+          "variant": "info"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-10.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-11.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-12.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-13.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Tendonitis"
+}

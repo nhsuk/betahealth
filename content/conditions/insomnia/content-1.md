@@ -1,0 +1,1 @@
+Insomnia means you regularly have problems sleeping. It usually gets better by changing your sleeping habits.

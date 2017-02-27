@@ -1,0 +1,1 @@
+Frozen shoulder means your shoulder is painful and stiff for months, sometimes years. It can be treated with shoulder exercises and painkillers.

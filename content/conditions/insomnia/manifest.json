@@ -1,0 +1,115 @@
+{
+  "layout": "content-simple",
+  "description": "Insomnia means you regularly have problems sleeping. It usually gets better by changing your sleeping habits.",
+  "choicesOrigin": "conditions/insomnia/pages/introduction.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-3.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "summary": "Illnesses and other things that can cause insomnia",
+          "variant": "block"
+        },
+        "type": "reveal"
+      },
+      {
+        "props": {
+          "value": "!file=content-4.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-5.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-6.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-7.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-8.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-9.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Insomnia"
+}

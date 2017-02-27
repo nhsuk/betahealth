@@ -1,0 +1,1 @@
+Tendonitis is when a tendon swells up and becomes painful after a tendon injury. You can treat mild tendon injuries yourself and should feel better within 2 to 3 weeks.

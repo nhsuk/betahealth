@@ -1,0 +1,50 @@
+{
+  "layout": "content-simple",
+  "description": "Carpal tunnel syndrome is pressure on a nerve in your wrist. It causes tingling, numbness and pain in your hand and fingers. You can often treat it yourself, but it can take months to get better.",
+  "choicesOrigin": "conditions/carpal-tunnel-syndrome/pages/whatisit.aspx",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "value": "!file=content-3.md",
+                "variant": "markdown"
+              },
+              "type": "text"
+            }
+          ],
+          "compact": false,
+          "variant": "attention"
+        },
+        "type": "callout"
+      },
+      {
+        "props": {
+          "value": "!file=content-4.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "nonEmergencyCallout": true,
+  "title": "Carpal tunnel syndrome"
+}

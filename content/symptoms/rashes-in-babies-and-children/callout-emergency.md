@@ -10,3 +10,5 @@
   [a glass against it](https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg)
 
 These can be signs of [meningitis.](http://www.nhs.uk/conditions/Meningitis/Pages/Introduction.aspx)
+
+*[A&E]: Accident and Emergency
