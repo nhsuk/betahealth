@@ -16,7 +16,7 @@
 <div class="reading-width">
   {% if variant == 'markdown' %}
     {% markdown %}
-      {{ value | renderString }}
+      {{ value | renderString | safe }}
     {% endmarkdown %}
   {% elseif variant == 'html' %}
     {{ value | renderString | safe }}
