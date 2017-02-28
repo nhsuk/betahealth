@@ -8,7 +8,7 @@ const assetPath = require('../app/middleware/asset-path');
 const COMPONENTS_PATH = '_components/';
 const COMPONENT_EXT = 'nunjucks';
 
-function ComponentExtension() {
+function ComponentExtension(env) {
   this.tags = ['component'];
 
   this.parse = function parse(parser, nodes) {
@@ -27,7 +27,7 @@ function ComponentExtension() {
     let result = '';
 
     try {
-      result = nunjucks.render(`${COMPONENTS_PATH}${changeCase.paramCase(name)}.${COMPONENT_EXT}`, ctx);
+      result = env.render(`${COMPONENTS_PATH}${changeCase.paramCase(name)}.${COMPONENT_EXT}`, ctx);
     } catch (e) {
       if (e.message.indexOf('template not found') > -1) {
         result = `Component '${name}' does not exist`;
@@ -47,6 +47,9 @@ module.exports = (app, config) => {
     autoescape: true,
     express: app,
   });
+
+  // Register markdown support
+  markdown(env);
 
   // Custom filters
   env.addFilter('split', (str, seperator) => {
@@ -79,16 +82,13 @@ module.exports = (app, config) => {
   }
 
   // Custom extensions
-  env.addExtension('ComponentExtension', new ComponentExtension());
+  env.addExtension('ComponentExtension', new ComponentExtension(env));
 
   // Global variables
   env.addGlobal('getContext', function getContext() {
     return this.ctx;
   });
   env.addGlobal('findersBaseUrl', config.findersBaseUrl);
-
-  // Register markdown support
-  markdown(env);
 
   return env;
 };
