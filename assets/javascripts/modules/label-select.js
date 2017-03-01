@@ -1,7 +1,7 @@
 const $ = require('jquery');
 
 const LabelSelect = function LabelSelect() {
-  this.el = '.selection-button';
+  this.el = '.multiple-choice';
   this.className = 'is-selected';
   this.delegateSelector = `${this.el} input[type=radio], ${this.el} input[type=checkbox]`;
 };

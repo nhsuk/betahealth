@@ -15,17 +15,19 @@
                   {% if FEEDBACKFORM.errorType == "submission" %}
                     Sorry, the feedback wasn't complete. Please make sure to tell us
 
-                    {% if FEEDBACKFORM.errors['feedback-form-comments'] %}
-                      <a href="#feedback-form-comments">what you were looking for{{ '.' if not FEEDBACKFORM.errors['feedback-form-found'] }}</a>{{ ',' if FEEDBACKFORM.errors['feedback-form-found'] }}
-                    {% endif %}
+                    {% for key, error in FEEDBACKFORM.errors %}
+                      {% if loop.last %}
+                        {% set join = '.' %}
+                      {% else %}
+                        {% if loop.revindex == 2 %}
+                          {% set join = ' and ' %}
+                        {% else %}
+                          {% set join = ',' %}
+                        {% endif %}
+                      {% endif %}
 
-                    {% if FEEDBACKFORM.errors['feedback-form-found'] and FEEDBACKFORM.errors['feedback-form-comments'] %}
-                      and
-                    {% endif %}
-
-                    {% if FEEDBACKFORM.errors['feedback-form-found'] %}
-                      <a href="#looking-for-group">if you found it</a>.
-                    {% endif %}
+                      <a href="#{{ error.msg.anchor }}">{{ error.msg.label }}</a>{{ join }}
+                    {% endfor %}
                   {% elif FEEDBACKFORM.errorType == "server" %}
                     Sorry, there’s been an error, <a href="#feedback-form-comments">please try again</a>.
                   {% endif %}
@@ -35,66 +37,63 @@
           </div>
         {% endif %}
 
-        <label for="feedback-form-comments" class="form-label form-label--large">
-          What were you looking for?
-        </label>
-        <div class="grid-row">
-          <div class="column--two-thirds">
-            <textarea
-              name="feedback-form-comments"
-              id="feedback-form-comments"
-              rows="4"
-              {% if FEEDBACKFORM.errors['feedback-form-comments'] %}
-                class="error"
-              {% endif %}
-            >{{ FEEDBACKFORM.data['feedback-form-comments'] }}</textarea>
-          </div>
+        {% component 'form-multiple-choice', {
+          variant: 'checkbox',
+          label: 'What were you looking for today?',
+          hint: 'Select all that apply',
+          name: 'feedback-form-theme',
+          error: FEEDBACKFORM.errors['feedback-form-theme'],
+          value: FEEDBACKFORM.data['feedback-form-theme'],
+          children: [{
+            label: 'Symptoms of a health issue'
+          }, {
+            label: 'Advice on treating a health issue myself'
+          }, {
+            label: 'Causes of a health issue'
+          }, {
+            label: 'Whether to seek medical help'
+          }, {
+            label: 'Where to seek medical help'
+          }, {
+            label: 'Something else'
+          }]
+        } %}
+
+        <p class="util-jshidden">If you chose something else:</p>
+
+        <div id="group-theme-other" class="util-jshidden util-indent" data-controlled-by="feedback-form-theme" data-control-value="Something else">
+          {% component 'form-textbox', {
+            label: 'What else were you looking for?',
+            name: 'feedback-form-theme-other',
+            error: FEEDBACKFORM.errors['feedback-form-theme-other'],
+            value: FEEDBACKFORM.data['feedback-form-theme-other']
+          } %}
         </div>
 
-        <fieldset>
-          <legend class="form-label form-label--large" id="looking-for-group">
-            Did you find what you were looking for?
-          </legend>
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
-                <input
-                  type="radio"
-                  name="feedback-form-found"
-                  value="Yes"
-                  class="selection-button__input"
-                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'Yes' %}
-                    checked=checked
-                  {% endif %}>
-                Yes
-              </label>
+        {% component 'form-multiple-choice', {
+          variant: 'radio',
+          label: 'Did you find what you were looking for?',
+          name: 'feedback-form-found',
+          error: FEEDBACKFORM.errors['feedback-form-found'],
+          value: FEEDBACKFORM.data['feedback-form-found'],
+          inline: true,
+          children: [{
+            label: 'Yes'
+          }, {
+            label: 'No'
+          }, {
+            label: 'Partially'
+          }]
+        } %}
 
-              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
-                <input
-                  type="radio"
-                  name="feedback-form-found"
-                  value="No"
-                  class="selection-button__input"
-                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'No' %}
-                    checked=checked
-                  {% endif %}>
-                No
-              </label>
-
-              <label class="selection-button selection-button--inline selection-button--radio{{ ' has-error' if FEEDBACKFORM.errors['feedback-form-found'] }}">
-                <input
-                  type="radio"
-                  name="feedback-form-found"
-                  value="Partially"
-                  class="selection-button__input"
-                  {% if FEEDBACKFORM.data['feedback-form-found'] == 'Partially' %}
-                    checked=checked
-                  {% endif %}>
-                Partially
-              </label>
-            </div>
-          </div>
-        </fieldset>
+        {% component 'form-textbox', {
+          variant: 'large',
+          label: 'What could be improved on this page?',
+          name: 'feedback-form-comments',
+          optional: true,
+          error: FEEDBACKFORM.errors['feedback-form-comments'],
+          value: FEEDBACKFORM.data['feedback-form-comments']
+        } %}
 
         <button type="submit" class="button" data-analytics="event" data-analytics-type="SendFeedback">Send feedback</button>
         <button type="reset" class="button button--cancel" data-analytics="event" data-analytics-type="CancelFeedback">Cancel</button>
