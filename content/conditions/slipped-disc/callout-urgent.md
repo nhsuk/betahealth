@@ -9,6 +9,5 @@
 - have a swelling in your back
 - notice the pain is worse at night
 - got it after a serious accident, such as a car accident
-- are over 50 or under 20 years old
 
 *[A&E]: Accident and Emergency

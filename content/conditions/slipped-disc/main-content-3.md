@@ -8,8 +8,8 @@ discuss surgery if your symptoms:
 
 ## Alternative treatments for slipped disc
 
-There’s a small amount of evidence to say other treatments like acupuncture,
-osteopathy and chiropractic can help ease some types of pain.
+There’s some evidence that manual therapies like osteopathy can help ease lower
+back pain.
 
 You'll usually have to pay for this treatment privately.
 
