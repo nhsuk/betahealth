@@ -1,4 +1,4 @@
-$_border-colour: shade($grey-3, 20);
+$_border-colour: $grey-3;
 
 .tabs {
   @extend %measure;
@@ -62,7 +62,7 @@ $_border-colour: shade($grey-3, 20);
 }
 
 .tabs__nav-link {
-  background-color: $grey-3;
+  background-color: $grey-4;
   display: block;
   margin: 0;
   padding: $baseline-grid-unit * 4 0;
