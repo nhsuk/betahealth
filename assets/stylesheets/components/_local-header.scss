@@ -37,7 +37,7 @@
 .local-header__return {
   @extend %link--reverse-polarity;
   background-color: $nhs-blue;
-  border: $baseline-grid-unit / 2 solid tint($nhs-blue, 20);
+  border: $baseline-grid-unit / 2 solid $blue-50;
   display: inline-block;
   margin-bottom: $baseline-grid-unit * 4;
   padding: $default-spacing-unit / 2 $default-spacing-unit;
@@ -72,7 +72,7 @@
   }
 
   &:before {
-    background-color: tint($nhs-blue, 20);
+    background-color: $blue-50;
     content: "";
     display: block;
     height: $baseline-grid-unit;

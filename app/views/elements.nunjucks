@@ -183,5 +183,9 @@
         </label>
       </div>
     </fieldset>
+
+    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button" disabled>Submit (disabled)</button>
+    <button type="reset" class="button button--cancel">Cancel</button>
   </form>
 {% endblock %}

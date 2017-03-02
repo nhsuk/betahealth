@@ -8,8 +8,10 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 
 .multiple-choice {
   @include core-font(20);
+  clear: left;
   cursor: pointer;
   display: block;
+  float: left;
   min-height: $_element-size;
   padding: 2px 0;
   position: relative;
@@ -44,7 +46,7 @@ $_radio-spacing: ($_element-size - $_radio-size) / 2;
 
 .multiple-choice--inline {
   @include media(tablet) {
-    float: left;
+    clear: none;
 
     + .multiple-choice--inline {
       margin-left: $default-spacing-unit * 2;
