@@ -1,5 +1,6 @@
 {
   "name": "Panel",
+  "family": "Display",
   "variants": [
     {
       "type": "panel",
@@ -50,7 +51,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "This is some content that appears in the body"
+              "value": "This is some content that appears in the body\r\n- list item\n- another list item\n{.list--chevron}"
             }
           }
         ],

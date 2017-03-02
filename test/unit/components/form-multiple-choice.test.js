@@ -25,13 +25,11 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio multiple-choice--inline">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio multiple-choice--inline">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -59,13 +57,11 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio has-error">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio has-error">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -92,13 +88,11 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio has-error">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio has-error">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -125,13 +119,11 @@ describe('Form multilpe choice component', () => {
             What were you looking for? (optional)
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -159,13 +151,11 @@ describe('Form multilpe choice component', () => {
             <span class="form-label__hint" id="hint-looking-for">Choose an option</span>
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input" aria-describedby="hint-looking-for">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="My marbells" class="multiple-choice__input" aria-describedby="hint-looking-for">
+            </label>
           </div>
         </fieldset>
         `
@@ -196,13 +186,11 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
-              </label>
-            </div>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -234,18 +222,16 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
-              <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
-                My marbells
-                <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input" checked="checked">
-              </label>
+          <div class="multiple-choice__container">
+            <label for="input--looking-for--1" class="multiple-choice multiple-choice--radio">
+              My marbells
+              <input type="radio" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input" checked="checked">
+            </label>
 
-              <label for="input--looking-for--2" class="multiple-choice multiple-choice--radio">
-                For love
-                <input type="radio" name="looking-for" id="input--looking-for--2" value="love" class="multiple-choice__input">
-              </label>
-            </div>
+            <label for="input--looking-for--2" class="multiple-choice multiple-choice--radio">
+              For love
+              <input type="radio" name="looking-for" id="input--looking-for--2" value="love" class="multiple-choice__input">
+            </label>
           </div>
         </fieldset>
         `
@@ -276,14 +262,12 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
+          <div class="multiple-choice__container">
               <label for="input--looking-for--1" class="multiple-choice multiple-choice--checkbox">
                 My marbells
                 <input type="checkbox" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
               </label>
             </div>
-          </div>
         </fieldset>
         `
       );
@@ -314,8 +298,7 @@ describe('Form multilpe choice component', () => {
             What were you looking for?
           </legend>
 
-          <div class="grid-row">
-            <div class="column--two-thirds">
+          <div class="multiple-choice__container">
               <label for="input--looking-for--1" class="multiple-choice multiple-choice--checkbox">
                 My marbells
                 <input type="checkbox" name="looking-for" id="input--looking-for--1" value="marbells" class="multiple-choice__input">
@@ -326,7 +309,6 @@ describe('Form multilpe choice component', () => {
                 <input type="checkbox" name="looking-for" id="input--looking-for--2" value="love" class="multiple-choice__input" checked="checked">
               </label>
             </div>
-          </div>
         </fieldset>
         `
       );

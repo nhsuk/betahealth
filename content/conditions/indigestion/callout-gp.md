@@ -9,3 +9,5 @@
 - have iron deficiency anaemia
 - feel like you have a lump in your stomach
 - have bloody vomit or poo
+
+These symptoms can be a sign of something more serious.

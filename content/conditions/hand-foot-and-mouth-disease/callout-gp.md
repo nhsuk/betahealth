@@ -5,5 +5,6 @@
 - you’re worried about your child’s symptoms
 - your child is dehydrated - they’re not peeing as often as usual
 - you’re pregnant and get hand, foot and mouth disease
----
-Hand, foot and mouth disease is infectious. Check with your GP surgery before you go in. They may suggest a phone consultation.
+
+Hand, foot and mouth disease is infectious. Check with your GP surgery before
+you go in. They may suggest a phone consultation.

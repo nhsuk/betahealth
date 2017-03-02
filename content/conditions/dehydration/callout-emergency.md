@@ -7,7 +7,6 @@
 - your pulse is weak or rapid
 - you have fits (seizures)
 
-***
 These can be signs of serious dehydration which needs urgent treatment.
 
 *[A&E]: Accident and Emergency

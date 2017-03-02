@@ -1,5 +1,6 @@
 {
   "name": "Callout",
+  "family": "Display",
   "variants": [
     {
       "type": "callout",
@@ -26,7 +27,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "[Find a pharamacy](#)"
+              "value": "[Find a pharmacy](#)"
             }
           }
         ]
@@ -41,7 +42,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "## See a GP if:\n\n- the pain gets much worse in a short space of time\n- the pain or bloating won’t go away or keeps coming back\n- you have other symptoms like weight loss or vomiting"
+              "value": "## See a GP if:\n\n- the pain gets much worse in a short space of time\n- the pain or bloating won’t go away or keeps coming back\n- you have other symptoms like weight loss or vomiting\r\n***\r\nThis could be a sign of something more serious"
             }
           }
         ]
@@ -56,7 +57,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "On the morning of your surgery you must not eat after midnight, and not drink after 6am."
+              "value": "On the morning of your surgery you must not eat after midnight, and not drink after 6am.\r\n- list item\n- another list item"
             }
           }
         ]
@@ -71,7 +72,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "## See a GP now or go to A&E if:\n\n- it feels hot\n- it’s hard and tender\n- it’s suddenly painful"
+              "value": "## See a GP now or go to A&E if:\n\n- it feels hot\n- it’s hard and tender\n- it’s suddenly painful\r\n***\r\nThis could be a sign of something more serious"
             }
           }
         ]
@@ -86,7 +87,7 @@
             "type": "text",
             "props": {
               "variant": "markdown",
-              "value": "## Call 999 or go to A&E if you:\n\n- have sudden, severe stomach pain\n- have pain when you touch your stomach\n- are vomiting blood or a ground coffee like substance"
+              "value": "## Call 999 or go to A&E if you:\n\n- have sudden, severe stomach pain\n- have pain when you touch your stomach\n- are vomiting blood or a ground coffee like substance\r\n***\r\nThis could be a sign of something more serious"
             }
           }
         ]

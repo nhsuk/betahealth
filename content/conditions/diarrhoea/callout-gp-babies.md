@@ -7,5 +7,4 @@
 - have severe stomach ache or one that doesn’t stop
 - still have diarrhoea after 5 to 7 days
 
-***
 Diarrhoea can be infectious. Check with your GP before you go in. They may suggest a phone consultation.
