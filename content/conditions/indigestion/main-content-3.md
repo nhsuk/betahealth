@@ -1,5 +1,3 @@
-These symptoms can be a sign of something more serious.
-
 ## Indigestion, heartburn and acid reflux - what’s the difference?
 
 Heartburn and acid reflux are the same thing. It’s when acid from your stomach comes up your throat.

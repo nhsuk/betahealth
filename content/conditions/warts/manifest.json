@@ -96,6 +96,22 @@
         }
       },
       {
+        "type": "callout",
+        "props": {
+          "variant": "info",
+          "compact": true,
+          "children": [
+            {
+              "type": "text",
+              "props": {
+                "variant": "markdown",
+                "value": "!file=callout-service-link.md"
+              }
+            }
+          ]
+        }
+      },
+      {
         "type": "text",
         "props": {
           "variant": "markdown",

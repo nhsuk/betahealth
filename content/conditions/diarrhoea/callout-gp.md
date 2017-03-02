@@ -6,5 +6,4 @@
 - the diarrhoea doesn’t go away
 - you have recently taken antibiotics or been treated in hospital
 
-***
 Diarrhoea can be infectious. Check with your GP before you go in. They may suggest a phone consultation.

@@ -6,8 +6,5 @@
 - a wart bleeds or changes how it looks
 - you have a wart on your face or genitals
 
-***
 [Genital warts](http://www.nhs.uk/Conditions/Genital_warts/Pages/Introduction.aspx) can also be treated at
 a sexual health or GUM clinic.
-
-[Find your nearest sexual health service](http://www.nhs.uk/Service-Search/Sexual%20health%20services/LocationSearch/1847)
