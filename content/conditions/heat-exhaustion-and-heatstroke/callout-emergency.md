@@ -9,8 +9,9 @@
 - loses consciousness
 - is unresponsive
 
----
 These can be signs of heat stroke.
+
+***
 
 While you wait for help, keep giving first aid and
 [put them in the recovery position if they lose consciousness](http://www.nhs.uk/Conditions/Accidents-and-first-aid/Pages/The-recovery-position.aspx).

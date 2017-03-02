@@ -48,7 +48,7 @@
       {
         "type": "callout",
         "props": {
-          "variant": "alert",
+          "variant": "attention",
           "children": [
             {
               "type": "text",
