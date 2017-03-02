@@ -21,3 +21,21 @@
     display: none;
   }
 }
+
+.util-jshidden {
+  // sass-lint:disable class-name-format
+  .js-enabled & {
+    display: none;
+    visibility: hidden;
+  }
+  // sass-lint:enable class-name-format
+}
+
+.util-indent {
+  border-left: $baseline-grid-unit * 2 solid $grey-2;
+  padding: ($baseline-grid-unit * 4) 0 0 ($baseline-grid-unit * 4);
+
+  @include media(desktop) {
+    padding-left: $baseline-grid-unit * 8;
+  }
+}

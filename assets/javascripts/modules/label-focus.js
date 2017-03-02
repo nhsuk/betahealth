@@ -1,7 +1,7 @@
 const $ = require('jquery');
 
 const LabelFocus = function LabelFocus() {
-  this.el = '.selection-button';
+  this.el = '.multiple-choice';
   this.className = 'is-focused';
 };
 

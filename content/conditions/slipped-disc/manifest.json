@@ -1,7 +1,7 @@
 {
   "layout": "content-simple",
   "title": "Slipped disc",
-  "description": "A slipped disc is when a soft cushion of tissue between the bones in your spine pops out. It’s painful if it presses on nerves. It usually gets better slowly with rest, gentle exercise and painkillers.",
+  "description": "A slipped disc is when a soft cushion of tissue between the bones in your spine pushes out. It’s painful if it presses on nerves. It usually gets better slowly with rest, gentle exercise and painkillers.",
   "nonEmergencyCallout": true,
   "choicesOrigin": "conditions/slipped-disc/pages/introduction.aspx",
   "content": {
@@ -10,7 +10,7 @@
         "type": "text",
         "props": {
           "variant": "markdown",
-          "value": "A slipped disc is when a soft cushion of tissue between the bones in your spine pops out. It’s painful if it presses on nerves. It usually gets better slowly with rest, gentle exercise and painkillers."
+          "value": "A slipped disc is when a soft cushion of tissue between the bones in your spine pushes out. It’s painful if it presses on nerves. It usually gets better slowly with rest, gentle exercise and painkillers."
         }
       }
     ],

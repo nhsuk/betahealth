@@ -33,11 +33,10 @@ level.
 ### Take painkillers
 
 Use painkillers such as ibuprofen and paracetamol (children under 16 shouldn’t
-  take aspirin). Take them regularly (the recommended daily amount), not just
-  when the pain is particularly bad. This will help you to keep moving.
+take aspirin). Take them regularly (the recommended daily amount), not just
+when the pain is particularly bad. This will help you to keep moving.
 
-Paracetamol on its own isn't recommended for back pain, but you can take it
-with ibuprofen if the pain is very bad.
+Paracetamol on its own isn't recommended for back pain.
 
 ## Your pharmacist can help with a slipped disc
 

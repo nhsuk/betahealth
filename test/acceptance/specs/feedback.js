@@ -39,7 +39,8 @@ describe('feedback mechanism', () => {
       FeedbackPage.errorSummary.waitForExist();
       FeedbackPage.errorSummary.isVisible().should.be.true;
       FeedbackPage.errorSummary.getText().should.contain('feedback wasn\'t complete');
-      FeedbackPage.comment.getAttribute('class').should.contain('error');
+      FeedbackPage.foundFirstOption.getAttribute('class').should.contain('has-error');
+      FeedbackPage.reasonFirstOption.getAttribute('class').should.contain('has-error');
     });
 
     it('should receive a thank you message if submitted with content', () => {

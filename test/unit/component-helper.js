@@ -8,7 +8,7 @@ const nunjucksConfig = require('../../config/nunjucks');
 
 const nunjucks = nunjucksConfig(null, {
   root: path.normalize(`${__dirname}/../..`),
-  findersBaseUrl: '',
+  findersBaseUrl: 'http://finders-base.com/',
 });
 
 nunjucks.addGlobal('asset_path', (filename) => {
