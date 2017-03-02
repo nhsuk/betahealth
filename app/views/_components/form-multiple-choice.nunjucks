@@ -38,38 +38,36 @@
     {% endif %}
   </legend>
 
-  <div class="grid-row">
-    <div class="column--two-thirds">
-      {% for option in children %}
-        {% set inputValue = option.value if 'value' in option else option.label %}
-        {% set inputId = ['input', name, loop.index] | join('--') %}
+  <div class="multiple-choice__container">
+    {% for option in children %}
+      {% set inputValue = option.value if 'value' in option else option.label %}
+      {% set inputId = ['input', name, loop.index] | join('--') %}
 
-        {% if variant == 'checkbox' %}
-          {% set isSelected = (value and (inputValue in value)) %}
-        {% else %}
-          {% set isSelected = (inputValue == value) %}
-        {% endif %}
+      {% if variant == 'checkbox' %}
+        {% set isSelected = (value and (inputValue in value)) %}
+      {% else %}
+        {% set isSelected = (inputValue == value) %}
+      {% endif %}
 
-        <label
-          for="{{ inputId }}"
-          class="multiple-choice multiple-choice--{{ variant | default('radio') }}{{ ' multiple-choice--inline' if inline }}{{ ' has-error' if error }}"
+      <label
+        for="{{ inputId }}"
+        class="multiple-choice multiple-choice--{{ variant | default('radio') }}{{ ' multiple-choice--inline' if inline }}{{ ' has-error' if error }}"
+      >
+        {{ option.label }}
+        <input
+          type="{{ variant }}"
+          name="{{ name }}"
+          id="{{ inputId }}"
+          value="{{ inputValue }}"
+          class="multiple-choice__input"
+          {% if isSelected %}
+            checked="checked"
+          {% endif %}
+          {% if hint %}
+            aria-describedby="{{ hintId }}"
+          {% endif %}
         >
-          {{ option.label }}
-          <input
-            type="{{ variant }}"
-            name="{{ name }}"
-            id="{{ inputId }}"
-            value="{{ inputValue }}"
-            class="multiple-choice__input"
-            {% if isSelected %}
-              checked="checked"
-            {% endif %}
-            {% if hint %}
-              aria-describedby="{{ hintId }}"
-            {% endif %}
-          >
-        </label>
-      {% endfor %}
-    </div>
+      </label>
+    {% endfor %}
   </div>
 </fieldset>
