@@ -1,0 +1,40 @@
+{
+  "name": "Textbox",
+  "family": "Form elements",
+  "variants": [
+    {
+      "type": "form-textbox",
+      "props": {
+        "variant": "default",
+        "label": "Textbox example",
+        "name": "textbox-example-1"
+      }
+    },
+    {
+      "type": "form-textbox",
+      "props": {
+        "variant": "default",
+        "label": "Textbox error example",
+        "name": "textbox-example-1-error",
+        "error": "Error message"
+      }
+    },
+    {
+      "type": "form-textbox",
+      "props": {
+        "variant": "large",
+        "label": "Textarea example",
+        "name": "textbox-example-2"
+      }
+    },
+    {
+      "type": "form-textbox",
+      "props": {
+        "variant": "large",
+        "label": "Textarea error example",
+        "name": "textbox-example-2-error",
+        "error": "Error message"
+      }
+    }
+  ]
+}
