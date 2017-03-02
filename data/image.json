@@ -1,5 +1,6 @@
 {
   "name": "Image",
+  "family": "Display",
   "variants": [
     {
       "type": "image",

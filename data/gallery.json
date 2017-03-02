@@ -1,5 +1,6 @@
 {
   "name": "Gallery",
+  "family": "Display",
   "variants": [
     {
       "type": "gallery",

@@ -1,5 +1,6 @@
 {
   "name": "Split content panel",
+  "family": "Display",
   "variants": [
     {
       "type": "splitContent",
