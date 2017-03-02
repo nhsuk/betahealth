@@ -5,15 +5,22 @@ const dataDir = path.resolve(__dirname, '../../data');
 
 function index(req, res) {
   const data = {
-    componentsData: {},
+    componentFamilies: {},
   };
   const files = fs.readdirSync(dataDir);
+  let family;
 
   for (let i = 0; i < files.length; i += 1) {
     const filename = files[i];
-    const contents = fs.readFileSync(path.resolve(dataDir, filename), 'utf8').trim();
+    const fileContents = fs.readFileSync(path.resolve(dataDir, filename), 'utf8').trim();
+    const componentData = JSON.parse(fileContents);
 
-    data.componentsData[filename.replace(/\.[^/.]+$/, '')] = JSON.parse(contents);
+    if (family !== componentData.family) {
+      family = componentData.family;
+      data.componentFamilies[family] = [];
+    }
+
+    data.componentFamilies[family].push(componentData);
   }
 
   res.render('components', data);

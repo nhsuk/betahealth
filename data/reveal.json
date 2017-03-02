@@ -1,5 +1,6 @@
 {
   "name": "Hidden text/image (progressive disclosure)",
+  "family": "Control",
   "variants": [
     {
       "type": "reveal",

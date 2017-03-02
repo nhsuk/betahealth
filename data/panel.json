@@ -1,5 +1,6 @@
 {
   "name": "Panel",
+  "family": "Display",
   "variants": [
     {
       "type": "panel",

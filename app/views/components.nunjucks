@@ -3,15 +3,19 @@
 {% set title = 'Components' %}
 
 {% block main_content %}
-  {% for filename, component in componentsData %}
-    <h2>{{ component.name }} component</h2>
+  {% for family, components in componentFamilies %}
+    <h2>{{ family }}</h2>
 
-    {% for component in component.variants %}
-      {% component name=component.type, context=component.props %}
+    {% for component in components %}
+      <h3>{{ component.name }} component</h3>
 
-      {% if not loop.last %}
-        <hr>
-      {% endif %}
+      {% for component in component.variants %}
+        {% component name=component.type, context=component.props %}
+
+        {% if not loop.last %}
+          <hr>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   {% endfor %}
 {% endblock %}

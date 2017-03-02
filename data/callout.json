@@ -1,5 +1,6 @@
 {
   "name": "Callout",
+  "family": "Display",
   "variants": [
     {
       "type": "callout",
