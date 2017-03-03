@@ -99,7 +99,7 @@
             }
           ],
           "compact": false,
-          "variant": "alert"
+          "variant": "severe"
         },
         "type": "callout"
       }
