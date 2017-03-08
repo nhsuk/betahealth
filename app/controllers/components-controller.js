@@ -8,19 +8,17 @@ function index(req, res) {
     componentFamilies: {},
   };
   const files = fs.readdirSync(dataDir);
-  let family;
 
   for (let i = 0; i < files.length; i += 1) {
     const filename = files[i];
     const fileContents = fs.readFileSync(path.resolve(dataDir, filename), 'utf8').trim();
     const componentData = JSON.parse(fileContents);
 
-    if (family !== componentData.family) {
-      family = componentData.family;
-      data.componentFamilies[family] = [];
+    if (!data.componentFamilies.hasOwnProperty(componentData.family)) {
+      data.componentFamilies[componentData.family] = [];
     }
 
-    data.componentFamilies[family].push(componentData);
+    data.componentFamilies[componentData.family].push(componentData);
   }
 
   res.render('components', data);
