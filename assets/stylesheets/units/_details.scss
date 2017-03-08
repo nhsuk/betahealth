@@ -64,6 +64,18 @@ details {
   text-decoration: underline;
 }
 
+.details__content {
+  @include element-padding(left);
+  border-left: $baseline-grid-unit * 2 solid $grey-3;
+  padding-bottom: $baseline-grid-unit * 2;
+  padding-top: $baseline-grid-unit * 2;
+
+  @include media(desktop) {
+    padding-bottom: $baseline-grid-unit * 4;
+    padding-top: $baseline-grid-unit * 4;
+  }
+}
+
 .details--inline {
   summary {
     color: $black;

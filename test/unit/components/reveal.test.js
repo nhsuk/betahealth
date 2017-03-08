@@ -15,7 +15,7 @@ describe('Reveal component', () => {
           <span class="details__summary">Summary text</span>
         </summary>
 
-        <div>
+        <div class="details__content">
         </div>
       </details>
       `
@@ -36,7 +36,7 @@ describe('Reveal component', () => {
           <span class="details__summary">Summary text with <span class="details__cta">inline link</span></span>
         </summary>
 
-        <div>
+        <div class="details__content">
         </div>
       </details>
       `

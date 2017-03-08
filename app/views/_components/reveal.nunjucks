@@ -24,7 +24,7 @@
     <span class="details__summary">{{ summary }}</span>
   </summary>
 
-  <div>
+  <div class="details__content">
     {% for component in children %}
       {% component name=component.type, context=component.props %}
     {% endfor %}
