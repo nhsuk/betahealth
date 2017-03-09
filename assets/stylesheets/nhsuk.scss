@@ -4,6 +4,7 @@
 @import "environment/settings/typography";
 @import "environment/settings/grid-layout";
 
+@import "environment/tools/mixins/button";
 @import "environment/tools/mixins/colour";
 @import "environment/tools/mixins/conditionals";
 @import "environment/tools/mixins/device-pixels";
@@ -19,7 +20,6 @@
 @import "environment/generic/shared";
 
 // units
-@import "units/buttons";
 @import "units/details";
 @import "units/figures";
 @import "units/forms";
@@ -38,6 +38,7 @@
 @import "objects/page-section";
 
 // components (eg. site search, navigation)
+@import "components/buttons";
 @import "components/article-pagination";
 @import "components/callout";
 @import "components/media";
