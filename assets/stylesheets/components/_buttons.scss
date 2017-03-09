@@ -1,5 +1,3 @@
-$_button-background: $green;
-
 .button {
   @include button($green);
 }

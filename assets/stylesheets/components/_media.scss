@@ -1,11 +1,3 @@
-.media__container {
-  @extend %clearfix;
-
-  & + * {
-    margin-top: 0;
-  }
-}
-
 .media {
   position: relative;
   vertical-align: top;
@@ -13,31 +5,14 @@
   @include media(tablet) {
     max-width: 40em;
   }
-
-  .media__container & {
-    @include element-spacing(bottom);
-
-    @include media(tablet) {
-      float: left;
-      margin-top: 0;
-      max-width: 300px;
-
-      // only apply margins to siblings
-      & + .media {
-        margin-left: $default-spacing-unit;
-      }
-
-      // reset margins and float every odd item
-      &:nth-child(2n+1) {
-        clear: left;
-        margin-left: 0;
-      }
-    }
-  }
 }
 
 .media__caption {
   background-color: $blue-10;
   margin-top: 0;
   padding: $default-spacing-unit;
+
+  .is-collapsed .gallery__item--collage & {
+    @extend %visuallyhidden;
+  }
 }

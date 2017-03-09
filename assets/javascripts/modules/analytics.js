@@ -146,6 +146,10 @@ Analytics.prototype._getEventData = function _getEventData(e) {
       name = `${this.wtPrefix}imageSet`;
       value = $el.attr('href');
       break;
+    case 'collage-button':
+      name = `${this.wtPrefix}CollageButton`;
+      value = $el.text();
+      break;
     case 'summary':
       name = `${this.wtPrefix}Details`;
       value = $el.text();

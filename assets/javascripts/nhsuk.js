@@ -7,6 +7,7 @@ const labelSelect = require('./modules/label-select');
 const tabs = require('./modules/tabs');
 const conditionalSubfields = require('./modules/conditional-subfields');
 const print = require('./modules/print');
+const collage = require('./modules/collage');
 
 cookieMessage('global-cookies-banner');
 
@@ -18,4 +19,5 @@ $(() => {
   tabs.init();
   conditionalSubfields.init();
   print.init();
+  collage.init();
 });

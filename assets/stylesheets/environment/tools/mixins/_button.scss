@@ -5,7 +5,7 @@
 // Example usage:
 
 // .button{
-//   @include button;
+//   @include button($green);
 // }
 // .button-secondary{
 //   @include button($grey-3);
@@ -14,7 +14,7 @@
 //   @include button($red);
 // }
 
-@mixin button($colour: $button-colour) {
+@mixin button($colour) {
   @include bold-font(20);
   -webkit-font-smoothing: antialiased;
   appearance: none;
