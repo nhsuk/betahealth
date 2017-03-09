@@ -105,6 +105,7 @@
       {
         "type": "gallery",
         "props": {
+          "variant": "inline",
           "children": [
             {
               "type": "image",
