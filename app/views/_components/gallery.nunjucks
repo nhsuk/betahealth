@@ -9,15 +9,27 @@
  #   {% component 'gallery', { children: [{...}, {...}] } %}
  #}
 
-<div class="media__container">
+<div class="gallery gallery--{{ variant }}{{ ' is-collapsed js-collage' if variant == 'collage' }}" data-expandtext= "Expand images" data-collapsetext= "Collapse images">
   {% for component in children %}
-    {# Change the analytics type used if the image is within a gallery #}
-    {% if component.type == 'image' %}
-      {% set context = component.props | assign({ analyticsType: 'figure' }) %}
+    {% if (children.length == 3 or children.length == 5) and loop.first %}
+      {% set _size = ' gallery__item--large' %}
+    {% elif (children.length == 3 or children.length == 5) and loop.index < 4 %}
+      {% set _size = ' gallery__item--small' %}
     {% else %}
-      {% set context = component.props %}
+      {% set _size = '' %}
     {% endif %}
 
-    {% component name=component.type, context=context %}
+    <div class="gallery__item gallery__item--{{ variant }}{{ _size }} is-{{ 'even' if loop.index % 2 == 0 else 'odd' }}">
+      {# Change the analytics type used if the image is within a gallery #}
+      {% if component.type == 'image' and variant == 'collage' %}
+        {% set context = component.props | assign({ analyticsType: 'collage' }) %}
+      {% elif component.type == 'image' %}
+        {% set context = component.props | assign({ analyticsType: 'figure' }) %}
+      {% else %}
+        {% set context = component.props %}
+      {% endif %}
+
+      {% component name=component.type, context=context %}
+    </div>
   {% endfor %}
 </div>

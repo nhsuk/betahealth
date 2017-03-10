@@ -43,7 +43,26 @@
           {
             "type": "gallery",
             "props": {
+              "variant": "inline",
               "children": [
+                {
+                  "type": "image",
+                  "props": {
+                    "id": 1,
+                    "width": 600,
+                    "height": 400,
+                    "alt": "lorem ipsum alt",
+                    "caption": "lorem ipsum caption",
+                    "slug": "image-600.jpeg",
+                    "version": 1,
+                    "srcset": [
+                      "https://placekitten.com/g/1280/853 400w",
+                      "https://placekitten.com/g/1280/853 640w",
+                      "https://placekitten.com/g/1280/853 800w",
+                      "https://placekitten.com/g/1280/853 1280w"
+                    ]
+                  }
+                },
                 {
                   "type": "image",
                   "props": {
