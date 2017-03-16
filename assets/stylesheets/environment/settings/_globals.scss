@@ -1,6 +1,5 @@
-$is-ie: false !default;
-$mobile-ie6: true !default;
-
 $font-family: "FS Me" !default;
-
 $font-cdn-path: "/* @echo FONT_CDN_PATH */assets/";
+
+$nhs-font-stack: $font-family, Arial, sans-serif;
+$print-font-stack: sans-serif;

@@ -1,5 +1,5 @@
 .link-list__row {
-  @extend %grid-row;
+  @include grid-row;
 }
 
 .link-list {
