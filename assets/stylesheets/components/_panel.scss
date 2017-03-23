@@ -1,5 +1,5 @@
 .panel {
-  @extend %clearfix;
+  @include clearfix;
   background-color: $grey-5;
   display: table;
   width: 100%;
