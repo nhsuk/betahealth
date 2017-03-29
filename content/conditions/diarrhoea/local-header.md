@@ -1,4 +1,4 @@
-Diarrhoea usually goes away on it’s own within a few days. Make sure you or your child drink plenty of fluids.
+Diarrhoea usually goes away on its own within a few days. Make sure you or your child drink plenty of fluids.
 
 - [Adults with diarrhoea](#how-you-can-treat-diarrhoea-yourself){data-analytics=anchor}
 - [Babies and toddlers with diarrhoea](#babies-and-toddlers-treating-diarrhoea){data-analytics=anchor}
