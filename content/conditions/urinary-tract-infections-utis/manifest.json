@@ -1,0 +1,95 @@
+{
+  "choicesOrigin": "",
+  "content": {
+    "header": [
+      {
+        "props": {
+          "value": "!file=content-1.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ],
+    "main": [
+      {
+        "props": {
+          "value": "!file=content-2.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "value": "!file=content-3.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      },
+      {
+        "props": {
+          "children": [
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-4.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            },
+            {
+              "props": {
+                "children": [
+                  {
+                    "props": {
+                      "value": "!file=content-5.md",
+                      "variant": "markdown"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "type": "splitArea"
+            }
+          ]
+        },
+        "type": "splitContent"
+      },
+      {
+        "props": {
+          "value": "!file=content-6.md",
+          "variant": "markdown"
+        },
+        "type": "text"
+      }
+    ]
+  },
+  "description": "",
+  "guide": false,
+  "id": 13,
+  "meta": {
+    "children": [],
+    "detailUrl": "http://localhost/api/preview-pages/13/",
+    "htmlUrl": "http://localhost/conditions/urinary-tract-infections-utis/",
+    "parent": {
+      "id": 6,
+      "meta": {
+        "detailUrl": "http://localhost/api/preview-pages/6/",
+        "htmlUrl": "http://localhost/conditions/",
+        "type": "pages.FolderPage"
+      },
+      "slug": "conditions",
+      "title": "Conditions"
+    },
+    "siblings": [],
+    "slug": "urinary-tract-infections-utis",
+    "type": "pages.EditorialPage"
+  },
+  "nonEmergencyCallout": true,
+  "title": "Urinary tract infections (UTIs)"
+}

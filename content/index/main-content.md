@@ -51,7 +51,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Tendonitis](/conditions/tendonitis)
 * [Thrush](/conditions/thrush)
 * [Tonsillitis](/conditions/tonsillitis)
-* [Urinary tract infections (UTIs)](/conditions/urinary-tract-infections)
+* [Urinary tract infections (UTIs)](/conditions/urinary-tract-infections-utis)
 * [Vaginal discharge](/conditions/vaginal-discharge)
 * [Warts](/conditions/warts)
 
