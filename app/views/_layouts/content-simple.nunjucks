@@ -1,4 +1,21 @@
-{% extends '_layouts/nhsuk.nunjucks' %}
+{% extends 'nhsuk-base.njk' %}
+
+{% block head %}
+  {% include '_includes/global/head.nunjucks' %}
+{% endblock %}
+
+{% block body_notifications %}
+  {% if previewRevisionId %}
+    {% include '_includes/preview-message.nunjucks' %}
+  {% endif %}
+  {{ super() }}
+  {% include '_includes/new-site-message.nunjucks' %}
+{% endblock %}
+
+{% block body %}
+  {{ super() }}
+  {% include '_includes/global/foot.nunjucks' %}
+{% endblock %}
 
 {% block body_main_content %}
   <article role="article">
@@ -38,4 +55,11 @@
     {% include '_includes/feedback-message.nunjucks' %}
 
   </article>
+{% endblock %}
+
+{% block body_footer %}
+  {% if feedback and not FEEDBACKFORM.disabled %}
+    {% include '_includes/feedback-form.nunjucks' %}
+  {% endif %}
+  {{ super() }}
 {% endblock %}

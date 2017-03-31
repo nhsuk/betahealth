@@ -43,7 +43,10 @@ function ComponentExtension(env) {
 }
 
 module.exports = (app, config) => {
-  const env = nunjucks.configure(`${config.root}/app/views`, {
+  const env = nunjucks.configure([
+    `${config.root}/app/views`,
+    `${config.root}/node_modules/nhsuk-frontend/src/templates`
+  ], {
     autoescape: true,
     express: app,
   });

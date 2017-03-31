@@ -25,7 +25,7 @@ The prescribed tablets are stronger than the supplements you can buy in pharmaci
 
 You’ll have to take them for about 6 months.
 
-Drinking orange juice after you’ve taken them will help your body absorb the iron.
+Drinking orange juice after you’ve taken them may help your body absorb the iron.
 
 Some people get side effects like:
 

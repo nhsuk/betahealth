@@ -54,8 +54,9 @@ module.exports = (app, config) => {
   // Needs to be registered after checkSecure for asset_path middleware
   nunjucks(app, config);
 
-  app.use(favicon(path.join(__dirname, '..', 'assets', 'images', 'favicon.ico')));
+  app.use(favicon(path.join(config.root, 'node_modules/nhsuk-frontend/dist', 'assets/images', 'favicon.ico')));
   app.use(express.static(`${config.root}/public`));
+  app.use(express.static(`${config.root}/node_modules/nhsuk-frontend/dist`));
   if (config.env !== 'production') {
     app.use(express.static(`${config.root}/.tmp`));
   }

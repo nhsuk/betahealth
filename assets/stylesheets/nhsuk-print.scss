@@ -3,26 +3,17 @@
 
 $is-print: true;
 
-@import "environment/settings/globals";
-@import "environment/settings/colours";
-@import "environment/settings/typography";
-
-@import "environment/tools/mixins/colour";
-@import "environment/tools/mixins/conditionals";
-@import "environment/tools/mixins/typography";
-@import "environment/tools/placeholders/shims";
-@import "environment/tools/utilities";
-
-@import "environment/generic/box-sizing";
-@import "environment/generic/reset";
 @import "normalize.css/normalize";
+@import "nhsuk-frontend/dist/scss/environment/settings";
+@import "nhsuk-frontend/dist/scss/environment/tools";
+@import "nhsuk-frontend/dist/scss/environment/generic";
 
 // units
-@import "units/images";
-@import "units/headings";
-@import "units/lists";
-@import "units/links";
-@import "units/quotes";
+@import "nhsuk-frontend/dist/scss/units/image";
+@import "nhsuk-frontend/dist/scss/units/heading";
+@import "nhsuk-frontend/dist/scss/units/list";
+@import "nhsuk-frontend/dist/scss/units/link";
+@import "nhsuk-frontend/dist/scss/units/quote";
 
 body {
   @include core-font(16);
