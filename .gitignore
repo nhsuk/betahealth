@@ -24,3 +24,6 @@ assets/fonts/fsme/
 
 # Ignore local env settings
 .env
+
+# Dev setup
+.idea/*
