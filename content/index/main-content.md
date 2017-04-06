@@ -76,7 +76,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Ibuprofen for adults (including Nurofen)](https://beta.nhs.uk/medicines/ibuprofen-for-adults)
 * [Ibuprofen for children](https://beta.nhs.uk/medicines/ibuprofen-for-children)
 * [Isotretinoin](https://beta.nhs.uk/medicines/isotretinoin)
-* [Isotretinoin capsules](https://beta.nhs.uk/medicines/isotretinoin-capsules)
+* [Isotretinoin capsules (Roaccutane)](https://beta.nhs.uk/medicines/isotretinoin-capsules)
 * [Isotretinoin gel (Isotrex)](https://beta.nhs.uk/medicines/isotretinoin-gel)
 * [Lactulose](https://beta.nhs.uk/medicines/lactulose)
 * [Lansoprazole](https://beta.nhs.uk/medicines/lansoprazole)
