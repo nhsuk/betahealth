@@ -8,3 +8,5 @@
 
 Hand, foot and mouth disease is infectious. Check with your GP surgery before
 you go in. They may suggest a phone consultation.
+
+[Book a GP appointment online]({{ findersBaseUrl }}book-a-gp-appointment)

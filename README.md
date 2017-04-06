@@ -45,7 +45,7 @@ To run develop mode:
 npm run develop
 ```
 
-In addition you can build the code yourself using gulp:
+In addition you can build the code yourself using [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md):
 
 ```
 gulp build
@@ -55,6 +55,12 @@ or lint the code for styleguide warnings and errors
 
 ```
 npm run lint
+```
+
+or run the application
+
+```
+npm start
 ```
 
 If you want to update build related code and scripts then each task is a [gulp](http://gulpjs.com/) script located at '*gulp/tasks*'.
@@ -78,7 +84,7 @@ If you need to include local environment variables in development add them to `.
 VARIABLE_NAME=value
 ```
 
-There's an `.env.example` with pre-populated development data including urls to the Content Store.
+There's an `.env.example` with pre-populated development data including urls to the Content Store. It's set to use the `file` system if the Content Store is not available.
 
 To use that, copy the file:
 
