@@ -1,1 +1,1 @@
-[Find a pharmacy]({{ findersBaseUrl }}find-help)
+[Find a pharmacy]({{ findersBaseUrl }}finders/find-help)
