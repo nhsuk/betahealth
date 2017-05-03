@@ -8,3 +8,5 @@
 - hearing loss or a change in hearing
 - other symptoms, like vomiting, a severe sore throat or dizziness
 - regular ear infections
+
+[Book a GP appointment online]({{ findersBaseUrl }}book-a-gp-appointment)
