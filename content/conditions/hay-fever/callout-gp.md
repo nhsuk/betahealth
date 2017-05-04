@@ -2,3 +2,5 @@
 
 - your symptoms are getting worse
 - your symptoms don’t improve after taking medicines from the pharmacy
+
+[Book a GP appointment online]({{ findersBaseUrl }}book-a-gp-appointment)

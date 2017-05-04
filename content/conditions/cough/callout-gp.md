@@ -9,3 +9,5 @@
 - you find it hard to breathe
 
 **See a GP urgently if you’re coughing up blood.**
+
+[Book a GP appointment online]({{ findersBaseUrl }}book-a-gp-appointment)
