@@ -39,21 +39,25 @@
 
         {% component 'form-multiple-choice', {
           variant: 'checkbox',
-          label: 'What were you looking for today?',
+          label: 'What were you looking for today? I wanted to know....',
           hint: 'Select all that apply',
           name: 'feedback-form-theme',
           error: FEEDBACKFORM.errors['feedback-form-theme'],
           value: FEEDBACKFORM.data['feedback-form-theme'],
           children: [{
-            label: 'Symptoms of a health issue'
+            label: 'What I should do about my symptom'
           }, {
-            label: 'Advice on treating a health issue myself'
+            label: 'How to treat a health issue or symptom myself'
           }, {
-            label: 'Causes of a health issue'
+            label: 'Whether or not I need to seek medical help'
           }, {
-            label: 'Whether to seek medical help'
+            label: 'Where to go for medical help (e.g. 111, pharmacist, GP, A&E)'
           }, {
-            label: 'Where to seek medical help'
+            label: 'More about a condition (following a diagnosis)'
+          }, {
+            label: 'About possible treatment options '
+          }, {
+            label: 'What is causing a symptom or a health issue'
           }, {
             label: 'Something else'
           }]

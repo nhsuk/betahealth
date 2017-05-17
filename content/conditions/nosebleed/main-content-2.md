@@ -27,7 +27,7 @@ Certain people are more prone to getting nosebleeds, including:
 
 - sit or stand upright (don’t lie down)
 - pinch your nose just above your nostrils for 10 to 15 minutes
-- lean forward and breath through your mouth
+- lean forward and breathe through your mouth
 - place an icepack (or a bag of frozen vegetables wrapped in a teatowel) at the
   top of your nose
 
