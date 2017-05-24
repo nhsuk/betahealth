@@ -20,4 +20,4 @@ Tonsillitis usually has to run its course. To help ease the symptoms:
 - get plenty of rest
 - drink cool drinks to soothe the throat
 - take paracetamol or ibuprofen (don’t give aspirin to children under 16)
-- gargle with warm salty water
+- gargle with warm salty water (children shouldn’t try this)
