@@ -45,7 +45,7 @@
           error: FEEDBACKFORM.errors['feedback-form-theme'],
           value: FEEDBACKFORM.data['feedback-form-theme'],
           children: [{
-            label: 'What I should do about my symptom'
+            label: 'What I should do about a symptom'
           }, {
             label: 'How to treat a health issue or symptom myself'
           }, {
