@@ -211,3 +211,6 @@ Acceptance tests are run on browserstack against a Heroku [review app](https://d
 ## Thanks
 
 We'd like to thank [BrowserStack](https://www.browserstack.com/) for providing a sponsored plan for this project.
+
+
+## this is a test and can be ignored
