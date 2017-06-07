@@ -2,7 +2,7 @@
 
 To help soothe a sore throat and shorten how long it lasts you can:
 
-- gargle with warm salty water
+- gargle with warm salty water (children shouldn’t try this)
 - drink plenty of water - but avoid hot drinks
 - eat cool or soft foods
 - avoid smoking or smoky places
