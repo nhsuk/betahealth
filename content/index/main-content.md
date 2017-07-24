@@ -83,6 +83,7 @@ take a look and tell us what you think. It will help us to improve what we do.
 * [Lactulose](https://beta.nhs.uk/medicines/lactulose)
 * [Lansoprazole](https://beta.nhs.uk/medicines/lansoprazole)
 * [Levothyroxine](https://beta.nhs.uk/medicines/levothyroxine)
+* [Lisinopril](https://beta.nhs.uk/medicines/lisinopril)
 * [Loratadine (Clarityn)](https://beta.nhs.uk/medicines/loratadine)
 * [Metformin](https://beta.nhs.uk/medicines/metformin)
 * [Morphine](https://beta.nhs.uk/medicines/morphine)
